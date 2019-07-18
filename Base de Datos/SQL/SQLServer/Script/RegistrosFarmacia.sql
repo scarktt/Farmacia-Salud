@@ -1,6 +1,6 @@
 use [FarmaciaMSalud]
 
---Compraproducto
+--[COMPLETO] Compraproducto
 INSERT [dbo].[CompraProducto] ([IDcompra], [IDpedido], [IDproveedor], [IDproducto], [Fecha_compra], [Num_factura], [Monto], [Cantidad], [Descuento]) VALUES (3001, 9001, 17001, 1001, CAST(N'2019-02-21' AS Date), 150, 25, 0.05)--Falta el monto, cantidad, descuento
 INSERT [dbo].[CompraProducto] ([IDcompra], [IDpedido], [IDproveedor], [IDproducto], [Fecha_compra], [Num_factura], [Monto], [Cantidad], [Descuento]) VALUES (3002, 9002, 17002, 1002, CAST(N'2018-12-19' AS Date), 200, 20, 0.1)
 INSERT [dbo].[CompraProducto] ([IDcompra], [IDpedido], [IDproveedor], [IDproducto], [Fecha_compra], [Num_factura], [Monto], [Cantidad], [Descuento]) VALUES (3003, 9003, 17003, 1003, CAST(N'2019-01-10' AS Date), 100, 20, 0)
@@ -28,7 +28,7 @@ INSERT [dbo].[CompraProducto] ([IDcompra], [IDpedido], [IDproveedor], [IDproduct
 INSERT [dbo].[CompraProducto] ([IDcompra], [IDpedido], [IDproveedor], [IDproducto], [Fecha_compra], [Num_factura], [Monto], [Cantidad], [Descuento]) VALUES (3025, 9013, 17013, 1013, CAST(N'2018-02-26' AS Date), 100, 25, 0.03)
 
 
---DetalleCompra
+--[COMPLETO] DetalleCompra
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11001, 3001, 1001, 25, 433.0000)
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11002, 3002, 1002, 100, 222.0000)
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11003, 3003, 1003, 10, 762.7000)
@@ -41,7 +41,19 @@ INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cant
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11010, 3010, 1010, 3, 234.0000)
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11011, 3011, 1011, 5, 380.0000)
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11012, 3012, 1012, 6, 192.0000)
-INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11013, 3013, 1013, 200, 960.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11013, 3013, 1013, 300, 960.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11014, 3014, 1014, 20, 560.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11015, 3015, 1015, 100, 260.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11016, 3016, 1016, 75, 750.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11017, 3017, 1017, 40, 290.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11018, 3018, 1018, 140, 970.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11019, 3019, 1019, 1, 780.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11020, 3020, 1019, 5, 910.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11021, 3021, 1013, 10, 910.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11022, 3022, 1020, 14, 910.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11023, 3023, 1022, 2, 910.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11024, 3024, 1025, 8, 910.0000)
+INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11025, 3025, 1017, 10, 910.0000)
 
 --[COMPLETO] Detallefactura
 INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4001, 3001, 30.0000, 1, 30.0000)
@@ -75,7 +87,7 @@ INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Can
 INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4024, 3008, 13.0000, 2, 16.0000)
 INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4025, 3008, 12.0000, 1, 12.0000)
 
---Detalle Pedido
+--DetallePedido
 INSERT [dbo].[DetallePedido] ([IDproveedor], [IDpedido], [Cantidad], [Monto], [IDproducto]) VALUES (17001, 9000, 12, 320, 10001)
 
 --DetalleProducto
