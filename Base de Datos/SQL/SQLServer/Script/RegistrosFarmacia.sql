@@ -43,17 +43,39 @@ INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cant
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11012, 3012, 1012, 6, 192.0000)
 INSERT [dbo].[DetalleCompra] ([IDdetallecompra], [IDcompra], [IDproducto], [Cantidad], [Costo]) VALUES (11013, 3013, 1013, 200, 960.0000)
 
---Detallefactura
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4001, 5001, 30.0000, 1, 30.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4002, 5006, 4.0000, 5, 20.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4003, 5007, 100.0000, 1, 100.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4004, 5013, 7.0000, 3, 21.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4005, 5008, 1.0000, 5, 5.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4006, 5011, 100.0000, 2, 190.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4007, 5002, 4.0000, 6, 24.0000)
-INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4008, 5012, 60.0000, 1, 60.0000)
+--[COMPLETO] Detallefactura
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4001, 3001, 30.0000, 1, 30.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4002, 3006, 4.0000, 5, 20.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4003, 3007, 100.0000, 1, 100.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4004, 3013, 7.0000, 3, 21.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4005, 3008, 1.0000, 5, 5.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4006, 3011, 100.0000, 2, 190.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4007, 3002, 4.0000, 6, 24.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4008, 3012, 6.0000, 1, 60.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4009, 3013, 8.0000, 2, 16.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4010, 3003, 50.0000, 1, 100.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4011, 3001, 10.0000, 2, 20.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4012, 3004, 40.0000, 1, 80.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4013, 3006, 20.0000, 2, 40.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4013, 3005, 8.0000, 3, 16.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4013, 3007, 10.0000, 1, 20.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4014, 3011, 7.5000, 1, 7.5000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4014, 3002, 3.2500, 4, 13.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4014, 3009, 14.0000, 1, 14.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4014, 3010, 4.6000, 6, 27.6000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4015, 3001, 9.0000, 2, 18.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4016, 3002, 10.5000, 2, 20.1000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4017, 3012, 20.0000, 1, 20.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4018, 3005, 30.0000, 2, 60.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4019, 3004, 1.5000, 10, 60.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4020, 3008, 2.000, 5, 10.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4021, 3007, 3.5000, 6, 21.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4022, 3011, 10.0000, 2, 20.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4023, 3003, 11.0000, 1, 11.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4024, 3008, 13.0000, 2, 16.0000)
+INSERT [dbo].[DetalleFactura] ([IDfactura], [IDproducto], [PrecioUnitario], [Cantidad], [Total]) VALUES (4025, 3008, 12.0000, 1, 12.0000)
 
---Detalle Pedido 
+--Detalle Pedido
 INSERT [dbo].[DetallePedido] ([IDproveedor], [IDpedido], [Cantidad], [Monto], [IDproducto]) VALUES (17001, 9000, 12, 320, 10001)
 
 --DetalleProducto
@@ -91,7 +113,7 @@ INSERT [dbo].[Enfermedad] ([IDenfermedad], [Descripcion]) VALUES (5023, N'Alergi
 INSERT [dbo].[Enfermedad] ([IDenfermedad], [Descripcion]) VALUES (5024, N'Sinucitis')
 INSERT [dbo].[Enfermedad] ([IDenfermedad], [Descripcion]) VALUES (5025, N'Infeccion vaginal')
 
---Factura
+--[COMPLETO] Factura
 INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6001, 2, CAST(N'2019-03-31 00:00:00.000' AS DateTime))
 INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6002, 1, CAST(N'2019-03-20 00:00:00.000' AS DateTime))
 INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6003, 2, CAST(N'2019-04-05 00:00:00.000' AS DateTime))
@@ -100,16 +122,36 @@ INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6005, 4, CAS
 INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6006, 2, CAST(N'2019-04-01 00:00:00.000' AS DateTime))
 INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6007, 2, CAST(N'2019-03-20 00:00:00.000' AS DateTime))
 INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6008, 1, CAST(N'2019-04-07 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6009, 1, CAST(N'2019-02-02 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6010, 1, CAST(N'2019-02-03 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6011, 1, CAST(N'2019-02-04 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6012, 1, CAST(N'2019-02-05 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6013, 1, CAST(N'2019-02-06 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6014, 1, CAST(N'2019-02-06 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6015, 1, CAST(N'2019-02-07 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6016, 1, CAST(N'2019-02-07 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6017, 1, CAST(N'2019-02-07 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6018, 1, CAST(N'2019-02-08 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6019, 1, CAST(N'2019-02-08 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6020, 1, CAST(N'2019-02-08 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6021, 1, CAST(N'2019-02-08 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6022, 1, CAST(N'2019-02-09 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6023, 1, CAST(N'2019-02-10 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6024, 1, CAST(N'2019-02-10 00:00:00.000' AS DateTime))
+INSERT [dbo].[Factura] ([IDfactura], [IDempleado], [Fecha]) VALUES (6025, 1, CAST(N'2019-02-10 00:00:00.000' AS DateTime))
 
-
---Indicacion
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7001, N'Mayores de 12 años')
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7002, N'0-18 años')
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7003, N'Mayores de 3 años')
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7004, N'Mayores de 18')
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7005, N'Mayores de 5 años')
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7006, N'TE')
-INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7007, N'2-5 años')
+--[COMPLETO] Indicacion
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7001, N'Mayores de 1 aÃ±o')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7002, N'Mayores de 3 aÃ±os')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7003, N'Mayores de 5 aÃ±os')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7004, N'Mayores de 12 aÃ±os')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7005, N'Mayores de 18 aÃ±os')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7006, N'Mayores de 50 aÃ±os')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7007, N'0-18 aÃ±os')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7008, N'Menores de 1 aÃ±o')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7009, N'TE')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7010, N'Embarazadas')
+INSERT [dbo].[Indicacion] ([IDindicacion], [Descripcion]) VALUES (7011, N'No apto para embarazadas')
 
 
 --IndicacionProducto {Completado}
@@ -222,7 +264,7 @@ INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) V
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17010, N'Laboratorio         ', N'Panzyma                       ')
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17011, N'Laboratorio         ', N'Infasa                        ')
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17012, N'Laboratorio         ', N'PFizer                        ')
-INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17013, N'Laboratorio         ', N'La Santé                      ')
+INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17013, N'Laboratorio         ', N'La Santï¿½                      ')
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17014, N'Laboratorio         ', N'Bengoechea                    ')
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17015, N'Distribuidor        ', N'Rocha                         ')
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17016, N'Distribuidor        ', N'J.Ruiz                        ')
@@ -247,7 +289,7 @@ INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) V
 INSERT [dbo].[Proveedor] ([IDproveedor], [Tipo_proveedor], [Nombre_proveedor]) VALUES (17035, N'Distribuidor        ', N'Generifar                     ')
 
 --UtilidadProducto {Completado}
-INSERT [dbo].[UtilidadProducto] ([IDproducto], [IDenfermedad]) VALUES (1001, 10001) 
+INSERT [dbo].[UtilidadProducto] ([IDproducto], [IDenfermedad]) VALUES (1001, 10001)
 INSERT [dbo].[UtilidadProducto] ([IDproducto], [IDenfermedad]) VALUES (1001, 10004)
 INSERT [dbo].[UtilidadProducto] ([IDproducto], [IDenfermedad]) VALUES (1002, 10002)
 INSERT [dbo].[UtilidadProducto] ([IDproducto], [IDenfermedad]) VALUES (1002, 10003)
