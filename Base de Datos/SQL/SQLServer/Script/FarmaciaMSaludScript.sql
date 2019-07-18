@@ -1,11 +1,9 @@
-
-
 Create table [Empleado]
 (
 	[IDempleado] Integer NOT NULL,
 	[Nombre] Char(50) NULL,
 Primary Key ([IDempleado])
-) 
+)
 go
 
 Create table [Producto]
@@ -20,7 +18,7 @@ Create table [Producto]
 	[StockBodega] Integer NULL,
 	[StockEstante] Integer NULL,
 Primary Key ([IDproducto])
-) 
+)
 go
 
 Create table [Proveedor]
@@ -29,7 +27,7 @@ Create table [Proveedor]
 	[Tipo_proveedor] Char(20) NULL,
 	[Nombre_proveedor] Char(30) NULL,
 Primary Key ([IDproveedor])
-) 
+)
 go
 
 Create table [CompraProducto]
@@ -44,7 +42,7 @@ Create table [CompraProducto]
 	[Cantidad] Integer NULL,
 	[Descuento] Float NULL,
 Primary Key ([IDcompra])
-) 
+)
 go
 
 Create table [Factura]
@@ -53,7 +51,7 @@ Create table [Factura]
 	[IDempleado] Integer NOT NULL,
 	[Fecha] Datetime NULL,
 Primary Key ([IDfactura])
-) 
+)
 go
 
 Create table [DetalleFactura]
@@ -64,7 +62,7 @@ Create table [DetalleFactura]
 	[Cantidad] Integer NULL,
 	[Total] Money NULL,
 Primary Key ([IDfactura],[IDproducto])
-) 
+)
 go
 
 Create table [Enfermedad]
@@ -72,7 +70,7 @@ Create table [Enfermedad]
 	[IDenfermedad] Integer NOT NULL,
 	[Descripcion] Char(50) NULL,
 Primary Key ([IDenfermedad])
-) 
+)
 go
 
 Create table [UtilidadProducto]
@@ -80,7 +78,7 @@ Create table [UtilidadProducto]
 	[IDproducto] Integer NOT NULL,
 	[IDenfermedad] Integer NOT NULL,
 Primary Key ([IDproducto],[IDenfermedad])
-) 
+)
 go
 
 Create table [Indicacion]
@@ -88,7 +86,7 @@ Create table [Indicacion]
 	[IDindicacion] Integer NOT NULL,
 	[Descripcion] Char(50) NULL,
 Primary Key ([IDindicacion])
-) 
+)
 go
 
 Create table [IndicacionProducto]
@@ -96,7 +94,7 @@ Create table [IndicacionProducto]
 	[IDproducto] Integer NOT NULL,
 	[IDindicacion] Integer NOT NULL,
 Primary Key ([IDproducto],[IDindicacion])
-) 
+)
 go
 
 Create table [DetalleCompra]
@@ -107,7 +105,7 @@ Create table [DetalleCompra]
 	[Cantidad] Integer NOT NULL,
 	[Costo] Money NULL,
 Primary Key ([IDdetallecompra],[IDcompra])
-) 
+)
 go
 
 Create table [Lote]
@@ -115,7 +113,7 @@ Create table [Lote]
 	[IDLote] Integer NOT NULL,
 	[Fecha_venc] Datetime NULL,
 Primary Key ([IDLote])
-) 
+)
 go
 
 Create table [PagoServicios]
@@ -126,7 +124,7 @@ Create table [PagoServicios]
 	[PagoServicio] Money NULL,
 	[FechaPago] Datetime NULL,
 Primary Key ([IDPagoServicios])
-) 
+)
 go
 
 Create table [Pedido]
@@ -135,7 +133,7 @@ Create table [Pedido]
 	[IDpedido] Integer NOT NULL,
 	[Fecha] Datetime NULL,
 Primary Key ([IDpedido])
-) 
+)
 go
 
 Create table [DetallePedido]
@@ -146,7 +144,7 @@ Create table [DetallePedido]
 	[Monto] Money NULL,
 	[IDproducto] Integer NOT NULL,
 Primary Key ([IDproveedor],[IDpedido],[IDproducto])
-) 
+)
 go
 
 Create table [DetalleProducto]
@@ -157,62 +155,46 @@ Create table [DetalleProducto]
 	[PrecioVenta] Money NULL,
 	[PrecioUnitario] Money NULL,
 Primary Key ([IDproducto])
-) 
+)
 go
 
-
-
-
-
-
-
-
-Alter table [Factura] add  foreign key([IDempleado]) references [Empleado] ([IDempleado])  on update no action on delete no action 
+Alter table [Factura] add  foreign key([IDempleado]) references [Empleado] ([IDempleado])  on update no action on delete no action
 go
-Alter table [Pedido] add  foreign key([IDempleado]) references [Empleado] ([IDempleado])  on update no action on delete no action 
+Alter table [Pedido] add  foreign key([IDempleado]) references [Empleado] ([IDempleado])  on update no action on delete no action
 go
-Alter table [PagoServicios] add  foreign key([IDempleado]) references [Empleado] ([IDempleado])  on update no action on delete no action 
+Alter table [PagoServicios] add  foreign key([IDempleado]) references [Empleado] ([IDempleado])  on update no action on delete no action
 go
-Alter table [UtilidadProducto] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action 
+Alter table [UtilidadProducto] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action
 go
-Alter table [IndicacionProducto] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action 
+Alter table [IndicacionProducto] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action
 go
-Alter table [DetalleProducto] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action 
+Alter table [DetalleProducto] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action
 go
-Alter table [DetallePedido] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action 
+Alter table [DetallePedido] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action
 go
-Alter table [DetalleCompra] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action 
+Alter table [DetalleCompra] add  foreign key([IDproducto]) references [Producto] ([IDproducto])  on update no action on delete no action
 go
-Alter table [DetallePedido] add  foreign key([IDproveedor]) references [Proveedor] ([IDproveedor])  on update no action on delete no action 
+Alter table [DetallePedido] add  foreign key([IDproveedor]) references [Proveedor] ([IDproveedor])  on update no action on delete no action
 go
-Alter table [DetalleCompra] add  foreign key([IDcompra]) references [CompraProducto] ([IDcompra])  on update no action on delete no action 
+Alter table [DetalleCompra] add  foreign key([IDcompra]) references [CompraProducto] ([IDcompra])  on update no action on delete no action
 go
-Alter table [DetalleFactura] add  foreign key([IDfactura]) references [Factura] ([IDfactura])  on update no action on delete no action 
+Alter table [DetalleFactura] add  foreign key([IDfactura]) references [Factura] ([IDfactura])  on update no action on delete no action
 go
-Alter table [UtilidadProducto] add  foreign key([IDenfermedad]) references [Enfermedad] ([IDenfermedad])  on update no action on delete no action 
+Alter table [UtilidadProducto] add  foreign key([IDenfermedad]) references [Enfermedad] ([IDenfermedad])  on update no action on delete no action
 go
-Alter table [IndicacionProducto] add  foreign key([IDindicacion]) references [Indicacion] ([IDindicacion])  on update no action on delete no action 
+Alter table [IndicacionProducto] add  foreign key([IDindicacion]) references [Indicacion] ([IDindicacion])  on update no action on delete no action
 go
-Alter table [DetalleProducto] add  foreign key([IDLote]) references [Lote] ([IDLote])  on update no action on delete no action 
+Alter table [DetalleProducto] add  foreign key([IDLote]) references [Lote] ([IDLote])  on update no action on delete no action
 go
-Alter table [DetallePedido] add  foreign key([IDpedido]) references [Pedido] ([IDpedido])  on update no action on delete no action 
+Alter table [DetallePedido] add  foreign key([IDpedido]) references [Pedido] ([IDpedido])  on update no action on delete no action
 go
-Alter table [CompraProducto] add  foreign key([IDproveedor],[IDpedido],[IDproducto]) references [DetallePedido] ([IDproveedor],[IDpedido],[IDproducto])  on update no action on delete no action 
+Alter table [CompraProducto] add  foreign key([IDproveedor],[IDpedido],[IDproducto]) references [DetallePedido] ([IDproveedor],[IDpedido],[IDproducto])  on update no action on delete no action
 go
-Alter table [DetalleFactura] add  foreign key([IDproducto]) references [DetalleProducto] ([IDproducto])  on update no action on delete no action 
+Alter table [DetalleFactura] add  foreign key([IDproducto]) references [DetalleProducto] ([IDproducto])  on update no action on delete no action
 go
-
 
 Set quoted_identifier on
 go
-
-
-
-
-
-
-
-
 
 Set quoted_identifier off
 go
