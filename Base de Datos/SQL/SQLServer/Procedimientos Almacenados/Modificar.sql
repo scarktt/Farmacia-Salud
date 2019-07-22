@@ -113,7 +113,7 @@ PrecioUnitario = @PrecioUnitario
 where IDproducto = @IDproducto AND IDlote = @IDlote,
 END
 
-Execute ModDetalleProducto '1001', '8001', '25-05-19', 250, 25
+Execute ModDetalleProducto '1002', '8001', '25-05-19', 250, 25
 
 --Empleado 
 
