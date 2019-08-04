@@ -1,0 +1,254 @@
+/* Pantalla #1 */
+
+position: relative;
+width: 1260px;
+height: 680px;
+
+* Login */
+
+position: absolute;
+width: 1260px;
+height: 680px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+
+/* Icono Exit */
+
+position: absolute;
+left: 97.22%;
+right: 1.18%;
+top: 2.35%;
+bottom: 95.5%;
+
+background: #DA2C38;
+
+/* Vector */
+
+position: absolute;
+width: 18.93px;
+height: 13.74px;
+left: 1225.6px;
+top: 16.43px;
+
+/* usuario */
+
+position: absolute;
+width: 40px;
+height: 27px;
+left: 1092px;
+top: 285px;
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+/* bloquear */
+
+position: absolute;
+width: 37px;
+height: 29px;
+left: 1092px;
+top: 367px;
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 54.17%;
+bottom: 16.67%;
+
+background: #000000;
+
+/* Iniciar Sesión */
+
+position: absolute;
+width: 129px;
+height: 29px;
+left: 898px;
+top: 463px;
+
+font-family: Calibri;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+/* Recuperar Contraseña */
+
+position: absolute;
+width: 231px;
+height: 21px;
+left: 855px;
+top: 551px;
+
+font-family: Calibri;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+
+color: #1C9DFB;
+
+/* Minimizar */
+
+position: absolute;
+width: 34px;
+height: 21px;
+left: 1171px;
+top: 13px;
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 38.1%;
+bottom: 38.1%;
+
+background: #DA2C38;
+
+/* Iniciar Sesión */
+
+position: absolute;
+width: 157px;
+height: 45px;
+left: 884px;
+top: 455px;
+
+background: #2C6D89;
+
+/* Usuario */
+
+position: absolute;
+width: 361px;
+height: 43px;
+left: 774px;
+top: 277px;
+
+background: #FFFFFF;
+
+/* Gray 1 */
+border: 1px solid #333333;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Barra Superior */
+
+position: absolute;
+width: 1260px;
+height: 46px;
+left: 0px;
+top: 0px;
+
+/* Barra Superior */
+background: #D7F9F1;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Plus */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 972px;
+top: 124px;
+
+mix-blend-mode: normal;
+
+/* Plus */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #B80C09;
+mix-blend-mode: normal;
+
+/* Farmacia */
+
+position: absolute;
+width: 201px;
+height: 49px;
+left: 754px;
+top: 124px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 55px;
+
+/* Farmacia */
+background: #574AE2;
+
+/* Imagen */
+
+position: absolute;
+width: 630px;
+height: 634px;
+left: 0px;
+top: 46px;
+
+background: url(Pastillas.jpg), #C4C4C4;
+
+/* Gray 2 */
+border: 1px solid #4F4F4F;
+box-sizing: border-box;
+
+/* Salud */
+
+position: absolute;
+width: 118px;
+height: 55px;
+left: 1033px;
+top: 124px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 55px;
+
+/* Farmacia */
+background: #574AE2;
+
+/* Contraseña */
+
+position: absolute;
+width: 361px;
+height: 44px;
+left: 774px;
+top: 359px;
+
+background: #FFFFFF;
+/* Gray 1 */
+border: 1px solid #333333;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
