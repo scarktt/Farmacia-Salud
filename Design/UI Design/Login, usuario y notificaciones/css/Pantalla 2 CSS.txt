@@ -16,33 +16,24 @@ top: 0px;
 
 background: #FFFFFF;
 
-/* Icono Exit */
+/* cerrar */
 
 position: absolute;
-left: 97.38%;
-right: 1.02%;
-top: 2.65%;
-bottom: 95.2%;
+width: 30px;
+height: 18px;
+left: 1216px;
+top: 14px;
 
 /* Vector */
 
 position: absolute;
-left: 97.38%;
-right: 1.02%;
-top: 2.65%;
-bottom: 95.2%;
+left: 0%;
+right: 0%;
+top: 100%;
+bottom: -100%;
 
-background: #DA2C38;
-
-/* Vector */
-
-position: absolute;
-left: 97.43%;
-right: 1.07%;
-top: 2.71%;
-bottom: 95.27%;
-
-background: #DA2C38;
+background: #DD2E44;
+transform: matrix(1, 0, 0, -1, 0, 0);
 
 /* Minimizar */
 
