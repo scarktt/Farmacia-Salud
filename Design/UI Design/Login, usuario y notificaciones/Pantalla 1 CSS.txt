@@ -14,23 +14,24 @@ top: 0px;
 
 background: #FFFFFF;
 
-/* Icono Exit */
+/* cerrar */
 
 position: absolute;
-left: 97.22%;
-right: 1.18%;
-top: 2.35%;
-bottom: 95.5%;
-
-background: #DA2C38;
+width: 30px;
+height: 18px;
+left: 1216px;
+top: 14px;
 
 /* Vector */
 
 position: absolute;
-width: 18.93px;
-height: 13.74px;
-left: 1225.6px;
-top: 16.43px;
+left: 0%;
+right: 0%;
+top: 100%;
+bottom: -100%;
+
+background: #DD2E44;
+transform: matrix(1, 0, 0, -1, 0, 0);
 
 /* usuario */
 
