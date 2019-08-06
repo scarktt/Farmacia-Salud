@@ -10,16 +10,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Formula" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane fx:id="Formula" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
    <children>
-      <AnchorPane prefHeight="37.0" prefWidth="1260.0" style="-fx-background-color: #D7F9F1;" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1260.0" style="-fx-background-color: #D7F9F1;" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" layoutX="1215.0" layoutY="3.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
                <image>
                   <Image url="@img/cerrar.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="48.0" layoutX="1186.0" layoutY="7.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="4.0">
+            <ImageView fitHeight="30.0" fitWidth="48.0" layoutX="1186.0" layoutY="7.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1186.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
                <image>
                   <Image url="@img/menos.png" />
                </image>
@@ -43,7 +43,7 @@
                   <Image url="@img/user.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnInSesion" layoutX="275.0" layoutY="467.0" mnemonicParsing="false" style="-fx-background-color: #2C6D89;" text="Iniciar Sesión">
+            <Button fx:id="btnInSesion" layoutX="275.0" layoutY="467.0" mnemonicParsing="false" onAction="#IniciarSesion" style="-fx-background-color: #2C6D89;" text="Iniciar Sesión">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
