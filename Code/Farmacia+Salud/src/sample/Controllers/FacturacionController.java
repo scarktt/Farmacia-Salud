@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.SplitPane;
 import javafx.scene.image.ImageView;
@@ -22,6 +23,8 @@ public class FacturacionController {
     @FXML private AnchorPane APNotificacion;
     @FXML private AnchorPane APFacturacion;
     @FXML private AnchorPane APBotones;
+    @FXML private AnchorPane APDetalleFactura;
+    @FXML private AnchorPane APHistoricoVentas;
 
     //Cierra el programa
     public void pressExit(){
@@ -46,6 +49,21 @@ public class FacturacionController {
         //No funciona
     }
 
-    public void pressFacturacion(MouseEvent event) { APFacturacion.setVisible(true); APBotones.setVisible(true);}
+    //Muestra en pantalla la ventana de facturacion
+    public void pressFacturacion(MouseEvent event) {
+        APFacturacion.setVisible(true); APBotones.setVisible(true);
+        APDetalleFactura.setVisible(false); APHistoricoVentas.setVisible(false);
+    }
 
+    //Muestra en pantalla la ventana de detalle factura
+    public void pressDetalleFactura(MouseEvent event) {
+      APDetalleFactura.setVisible(true);
+      APFacturacion.setVisible(false); APHistoricoVentas.setVisible(false);
+    }
+
+    //Muestra en pantalla la ventana de historico de ventas
+    public void pressHistoricoVentas(MouseEvent event) {
+        APHistoricoVentas.setVisible(true);
+        APDetalleFactura.setVisible(false); APFacturacion.setVisible(false);
+    }
 }
