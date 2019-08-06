@@ -20,6 +20,8 @@ public class FacturacionController {
 
     @FXML private AnchorPane APUser;
     @FXML private AnchorPane APNotificacion;
+    @FXML private AnchorPane APFacturacion;
+    @FXML private AnchorPane APBotones;
 
     //Cierra el programa
     public void pressExit(){
@@ -43,5 +45,7 @@ public class FacturacionController {
     public void pressCerrarSesion(MouseEvent event) throws IOException {
         //No funciona
     }
+
+    public void pressFacturacion(MouseEvent event) { APFacturacion.setVisible(true); APBotones.setVisible(true);}
 
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -12,17 +13,19 @@
 
 <AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.FacturacionController">
    <children>
-      <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1260.0" style="-fx-background-color: #D7F9F1;" />
-      <ImageView fx:id="imgMin" fitHeight="30.0" fitWidth="48.0" layoutX="1325.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
-         <image>
-            <Image url="@../img/menos.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" layoutX="1451.0" layoutY="14.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
-         <image>
-            <Image url="@../img/cerrar.png" />
-         </image>
-      </ImageView>
+      <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1260.0" style="-fx-background-color: #D7F9F1;">
+         <children>
+            <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
+               <image>
+                  <Image url="@../img/cerrar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgMin" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
+               <image>
+                  <Image url="@../img/menos.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
       <AnchorPane layoutY="36.0" prefHeight="616.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="36.0">
          <children>
             <ImageView fitHeight="65.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="620.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
@@ -30,7 +33,7 @@
                   <Image url="@../img/disposicion.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="506.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="118.0">
+            <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="118.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="506.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="118.0">
                <image>
                   <Image url="@../img/carrito-de-compras.png" />
                </image>
@@ -80,9 +83,37 @@
                   <Image url="@../img/campana.png" />
                </image>
             </ImageView>
+            <AnchorPane fx:id="APBotones" layoutX="14.0" layoutY="9.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false">
+               <children>
+                  <Button fx:id="btnInicio" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Inicio" AnchorPane.topAnchor="12.0">
+                     <effect>
+                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDetalleFactura" layoutX="108.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Detalle Factura" AnchorPane.topAnchor="12.0">
+                     <effect>
+                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnHistoricoVenta" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Histórico de venta" AnchorPane.topAnchor="12.0">
+                     <effect>
+                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="317.0" layoutY="223.0" prefHeight="575.0" prefWidth="1135.0" style="-fx-background-color: #423E47;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
+      <AnchorPane layoutX="317.0" layoutY="223.0" prefHeight="575.0" prefWidth="1135.0" style="-fx-background-color: #423E47;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
          <children>
             <ListView editable="true" fixedCellSize="3.0" layoutX="66.0" layoutY="65.0" prefHeight="470.0" prefWidth="1070.0" visible="false" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="65.0" />
          </children>
@@ -214,6 +245,120 @@
             <ImageView fx:id="imgFlecha" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="-22.0">
                <image>
                   <Image url="@../img/flecha.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="APFacturacion" layoutX="60.0" layoutY="101.0" prefHeight="609.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" visible="false" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="101.0">
+         <children>
+            <Label layoutX="84.0" layoutY="73.0" text="Datos Factura">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="36.0" layoutY="84.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="84.0" />
+            <Separator layoutX="34.0" layoutY="87.0" orientation="VERTICAL" prefHeight="473.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="88.0" />
+            <Separator layoutX="36.0" layoutY="556.0" prefHeight="3.0" prefWidth="806.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="558.0" />
+            <Separator layoutX="839.0" layoutY="85.0" orientation="VERTICAL" prefHeight="473.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="839.0" AnchorPane.topAnchor="85.0" />
+            <Separator layoutX="481.0" layoutY="81.0" prefHeight="3.0" prefWidth="636.0" style="-fx-background-color: #000000;" AnchorPane.rightAnchor="361.0" AnchorPane.topAnchor="81.0" />
+            <Label layoutX="68.0" layoutY="130.0" text="Vendedor">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="169.0" layoutY="122.0" prefHeight="37.0" prefWidth="190.0" promptText="Gabriela Castillo" style="-fx-background-color: #FFFFFF;" />
+            <Label layoutX="337.0" layoutY="260.0" text="Adicionar Productos">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="256.0" layoutY="305.0" prefHeight="40.0" prefWidth="361.0" promptText="       Buscar">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="264.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/search.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="63.0" layoutY="400.0" prefHeight="3.0" prefWidth="718.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="419.0" />
+            <Separator layoutX="73.0" layoutY="410.0" prefHeight="3.0" prefWidth="718.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="63.0" AnchorPane.topAnchor="460.0" />
+            <Label layoutX="78.0" layoutY="421.0" text="Producto">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="437.0" layoutY="421.0" text="Cantidad">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="525.0" layoutY="421.0" text="Precio">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="691.0" layoutY="421.0" text="Agregar">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="593.0" layoutY="421.0" text="Descuento">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="842.0" layoutY="53.0" prefHeight="518.0" prefWidth="361.0" AnchorPane.topAnchor="58.0">
+               <children>
+                  <Label layoutX="65.0" layoutY="12.0" text="Búsqueda Avanzada">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="17.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
+                  <Separator layoutX="11.0" layoutY="25.0" orientation="VERTICAL" prefHeight="476.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="25.0" />
+                  <Separator layoutX="17.0" layoutY="497.0" prefHeight="3.0" prefWidth="333.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="500.0" />
+                  <Separator layoutX="344.0" layoutY="25.0" orientation="VERTICAL" prefHeight="476.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+                  <Separator layoutX="272.0" layoutY="24.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="24.0" />
+                  <Button fx:id="btnRestablecer" layoutX="57.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Restablecer">
+                     <effect>
+                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Dist. Ramos" style="-fx-background-color: #FFFFFF;" />
+                  <ComboBox fx:id="cmbProducto" layoutX="57.0" layoutY="165.0" prefHeight="30.0" prefWidth="239.0" promptText="Supositorio" style="-fx-background-color: #FFFFFF;" />
+                  <Label layoutX="57.0" layoutY="231.0" text="Unidad de medida">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtMedida" layoutX="57.0" layoutY="271.0" prefHeight="28.0" prefWidth="60.0">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="273.0" prefHeight="30.0" prefWidth="169.0" promptText="mg" style="-fx-background-color: #FFFFFF;" />
+                  <ComboBox fx:id="cmbUtilidad" layoutX="61.0" layoutY="339.0" prefHeight="30.0" prefWidth="239.0" promptText="Utilidad" style="-fx-background-color: #FFFFFF;" />
+                  <ComboBox fx:id="cmbIndicacion" layoutX="64.0" layoutY="400.0" prefHeight="30.0" prefWidth="239.0" promptText="Indicación" style="-fx-background-color: #FFFFFF;" />
+                  <CheckBox fx:id="chbVentaRestr" layoutX="66.0" layoutY="447.0" mnemonicParsing="false" text="Venta Restringida">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="chbGenerico" layoutX="66.0" layoutY="475.0" mnemonicParsing="false" text="Génerico">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="697.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/agregar.png" />
                </image>
             </ImageView>
          </children>
