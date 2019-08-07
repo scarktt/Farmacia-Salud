@@ -1,172 +1,651 @@
 
-use FarmaciaMasS
+--Abono [COMPLETADO - 99 REGISTROS]
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1601,3083,17031,398);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1602,3010,17026,127);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1603,3041,17028,325);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1604,3025,17032,177);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1605,3016,17014,470);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1606,3016,17029,487);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1607,3048,17015,448);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1608,3022,17005,171);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1609,3077,17022,135);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1610,3064,17024,464);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1611,3018,17006,415);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1612,3075,17004,103);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1613,3035,17017,381);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1614,3057,17018,214);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1615,3041,17007,126);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1616,3024,17017,375);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1617,3048,17002,149);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1618,3034,17007,276);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1619,3011,17009,293);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1620,3078,17020,445);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1621,3024,17002,234);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1622,3071,17004,336);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1623,3090,17015,192);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1624,3056,17008,361);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1625,3049,17018,209);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1626,3054,17020,147);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1627,3048,17023,176);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1628,3058,17018,417);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1629,3070,17035,109);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1630,3072,17030,194);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1631,3089,17020,498);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1632,3021,17022,251);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1633,3043,17033,160);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1634,3031,17021,174);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1635,3062,17027,338);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1636,3041,17019,138);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1637,3013,17027,205);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1638,3073,17004,345);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1639,3026,17021,264);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1640,3013,17011,282);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1641,3025,17024,206);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1642,3033,17006,440);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1643,3032,17004,467);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1644,3086,17008,377);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1645,3070,17001,233);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1646,3075,17021,405);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1647,3001,17018,326);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1648,3043,17008,362);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1649,3017,17011,373);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1650,3054,17001,390);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1651,3060,17003,261);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1652,3058,17029,131);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1653,3008,17030,340);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1654,3087,17021,249);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1655,3086,17020,474);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1656,3064,17017,452);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1657,3064,17033,398);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1658,3065,17020,125);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1659,3038,17004,415);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1660,3006,17024,115);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1661,3009,17004,476);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1662,3067,17029,278);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1663,3018,17002,254);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1664,3013,17032,260);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1665,3085,17032,317);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1666,3020,17006,384);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1667,3040,17002,425);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1668,3031,17020,468);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1669,3089,17031,222);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1670,3017,17009,461);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1671,3079,17006,301);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1672,3010,17015,351);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1673,3074,17025,296);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1674,3080,17018,191);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1675,3037,17035,438);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1676,3083,17010,310);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1677,3081,17020,478);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1678,3085,17003,167);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1679,3011,17009,499);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1680,3045,17020,106);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1681,3078,17018,157);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1682,3022,17021,446);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1683,3079,17002,259);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1684,3037,17011,276);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1685,3053,17008,440);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1686,3031,17008,184);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1687,3026,17014,480);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1688,3052,17016,470);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1689,3036,17032,396);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1690,3075,17002,312);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1691,3004,17035,228);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1692,3026,17032,333);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1693,3069,17031,363);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1694,3081,17035,257);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1695,3071,17020,345);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1696,3087,17001,281);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1697,3072,17004,235);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1698,3048,17029,162);
+INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (1699,3075,17003,299);
 
---Compraproducto{Completo}
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3001, 9001, 17001, 1001, CAST(N'2019-02-21' AS Date), 23121, 150, 25, 0.05)--Falta el monto, cantidad, descuento
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3002, 9002, 17002, 1002, CAST(N'2018-12-19' AS Date), 23121, 200, 20, 0.1)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3003, 9003, 17003, 1003, CAST(N'2019-01-10' AS Date), 23121, 100, 20, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3004, 9004, 17004, 1004, CAST(N'2018-06-06' AS Date), 23121, 50, 20, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3005, 9005, 17005, 1005, CAST(N'2018-12-20' AS Date), 23121, 300, 100, 0.1)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3006, 9006, 17006, 1006, CAST(N'2018-11-13' AS Date), 23121, 80, 40, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3007, 9007, 17007, 1007, CAST(N'2018-11-13' AS Date), 23121, 120, 40, 0.04)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3008, 9008, 17008, 1008, CAST(N'2018-12-20' AS Date), 23121, 60, 10, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3009, 9009, 17009, 1009, CAST(N'2018-12-20' AS Date), 23121, 450, 15, 0.05)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3010, 9010, 17010, 1010, CAST(N'2019-01-25' AS Date), 23121, 40, 40, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3011, 9011, 17011, 1011, CAST(N'2018-09-07' AS Date), 23121, 50, 60, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3012, 9012, 17012, 1012, CAST(N'2017-09-13' AS Date), 23121, 30, 10, 0 )
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3013, 9013, 17013, 1013, CAST(N'2018-02-26' AS Date), 23121, 100, 25, 0.03)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3014, 9002, 17014, 1002, CAST(N'2018-12-19' AS Date), 23121, 200, 20, 0.1)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3015, 9003, 17015, 1003, CAST(N'2019-01-10' AS Date), 23121, 100, 20, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3016, 9004, 17016, 1004, CAST(N'2018-06-06' AS Date), 23121, 50, 20, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3017, 9005, 17017, 1005, CAST(N'2018-12-20' AS Date), 23121, 300, 100, 0.1)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3018, 9006, 17018, 1006, CAST(N'2018-11-13' AS Date), 23121, 80, 40, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3019, 9007, 17007, 1007, CAST(N'2018-11-13' AS Date), 23121, 120, 40, 0.04)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3020, 9008, 17019, 1008, CAST(N'2018-12-20' AS Date), 23121, 60, 10, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3021, 9009, 17020, 1009, CAST(N'2018-12-20' AS Date), 23121, 450, 15, 0.05)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3022, 9010, 17021, 1010, CAST(N'2019-01-25' AS Date), 23121, 40, 40, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3023, 9011, 17012, 1011, CAST(N'2018-09-07' AS Date), 23121, 50, 60, 0)
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3024, 9012, 17003, 1012, CAST(N'2017-09-13' AS Date), 23121, 30, 10, 0 )
-INSERT CompraProducto (IDcompra, IDpedido, IDproveedor, IDproducto, Fecha_compra, Num_factura, Monto, Cantidad, Descuento) VALUES (3025, 9013, 17012, 1013, CAST(N'2018-02-26' AS Date), 23121, 100, 25, 0.03)
+--Compraproducto [COMPLETADO - 80 REGISTROS]
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3001, 9001, 1001, CAST("2016-01-21" AS Date), 150, 5001, "Credito", "-", CAST("2016-01-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3002, 9002, 1002, CAST("2016-01-19" AS Date), 200, 5002, "Credito", "-", CAST("2016-01-30" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3003, 9003, 1003, CAST("2016-03-10" AS Date), 100, 5003, "Credito", "-", CAST("2016-03-15" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3004, 9004, 1004, CAST("2017-04-06" AS Date), 50, 5004, "Credito", "-", CAST("2017-04-10" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3005, 9005, 1005, CAST("2017-05-20" AS Date), 300, 5005, "Credito", "-", CAST("2017-05-30" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3006, 9006, 1006, CAST("2017-06-13" AS Date), 80, 5006, "Credito", "-", CAST("2017-06-20" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3007, 9007, 1007, CAST("2017-07-13" AS Date), 120, 5007, "Contado", "-", CAST("2017-07-13" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3008, 9008, 1008, CAST("2017-08-20" AS Date), 60, 5008, "Credito", "-", CAST("2017-08-20" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3009, 9009, 1009, CAST("2017-09-20" AS Date), 450, 5009, "Contado", "-", CAST("2017-09-20" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3010, 9010, 1010, CAST("2017-10-25" AS Date), 40, 5010, "Contado", "-", CAST("2017-10-25" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3011, 9011, 1011, CAST("2017-11-07" AS Date), 50, 5011, "Contado", "-", CAST("2017-11-07" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3012, 9012, 1012, CAST("2018-01-13" AS Date), 30, 5012, "Contado", "-", CAST("2018-01-13" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3013, 9013, 1013, CAST("2018-01-26" AS Date), 100, 5013, "Contado", "-", CAST("2018-01-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3014, 9014, 1002, CAST("2018-02-19" AS Date), 200, 5014, "Credito", "-", CAST("2018-02-19" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3015, 9015, 1003, CAST("2018-04-10" AS Date), 100, 5015, "Credito", "-", CAST("2019-04-10" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3016, 9016, 1004, CAST("2018-05-06" AS Date), 50, 5016, "Credito", "-", CAST("2018-05-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3017, 9017, 1005, CAST("2018-07-20" AS Date), 300, 5017, "Credito", "-", CAST("2018-07-20" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3018, 9018, 1006, CAST("2018-09-13" AS Date), 80, 5018, "Contado", "-", CAST("2018-09-13" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3019, 9019, 1007, CAST("2018-12-13" AS Date), 120, 5019, "Contado", "-", CAST("2018-12-13" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3020, 9020, 1008, CAST("2019-01-20" AS Date), 60, 5020, "Contado", "-", CAST("2019-01-20" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3021, 9021, 1009, CAST("2019-01-20" AS Date), 450, 5021, "Contado", "-", CAST("2019-01-20" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3022, 9022, 1010, CAST("2019-02-25" AS Date), 40, 5022, "Contado", "-", CAST("2019-02-25" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3023, 9023, 1011, CAST("2019-03-07" AS Date), 50, 5023, "Credito", "-", CAST("2019-03-07" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3024, 9024, 1012, CAST("2019-04-07" AS Date), 30, 5024, "Credito", "-", CAST("2019-04-07" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3025, 9025, 1013, CAST("2019-04-26" AS Date), 25, 5025, "Credito", "-", CAST("2019-04-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto, FacturaPedido, IDproducto, FechaCompra, MontoCompra, ReciboColector, Status, Observacion, FechaVencPago) VALUES (3026,9026,1005,CAST("2019-04-28" AS Date),357,501,"Credito","-",CAST("2019-05-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3027,9027,1040,CAST("2019-04-30" AS Date),402,502,"Credito","-",CAST("2019-05-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3028,9028,1060,CAST("2019-05-04" AS Date),638,503,"Credito","-",CAST("2019-05-11" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3029,9029,1020,CAST("2019-05-06" AS Date),499,504,"Credito","-",CAST("2019-05-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3030,9030,1059,CAST("2019-05-08" AS Date),186,505,"Credito","-",CAST("2019-05-21" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3031,9031,1028,CAST("2019-05-10" AS Date),253,506,"Credito","-",CAST("2019-05-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3032,9032,1042,CAST("2019-05-12" AS Date),171,507,"Credito","-",CAST("2019-05-31" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3033,9033,1022,CAST("2019-05-14" AS Date),596,508,"Credito","-",CAST("2019-06-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3034,9034,1051,CAST("2019-05-16" AS Date),304,509,"Credito","-",CAST("2019-06-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3035,9035,1009,CAST("2019-05-18" AS Date),106,5010,"Credito","-",CAST("2019-06-11" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3036,9036,1012,CAST("2019-05-20" AS Date),227,5011,"Contado","-",CAST("2019-06-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3037,9037,1031,CAST("2019-05-22" AS Date),508,5012,"Contado","-",CAST("2019-06-21" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3038,9038,1087,CAST("2019-05-24" AS Date),228,5013,"Contado","-",CAST("2019-06-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3039,9039,1043,CAST("2019-05-26" AS Date),478,5014,"Contado","-",CAST("2019-06-30" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3040,9040,1065,CAST("2019-05-28" AS Date),311,5015,"Contado","-",CAST("2019-07-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3041,9041,1013,CAST("2019-05-30" AS Date),524,5016,"Contado","-",CAST("2019-07-04" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3042,9042,1051,CAST("2019-06-02" AS Date),540,5017,"Contado","-",CAST("2019-07-07" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3043,9043,1075,CAST("2019-06-04" AS Date),535,5018,"Contado","-",CAST("2019-07-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3044,9044,1012,CAST("2019-06-06" AS Date),360,5019,"Contado","-",CAST("2019-07-21" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3045,9045,1086,CAST("2019-06-08" AS Date),470,5020,"Contado","-",CAST("2019-07-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3046,9046,1074,CAST("2019-06-10" AS Date),383,5021,"Credito","-",CAST("2019-07-31" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3047,9047,1067,CAST("2019-06-12" AS Date),265,5022,"Credito","-",CAST("2019-08-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3048,9048,1071,CAST("2019-06-14" AS Date),94,5023,"Credito","-",CAST("2019-08-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3049,9049,1009,CAST("2019-06-16" AS Date),646,5024,"Credito","-",CAST("2019-08-11" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3050,9050,1007,CAST("2019-06-18" AS Date),269,5025,"Credito","-",CAST("2019-08-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3051,9051,1009,CAST("2019-06-20" AS Date),330,5026,"Credito","-",CAST("2019-08-21" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3052,9052,1006,CAST("2019-06-22" AS Date),498,5027,"Credito","-",CAST("2019-08-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3053,9053,1042,CAST("2019-06-24" AS Date),564,5028,"Credito","-",CAST("2019-08-31" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3054,9054,1014,CAST("2019-06-26" AS Date),351,5029,"Credito","-",CAST("2019-09-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3055,9055,1027,CAST("2019-06-28" AS Date),133,5030,"Credito","-",CAST("2019-09-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3056,9056,1006,CAST("2019-06-30" AS Date),400,5031,"Contado","-",CAST("2019-09-11" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3057,9057,1028,CAST("2019-07-01" AS Date),88,5032,"Contado","-",CAST("2019-09-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3058,9058,1065,CAST("2019-07-03" AS Date),514,5033,"Contado","-",CAST("2019-09-21" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3059,9059,1075,CAST("2019-07-05" AS Date),161,5034,"Contado","-",CAST("2019-09-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3060,9060,1055,CAST("2019-07-07" AS Date),642,5035,"Contado","-",CAST("2019-09-30" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3061,9061,1092,CAST("2019-07-09" AS Date),611,5036,"Contado","-",CAST("2019-10-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3062,9062,1072,CAST("2019-07-11" AS Date),219,5037,"Contado","-",CAST("2019-10-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3063,9063,1052,CAST("2019-07-13" AS Date),119,5038,"Contado","-",CAST("2019-10-11" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3064,9064,1030,CAST("2019-07-15" AS Date),219,5039,"Contado","-",CAST("2019-10-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3065,9065,1012,CAST("2019-07-17" AS Date),189,5040,"Contado","-",CAST("2019-10-21" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3066,9066,1051,CAST("2019-07-19" AS Date),50,5041,"Credito","-",CAST("2019-10-26" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3067,9067,1012,CAST("2019-07-21" AS Date),623,5042,"Credito","-",CAST("2019-10-31" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3068,9068,1065,CAST("2019-07-23" AS Date),582,5043,"Credito","-",CAST("2019-11-01" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3069,9069,1041,CAST("2019-07-25" AS Date),562,5044,"Credito","-",CAST("2019-11-06" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3070,9070,1098,CAST("2019-07-27" AS Date),299,5045,"Credito","-",CAST("2019-11-11" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3071,9071,1011,CAST("2019-07-29" AS Date),145,5046,"Credito","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3072,9072,1010,CAST("2019-08-02" AS Date),111,5047,"Credito","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3073,9073,1005,CAST("2019-08-02" AS Date),387,5048,"Credito","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3074,9074,1012,CAST("2019-08-02" AS Date),408,5049,"Credito","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3075,9075,1043,CAST("2019-08-02" AS Date),198,5050,"Credito","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3076,9076,1019,CAST("2019-08-04" AS Date),212,5051,"Contado","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3077,9077,1062,CAST("2019-08-04" AS Date),253,5052,"Contado","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3078,9078,1054,CAST("2019-08-06" AS Date),629,5053,"Contado","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3079,9079,1094,CAST("2019-08-06" AS Date),547,5054,"Contado","-",CAST("2019-11-16" AS Date));
+INSERT INTO CompraProducto (FacturaCompraProducto,FacturaPedido,IDproducto,FechaCompra,MontoCompra,ReciboColector,Status,Observacion,FechaVencPago) VALUES (3080,9080,1008,CAST("2019-08-06" AS Date),256,5055,"Contado","-",CAST("2019-11-16" AS Date));
 
 
---DetalleCompra
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11001, 3001, 1001, 25, 433.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11002, 3002, 1002, 100, 222.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11003, 3003, 1003, 10, 762.7000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11004, 3004, 1004, 10, 424.2000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11005, 3005, 1005, 200, 636.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11006, 3006, 1006, 300, 240.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11007, 3014, 1007, 5, 198.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11008, 3015, 1008, 100, 44.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11009, 3016, 1009, 3, 57.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11010, 3017, 1010, 3, 234.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11011, 3018, 1011, 5, 380.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11012, 3001, 1012, 6, 192.0000)
-INSERT DetalleCompra (IDdetallecompra, IDcompra, IDproducto, Cantidad, Costo) VALUES (11013, 3006, 1013, 200, 960.0000)
+--DetalleCompraProducto [COMPLETADO - 99 REGISTROS]
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1101,1012,252,3);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1102,1017,147,4);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1103,1013,132,4);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1104,1083,212,16);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1105,1026,169,17);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1106,1070,72,35);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1107,1070,103,16);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1108,1003,97,10);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1109,1036,267,15);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1110,1050,290,14);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1111,1072,239,4);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1112,1003,163,15);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1113,1060,62,33);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1114,1055,109,29);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1115,1036,58,25);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1116,1032,46,8);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1117,1032,32,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1118,1006,54,7);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1119,1026,288,45);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1120,1006,203,34);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1121,1054,103,7);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1122,1001,214,10);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1123,1089,140,17);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1124,1029,80,42);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1125,1073,24,27);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1126,1018,101,47);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1127,1022,290,45);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1128,1010,133,18);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1129,1071,77,43);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1130,1042,189,40);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1131,1087,42,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1132,1095,154,33);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1133,1028,37,3);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1134,1054,34,15);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1135,1065,53,24);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1136,1033,147,20);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1137,1080,165,41);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1138,1032,112,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1139,1074,133,3);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1140,1012,144,46);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1141,1043,173,25);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1142,1047,38,34);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1143,1062,55,29);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1144,1081,67,7);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1145,1006,266,38);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1146,1054,282,32);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1147,1072,52,18);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1148,1010,135,24);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1149,1026,251,4);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1150,1052,213,32);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1151,1081,56,26);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1152,1099,213,49);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1153,1089,123,21);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1154,1021,263,30);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1155,1069,202,1);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1156,1012,290,22);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1157,1006,195,15);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1158,1085,260,47);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1159,1067,102,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1160,1086,56,24);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1161,1046,40,30);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1162,1035,269,20);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1163,1084,238,6);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1164,1091,243,27);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1165,1050,244,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1166,1023,71,25);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1167,1084,280,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1168,1032,202,20);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1169,1010,240,25);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1170,1061,52,44);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1171,1092,257,1);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1172,1052,272,13);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1173,1042,245,29);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1174,1008,50,14);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1175,1079,242,17);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1176,1048,40,50);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1177,1019,192,9);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1178,1072,52,37);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1179,1046,30,19);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1180,1053,243,12);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1181,1051,231,47);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1182,1083,171,42);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1183,1064,171,31);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1184,1030,198,26);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1185,1077,60,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1186,1077,163,34);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1187,1011,247,47);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1188,1023,196,42);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1189,1050,253,21);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1190,1077,139,27);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1191,1012,105,50);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1192,1035,131,30);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1193,1060,240,34);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1194,1038,157,19);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1195,1050,50,19);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1196,1026,150,16);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1197,1043,176,28);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1198,1065,35,25);
+INSERT INTO DetalleCompraProducto (FacturaCompraProducto,IDproducto,CantidadUnidades,PrecioxUnidad) VALUES (1199,1088,236,32);
 
---Detallefactura
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6001, 1001, 30.0000, 1, 30.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6002, 1006, 4.0000, 5, 20.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6003, 1007, 100.0000, 1, 100.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6004, 1013, 7.0000, 3, 21.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6005, 1008, 1.0000, 5, 5.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6006, 1011, 100.0000, 2, 190.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6007, 1002, 4.0000, 6, 24.0000)
-INSERT DetalleFactura (NoFactura, IDproducto, PrecioUnitario, Cantidad, Total) VALUES (6008, 1012, 60.0000, 1, 60.0000)
+--DetalleFactura [COMPLETADO - 99 REGISTROS]
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6001,1044,84763,69,10,690);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6002,1074,92321,59,5,295);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6003,1098,87680,20,4,80);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6004,1005,93976,55,10,550);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6005,1088,80367,91,2,182);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6006,1062,90977,93,4,372);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6007,1020,83065,38,5,190);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6008,1061,94854,1,6,6);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6009,1050,87565,103,3,309);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6010,1026,84899,44,3,132);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6011,1085,87887,48,2,96);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6012,1037,89169,24,2,48);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6013,1071,93854,63,5,315);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6014,1008,82774,99,3,297);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6015,1038,94720,10,9,90);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6016,1058,91077,113,6,678);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6017,1018,84857,21,7,147);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6018,1071,85010,110,9,990);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6019,1071,80187,66,1,66);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6020,1074,92865,19,6,114);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6021,1042,81332,30,6,180);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6022,1016,87919,5,5,25);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6023,1097,86754,24,7,168);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6024,1099,82691,26,7,182);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6025,1084,83101,52,6,312);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6026,1040,80221,44,5,220);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6027,1040,91409,16,9,144);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6028,1097,90912,26,5,130);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6029,1079,90598,111,9,999);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6030,1035,93398,12,9,108);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6031,1073,82503,103,3,309);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6032,1021,92332,67,10,670);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6033,1003,90886,7,4,28);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6034,1005,92391,86,8,688);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6035,1077,93079,11,9,99);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6036,1030,84031,83,9,747);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6037,1028,92684,2,4,8);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6038,1094,81966,108,5,540);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6039,1008,94808,110,9,990);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6040,1065,82749,75,8,600);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6041,1092,89039,90,3,270);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6042,1050,82511,86,3,258);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6043,1091,89284,115,4,460);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6044,1028,83420,115,8,920);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6045,1080,83153,41,5,205);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6046,1084,84824,1,9,9);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6047,1075,86750,101,9,909);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6048,1098,92550,94,1,94);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6049,1080,83937,46,3,138);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6050,1095,86848,31,9,279);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6051,1049,93781,97,10,970);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6052,1090,93068,79,9,711);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6053,1001,81497,52,3,156);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6054,1040,94535,105,8,840);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6055,1006,88959,100,5,500);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6056,1098,83177,94,7,658);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6057,1040,94751,27,2,54);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6058,1029,82154,3,2,6);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6059,1010,90130,32,3,96);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6060,1010,85839,84,7,588);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6061,1048,84379,90,1,90);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6062,1079,87986,88,3,264);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6063,1009,81196,70,1,70);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6064,1039,94635,98,7,686);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6065,1088,87574,16,6,96);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6066,1087,87644,120,2,240);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6067,1074,94390,10,4,40);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6068,1034,94400,96,6,576);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6069,1073,87631,75,8,600);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6070,1058,93267,54,5,270);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6071,1087,82481,81,7,567);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6072,1030,82520,80,8,640);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6073,1051,90939,29,10,290);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6074,1022,83980,70,3,210);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6075,1004,84721,2,6,12);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6076,1012,89616,102,7,714);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6077,1019,81499,95,6,570);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6078,1052,93903,87,2,174);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6079,1022,85877,22,10,220);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6080,1006,84809,71,10,710);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6081,1029,87999,119,6,714);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6082,1080,82278,33,2,66);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6083,1012,83908,55,10,550);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6084,1060,93681,52,10,520);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6085,1027,82724,24,5,120);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6086,1075,91086,52,9,468);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6087,1061,87973,91,10,910);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6088,1020,86142,79,7,553);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6089,1006,91762,7,5,35);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6090,1012,82368,69,6,414);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6091,1029,89800,46,1,46);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6092,1075,91572,75,7,525);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6093,1016,82251,74,5,370);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6094,1086,89345,88,8,704);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6095,1068,93255,52,6,312);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6096,1045,83276,81,1,81);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6097,1053,89532,94,2,188);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6098,1058,94858,79,2,158);
+INSERT INTO DetalleFactura (NoFactura,IDproducto,IDLote,PrecioUnitario,Cantidad,Total) VALUES (6099,1090,81457,29,3,87);
 
---Detalle Pedido {Completo}
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17001, 9001, 12, 320, 1001)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17002, 9002, 15, 120, 1002)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17003, 9003, 20, 200, 1003)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17004, 9004, 25, 350, 1004)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17005, 9005, 10, 90, 1005)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17006, 9006, 200, 400, 1006)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17007, 9002, 25, 100, 1007)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17008, 9003, 20, 300, 1008)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17009, 9004, 25, 350, 1009)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17010, 9005, 10, 90, 10010)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17011, 9006, 12, 320, 1011)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17012, 9007, 15, 190, 1012)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17013, 9008, 25, 210, 1013)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17014, 9009, 25, 350, 1001)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17015, 9010, 10, 90, 1002)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17016, 9011, 12, 320, 1003)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17017, 9012, 15, 120, 1004)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17018, 9013, 20, 200, 1005)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17019, 9014, 25, 350, 1006)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17020, 9015, 10, 90, 1020)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17021, 9016, 12, 320, 1021)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17022, 9017, 15, 120, 1022)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17023, 9018, 20, 200, 1023)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17024, 9019, 25, 350, 1024)
-INSERT DetallePedido (IDproveedor, IDpedido, Cantidad, Monto, IDproducto) VALUES (17025, 9020, 10, 90, 1025)
+--DetallePedido [COMPLETADO - 99 REGISTROS]
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2201,1092,27,243,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2202,1059,239,45,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2203,1078,16,57,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2204,1013,129,151,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2205,1054,19,266,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2206,1083,251,115,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2207,1081,126,126,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2208,1087,69,179,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2209,1006,258,20,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2210,1072,237,144,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2211,1064,277,208,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2212,1007,133,103,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2213,1073,272,298,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2214,1091,299,3,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2215,1047,183,99,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2216,1045,72,40,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2217,1018,174,13,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2218,1039,132,156,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2219,1018,130,283,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2220,1053,214,115,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2221,1011,86,292,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2222,1080,235,149,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2223,1088,81,265,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2224,1055,139,90,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2225,1059,265,108,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2226,1022,220,32,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2227,1005,75,220,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2228,1079,69,284,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2229,1003,299,33,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2230,1073,148,152,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2231,1071,261,50,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2232,1055,36,91,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2233,1064,246,191,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2234,1019,50,109,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2235,1036,13,63,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2236,1018,217,146,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2237,1043,300,59,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2238,1067,110,207,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2239,1090,241,178,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2240,1067,147,150,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2241,1002,81,42,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2242,1080,36,244,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2243,1099,189,178,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2244,1042,241,9,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2245,1006,37,221,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2246,1087,156,271,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2247,1006,286,275,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2248,1098,162,192,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2249,1031,56,210,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2250,1050,299,80,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2251,1093,112,59,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2252,1050,116,189,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2253,1057,37,184,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2254,1073,192,149,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2255,1033,107,31,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2256,1064,92,181,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2257,1087,129,256,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2258,1092,43,99,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2259,1042,108,235,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2260,1026,41,36,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2261,1091,34,269,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2262,1058,171,31,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2263,1018,194,111,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2264,1046,159,3,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2265,1089,84,280,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2266,1087,180,24,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2267,1080,205,234,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2268,1065,24,95,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2269,1068,107,180,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2270,1047,92,275,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2271,1019,263,146,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2272,1072,197,77,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2273,1072,289,282,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2274,1056,224,36,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2275,1016,185,297,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2276,1043,76,277,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2277,1008,52,68,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2278,1018,184,53,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2279,1086,267,89,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2280,1029,197,59,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2281,1012,128,214,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2282,1035,242,115,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2283,1088,134,164,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2284,1037,127,63,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2285,1027,155,160,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2286,1052,88,237,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2287,1057,75,43,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2288,1067,55,204,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2289,1058,201,147,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2290,1019,167,271,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2291,1024,34,155,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2292,1061,235,170,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2293,1028,11,232,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2294,1034,224,102,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2295,1011,163,152,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2296,1096,207,263,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2297,1013,209,140,0);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2298,1017,138,230,1);
+INSERT INTO DetallePedido (FacturaPedido,IDproducto,CantidadUnidad,PrecioxUnidad,EsProductoNuevo) VALUES (2299,1023,245,187,1);
 
---DetalleProducto
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1001, 1812, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1002, 4123, CAST(N'2019-11-30' AS Date), 15, 5 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1003, 6812, CAST(N'2020-02-21' AS Date), 10, 10 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1004, 7281, CAST(N'2020-02-21' AS Date), 43, 10 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1005, 8371, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1006, 23742, CAST(N'2020-02-21' AS Date), 100, 80 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1007, 28391, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1008, 31874, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1009, 31979, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1010, 32341, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1011, 32113, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1012, 34221, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1013, 42114, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1014, 38478, CAST(N'2019-11-30' AS Date), 15, 5 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1015, 45816, CAST(N'2020-02-21' AS Date), 10, 10 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1016, 49413, CAST(N'2020-02-21' AS Date), 43, 10 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1017, 67346, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1018, 72321, CAST(N'2020-02-21' AS Date), 100, 80 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1019, 76376, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1020, 231451, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1021, 363472, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1022, 813431, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1023, 871711, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1024, 522345, CAST(N'2020-02-21' AS Date), 12, 3 )
-INSERT DetalleProducto (IDproducto, IDLote, FechaVenc, PrecioVenta, PrecioUnitario) VALUES (1025, 7231343, CAST(N'2020-02-21' AS Date), 12, 3 )
+--DetalleProducto [COMPLETADO - 99 REGISTROS]
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1051,92755,"2020-05-15 18:37:18",60,"21");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1039,93023,"2019-03-20 06:39:38",92,"32.2");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1001,81329,"2018-10-29 12:52:44",63,"22.05");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1076,90926,"2020-06-10 03:21:00",107,"37.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1020,91159,"2020-06-18 16:18:51",47,"16.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1078,91976,"2018-11-16 12:33:51",9,"3.15");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1062,92251,"2019-12-24 18:15:36",135,"47.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1085,85967,"2020-02-26 06:08:42",138,"48.3");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1065,80705,"2019-08-15 22:43:59",42,"14.7");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1049,80792,"2020-06-09 13:22:10",37,"12.95");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1067,86114,"2020-01-17 01:36:42",34,"11.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1088,92889,"2019-07-30 03:24:11",67,"23.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1072,82642,"2018-12-25 18:49:23",149,"52.15");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1058,93487,"2019-02-25 06:31:41",115,"40.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1025,91931,"2019-11-22 01:45:39",148,"51.8");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1037,93175,"2019-02-28 12:57:47",19,"6.65");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1093,89953,"2018-10-05 05:18:56",58,"20.3");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1095,89183,"2018-11-14 08:52:45",147,"51.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1057,93805,"2019-08-23 01:43:56",50,"17.5");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1008,92241,"2018-09-20 20:24:52",121,"42.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1012,87570,"2019-01-30 21:09:42",43,"15.05");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1056,90460,"2020-07-28 09:53:13",134,"46.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1007,87381,"2019-09-04 19:38:37",178,"62.3");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1095,87298,"2019-02-28 02:37:47",89,"31.15");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1010,93768,"2019-12-28 17:53:33",174,"60.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1013,86159,"2019-05-20 22:56:59",74,"25.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1021,81784,"2018-12-19 10:48:18",194,"67.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1097,88340,"2019-05-26 21:36:58",74,"25.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1061,82405,"2020-02-04 06:12:51",178,"62.3");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1007,93978,"2020-02-06 09:36:22",152,"53.2");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1089,87280,"2018-12-24 10:53:57",190,"66.5");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1035,80037,"2019-08-09 04:08:58",161,"56.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1030,86363,"2019-11-02 02:12:19",38,"13.3");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1046,81991,"2018-09-28 03:47:46",77,"26.95");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1011,84724,"2019-02-06 13:51:32",81,"28.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1059,87943,"2019-04-09 23:06:34",68,"23.8");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1089,81336,"2019-06-01 19:47:54",158,"55.3");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1007,92226,"2019-12-10 05:40:47",19,"6.65");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1040,88200,"2019-12-19 18:32:47",75,"26.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1041,93857,"2019-04-29 00:09:06",25,"8.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1034,85652,"2019-05-22 05:39:20",83,"29.05");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1082,89698,"2019-02-26 01:13:53",1,"0.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1015,89218,"2018-11-02 01:47:55",107,"37.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1088,83577,"2019-09-17 02:25:49",73,"25.55");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1094,86775,"2018-08-12 10:44:11",193,"67.55");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1028,85058,"2018-09-12 14:39:35",146,"51.1");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1096,94574,"2019-12-28 08:53:06",37,"12.95");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1075,94779,"2019-04-04 12:58:09",81,"28.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1056,82499,"2020-08-01 04:44:39",188,"65.8");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1050,91593,"2018-11-10 07:08:56",176,"61.6");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1028,81539,"2020-02-17 03:58:38",150,"52.5");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1014,88325,"2019-04-21 16:43:06",17,"5.95");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1008,92565,"2018-09-01 03:50:49",175,"61.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1020,89439,"2019-08-06 00:32:33",101,"35.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1089,83433,"2019-08-13 00:04:31",85,"29.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1076,93368,"2020-03-06 14:08:46",43,"15.05");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1098,84215,"2019-10-06 17:44:38",162,"56.7");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1093,81041,"2020-02-23 23:53:34",74,"25.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1089,94372,"2018-12-30 06:07:29",41,"14.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1028,80898,"2019-07-09 05:39:51",40,"14");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1085,83444,"2018-09-26 20:13:35",195,"68.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1079,84312,"2020-04-16 22:54:19",195,"68.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1040,83671,"2019-04-09 22:53:36",49,"17.15");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1034,91487,"2019-07-02 17:00:48",195,"68.25");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1025,89716,"2020-06-01 03:15:51",127,"44.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1019,90518,"2020-06-23 17:43:45",132,"46.2");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1036,92189,"2018-08-16 15:00:05",81,"28.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1031,85930,"2019-04-06 05:27:00",45,"15.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1030,89559,"2019-08-17 22:21:34",165,"57.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1072,90828,"2018-11-17 19:15:25",20,"7");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1078,84270,"2019-01-08 13:20:00",74,"25.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1034,93465,"2018-12-27 22:49:38",142,"49.7");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1083,93980,"2019-07-24 23:13:35",26,"9.1");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1037,84089,"2020-01-22 00:48:54",181,"63.35");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1036,91769,"2018-09-02 19:05:21",39,"13.65");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1030,86994,"2020-08-05 20:16:49",72,"25.2");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1086,89066,"2018-08-28 16:28:09",193,"67.55");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1099,91590,"2019-11-30 00:57:41",174,"60.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1080,92877,"2018-08-19 04:24:40",72,"25.2");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1025,83872,"2020-07-09 15:44:10",25,"8.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1008,92198,"2018-11-25 05:54:23",143,"50.05");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1041,82117,"2020-05-09 12:07:14",111,"38.85");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1026,89197,"2019-12-20 23:50:54",140,"49");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1080,85263,"2019-10-10 15:22:51",26,"9.1");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1004,88576,"2020-07-03 12:54:22",123,"43.05");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1079,90938,"2020-02-11 09:13:11",137,"47.95");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1081,88577,"2019-10-02 06:52:06",5,"1.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1039,81622,"2020-07-09 09:53:36",126,"44.1");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1015,92415,"2019-10-27 02:53:36",67,"23.45");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1037,85944,"2019-12-02 17:58:04",157,"54.95");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1087,80446,"2018-08-08 14:54:41",179,"62.65");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1003,81911,"2019-03-02 00:58:51",79,"27.65");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1035,88075,"2019-05-08 10:19:46",9,"3.15");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1096,90469,"2020-04-27 21:47:23",130,"45.5");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1074,89648,"2020-02-23 02:21:58",73,"25.55");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1053,84884,"2020-05-22 19:42:31",125,"43.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1034,82800,"2020-05-04 06:21:53",94,"32.9");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1072,85649,"2018-08-27 18:08:56",145,"50.75");
+INSERT INTO DetalleProducto (IDproducto,IDLote,FechaVenc,PrecioUnitario,PrecioVenta) VALUES (1073,83910,"2020-05-05 04:59:12",158,"55.3");
 
 
---Empleado {Completado}
-INSERT Empleado (IDempleado, Nombre) VALUES (1, N'Francisco Silva')
-INSERT Empleado (IDempleado, Nombre) VALUES (2, N'Gabriela Castillo')
-INSERT Empleado (IDempleado, Nombre) VALUES (3, N'Isis Amador')
+--Empleado [COMPLETADO - 3 REGISTROS]
+INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (1, "001-130599-1007K", "Francisco Silva", "FSilva", "1234");
+INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (2, "001-230198-0198W", "Gabriela Castillo", "GCastillo", "1234");
+INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (3, "001-091296-1000D", "Isis Amador", "IAmador", "1234");
 
---Enfermedad {Completado}
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5001, N'Fiebre')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5002, N'Herpes    ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5003, N'Varicela  ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5004, N'Gripe     ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5005, N'Congestion')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5006, N'Dolor muscular')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5007, N'Diarrea   ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5008, N'Dolor estomacal')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5009, N'Ansiedad  ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5010, N'Infeccion estomacal')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5011, N'Bronquitis')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5012, N'Neumonia  ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5013, N'Rinitis   ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5014, N'Mucolitico')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5015, N'Deshidratacion')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5016, N'Relajar   ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5017, N'Imsonmio   ')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5018, N'Mononucleosis')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5019, N'Dolor de cabeza')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5020, N'Dolor de muela')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5021, N'Tos')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5022, N'Vomito')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5023, N'Alergia')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5024, N'Sinucitis')
-INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5025, N'Infeccion vaginal')
+--Enfermedad [COMPLETADO - 25 REGISTROS]
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5001, "Fiebre");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5002, "Herpes");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5003, "Varicela");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5004, "Gripe");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5005, "Congestion");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5006, "Dolor muscular");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5007, "Diarrea");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5008, "Dolor estomacal");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5009, "Ansiedad");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5010, "Infeccion estomacal");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5011, "Bronquitis");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5012, "Neumonia");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5013, "Rinitis");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5014, "Mucolitico");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5015, "Deshidratacion");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5016, "Relajar");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5017, "Imsonmio");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5018, "Mononucleosis");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5019, "Dolor de cabeza");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5020, "Dolor de muela");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5021, "Tos");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5022, "Vomito");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5023, "Alergia");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5024, "Sinucitis");
+INSERT Enfermedad (IDenfermedad, Descripcion) VALUES (5025, "Infeccion vaginal");
 
---Factura [COMPLETO - 99 REGISTROS]
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6001, 2, CAST(N'2019-03-31 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6002, 1, CAST(N'2019-03-20 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6003, 2, CAST(N'2019-04-05 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6004, 3, CAST(N'2019-04-01 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6005, 2, CAST(N'2019-03-25 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6006, 2, CAST(N'2019-04-01 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6007, 2, CAST(N'2019-03-20 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6008, 1, CAST(N'2019-04-07 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6009, 2, CAST(N'2019-03-31 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6010, 1, CAST(N'2019-03-20 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6011, 2, CAST(N'2019-04-05 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6012, 3, CAST(N'2019-04-01 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6013, 1, CAST(N'2019-03-25 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6014, 2, CAST(N'2019-04-01 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6015, 2, CAST(N'2019-03-20 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6016, 1, CAST(N'2019-04-07 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6017, 2, CAST(N'2019-03-31 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6018, 1, CAST(N'2019-03-20 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6019, 2, CAST(N'2019-04-05 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6020, 3, CAST(N'2019-04-01 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6021, 3, CAST(N'2019-03-25 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6022, 2, CAST(N'2019-04-01 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6023, 2, CAST(N'2019-03-20 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6024, 1, CAST(N'2019-04-07 00:00:00.000' AS DateTime));
-INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6025, 1, CAST(N'2019-04-07 00:00:00.000' AS DateTime));
+--Factura [COMPLETADO - 99 REGISTROS]
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6001, 2, CAST("2019-03-31 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6002, 1, CAST("2019-03-20 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6003, 2, CAST("2019-04-05 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6004, 3, CAST("2019-04-01 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6005, 2, CAST("2019-03-25 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6006, 2, CAST("2019-04-01 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6007, 2, CAST("2019-03-20 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6008, 1, CAST("2019-04-07 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6009, 2, CAST("2019-03-31 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6010, 1, CAST("2019-03-20 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6011, 2, CAST("2019-04-05 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6012, 3, CAST("2019-04-01 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6013, 1, CAST("2019-03-25 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6014, 2, CAST("2019-04-01 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6015, 2, CAST("2019-03-20 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6016, 1, CAST("2019-04-07 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6017, 2, CAST("2019-03-31 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6018, 1, CAST("2019-03-20 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6019, 2, CAST("2019-04-05 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6020, 3, CAST("2019-04-01 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6021, 3, CAST("2019-03-25 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6022, 2, CAST("2019-04-01 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6023, 2, CAST("2019-03-20 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6024, 1, CAST("2019-04-07 00:00:00.000" AS DateTime));
+INSERT Factura (NoFactura, IDempleado, Fecha) VALUES (6025, 1, CAST("2019-04-07 00:00:00.000" AS DateTime));
 INSERT INTO Factura (NoFactura,IDempleado,Fecha) VALUES (6026,1,"2016-05-06 07:07:51");
 INSERT INTO Factura (NoFactura,IDempleado,Fecha) VALUES (6027,1,"2016-06-01 14:56:29");
 INSERT INTO Factura (NoFactura,IDempleado,Fecha) VALUES (6028,3,"2016-06-22 18:48:10");
@@ -243,187 +722,762 @@ INSERT INTO Factura (NoFactura,IDempleado,Fecha) VALUES (6098,3,"2016-07-09 01:3
 INSERT INTO Factura (NoFactura,IDempleado,Fecha) VALUES (6099,3,"2016-09-19 19:49:57");
 
 
---Indicacion
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7001, N'Mayores de doce años')
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7002, N'0-18 años')
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7003, N'Mayores de 3 años')
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7004, N'Mayores de 18')
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7005, N'Mayores de 5 años')
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7006, N'TE')
-INSERT Indicacion (IDindicacion, Descripcion) VALUES (7007, N'2-5 años')
+--Indicacion [COMPLETADO - 14 REGISTROS]
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7001, "Niños < 6 meses");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7002, "Niños < 1 año");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7003, "Niños < 2 años");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7004, "Niños < 5 años");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7005, "Niños < 7 años");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7006, "Niños < 10 años");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7007, "0-15 años");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7008, "Mayores de 18");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7009, "Adultos > 40");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7010, "Adultos > 50");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7011, "Adultos > 60");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7012, "Todas las edades");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7013, "No apto para embarazadas");
+INSERT Indicacion (IDindicacion, Descripcion) VALUES (7014, "No apto durante la lactancia");
 
+--IndicacionProducto [COMPLETADO - 99 REGISTROS]
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (121,1086,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (122,1015,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (123,1035,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (124,1071,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (125,1045,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (126,1047,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (127,1073,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (128,1048,7008);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (129,1030,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1210,1019,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1211,1015,7007);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1212,1077,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1213,1074,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1214,1093,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1215,1025,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1216,1029,7008);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1217,1029,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1218,1098,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1219,1048,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1220,1047,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1221,1070,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1222,1059,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1223,1043,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1224,1097,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1225,1074,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1226,1083,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1227,1019,7014);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1228,1059,7014);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1229,1083,7014);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1230,1071,7001);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1231,1089,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1232,1097,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1233,1003,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1234,1079,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1235,1060,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1236,1054,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1237,1028,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1238,1052,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1239,1006,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1240,1094,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1241,1093,7001);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1242,1099,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1243,1091,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1244,1066,7007);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1245,1079,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1246,1047,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1247,1028,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1248,1007,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1249,1069,7002);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1250,1063,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1251,1077,7012);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1252,1040,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1253,1084,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1254,1062,7014);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1255,1013,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1256,1087,7007);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1257,1077,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1258,1030,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1259,1012,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1260,1079,7002);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1261,1061,7001);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1262,1048,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1263,1006,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1264,1078,7001);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1265,1033,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1266,1096,7005);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1267,1058,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1268,1028,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1269,1013,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1270,1002,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1271,1041,7012);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1272,1003,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1273,1065,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1274,1012,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1275,1084,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1276,1008,7003);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1277,1094,7008);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1278,1022,7002);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1279,1034,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1280,1007,7001);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1281,1014,7012);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1282,1032,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1283,1069,7010);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1284,1055,7012);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1285,1001,7013);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1286,1048,7011);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1287,1031,7001);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1288,1009,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1289,1083,7002);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1290,1043,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1291,1050,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1292,1014,7004);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1293,1001,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1294,1005,7002);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1295,1090,7008);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1296,1044,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1297,1070,7009);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1298,1094,7006);
+INSERT INTO IndicacionProducto (IDindicacionProducto,IDproducto,IDindicacion) VALUES (1299,1011,7012);
 
---IndicacionProducto {Completado}
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1001, 7001)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1002, 7001)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1003, 7002)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1004, 7003)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1005, 7001)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1006, 7001)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1007, 7005)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1008, 7001)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1009, 7007)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1010, 7005)
-INSERT IndicacionProducto (IDproducto, IDindicacion) VALUES (1011, 7906)
+--Lote [COMPLETADO - 99 REGISTROS]
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80001,"2019-11-05 11:56:00");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80002,"2020-03-11 05:42:02");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80003,"2018-09-02 03:12:59");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80004,"2020-01-29 03:46:19");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80005,"2019-01-04 16:07:27");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80006,"2020-03-25 00:13:27");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80007,"2019-02-17 18:06:33");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80008,"2018-10-01 19:03:17");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80009,"2019-03-01 10:56:02");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80010,"2020-07-20 07:10:21");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80011,"2020-02-07 09:43:00");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80012,"2020-05-30 23:32:52");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80013,"2018-12-15 06:55:56");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80014,"2019-11-09 05:59:09");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80015,"2020-01-18 17:28:59");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80016,"2020-03-11 23:51:32");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80017,"2019-06-09 21:32:49");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80018,"2019-10-02 20:47:04");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80019,"2018-08-29 09:29:26");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80020,"2018-10-13 21:41:52");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80021,"2018-08-27 17:13:59");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80022,"2018-12-19 04:33:23");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80023,"2019-07-25 13:11:32");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80024,"2019-11-07 00:38:18");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80025,"2020-04-25 07:53:40");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80026,"2020-05-04 09:16:06");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80027,"2020-06-16 14:30:50");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80028,"2019-09-24 18:57:01");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80029,"2019-12-13 12:42:55");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80030,"2020-07-30 17:03:10");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80031,"2019-02-09 17:57:36");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80032,"2020-08-02 01:47:09");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80033,"2018-12-24 08:48:41");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80034,"2019-10-06 16:51:00");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80035,"2020-06-17 08:00:05");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80036,"2019-03-29 14:41:12");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80037,"2018-12-27 21:56:16");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80038,"2019-09-05 13:36:49");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80039,"2019-03-31 14:24:39");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80040,"2019-04-23 03:12:25");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80041,"2018-09-23 19:09:29");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80042,"2018-12-16 19:36:20");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80043,"2019-12-07 21:37:16");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80044,"2018-11-02 08:53:49");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80045,"2019-06-04 19:15:47");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80046,"2019-04-09 12:39:26");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80047,"2019-09-21 00:59:23");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80048,"2018-10-03 08:20:28");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80049,"2019-06-01 04:05:20");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80050,"2019-04-11 13:43:31");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80051,"2019-09-19 20:17:51");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80052,"2020-05-19 02:57:06");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80053,"2020-02-11 06:16:48");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80054,"2018-11-23 14:50:12");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80055,"2018-08-25 20:01:51");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80056,"2019-08-18 02:17:30");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80057,"2019-03-10 01:34:40");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80058,"2018-10-05 10:36:26");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80059,"2019-03-23 22:02:47");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80060,"2019-10-12 12:37:27");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80061,"2020-08-02 09:07:48");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80062,"2019-11-16 02:09:12");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80063,"2018-09-26 07:33:13");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80064,"2019-07-13 12:02:06");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80065,"2020-07-03 01:45:42");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80066,"2019-09-17 21:00:44");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80067,"2019-09-24 05:17:23");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80068,"2018-09-19 03:14:42");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80069,"2019-06-08 16:33:22");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80070,"2020-05-28 06:13:11");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80071,"2019-07-05 15:51:47");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80072,"2019-08-20 20:55:29");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80073,"2019-08-16 17:12:33");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80074,"2019-10-07 14:18:08");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80075,"2020-06-09 02:04:25");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80076,"2020-05-11 23:00:07");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80077,"2018-08-21 06:18:30");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80078,"2019-11-04 00:01:04");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80079,"2018-11-05 11:46:34");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80080,"2019-01-17 20:41:01");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80081,"2020-03-31 16:50:49");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80082,"2020-05-31 11:22:57");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80083,"2020-03-07 01:26:22");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80084,"2018-11-09 02:16:20");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80085,"2019-08-16 00:25:41");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80086,"2019-11-10 14:13:49");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80087,"2020-07-09 10:38:09");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80088,"2020-01-01 03:37:39");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80089,"2019-09-24 08:39:14");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80090,"2019-01-08 06:45:07");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80091,"2019-10-05 00:55:16");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80092,"2018-10-16 14:48:32");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80093,"2018-09-18 08:19:10");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80094,"2019-04-04 09:21:46");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80095,"2019-06-06 14:58:31");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80096,"2019-10-11 06:36:00");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80097,"2019-06-03 04:49:45");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80098,"2019-07-29 07:34:24");
+INSERT INTO Lote (IDlote,Fecha_venc) VALUES (80099,"2018-11-30 06:04:22");
 
---Lote {Completado}
-INSERT Lote (IDlote, Fecha_venc) VALUES (1812, CAST(N'2020-01-01 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (6812, CAST(N'2021-07-19 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (7281, CAST(N'2019-12-01 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (8371, CAST(N'2020-01-19 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (28391, CAST(N'2019-12-12 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (31874, CAST(N'2019-04-28 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (31979, CAST(N'2019-12-26 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (32341, CAST(N'2019-01-09 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (49413, CAST(N'2019-06-19 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (72321, CAST(N'2020-10-01 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (231451, CAST(N'2019-07-31 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (522345, CAST(N'2021-02-04 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (721489, CAST(N'2019-08-07 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (823134, CAST(N'2019-07-02 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (837328, CAST(N'2021-08-02 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (2033145, CAST(N'2019-09-20 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (7231343, CAST(N'2019-05-11 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (9142181, CAST(N'2019-05-21 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (30134221, CAST(N'2020-04-18 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (324113, CAST(N'2021-02-01 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (67346, CAST(N'2020-07-19 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (984721, CAST(N'2020-12-01 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (23742, CAST(N'2021-01-19 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (872611, CAST(N'2022-11-12 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (38478, CAST(N'2019-10-28 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (363472, CAST(N'2020-12-26 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (813431, CAST(N'2019-11-09 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (4123, CAST(N'2020-06-19 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (97631, CAST(N'2021-10-01 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (97463, CAST(N'2020-07-31 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (871711, CAST(N'2022-02-04 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (232131, CAST(N'2019-12-23 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (42114, CAST(N'2021-07-02 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (76376, CAST(N'2020-01-02 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (45816, CAST(N'2019-10-22 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (928112, CAST(N'2020-08-21 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (32113, CAST(N'2019-05-21 00:00:00.000' AS DateTime));
-INSERT Lote (IDlote, Fecha_venc) VALUES (34221, CAST(N'2021-08-28 00:00:00.000' AS DateTime));
+--PagoServicios [COMPLETADO - 99 REGISTROS]
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1601,1,"Luz",1072,"2018-09-14 01:26:52");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1602,1,"Luz",772,"2019-01-04 22:36:26");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1603,1,"Luz",448,"2018-11-29 05:09:12");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1604,1,"Agua",1460,"2018-11-23 05:52:29");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1605,2,"Agua",1011,"2019-01-24 14:58:03");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1606,1,"Agua",1065,"2019-02-20 15:27:53");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1607,2,"CasaClaro",331,"2019-03-29 20:03:07");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1608,1,"CasaClaro",1343,"2019-01-04 07:41:08");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1609,2,"CasaClaro",621,"2019-03-06 20:33:23");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1610,1,"Luz",1095,"2019-03-06 14:57:14");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1611,1,"Luz",294,"2018-09-04 13:18:13");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1612,1,"Luz",70,"2018-11-15 18:08:13");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1613,1,"Agua",372,"2019-03-04 16:40:50");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1614,1,"Agua",722,"2019-07-09 16:04:36");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1615,2,"Agua",234,"2018-11-04 18:33:25");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1616,1,"CasaClaro",1116,"2019-04-01 07:09:51");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1617,2,"CasaClaro",984,"2019-01-26 10:13:26");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1618,1,"CasaClaro",617,"2018-10-28 20:08:57");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1619,1,"Luz",953,"2018-08-28 05:18:10");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1620,2,"Luz",673,"2019-06-21 03:32:20");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1621,1,"Luz",473,"2019-02-10 02:40:49");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1622,1,"Agua",1180,"2019-06-07 22:52:16");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1623,2,"Agua",496,"2019-04-11 03:19:19");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1624,2,"Agua",335,"2018-11-22 02:39:10");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1625,2,"CasaClaro",793,"2019-04-15 22:40:20");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1626,2,"CasaClaro",442,"2018-11-25 06:14:45");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1627,1,"CasaClaro",1210,"2019-05-14 00:21:50");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1628,1,"Luz",576,"2019-06-13 18:29:32");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1629,2,"Luz",1068,"2019-01-26 20:01:45");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1630,2,"Luz",1397,"2018-09-04 09:28:41");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1631,1,"Agua",890,"2019-07-13 07:48:52");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1632,1,"Agua",1158,"2018-09-25 23:51:41");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1633,1,"Agua",338,"2019-01-30 14:55:04");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1634,1,"CasaClaro",520,"2019-05-13 22:33:36");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1635,2,"CasaClaro",772,"2018-12-12 18:12:32");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1636,2,"CasaClaro",145,"2018-10-20 09:48:05");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1637,1,"Luz",1450,"2019-03-28 06:30:45");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1638,2,"Luz",522,"2018-08-31 17:29:04");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1639,2,"Luz",469,"2019-08-04 09:05:37");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1640,2,"Agua",593,"2019-02-23 05:35:15");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1641,1,"Agua",346,"2019-05-12 22:26:14");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1642,1,"Agua",1293,"2019-03-23 09:43:43");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1643,2,"CasaClaro",263,"2018-10-21 14:14:23");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1644,1,"CasaClaro",1424,"2019-03-28 19:04:43");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1645,2,"CasaClaro",1002,"2018-11-06 10:55:45");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1646,1,"Luz",671,"2019-01-29 02:22:08");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1647,2,"Luz",1298,"2019-04-24 01:52:57");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1648,2,"Luz",734,"2019-03-22 22:13:19");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1649,2,"Agua",670,"2018-08-12 16:09:23");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1650,1,"Agua",163,"2018-11-28 13:10:54");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1651,1,"Agua",1344,"2018-08-18 11:29:13");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1652,2,"CasaClaro",715,"2018-12-08 07:12:10");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1653,2,"CasaClaro",786,"2018-09-24 09:40:32");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1654,2,"CasaClaro",1375,"2018-12-01 08:20:28");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1655,1,"Luz",181,"2019-07-10 22:49:43");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1656,1,"Luz",1377,"2019-05-20 00:16:22");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1657,1,"Luz",1339,"2018-11-07 11:19:56");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1658,2,"Agua",884,"2019-05-09 12:48:00");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1659,1,"Agua",269,"2019-04-20 19:54:00");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1660,2,"Agua",1222,"2018-10-09 20:34:39");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1661,2,"CasaClaro",190,"2018-10-21 23:13:41");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1662,1,"CasaClaro",50,"2018-10-01 16:02:58");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1663,1,"CasaClaro",1227,"2018-11-26 01:02:24");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1664,1,"Luz",867,"2019-03-02 01:22:26");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1665,1,"Luz",1063,"2019-01-09 19:29:09");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1666,2,"Luz",1460,"2019-01-06 23:43:06");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1667,1,"Agua",1184,"2018-08-29 07:05:32");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1668,1,"Agua",578,"2019-01-15 06:55:50");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1669,2,"Agua",1316,"2019-07-22 00:56:11");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1670,1,"CasaClaro",959,"2018-09-15 22:06:30");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1671,2,"CasaClaro",159,"2018-09-13 09:24:37");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1672,2,"CasaClaro",602,"2019-01-19 23:22:43");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1673,1,"Luz",1356,"2019-06-13 18:52:59");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1674,1,"Luz",440,"2018-10-29 13:43:47");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1675,1,"Luz",570,"2019-07-23 01:35:13");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1676,2,"Agua",370,"2019-05-24 12:10:06");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1677,1,"Agua",1290,"2019-01-09 21:08:02");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1678,1,"Agua",55,"2019-02-07 21:14:52");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1679,1,"CasaClaro",1218,"2018-09-05 18:16:33");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1680,2,"CasaClaro",705,"2019-05-19 18:59:20");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1681,2,"CasaClaro",1344,"2019-05-21 11:19:30");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1682,2,"Luz",803,"2018-11-29 07:47:43");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1683,1,"Luz",657,"2018-08-16 10:24:24");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1684,1,"Luz",1327,"2019-04-19 21:26:54");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1685,1,"Agua",507,"2019-04-26 12:44:51");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1686,2,"Agua",643,"2019-08-06 00:16:20");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1687,2,"Agua",198,"2018-08-22 20:40:25");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1688,1,"CasaClaro",263,"2019-02-21 22:21:07");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1689,2,"CasaClaro",1348,"2019-06-16 14:49:55");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1690,2,"CasaClaro",163,"2018-12-16 08:45:54");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1691,2,"Luz",996,"2019-05-18 00:00:03");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1692,1,"Luz",406,"2019-04-10 07:41:22");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1693,2,"Luz",1161,"2018-09-20 01:19:41");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1694,1,"Agua",541,"2019-07-08 08:22:39");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1695,2,"Agua",264,"2018-09-25 11:25:46");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1696,1,"Agua",515,"2018-11-19 22:08:36");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1697,2,"CasaClaro",84,"2018-08-27 06:30:16");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1698,1,"CasaClaro",942,"2019-05-04 05:28:09");
+INSERT INTO Pagos (IDPagos,IDempleado,TipoPago,MontoPago,FechaPago) VALUES (1699,1,"CasaClaro",1298,"2018-08-22 19:54:13");
 
---PagoServicios
-INSERT PagoServicios (IDPagoServicios, IDempleado, TipodePagoServicios, PagoServicio, FechaPago) VALUES (16001, 1, 'Luz', '500', CAST(N'2019-06-28 00:00:00.000' AS DateTime));
-INSERT PagoServicios (IDPagoServicios, IDempleado, TipodePagoServicios, PagoServicio, FechaPago) VALUES (16002, 1, 'Agua', '200', CAST(N'2019-06-28 00:00:00.000' AS DateTime));
-INSERT PagoServicios (IDPagoServicios, IDempleado, TipodePagoServicios, PagoServicio, FechaPago) VALUES (16003, 1, 'CasaClaro', '1550', CAST(N'2019-06-28 00:00:00.000' AS DateTime));
-INSERT PagoServicios (IDPagoServicios, IDempleado, TipodePagoServicios, PagoServicio, FechaPago) VALUES (16004, 1, 'Nmina', '15000', CAST(N'2019-06-28 00:00:00.000' AS DateTime));
+--Pedido [COMPLETADO - 99 REGISTROS]
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2201,17002,2,"2019-07-09 17:06:01",1665);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2202,17014,1,"2018-08-30 07:10:52",1698);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2203,17002,1,"2019-06-12 09:47:07",398);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2204,17034,1,"2019-05-23 19:34:19",1828);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2205,17009,1,"2019-05-18 12:32:08",1537);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2206,17012,2,"2019-05-16 14:12:09",1635);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2207,17013,1,"2019-03-10 01:22:08",1953);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2208,17023,2,"2019-06-08 07:36:28",972);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2209,17025,1,"2019-05-13 00:45:38",366);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2210,17016,2,"2018-08-27 16:45:21",647);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2211,17032,2,"2018-08-07 05:03:21",1417);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2212,17032,1,"2018-09-29 06:09:45",571);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2213,17024,2,"2018-10-13 13:55:46",1975);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2214,17003,2,"2019-07-25 15:05:14",1739);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2215,17008,2,"2019-02-09 00:43:23",1692);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2216,17021,1,"2018-12-02 14:43:32",52);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2217,17007,2,"2019-02-04 11:25:45",1139);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2218,17028,1,"2018-09-14 00:06:54",510);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2219,17019,2,"2019-04-22 02:17:55",1751);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2220,17019,2,"2018-11-25 05:34:09",599);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2221,17009,2,"2019-03-15 07:13:35",1788);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2222,17029,2,"2018-12-27 21:43:51",1751);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2223,17025,1,"2018-12-06 09:54:41",1394);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2224,17022,2,"2019-07-07 20:56:46",1642);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2225,17015,1,"2018-10-24 11:54:31",684);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2226,17018,2,"2019-05-19 02:54:45",385);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2227,17012,2,"2018-11-15 04:43:00",707);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2228,17001,1,"2018-08-19 15:47:25",171);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2229,17022,2,"2019-07-25 08:21:09",1352);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2230,17027,2,"2019-03-13 02:51:41",1151);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2231,17027,1,"2019-07-01 08:19:26",427);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2232,17030,1,"2019-03-26 20:24:50",733);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2233,17012,2,"2019-08-04 09:28:10",1160);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2234,17013,1,"2018-09-08 03:25:18",1715);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2235,17007,1,"2019-06-15 13:46:57",1788);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2236,17032,2,"2019-07-28 18:15:14",179);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2237,17034,2,"2019-03-20 18:29:12",1300);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2238,17027,1,"2018-10-24 02:49:13",96);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2239,17022,2,"2019-01-20 09:45:16",1954);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2240,17013,2,"2018-09-26 01:15:13",758);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2241,17030,2,"2019-08-01 12:13:09",1626);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2242,17010,1,"2018-08-20 06:48:05",1385);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2243,17034,2,"2019-06-26 19:34:38",273);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2244,17012,2,"2019-06-22 03:10:02",936);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2245,17027,2,"2019-05-02 07:05:25",588);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2246,17027,2,"2019-03-06 15:31:47",1743);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2247,17013,2,"2018-10-19 06:49:28",1207);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2248,17012,2,"2019-03-30 19:15:58",734);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2249,17003,2,"2019-06-03 16:38:46",346);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2250,17024,1,"2018-08-07 21:14:44",581);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2251,17018,1,"2018-10-16 02:34:17",1979);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2252,17008,1,"2019-04-28 16:14:29",951);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2253,17007,2,"2018-08-24 13:16:10",265);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2254,17002,2,"2018-08-29 05:46:17",99);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2255,17022,1,"2018-10-01 18:22:24",305);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2256,17026,2,"2018-12-03 17:25:49",899);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2257,17006,1,"2019-04-14 12:39:03",741);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2258,17033,1,"2018-12-03 23:24:59",1710);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2259,17016,1,"2018-08-07 04:31:37",109);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2260,17023,2,"2018-12-23 02:42:56",102);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2261,17019,1,"2018-12-14 02:30:39",1101);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2262,17007,2,"2018-08-17 09:25:30",1999);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2263,17033,2,"2018-08-27 17:28:57",181);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2264,17004,1,"2018-09-14 23:48:31",1498);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2265,17024,1,"2018-09-29 01:40:16",879);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2266,17031,2,"2019-07-07 02:00:58",1048);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2267,17023,1,"2019-04-16 15:19:12",1763);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2268,17012,2,"2018-09-04 14:16:25",473);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2269,17019,2,"2019-06-07 09:33:58",692);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2270,17005,1,"2018-10-04 23:46:48",577);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2271,17016,1,"2018-08-18 15:34:34",1941);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2272,17023,1,"2019-05-07 18:15:36",478);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2273,17024,1,"2019-07-23 08:13:25",270);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2274,17027,1,"2018-11-08 04:11:51",650);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2275,17009,2,"2019-03-01 22:34:37",997);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2276,17010,2,"2018-09-07 17:58:46",1906);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2277,17005,2,"2019-01-18 14:21:22",1614);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2278,17026,1,"2019-01-02 03:06:35",326);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2279,17034,2,"2018-11-20 04:50:43",434);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2280,17024,2,"2018-11-30 04:46:21",1656);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2281,17015,2,"2019-05-29 08:19:36",1661);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2282,17025,1,"2019-07-07 15:37:18",1321);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2283,17015,1,"2019-07-14 08:36:02",1947);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2284,17004,1,"2018-12-23 08:30:58",492);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2285,17011,2,"2018-10-31 15:58:47",1295);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2286,17001,2,"2019-04-16 03:10:22",527);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2287,17027,1,"2018-09-17 09:25:33",1623);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2288,17010,2,"2019-05-17 17:52:52",1396);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2289,17022,2,"2018-08-26 09:59:32",1903);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2290,17030,1,"2018-09-17 05:06:47",923);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2291,17007,1,"2019-05-16 21:37:58",1134);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2292,17030,2,"2019-03-30 11:51:36",139);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2293,17010,1,"2019-04-14 03:00:48",855);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2294,17009,1,"2018-12-04 16:45:46",1731);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2295,17026,1,"2019-06-25 09:23:40",899);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2296,17034,1,"2018-10-14 08:26:40",709);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2297,17009,1,"2018-11-14 19:37:45",590);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2298,17023,2,"2018-09-26 22:47:01",1110);
+INSERT INTO Pedido (FacturaPedido,IDproveedor,IDempleado,FechaPedido,MontoPedido) VALUES (2299,17012,1,"2019-05-05 19:43:01",1296);
 
---Pedido {Completado}
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9001, CAST(N'2019-07-18 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9002, CAST(N'2019-07-15 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9003, CAST(N'2019-07-13 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9004, CAST(N'2019-07-10 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9005, CAST(N'2019-07-09 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9006, CAST(N'2019-07-05 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9007, CAST(N'2019-07-01 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9008, CAST(N'2019-06-28 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9009, CAST(N'2019-06-24 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9010, CAST(N'2019-06-21 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9011, CAST(N'2019-06-17 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9012, CAST(N'2019-06-14 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9013, CAST(N'2019-06-10 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9014, CAST(N'2019-06-06 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9015, CAST(N'2019-06-04 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9016, CAST(N'2019-06-02 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9017, CAST(N'2019-06-01 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9018, CAST(N'2019-05-31 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9019, CAST(N'2019-05-28 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9020, CAST(N'2019-05-25 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9021, CAST(N'2019-05-23 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9022, CAST(N'2019-05-20 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9023, CAST(N'2019-05-18 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9024, CAST(N'2019-05-13 00:00:00.000' AS DateTime));
-INSERT Pedido (IDempleado, IDPedido, Fecha) VALUES (1, 9025, CAST(N'2019-05-10 00:00:00.000' AS DateTime));
+--Producto [COMPLETO - 99 REGISTROS]
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1001, "Acetaminofen", "Gotas", 30, "ml", 0, 0, 1, 25, 25);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1002, "Aciclovir", "Tabletas", 400, "mg", 0, 0, 1, 50, 100);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1003, "Mucolex", "Jarabe", 90, "ml", 0, 0, 0, 15, 20);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1004, "Zepol Deportista", "Crema", 30, "gr", 0, 0, 0, 20, 20);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1005, "Alka-D", "Tabletas", 25, "gr", 0, 1, 0, 40, 0);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1006, "Amoxicilina", "Tabletas",500, "ml", 0, 0, 0, 50, 100);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1007, "Ambroxol", "Jarabe", 100, "ml", 0, 0, 0, 10, 15);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1008, "Ketotifeno", "Tabletas",1, "mg", 0, 0, 0, 40, 60);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1009, "Bromexina", "Jarabe", 120, "ml", 0, 0, 0, 5, 10);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1010, "Broncodil", "Gotas", 30, "ml", 0, 0, 0, 14, 21);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1011, "Electrolit", "Suero", 625, "ml", 0, 0, 0, 5, 5);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1012, "Kalizzer", "Suspension",180, "ml", 0, 0, 0, 20, 10);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1013, "Lorazepam", "Tableta", 2, "mg", 1, 0, 0, 75, 40);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1014, "Panesia", "Spray", 20, "ml", 0, 0, 0, 10, 9);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1015, "Clotrimazol", "Crema", 20, "gr", 0, 0, 0, 10, 5);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1016, "ViroGrip Gel AM", "Tabletas", 24, "mg", 0, 0, 0, 15, 15);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1017, "ViroGrip Gel PM", "Tabletas", 24, "mg", 0, 0, 0, 15, 15);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1018, "Prueba de embarazo", "Unidad", 0, "-", 0, 0, 0, 30, 0);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1019, "ViroGrip Gel AM", "Tabletas", 24, "mg", 0, 0, 0, 15, 15);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1020, "Loratadina", "Tabletas", 10, "mg", 0, 0, 0, 100, 0);
+INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1021, "ViroGrip Gel AM", "Tabletas", 24, "mg", 0, 0, 0, 15, 15);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1022,"Furosemide","Tabletas",467,"mg",1,1,1,126,45);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1023,"Metoprolol Tartrate ","Tabletas",75,"mg",0,1,1,57,28);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1024,"Hydrocodone/APAP","Tabletas",340,"mg",1,0,0,13,175);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1025,"Flovent HFA","Tabletas",385,"mg",0,1,0,75,73);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1026,"Potassium Chloride","Tabletas",384,"mg",1,0,0,70,171);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1027,"Omeprazole (Rx)","Tabletas",421,"mg",1,1,1,108,78);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1028,"Meloxicam","Tabletas",56,"mg",0,0,0,196,68);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1029,"Sertraline HCl","Tabletas",434,"mg",1,1,0,178,174);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1030,"Gabapentin","Tabletas",337,"mg",1,0,0,17,150);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1031,"Carvedilol","Tabletas",85,"mg",1,1,1,60,143);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1032,"Simvastatin","Tabletas",155,"mg",1,1,1,109,8);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1033,"Zolpidem Tartrate","Tabletas",369,"mg",0,1,0,15,60);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1034,"Omeprazole (Rx)","Tabletas",434,"mg",0,0,1,5,3);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1035,"Amoxicillin","Tabletas",107,"mg",1,1,0,15,60);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1036,"Simvastatin","Tabletas",290,"mg",0,1,0,159,113);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1037,"Ibuprofen (Rx)","Tabletas",162,"mg",1,1,1,51,4);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1038,"Pantoprazole Sodium","Tabletas",89,"mg",1,1,0,60,67);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1039,"Vitamin D (Rx)","Tabletas",294,"mg",1,0,0,0,21);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1040,"Cephalexin","Tabletas",106,"mg",0,0,1,138,56);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1041,"Gabapentin","Tabletas",563,"mg",1,0,1,40,157);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1042,"Levothyroxine Sodium","Gotas",148,"ml",1,1,1,133,100);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1043,"Fluticasone Propionate","Gotas",589,"ml",0,0,0,77,196);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1044,"Gianvi","Gotas",13,"ml",1,1,0,142,59);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1045,"Penicillin VK","Gotas",237,"ml",0,0,1,85,8);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1046,"Niaspan","Gotas",325,"ml",0,0,1,158,111);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1047,"Fluticasone Propionate","Gotas",147,"ml",1,1,1,131,105);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1048,"Clindamycin HCl","Gotas",257,"ml",0,0,1,64,61);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1049,"Pantoprazole Sodium","Gotas",488,"ml",1,1,1,147,142);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1050,"Carvedilol","Gotas",157,"ml",1,1,0,151,59);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1051,"Tramadol HCl","Gotas",227,"ml",1,1,0,133,21);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1052,"Pantoprazole Sodium","Jarabe",481,"ml",1,1,0,135,121);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1053,"Sertraline HCl","Jarabe",24,"ml",0,0,0,178,45);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1054,"Amoxicillin Trihydrate","Jarabe",311,"ml",0,1,0,179,52);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1055,"Simvastatin","Jarabe",55,"ml",0,1,1,115,44);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1056,"Cialis","Jarabe",270,"ml",1,1,0,117,173);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1057,"Zolpidem Tartrate","Jarabe",226,"ml",0,1,1,163,143);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1058,"Azithromycin","Jarabe",375,"ml",1,0,1,129,96);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1059,"Lovaza","Jarabe",466,"ml",1,0,0,60,48);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1060,"Fluticasone Propionate","Jarabe",335,"ml",0,0,1,63,164);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1061,"Oxycontin","Jarabe",168,"ml",1,0,0,102,118);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1062,"Doxycycline Hyclate","Crema",540,"gr",1,1,0,23,95);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1063,"Zolpidem Tartrate","Crema",577,"gr",1,0,1,34,183);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1064,"Lyrica","Crema",566,"gr",1,1,1,32,46);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1065,"Amlodipine Besylate","Crema",59,"gr",0,1,1,134,69);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1066,"Potassium Clavulanate","Crema",220,"gr",1,0,1,157,193);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1067,"Metoprolol Succinate","Crema",12,"gr",1,1,1,167,113);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1068,"Promethazine HCl","Crema",380,"gr",0,1,1,119,76);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1069,"Amoxicillin","Crema",477,"gr",0,1,1,121,38);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1070,"Proair HFA","Crema",335,"gr",1,1,1,152,198);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1071,"Lisinopril","Crema",43,"gr",1,1,0,1,15);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1072,"Alprazolam","Suero",343,"ml",1,0,1,175,114);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1073,"Fluoxetine HCl","Suero",36,"ml",0,1,0,47,176);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1074,"Tramadol HCl","Suero",314,"ml",1,0,0,134,65);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1075,"Simvastatin","Suero",105,"ml",1,1,1,188,199);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1076,"Amlodipine Besylate","Suero",588,"ml",0,0,1,166,194);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1077,"Loestrin 24 Fe","Suero",517,"ml",1,1,0,135,171);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1078,"Zyprexa","Suero",455,"ml",1,0,1,142,51);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1079,"LevothyroxineSodium","Suero",362,"ml",1,1,0,133,27);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1080,"Premarin","Suero",337,"ml",1,0,1,100,13);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1081,"Cephalexin","Suero",590,"ml",1,0,1,48,16);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1082,"Hydrocodone/APAP","Spray",570,"ml",0,1,1,135,79);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1083,"Fluoxetine HCl","Spray",144,"ml",1,1,0,67,136);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1084,"Carvedilol","Spray",217,"ml",1,1,0,21,90);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1085,"Diazepam","Spray",572,"ml",1,1,1,140,16);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1086,"Penicillin VK","Spray",238,"ml",1,0,1,5,174);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1087,"Sertraline HCl","Spray",10,"ml",1,1,1,178,1);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1088,"Hydrochlorothiazide","Spray",272,"ml",1,1,1,153,79);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1089,"Atenolol","Spray",263,"ml",0,0,0,9,66);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1090,"Lisinopril","Spray",2,"ml",0,0,0,105,193);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1091,"Triamcinolone Acetonide","Spray",60,"ml",1,1,1,84,82);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1092,"Pravastatin Sodium","Tabletas",163,"mg",1,1,0,43,62);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1093,"Venlafaxine HCl ER","Tabletas",560,"mg",1,0,1,189,43);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1094,"Lovaza","Tabletas",540,"mg",1,1,0,156,166);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1095,"Levaquin","Tabletas",256,"mg",0,1,0,21,94);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1096,"Viagra","Tabletas",489,"mg",0,1,0,169,53);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1097,"Alprazolam","Tabletas",565,"mg",0,0,1,104,145);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1098,"Viagra","Tabletas",8,"mg",0,0,0,147,136);
+INSERT INTO Producto (IDproducto,Nombre,Forma_farmaceutica,Dosis_Contenido,Unidad_medida,Restriccion,Descontinuado,Generico,StockBodega,StockEstante) VALUES (1099,"Amphetamine Salts","Tabletas",69,"mg",0,1,0,98,169);
 
---Producto
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1001, N'Acetaminofen', N'Gotas', 0, N'30 ml', 0, 1, 25, 25)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1002, N'Aciclovir', N'Tabletas', 0, N'400 mg', 0, 1, 50, 100)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1003, N'Mucolex', N'Jarabe', 0, N'90 ml', 0, 0, 15, 20)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1004, N'Zepol Deportista', N'Crema', 0, N'30 gr', 0, 0, 20, 20)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1005, N'Alka-D', N'Tabletas', 0, N'25 gr', 1, 0, 40, 0)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1006, N'Amoxicilina', N'Tabletas',0, N'500 mg',  0, 0, 50, 100)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1007, N'Ambroxol', N'Jarabe', 0, N'100 ml', 0, 0, 10, 15)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1008, N'Ketotifeno', N'Tabletas',0, N'1 mg', 0, 0, 40, 60)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1009, N'Bromexina', N'Jarabe', 0, N'120 ml', 0, 0, 5, 10)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1010, N'Broncodil', N'Gotas', 0, N'30 ml', 0, 0, 14, 21)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1011, N'Electrolit', N'Suero', 0, N'625 ml', 0, 0, 5, 5)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1012, N'Kalizzer', N'Suspension',0, N'180 ml', 0, 0, 20, 10)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1013, N'Lorazepam', N'Tableta', 1, N'2 mg', 0, 0, 75, 40)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1014, N'Panesia', N'Spray', 0, N'20 ml', 0, 0, 10, 9)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1015, N'Clotrimazol', N'Crema', 0, N'20 gr', 0, 0, 10, 5)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1016, N'ViroGrip Gel AM', N'Tabletas', 0, N'24 mg', 0, 0, 15, 15)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1017, N'ViroGrip Gel PM', N'Tabletas', 0, N'24 mg', 0, 0, 15, 15)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1018, N'Prueba de embarazo', N'-', 0, N'-', 0, 0, 30, 0)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1019, N'ViroGrip Gel AM', N'Tabletas', 0, N'24 mg', 0, 0, 15, 15)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1020, N'Loratadina', N'Tabletas', 0, N'10 mg', 0, 0, 100, 0)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1021, N'ViroGrip Gel AM', N'Tabletas', 0, N'24 mg', 0, 0, 15, 15)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1013, N'Ketrolac', N'Ampolla', 0, N'30 mg', 0, 0, 3, 35)
-INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Restriccion, Unidad_medida, Descontinuado, Generico, StockBodega, StockEstante) VALUES (1013, N'Ketrolac', N'Ampolla', 0, N'60 mg',  0, 0,3, 60)
+--Proveedor [Completado - 35 REGISTROS]
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17001, "Laboratorio", "Unifarm", "82245083","50544141");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17002, "Laboratorio", "Pharmalat", "86328780","50584497");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17003, "Laboratorio", "Ramos", "86869305","50582411");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17004, "Laboratorio", "Caplin Point", "89502120","50561672");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17005, "Laboratorio", "Procaps", "83632708","50531871");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17006, "Laboratorio", "Chia Fong","86751478","50536816");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17007, "Laboratorio", "Ceguel","87656496","50506111");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17008, "Laboratorio", "Rarpe","87249035","50549373");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17009, "Laboratorio", "Pisa","81216361","50526788");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17010, "Laboratorio", "Panzyma","82452831","50594381");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17011, "Laboratorio", "Infasa","82472541","50554505");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17012, "Laboratorio", "PFizer","85333518","50520184");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17013, "Laboratorio", "La Santé","89471012","50539881");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17014, "Laboratorio", "Bengoechea","87178376","50596431");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17015, "Distribuidor", "Rocha","86895446","50546020");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17016, "Distribuidor", "J.Ruiz","88377702","50527204");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17017, "Distribuidor", "Jazmin","86907496","50554013");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17018, "Distribuidor", "Refanic","84891081","50582053");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17019, "Distribuidor", "Los Paisanos","87754774","50530178");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17020, "Distribuidor", "Krisan","84932838","50595898");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17021, "Laboratorio", "Solka","85241613","50529273");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17022, "Laboratorio", "Calox","81107530","50541918");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17023, "Laboratorio", "Unimark","87771903","50538060");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17024, "Laboratorio", "Zepol","83431661","50561358");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17025, "Laboratorio", "Altasa","83232788","50529789");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17026, "Laboratorio", "Winzzer","89796572","50524172");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17027, "Laboratorio", "Bayer","82923822","50514348");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17028, "Laboratorio", "Discarsa","81272620","50545650");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17029, "Laboratorio", "Euros","82723919","50576799");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17030, "Distribuidor", "Refanic","85959242","50576341");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17031, "Distribuidor", "Dicegsa","82023051","50591681");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17032, "Distribuidor", "Farcosa","87872917","50508896");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17033, "Distribuidor", "Disprofar","84546224","50529781");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17034, "Distribuidor", "Pushendorf","82641888","50587955");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (17035, "Distribuidor", "Generifar","85126168","50590685");
 
---Proveedor {Completado}
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17001, N'Laboratorio         ', N'Unifarm                      ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17002, N'Laboratorio         ', N'Pharmalat                     ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17003, N'Laboratorio         ', N'Ramos                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17004, N'Laboratorio         ', N'Caplin Point                  ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17005, N'Laboratorio         ', N'Procaps                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17006, N'Laboratorio         ', N'Chia Fong                     ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17007, N'Laboratorio         ', N'Ceguel                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17008, N'Laboratorio         ', N'Rarpe                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17009, N'Laboratorio         ', N'Pisa                          ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17010, N'Laboratorio         ', N'Panzyma                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17011, N'Laboratorio         ', N'Infasa                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17012, N'Laboratorio         ', N'PFizer                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17013, N'Laboratorio         ', N'La Santé                      ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17014, N'Laboratorio         ', N'Bengoechea                    ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17015, N'Distribuidor        ', N'Rocha                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17016, N'Distribuidor        ', N'J.Ruiz                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17017, N'Distribuidor        ', N'Jazmin                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17018, N'Distribuidor        ', N'Refanic                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17019, N'Distribuidor        ', N'Los Paisanos                  ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17020, N'Distribuidor        ', N'Krisan                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17021, N'Laboratorio         ', N'Solka                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17022, N'Laboratorio         ', N'Calox                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17023, N'Laboratorio         ', N'Unimark                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17024, N'Laboratorio         ', N'Zepol                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17025, N'Laboratorio         ', N'Altasa                        ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17026, N'Laboratorio         ', N'Winzzer                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17027, N'Laboratorio         ', N'Bayer                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17028, N'Laboratorio         ', N'Discarsa                      ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17029, N'Laboratorio         ', N'Euros                         ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17030, N'Distribuidor        ', N'Refanic                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17031, N'Distribuidor        ', N'Dicegsa                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17032, N'Distribuidor        ', N'Farcosa                       ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17033, N'Distribuidor        ', N'Disprofar                     ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17034, N'Distribuidor        ', N'Pushendorf                    ')
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor) VALUES (17035, N'Distribuidor        ', N'Generifar                     ')
+--UtilidadProducto [COMPLETADO - 99 REGISTROS]
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2101,1036,5009);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2102,1085,5022);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2103,1085,5011);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2104,1039,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2105,1027,5019);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2106,1061,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2107,1050,5001);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2108,1027,5007);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2109,1094,5023);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2110,1037,5020);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2111,1038,5016);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2112,1088,5009);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2113,1065,5015);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2114,1026,5023);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2115,1002,5024);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2116,1004,5020);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2117,1097,5013);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2118,1055,5010);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2119,1064,5015);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2120,1088,5010);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2121,1049,5019);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2122,1075,5003);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2123,1062,5007);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2124,1018,5018);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2125,1025,5010);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2126,1062,5016);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2127,1092,5020);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2128,1067,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2129,1014,5011);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2130,1014,5024);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2131,1043,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2132,1057,5024);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2133,1054,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2134,1052,5002);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2135,1044,5021);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2136,1050,5024);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2137,1041,5022);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2138,1022,5004);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2139,1089,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2140,1025,5016);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2141,1087,5019);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2142,1084,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2143,1058,5006);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2144,1091,5021);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2145,1052,5006);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2146,1087,5012);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2147,1002,5019);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2148,1029,5001);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2149,1013,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2150,1019,5023);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2151,1035,5009);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2152,1013,5011);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2153,1037,5021);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2154,1045,5003);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2155,1095,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2156,1066,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2157,1014,5006);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2158,1029,5006);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2159,1009,5021);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2160,1082,5015);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2161,1052,5004);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2162,1094,5016);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2163,1017,5013);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2164,1004,5017);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2165,1048,5014);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2166,1047,5015);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2167,1069,5016);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2168,1079,5013);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2169,1087,5007);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2170,1065,5006);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2171,1067,5017);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2172,1036,5003);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2173,1058,5003);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2174,1030,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2175,1085,5022);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2176,1049,5022);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2177,1086,5006);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2178,1068,5017);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2179,1044,5016);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2180,1039,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2181,1042,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2182,1076,5007);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2183,1056,5020);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2184,1095,5021);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2185,1085,5011);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2186,1028,5019);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2187,1081,5010);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2188,1081,5018);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2189,1047,5012);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2190,1039,5004);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2191,1054,5020);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2192,1033,5017);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2193,1046,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2194,1060,5009);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2195,1069,5025);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2196,1006,5009);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2197,1030,5017);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2198,1094,5001);
+INSERT INTO UtilidadProducto (IDutilidadProducto,IDproducto,IDenfermedad) VALUES (2199,1023,5022);
 
---UtilidadProducto {Completado}
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1001, 10001)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1001, 10004)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1002, 10002)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1002, 10003)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1003, 10004)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1003, 10005)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1004, 10006)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1005, 10007)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1006, 10010)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1007, 10011)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1007, 10012)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1007, 10013)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1008, 10011)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1008, 10013)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1009, 10011)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1009, 10014)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1010, 10014)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1011, 10015)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1012, 10008)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1013, 10009)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1014, 10016)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1015, 10001)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1016, 10004)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1017, 10002)
-INSERT UtilidadProducto (IDproducto, IDenfermedad) VALUES (1018, 10003)
+--PerdidaProducto [COMPLETADO - 99 REGISTROS]
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1057,86600,2301,6,176);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1038,88163,2302,4,128);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1035,88937,2303,5,147);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1024,80832,2304,3,73);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1010,81361,2305,5,173);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1019,94877,2306,5,68);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1012,83149,2307,4,177);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1031,94603,2308,3,150);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1011,89935,2309,5,186);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1006,88923,2310,4,166);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1037,92053,2311,4,61);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1039,86183,2312,1,131);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1079,86198,2313,1,74);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1037,88367,2314,2,108);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1015,88866,2315,3,107);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1067,87444,2316,1,51);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1067,85500,2317,1,139);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1065,92247,2318,4,132);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1096,92139,2319,3,64);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1094,81218,2320,3,145);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1039,94102,2321,4,74);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1057,85341,2322,3,174);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1084,85341,2323,5,139);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1035,83291,2324,1,93);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1014,89569,2325,5,62);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1048,87667,2326,4,175);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1006,90955,2327,1,193);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1092,82534,2328,2,87);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1074,81430,2329,3,66);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1050,93258,2330,1,138);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1042,87610,2331,3,154);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1035,84859,2332,2,135);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1041,86058,2333,6,181);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1067,87717,2334,2,54);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1084,94208,2335,3,194);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1031,94594,2336,3,176);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1029,92647,2337,6,162);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1005,87865,2338,5,52);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1081,88902,2339,4,132);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1020,88912,2340,6,100);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1088,85835,2341,6,142);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1089,81530,2342,2,166);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1067,91387,2343,1,149);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1077,89135,2344,5,99);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1064,90812,2345,5,99);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1024,85089,2346,5,199);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1028,86000,2347,5,164);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1052,81607,2348,4,137);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1081,82203,2349,4,182);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1059,82153,2350,5,151);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1056,83992,2351,1,133);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1042,82648,2352,5,145);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1077,83939,2353,3,171);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1090,91258,2354,6,66);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1051,87064,2355,4,137);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1036,81545,2356,5,87);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1012,93111,2357,4,58);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1044,85079,2358,3,111);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1004,92217,2359,5,109);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1034,93792,2360,6,108);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1055,89289,2361,1,79);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1095,83551,2362,4,192);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1053,86885,2363,5,176);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1086,88429,2364,6,81);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1010,81365,2365,2,107);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1038,87654,2366,3,116);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1026,88363,2367,5,192);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1081,93034,2368,1,156);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1081,87462,2369,5,75);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1027,80573,2370,3,113);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1019,93980,2371,6,127);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1052,94275,2372,5,141);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1069,93558,2373,1,80);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1031,80640,2374,6,73);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1022,91919,2375,1,66);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1047,87533,2376,1,63);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1021,90215,2377,4,55);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1008,88668,2378,6,145);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1041,83182,2379,2,170);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1032,80949,2380,6,138);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1026,81449,2381,5,137);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1097,93434,2382,2,147);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1089,82489,2383,5,136);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1011,85518,2384,3,88);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1073,91515,2385,6,114);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1021,93577,2386,3,150);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1062,85329,2387,5,112);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1004,89286,2388,2,59);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1019,83657,2389,2,83);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1051,83897,2390,3,149);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1096,87224,2391,4,57);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1092,89580,2392,4,51);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1026,83900,2393,5,126);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1042,83378,2394,6,117);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1057,81790,2395,4,98);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1028,80234,2396,4,80);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1006,94929,2397,1,146);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1067,86938,2398,3,79);
+INSERT INTO PerdidaProducto (IDproducto,IDLote,IDperdida,Cantidad,MontoPerdido) VALUES (1013,89406,2399,4,108);
