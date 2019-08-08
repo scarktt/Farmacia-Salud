@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.effect.*?>
-<?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -137,7 +136,7 @@
                         <Font name="Calibri Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btn2" layoutX="58.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras" style="-fx-background-color: #A2AAAD;" text="2">
+                  <Button fx:id="btn2" layoutX="58.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras2" style="-fx-background-color: #A2AAAD;" text="2">
                      <effect>
                         <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
                      </effect>
@@ -849,8 +848,7 @@
                                     <Font name="Calibri" size="16.0" />
                                  </font>
                               </TextField>
-                              <JFXDialogLayout layoutX="370.0" layoutY="85.0" />
-                              <JFXSlider fx:id="SldCantEstante" layoutX="1008.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
+                              <Slider fx:id="SldCantEstante" layoutX="999.0" layoutY="36.0" prefHeight="14.0" prefWidth="86.0" />
                               <Label fx:id="lblCantEstante" layoutX="1042.0" layoutY="3.0" text="50">
                                  <font>
                                     <Font name="Calibri" size="18.0" />
@@ -892,9 +890,8 @@
                                     <Font name="Calibri" size="16.0" />
                                  </font>
                               </TextField>
-                              <JFXDialogLayout layoutX="370.0" layoutY="85.0" />
-                              <JFXSlider fx:id="SldCantEstante1" layoutX="1008.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
-                              <Label fx:id="lblCantEstante1" layoutX="1042.0" layoutY="3.0" text="50">
+                              <Slider fx:id="SldCantEstante2" layoutX="999.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
+                              <Label fx:id="lblCantEstante2" layoutX="1042.0" layoutY="3.0" text="50">
                                  <font>
                                     <Font name="Calibri" size="18.0" />
                                  </font>
@@ -935,14 +932,13 @@
                                     <Font name="Calibri" size="16.0" />
                                  </font>
                               </TextField>
-                              <JFXDialogLayout layoutX="370.0" layoutY="85.0" />
-                              <JFXSlider fx:id="SldCantEstante11" layoutX="1008.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
-                              <Label fx:id="lblCantEstante11" layoutX="1042.0" layoutY="3.0" text="50">
+                              <Label fx:id="lblCantEstante3" layoutX="1042.0" layoutY="3.0" text="50">
                                  <font>
                                     <Font name="Calibri" size="18.0" />
                                  </font>
                               </Label>
                               <Separator layoutY="70.0" prefHeight="3.0" prefWidth="1100.0" style="-fx-background-color: #000000;" />
+                              <Slider fx:id="SldCantEstante3" layoutX="999.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
                            </children>
                         </AnchorPane>
                         <ImageView fx:id="Check" fitHeight="40.0" fitWidth="51.0" layoutX="1089.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
@@ -956,225 +952,6 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="APDetalleCompra" layoutX="70.0" layoutY="111.0" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" visible="false">
-         <children>
-            <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="609.0" prefWidth="1179.0" style="-fx-background-color: #BCB8B1;">
-               <children>
-                  <Separator layoutX="14.0" layoutY="13.0" prefHeight="3.0" prefWidth="1151.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" />
-                  <Separator layoutX="14.0" layoutY="571.0" prefHeight="3.0" prefWidth="1151.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="557.0" />
-                  <Separator layoutX="11.0" layoutY="13.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="14.0" />
-                  <Separator layoutX="1159.0" layoutY="13.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="1158.0" AnchorPane.topAnchor="15.0" />
-                  <Label layoutX="27.0" layoutY="30.0" text="Factura:">
-                     <font>
-                        <Font name="Calibri" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblNumFactura1" layoutX="87.0" layoutY="30.0" text="128121">
-                     <font>
-                        <Font name="Calibri" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="27.0" layoutY="94.0" text="Recibo Colector">
-                     <font>
-                        <Font name="Calibri" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="50.0" layoutY="138.0" text="Observación">
-                     <font>
-                        <Font name="Calibri" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="435.0" layoutY="95.0" text="Fecha de vencimiento de pago">
-                     <font>
-                        <Font name="Calibri" size="18.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="txtObservacion1" layoutX="157.0" layoutY="134.0" prefHeight="30.0" prefWidth="697.0">
-                     <font>
-                        <Font name="Calibri" size="16.0" />
-                     </font>
-                  </TextField>
-                  <DatePicker fx:id="dtFechaVencimiento1" layoutX="678.0" layoutY="94.0" />
-                  <ComboBox fx:id="cmbCompraRealizadaPor1" layoutX="936.0" layoutY="93.0" prefHeight="25.0" prefWidth="174.0" promptText="Compra realizada por" style="-fx-background-color: #FFFFFF;" />
-                  <ComboBox fx:id="cmbStatus1" layoutX="936.0" layoutY="137.0" prefWidth="150.0" promptText="Status" style="-fx-background-color: #FFFFFF;" />
-                  <AnchorPane layoutX="18.0" layoutY="176.0" prefHeight="373.0" prefWidth="1143.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Separator layoutX="22.0" layoutY="13.0" prefHeight="3.0" prefWidth="1100.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="13.0" />
-                        <Separator layoutX="22.0" layoutY="45.0" prefHeight="3.0" prefWidth="1100.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="37.0" layoutY="24.0" text="Producto" AnchorPane.topAnchor="20.0">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="294.0" layoutY="20.0" text="Precio Unit.">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="431.0" layoutY="20.0" text="\% Ganancia">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="572.0" layoutY="20.0" text="Precio Venta">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="721.0" layoutY="20.0" text="Lote No.">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="837.0" layoutY="20.0" text="Fecha vencimiento">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="1024.0" layoutY="20.0" text="Cant. Estante">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <AnchorPane layoutX="22.0" layoutY="48.0" prefHeight="85.0" prefWidth="1101.0" style="-fx-background-color: #BCB8B1;">
-                           <children>
-                              <Label fx:id="lblProducto2" layoutX="14.0" layoutY="14.0" text="Ibuprofeno">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="lblUnidadMedida2" layoutX="14.0" layoutY="36.0" text="400 mg">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="lblPrecioUnit1" layoutX="275.0" layoutY="14.0" text="2.000">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <ComboBox fx:id="cmbGanancia1" layoutX="404.0" layoutY="13.0" prefHeight="25.0" prefWidth="98.0" promptText="Categoría" style="-fx-background-color: #FFFFFF;" />
-                              <TextField fx:id="txtPrecioVenta1" layoutX="551.0" layoutY="11.0" prefHeight="30.0" prefWidth="98.0" text="5.000">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtLote1" layoutX="693.0" layoutY="11.0" prefHeight="30.0" prefWidth="89.0" text="552">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtFechaVencimiento1" layoutX="826.0" layoutY="11.0" prefHeight="30.0" prefWidth="107.0" text="01/21">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <JFXDialogLayout layoutX="370.0" layoutY="85.0" />
-                              <JFXSlider fx:id="SldCantEstante1" layoutX="1008.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
-                              <Label fx:id="lblCantEstante1" layoutX="1042.0" layoutY="3.0" text="50">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Separator layoutY="70.0" prefHeight="3.0" prefWidth="1100.0" style="-fx-background-color: #000000;" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="21.0" layoutY="122.0" prefHeight="85.0" prefWidth="1101.0" style="-fx-background-color: #BCB8B1;">
-                           <children>
-                              <Label fx:id="lblProducto21" layoutX="14.0" layoutY="14.0" text="Ibuprofeno">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="lblUnidadMedida21" layoutX="14.0" layoutY="36.0" text="600 mg">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="lblPrecioUnit11" layoutX="275.0" layoutY="14.0" text="3.000">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <ComboBox fx:id="cmbGanancia11" layoutX="404.0" layoutY="13.0" prefHeight="25.0" prefWidth="98.0" promptText="Categoría" style="-fx-background-color: #FFFFFF;" />
-                              <TextField fx:id="txtPrecioVenta11" layoutX="551.0" layoutY="11.0" prefHeight="30.0" prefWidth="98.0" text="6.000">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtLote11" layoutX="693.0" layoutY="11.0" prefHeight="30.0" prefWidth="89.0" text="3212">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtFechaVencimiento11" layoutX="826.0" layoutY="11.0" prefHeight="30.0" prefWidth="107.0" text="02/12">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <JFXDialogLayout layoutX="370.0" layoutY="85.0" />
-                              <JFXSlider fx:id="SldCantEstante11" layoutX="1008.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
-                              <Label fx:id="lblCantEstante11" layoutX="1042.0" layoutY="3.0" text="50">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Separator layoutY="70.0" prefHeight="3.0" prefWidth="1100.0" style="-fx-background-color: #000000;" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="22.0" layoutY="198.0" prefHeight="85.0" prefWidth="1101.0" style="-fx-background-color: #BCB8B1;">
-                           <children>
-                              <Label fx:id="lblProducto211" layoutX="14.0" layoutY="14.0" text="Ambroxol">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="lblUnidadMedida211" layoutX="14.0" layoutY="36.0" text="5 ml">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="lblPrecioUnit111" layoutX="275.0" layoutY="14.0" text="60.000">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <ComboBox fx:id="cmbGanancia111" layoutX="404.0" layoutY="13.0" prefHeight="25.0" prefWidth="98.0" promptText="Categoría" style="-fx-background-color: #FFFFFF;" />
-                              <TextField fx:id="txtPrecioVenta111" layoutX="551.0" layoutY="11.0" prefHeight="30.0" prefWidth="98.0" text="70.000">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtLote111" layoutX="693.0" layoutY="11.0" prefHeight="30.0" prefWidth="89.0" text="1292">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <TextField fx:id="txtFechaVencimiento111" layoutX="826.0" layoutY="11.0" prefHeight="30.0" prefWidth="107.0" text="12/09">
-                                 <font>
-                                    <Font name="Calibri" size="16.0" />
-                                 </font>
-                              </TextField>
-                              <JFXDialogLayout layoutX="370.0" layoutY="85.0" />
-                              <JFXSlider fx:id="SldCantEstante111" layoutX="1008.0" layoutY="29.0" prefHeight="14.0" prefWidth="86.0" />
-                              <Label fx:id="lblCantEstante111" layoutX="1042.0" layoutY="3.0" text="50">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <Separator layoutY="70.0" prefHeight="3.0" prefWidth="1100.0" style="-fx-background-color: #000000;" />
-                           </children>
-                        </AnchorPane>
-                        <ImageView fx:id="Check1" fitHeight="40.0" fitWidth="51.0" layoutX="1089.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/checked.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
+      <AnchorPane fx:id="APDetalleCompra" layoutX="70.0" layoutY="111.0" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" visible="false" />
    </children>
 </AnchorPane>
