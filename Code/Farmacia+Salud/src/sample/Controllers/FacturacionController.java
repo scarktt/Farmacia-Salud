@@ -74,7 +74,7 @@ public class FacturacionController {
         APCompras.setVisible(false); APCompras2.setVisible(false);
     }
 
-    //Muestra en pantalla la ventana de pedidos
+    //Muestra en pantalla la ventana de compras
     public void pressCompras(MouseEvent event) {
         APCompras.setVisible(true); APBotonesCompra.setVisible(true);
         APHistoricoVentas.setVisible(false);APDetalleFactura.setVisible(false);
@@ -82,9 +82,9 @@ public class FacturacionController {
         APCompras2.setVisible(false);
     }
 
-    //Muestra en pantalla la ventana de pedidos2
+    //Muestra en pantalla la ventana de compras2
     public void pressCompras2(MouseEvent event) {
-        APCompras.setVisible(true);
+        APCompras2.setVisible(true);
         APHistoricoVentas.setVisible(false);APDetalleFactura.setVisible(false);
         APFacturacion.setVisible(false); APBotonesFacturacion.setVisible(false);
         APCompras.setVisible(false);
