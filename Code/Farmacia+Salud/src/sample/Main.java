@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sample.util.DBUtil;
+import sample.util.MySQLAccess;
 
 public class Main extends Application {
 
@@ -22,6 +24,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        launch(args);
+        MySQLAccess.readDataBase();
+        //launch(args);
     }
 }
