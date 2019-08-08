@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `FarmaciaMSalud` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `FarmaciaMSalud`;
 USE `FarmaciaMSalud`;
 -- MySQL dump 10.13  Distrib 8.0.16, for macos10.14 (x86_64)
 --
@@ -30,7 +30,7 @@ CREATE TABLE `Abono` (
   `IDproveedor` int(11) NOT NULL,
   `SaldoAbono` decimal(13,3) NOT NULL,
   PRIMARY KEY (`IDabono`,`FacturaCompraProducto`,`IDproveedor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +61,7 @@ CREATE TABLE `CompraProducto` (
   `Observacion` char(30) DEFAULT NULL,
   `FechaVencPago` datetime DEFAULT NULL,
   PRIMARY KEY (`FacturaCompraProducto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `DetalleCompraProducto` (
   `CantidadUnidades` int(11) NOT NULL,
   `PrecioxUnidad` decimal(13,3) NOT NULL,
   PRIMARY KEY (`FacturaCompraProducto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `DetalleFactura` (
   `Cantidad` int(11) NOT NULL,
   `Total` decimal(13,3) NOT NULL,
   PRIMARY KEY (`NoFactura`,`IDproducto`,`IDLote`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,7 +142,7 @@ CREATE TABLE `DetallePedido` (
   `PrecioxUnidad` decimal(13,3) NOT NULL,
   `EsProductoNuevo` bit(1) NOT NULL,
   PRIMARY KEY (`FacturaPedido`,`IDproducto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +169,7 @@ CREATE TABLE `DetalleProducto` (
   `PrecioUnitario` decimal(13,3) NOT NULL,
   `PrecioVenta` decimal(13,3) NOT NULL,
   PRIMARY KEY (`IDproducto`,`IDLote`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -196,7 +196,7 @@ CREATE TABLE `Empleado` (
   `Usuario` char(15) NOT NULL,
   `Pass` char(10) NOT NULL,
   PRIMARY KEY (`IDempleado`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -220,7 +220,7 @@ CREATE TABLE `Enfermedad` (
   `IDenfermedad` int(11) NOT NULL,
   `Descripcion` char(30) NOT NULL,
   PRIMARY KEY (`IDenfermedad`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -245,7 +245,7 @@ CREATE TABLE `Factura` (
   `IDempleado` int(11) NOT NULL,
   `Fecha` datetime DEFAULT NULL,
   PRIMARY KEY (`NoFactura`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -269,7 +269,7 @@ CREATE TABLE `Indicacion` (
   `IDindicacion` int(11) NOT NULL,
   `Descripcion` char(30) NOT NULL,
   PRIMARY KEY (`IDindicacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -294,7 +294,7 @@ CREATE TABLE `IndicacionProducto` (
   `IDproducto` int(11) NOT NULL,
   `IDindicacion` int(11) NOT NULL,
   PRIMARY KEY (`IDindicacionProducto`,`IDproducto`,`IDindicacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -318,7 +318,7 @@ CREATE TABLE `Lote` (
   `IDlote` int(11) NOT NULL,
   `Fecha_venc` datetime DEFAULT NULL,
   PRIMARY KEY (`IDlote`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -345,7 +345,7 @@ CREATE TABLE `Pagos` (
   `MontoPago` decimal(13,3) DEFAULT NULL,
   `FechaPago` datetime DEFAULT NULL,
   PRIMARY KEY (`IDPagos`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,7 +372,7 @@ CREATE TABLE `Pedido` (
   `FechaPedido` datetime DEFAULT NULL,
   `MontoPedido` decimal(13,3) DEFAULT NULL,
   PRIMARY KEY (`FacturaPedido`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -399,7 +399,7 @@ CREATE TABLE `PerdidaProducto` (
   `Cantidad` int(11) DEFAULT NULL,
   `MontoPerdido` decimal(13,3) DEFAULT NULL,
   PRIMARY KEY (`IDproducto`,`IDLote`,`IDperdida`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -431,7 +431,7 @@ CREATE TABLE `Producto` (
   `StockBodega` int(11) NOT NULL,
   `StockEstante` int(11) NOT NULL,
   PRIMARY KEY (`IDproducto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -458,7 +458,7 @@ CREATE TABLE `Proveedor` (
   `tel1` char(8) DEFAULT NULL,
   `tel2` char(8) DEFAULT NULL,
   PRIMARY KEY (`IDproveedor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -483,7 +483,7 @@ CREATE TABLE `UtilidadProducto` (
   `IDproducto` int(11) NOT NULL,
   `IDenfermedad` int(11) NOT NULL,
   PRIMARY KEY (`IDutilidadProducto`,`IDproducto`,`IDenfermedad`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
