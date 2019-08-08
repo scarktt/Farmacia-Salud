@@ -24,7 +24,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        MySQLAccess.readDataBase();
+        DBUtil.dbConnect();
         //launch(args);
     }
 }

@@ -11,8 +11,9 @@ public class MySQLAccess {
             // This will load the MySQL driver, each DB has its own driver
             Class.forName("com.mysql.jdbc.Driver");
             // Setup the connection with the DB
-            connect = DriverManager.getConnection("jdbc:mysql://localhost/FarmaciaMSalud" + "user=root&password=12345678");
+            connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/FarmaciaMSalud" + "user=root&password=12345678");
 
+            System.out.println("Aqui estoy");
             if (connect != null) {
                 System.out.println("Conexion establecida");
             }
