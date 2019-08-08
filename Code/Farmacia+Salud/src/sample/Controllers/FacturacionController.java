@@ -22,9 +22,12 @@ public class FacturacionController {
     @FXML private AnchorPane APUser;
     @FXML private AnchorPane APNotificacion;
     @FXML private AnchorPane APFacturacion;
-    @FXML private AnchorPane APBotones;
+    @FXML private AnchorPane APBotonesFacturacion;
     @FXML private AnchorPane APDetalleFactura;
     @FXML private AnchorPane APHistoricoVentas;
+    @FXML private AnchorPane APCompras;
+    @FXML private AnchorPane APCompras2;
+    @FXML private AnchorPane APBotonesCompra;
 
     //Cierra el programa
     public void pressExit(){
@@ -51,19 +54,39 @@ public class FacturacionController {
 
     //Muestra en pantalla la ventana de facturacion
     public void pressFacturacion(MouseEvent event) {
-        APFacturacion.setVisible(true); APBotones.setVisible(true);
+        APFacturacion.setVisible(true); APBotonesFacturacion.setVisible(true);
         APDetalleFactura.setVisible(false); APHistoricoVentas.setVisible(false);
+        APCompras.setVisible(false); APBotonesCompra.setVisible(false);
+        APCompras2.setVisible(false);
     }
 
     //Muestra en pantalla la ventana de detalle factura
     public void pressDetalleFactura(MouseEvent event) {
       APDetalleFactura.setVisible(true);
       APFacturacion.setVisible(false); APHistoricoVentas.setVisible(false);
+        APCompras.setVisible(false); APCompras2.setVisible(false);
     }
 
     //Muestra en pantalla la ventana de historico de ventas
     public void pressHistoricoVentas(MouseEvent event) {
         APHistoricoVentas.setVisible(true);
         APDetalleFactura.setVisible(false); APFacturacion.setVisible(false);
+        APCompras.setVisible(false); APCompras2.setVisible(false);
+    }
+
+    //Muestra en pantalla la ventana de pedidos
+    public void pressCompras(MouseEvent event) {
+        APCompras.setVisible(true); APBotonesCompra.setVisible(true);
+        APHistoricoVentas.setVisible(false);APDetalleFactura.setVisible(false);
+        APFacturacion.setVisible(false); APBotonesFacturacion.setVisible(false);
+        APCompras2.setVisible(false);
+    }
+
+    //Muestra en pantalla la ventana de pedidos2
+    public void pressCompras2(MouseEvent event) {
+        APCompras.setVisible(true);
+        APHistoricoVentas.setVisible(false);APDetalleFactura.setVisible(false);
+        APFacturacion.setVisible(false); APBotonesFacturacion.setVisible(false);
+        APCompras.setVisible(false);
     }
 }
