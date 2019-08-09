@@ -1,4 +1,4 @@
-package sample.util;
+package sample.modelo;
 
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBUtil {
     // Declaramos la conexion a mysql
-    private static Connection con;
+    private static Connection connect = null;
     // Declaramos los datos de conexion a la bd
     private static final String driver = "com.mysql.jdbc.Driver";
     private static final String user = "root";
@@ -15,14 +15,14 @@ public class DBUtil {
 
     // Funcion que va conectarse a mi bd de mysql
     public static void dbConnect() {
-        con = null; // Reseteamos a null la conexion a la bd
+        connect = null; // Reseteamos a null la conexion a la bd
 
         try{
             Class.forName(driver);
-            con = (Connection) DriverManager.getConnection(url, user, pass); // Nos conectamos a la bd
+            connect = (Connection) DriverManager.getConnection(url, user, pass); // Nos conectamos a la bd
 
             // Si la conexion fue exitosa mostramos un mensaje de conexion exitosa
-            if (con != null){
+            if (connect != null){
                 System.out.println("Conexion establecida");
             }
         } catch (ClassNotFoundException | SQLException e){

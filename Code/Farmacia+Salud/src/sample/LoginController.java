@@ -1,5 +1,6 @@
-package sample;
+package sample.Vista;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -10,8 +11,8 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.net.URL;
 
 public class LoginController {
 
@@ -43,7 +44,7 @@ public class LoginController {
 
     @FXML
     public void IniciarSesion(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Vistas/Facturacion.fxml"));//Se carga la siguiente pantalla
+        Parent root = FXMLLoader.load(getClass().getResource("Vista/Facturacion.fxml"));//Se carga la siguiente pantalla
         Stage stage = new Stage();//Se crea un nuevo escenario
         Scene scene = new Scene(root, 1260, 680);//Se crea una nueva escena y se indica que tendrá la vista cargada previamente
         stage.setScene(scene);//Se carga el nuevo escenario

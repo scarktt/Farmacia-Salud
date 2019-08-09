@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Formula" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+
+<AnchorPane fx:id="Formula" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vista.LoginController">
    <children>
       <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1260.0" style="-fx-background-color: #D7F9F1;" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" layoutX="1215.0" layoutY="3.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
                <image>
-                  <Image url="@img/cerrar.png" />
+                  <Image url="@../img/cerrar.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="48.0" layoutX="1186.0" layoutY="7.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1186.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
                <image>
-                  <Image url="@img/menos.png" />
+                  <Image url="@../img/menos.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
       <ImageView fitHeight="646.0" fitWidth="594.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="37.0">
          <image>
-            <Image url="@img/Pastillas.jpg" />
+            <Image url="@../img/Pastillas.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="590.0" layoutY="37.0" prefHeight="646.0" prefWidth="670.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="590.0">
          <children>
             <ImageView fitHeight="95.0" fitWidth="327.0" layoutX="172.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="170.0">
                <image>
-                  <Image url="@img/Farmacia.png" />
+                  <Image url="@../img/Farmacia.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="436.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/user.png" />
+                  <Image url="@../img/user.png" />
                </image>
             </ImageView>
             <Button fx:id="btnInSesion" layoutX="275.0" layoutY="467.0" mnemonicParsing="false" onAction="#IniciarSesion" style="-fx-background-color: #2C6D89;" text="Iniciar Sesión">
@@ -78,7 +69,7 @@
             </JFXTextField>
             <ImageView fitHeight="37.0" fitWidth="41.0" layoutX="436.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="346.0">
                <image>
-                  <Image url="@img/bloquear.png" />
+                  <Image url="@../img/bloquear.png" />
                </image>
             </ImageView>
          </children>
