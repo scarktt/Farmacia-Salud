@@ -375,7 +375,7 @@
                               <Font name="Calibri" size="24.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="224.0" layoutY="212.0" prefHeight="40.0" prefWidth="361.0" promptText="       Buscar">
+                        <TextField fx:id="txtBuscar" layoutX="224.0" layoutY="212.0" prefHeight="40.0" prefWidth="361.0" promptText="       Buscar">
                            <font>
                               <Font name="Calibri" size="18.0" />
                            </font>
