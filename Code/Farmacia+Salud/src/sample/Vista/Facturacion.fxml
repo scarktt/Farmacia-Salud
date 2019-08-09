@@ -390,10 +390,12 @@
                               <Image url="@../img/agregar.png" />
                            </image>
                         </ImageView>
-                        <TableView fx:id="TVAgregarProductos" layoutX="46.0" layoutY="341.0" prefHeight="200.0" prefWidth="636.0">
+                        <TableView fx:id="TVAgregarProductos" layoutX="180.0" layoutY="326.0" prefHeight="200.0" prefWidth="450.0">
                            <columns>
-                              <TableColumn prefWidth="75.0" text="C1" />
-                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn fx:id="TCProducto" prefWidth="150.0" text="Producto" />
+                              <TableColumn fx:id="TCCantidad" minWidth="100.0" prefWidth="52.0" text="Cantidad" />
+                              <TableColumn fx:id="TCDescuento" minWidth="100.0" prefWidth="75.0" text="Descuento" />
+                              <TableColumn fx:id="TCAgregar" minWidth="100.0" prefWidth="85.0" text="Agregar" />
                            </columns>
                         </TableView>
                      </children>
@@ -418,8 +420,8 @@
                               <Font name="Calibri Bold" size="14.0" />
                            </font>
                         </Button>
-                        <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Dist. Ramos" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbProducto" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Supositorio" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="cmbFormaFarmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
                         <Label layoutX="58.0" layoutY="240.0" text="Unidad de medida">
                            <font>
                               <Font name="Calibri" size="20.0" />
@@ -430,7 +432,7 @@
                               <Font name="Calibri" size="18.0" />
                            </font>
                         </TextField>
-                        <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="290.0" prefHeight="30.0" prefWidth="174.0" promptText="mg" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="290.0" prefHeight="30.0" prefWidth="174.0" promptText="Unidad de medida" style="-fx-background-color: #FFFFFF;" />
                         <ComboBox fx:id="cmbUtilidad" layoutX="57.0" layoutY="360.0" prefHeight="30.0" prefWidth="239.0" promptText="Utilidad" style="-fx-background-color: #FFFFFF;" />
                         <ComboBox fx:id="cmbIndicacion" layoutX="57.0" layoutY="422.0" prefHeight="30.0" prefWidth="239.0" promptText="Indicación" style="-fx-background-color: #FFFFFF;" />
                         <CheckBox fx:id="chbVentaRestr" layoutX="64.0" layoutY="489.0" mnemonicParsing="false" text="Venta Restringida">
@@ -495,32 +497,14 @@
                         <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
                         <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
                         <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="77.0" layoutY="75.0" text="Código">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="166.0" layoutY="75.0" text="Descripción">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="748.0" layoutY="52.0" text="Unidades ">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="751.0" layoutY="75.0" text="Vendidas">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="952.0" layoutY="75.0" text="Disponible">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="46.0" layoutY="113.0" prefHeight="3.0" prefWidth="1021.0" style="-fx-background-color: #000000;" />
+                        <TableView fx:id="HVTCHistoricoVenta" layoutX="158.0" layoutY="49.0" prefHeight="247.0" prefWidth="763.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="215.0">
+                           <columns>
+                              <TableColumn fx:id="HVTCCodigo" prefWidth="120.0" text="Código" />
+                              <TableColumn fx:id="HVTCDescripcion" prefWidth="300.0" text="Descripción" />
+                              <TableColumn fx:id="HVTCUnidadesVendidas" prefWidth="170.0" text="Unidades Vendidas" />
+                              <TableColumn minWidth="2.0" prefWidth="170.0" text="Disponible" />
+                           </columns>
+                        </TableView>
                      </children>
                   </AnchorPane>
                </children>
@@ -539,78 +523,15 @@
                         <Separator layoutX="17.0" layoutY="32.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="34.0" />
                         <Separator layoutX="1118.0" layoutY="32.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="34.0" />
                         <Separator layoutX="204.0" layoutY="32.0" prefHeight="3.0" prefWidth="918.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="32.0" />
-                        <Label layoutX="98.0" layoutY="65.0" text="Código">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="203.0" layoutY="65.0" text="Descripción">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="694.0" layoutY="65.0" text="Cantidad">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="992.0" layoutY="65.0" text="Precio Total">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="815.0" layoutY="65.0" text="Precio Unitario">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="51.0" layoutY="140.0" prefHeight="3.0" prefWidth="1039.0" style="-fx-background-color: #000000;" />
-                        <Label fx:id="lblCodigo" layoutX="98.0" layoutY="164.0" text="1704">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="ldlDescripcion" layoutX="214.0" layoutY="164.0" text="Ácido Acetílsalicilico 1mlg">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lblCantidad" layoutX="694.0" layoutY="164.0" text="10">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lblPrecioUnitario" layoutX="848.0" layoutY="164.0" text="12.000">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lblPrecioTotal" layoutX="1008.0" layoutY="164.0" text="120.000">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="49.0" layoutY="211.0" prefHeight="3.0" prefWidth="1039.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="821.0" layoutY="257.0" text="SUBTOTAL C$">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="837.0" layoutY="297.0" text="TOTAL C$">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lblSubTotal" layoutX="1008.0" layoutY="257.0" text="120.000">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lblTotal" layoutX="1014.0" layoutY="297.0" text="120.000">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
+                        <TableView fx:id="TVDetalleFactura" layoutX="102.0" layoutY="62.0" prefHeight="358.0" prefWidth="932.0">
+                           <columns>
+                              <TableColumn fx:id="DFTCodigo" prefWidth="120.0" text="Código" />
+                              <TableColumn fx:id="DFTCDescripcion" prefWidth="300.0" text="Descripción" />
+                              <TableColumn fx:id="DFTCCantidad" prefWidth="170.0" text="Cantidad" />
+                              <TableColumn fx:id="DFTCPrecUnit" minWidth="2.0" prefWidth="170.0" text="Precio Unitario" />
+                              <TableColumn fx:id="DFTCPrecTotal" minWidth="0.0" prefWidth="170.0" text="Precio Total" />
+                           </columns>
+                        </TableView>
                         <Button fx:id="btnImprimir" layoutX="532.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Imprimir">
                            <font>
                               <Font name="Calibri Bold" size="18.0" />
