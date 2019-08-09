@@ -10,7 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.FacturacionControlador>
+<AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.FacturacionControlador">
    <children>
       <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1263.0" style="-fx-background-color: #D7F9F1;">
          <children>
@@ -420,13 +420,9 @@
                               <Font name="Calibri Bold" size="14.0" />
                            </font>
                         </Button>
-<<<<<<< HEAD
                         <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedores" style="-fx-background-color: #FFFFFF;" />
                         <ComboBox fx:id="cmbForma_farmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceutica" style="-fx-background-color: #FFFFFF;" />
-=======
-                        <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbFormaFarmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
->>>>>>> origin/master
+                        
                         <Label layoutX="58.0" layoutY="240.0" text="Unidad de medida">
                            <font>
                               <Font name="Calibri" size="20.0" />
