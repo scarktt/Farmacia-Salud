@@ -1,38 +1,26 @@
-package sample.modelo;
+package sample.Modelo;
 
 import javafx.beans.property.FloatProperty;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleFloatProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class DetalleFactura{
-    private IntegerProperty NoFactura;
+public class PerdidaProducto{
     private IntegerProperty IDproducto;
     private IntegerProperty IDLote;
-    private FloatProperty PrecioUnitario;
+    private IntegerProperty IDperdida;
     private IntegerProperty Cantidad;
-    private FloatProperty Total;
+    private FloatProperty MontoPerdido;
 
-    public DetalleFactura(int NoFactura, int IDproducto, int IDLote,
-                          float PrecioUnitario, int Cantidad, float Total) {
-        this.NoFactura = new SimpleIntegerProperty(NoFactura);
+    public PerdidaProducto(int IDproducto, int IDLote, int IDperdida,
+                           int Cantidad, float MontoPerdido) {
         this.IDproducto = new SimpleIntegerProperty(IDproducto);
         this.IDLote = new SimpleIntegerProperty(IDLote);
-        this.PrecioUnitario = new SimpleFloatProperty(PrecioUnitario);
+        this.IDperdida = new SimpleIntegerProperty(IDperdida);
         this.Cantidad = new SimpleIntegerProperty(Cantidad);
-        this.Total = new SimpleFloatProperty(Total);
+        this.MontoPerdido = new SimpleFloatProperty(MontoPerdido);
     }
 
-    //Metodos atributo: NoFactura
-    public int getNoFactura() {
-        return NoFactura.get();
-    }
-    public void setNoFactura(int NoFactura) {
-        this.NoFactura = new SimpleIntegerProperty(NoFactura);
-    }
-    public IntegerProperty NoFacturaProperty() {
-        return NoFactura;
-    }
     //Metodos atributo: IDproducto
     public int getIDproducto() {
         return IDproducto.get();
@@ -53,15 +41,15 @@ public class DetalleFactura{
     public IntegerProperty IDLoteProperty() {
         return IDLote;
     }
-    //Metodos atributo: PrecioUnitario
-    public float getPrecioUnitario() {
-        return PrecioUnitario.get();
+    //Metodos atributo: IDperdida
+    public int getIDperdida() {
+        return IDperdida.get();
     }
-    public void setPrecioUnitario(float PrecioUnitario) {
-        this.PrecioUnitario = new SimpleFloatProperty(PrecioUnitario);
+    public void setIDperdida(int IDperdida) {
+        this.IDperdida = new SimpleIntegerProperty(IDperdida);
     }
-    public FloatProperty PrecioUnitarioProperty() {
-        return PrecioUnitario;
+    public IntegerProperty IDperdidaProperty() {
+        return IDperdida;
     }
     //Metodos atributo: Cantidad
     public int getCantidad() {
@@ -73,14 +61,14 @@ public class DetalleFactura{
     public IntegerProperty CantidadProperty() {
         return Cantidad;
     }
-    //Metodos atributo: Total
-    public float getTotal() {
-        return Total.get();
+    //Metodos atributo: MontoPerdido
+    public float getMontoPerdido() {
+        return MontoPerdido.get();
     }
-    public void setTotal(float Total) {
-        this.Total = new SimpleFloatProperty(Total);
+    public void setMontoPerdido(float MontoPerdido) {
+        this.MontoPerdido = new SimpleFloatProperty(MontoPerdido);
     }
-    public FloatProperty TotalProperty() {
-        return Total;
+    public FloatProperty MontoPerdidoProperty() {
+        return MontoPerdido;
     }
 }

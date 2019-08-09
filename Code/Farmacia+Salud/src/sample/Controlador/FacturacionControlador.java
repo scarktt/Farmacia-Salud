@@ -6,7 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import sample.modelo.Empleado;
+import sample.Modelo.Empleado;
 
 import java.io.IOException;
 import java.net.URL;
