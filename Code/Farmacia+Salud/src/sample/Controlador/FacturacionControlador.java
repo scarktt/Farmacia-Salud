@@ -1,11 +1,13 @@
 package sample.Controlador;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import sample.Modelo.Conexion;
 import sample.Modelo.Empleado;
 
 import java.io.IOException;
@@ -24,11 +26,26 @@ public class FacturacionControlador implements Initializable {
     @FXML private AnchorPane APCompras2;
     @FXML private AnchorPane APBotonesCompra;
     @FXML private ComboBox<Empleado> cmbVendidoPor;
-    @FXML private ObservableList<Empleado> ListaVendedores;
+
+    private ObservableList<Empleado> ListaVendedores;
+
+    private Conexion conexion;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        conexion = new Conexion();
+        conexion.establecerConexion();
+
+        // Inicializar listas
+        ListaVendedores = FXCollections.observableArrayList();
+
+        //LLenar listas
+        Empleado.llenarInformacion(conexion.getConnection(), ListaVendedores);
+
+        //Enlazar listas con ComboBox y TableView
         cmbVendidoPor.setItems(ListaVendedores);
+
+        conexion.cerrarConexion();
     }
 
     //Cierra el programa

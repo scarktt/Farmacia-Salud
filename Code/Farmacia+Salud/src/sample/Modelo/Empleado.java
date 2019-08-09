@@ -4,6 +4,13 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.ObservableList;
+import java.lang.String;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Empleado{
     private IntegerProperty IDempleado;
@@ -12,8 +19,7 @@ public class Empleado{
     private StringProperty Usuario;
     private StringProperty Pass;
 
-    public Empleado(int IDempleado, String CedulaEmpleado, String Nombre,
-                    String Usuario, String Pass) {
+    public Empleado(int IDempleado, String CedulaEmpleado, String Nombre, String Usuario, String Pass) {
         this.IDempleado = new SimpleIntegerProperty(IDempleado);
         this.CedulaEmpleado = new SimpleStringProperty(CedulaEmpleado);
         this.Nombre = new SimpleStringProperty(Nombre);
@@ -70,5 +76,31 @@ public class Empleado{
     }
     public StringProperty PassProperty() {
         return Pass;
+    }
+
+    @Override
+    public String toString () {
+        return Nombre.get();
+    }
+
+    public static void llenarInformacion (Connection connection, ObservableList<Empleado> lista) {
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultado = statement.executeQuery("SELECT IDempleado, CedulaEmpleado,Nombre,Usuario,Pass FROM Empleado");
+
+            while (resultado.next()) {
+                lista.add(
+                        new Empleado(
+                            resultado.getInt("IDempleado"),
+                            resultado.getString("CedulaEmpleado"),
+                            resultado.getString("Nombre"),
+                            resultado.getString("Usuario"),
+                            resultado.getString("Pass")
+                        )
+                );
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
