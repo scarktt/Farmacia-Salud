@@ -10,7 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.FacturacionController">
+<AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.FacturacionControlador">
    <children>
       <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1263.0" style="-fx-background-color: #D7F9F1;">
          <children>

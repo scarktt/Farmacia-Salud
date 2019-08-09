@@ -4,7 +4,7 @@ import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DBUtil {
+public class Conexion {
     // Declaramos la conexion a mysql
     private static Connection connect = null;
     // Declaramos los datos de conexion a la bd

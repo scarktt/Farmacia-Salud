@@ -1,4 +1,4 @@
-package sample.Vista;
+package sample;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
