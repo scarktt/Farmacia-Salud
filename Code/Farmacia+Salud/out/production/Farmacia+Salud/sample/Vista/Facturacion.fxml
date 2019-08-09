@@ -10,7 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.FacturacionControlador">
+<AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.FacturacionController">
    <children>
       <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1263.0" style="-fx-background-color: #D7F9F1;">
          <children>
@@ -302,7 +302,7 @@
       </AnchorPane>
       <AnchorPane fx:id="APUser" layoutX="1052.0" layoutY="121.0" onMouseExited="#exitUsuario" prefHeight="101.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="1052.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
          <children>
-            <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
+          <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
                <children>
                   <Label fx:id="lblRol" layoutY="6.0" text="Rol: Administrador" AnchorPane.leftAnchor="30.0">
                      <font>
@@ -327,7 +327,7 @@
                   <Separator prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0" />
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+          <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
                <children>
                   <Label fx:id="lblCerrarSesion" layoutX="27.0" layoutY="7.0" text="Cerrar sesión" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="7.0">
                      <font>
@@ -369,7 +369,7 @@
                               <Font name="Calibri" size="18.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="cmbVendidoPor" layoutX="141.0" layoutY="50.0" prefHeight="37.0" prefWidth="190.0" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="cmbVendedor" layoutX="141.0" layoutY="50.0" prefHeight="37.0" prefWidth="190.0" promptText="Gabriela Castillo" style="-fx-background-color: #FFFFFF;" />
                         <Label layoutX="305.0" layoutY="173.0" text="Adicionar Productos">
                            <font>
                               <Font name="Calibri" size="24.0" />
@@ -385,38 +385,17 @@
                               <Image url="@../img/search.png" />
                            </image>
                         </ImageView>
-                        <Separator layoutX="34.0" layoutY="334.0" prefHeight="3.0" prefWidth="718.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="74.0" />
-                        <Separator layoutX="34.0" layoutY="380.0" prefHeight="3.0" prefWidth="718.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="49.0" layoutY="350.0" text="Producto">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="404.0" layoutY="350.0" text="Cantidad">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="497.0" layoutY="350.0" text="Precio">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="694.0" layoutY="350.0" text="Agregar">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="576.0" layoutY="350.0" text="Descuento">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
                         <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="694.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/agregar.png" />
                            </image>
                         </ImageView>
+                        <TableView layoutX="46.0" layoutY="341.0" prefHeight="200.0" prefWidth="636.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="820.0" prefHeight="564.0" prefWidth="351.0" AnchorPane.topAnchor="0.0">
@@ -1298,7 +1277,7 @@
                         </Label>
                         <DatePicker fx:id="CDPFechaDesde" layoutX="189.0" layoutY="56.0" />
                         <DatePicker fx:id="CDPFechaHasta" layoutX="189.0" layoutY="100.0" />
-                        <ComboBox fx:id="CcmbCompradoPor" layoutX="512.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Comprado por" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="CcmbCompraoPor" layoutX="512.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Comprado por" style="-fx-background-color: #FFFFFF;" />
                         <ComboBox fx:id="CcmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
                         <ComboBox fx:id="CcmbDistribuidor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Distribuidor" style="-fx-background-color: #FFFFFF;" />
                         <Button fx:id="CbtnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
