@@ -1,23 +1,18 @@
-package sample.Controllers;
+package sample.Controlador;
 
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.SplitPane;
-import javafx.scene.image.ImageView;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import sun.plugin.javascript.navig.Anchor;
+import sample.modelo.Empleado;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class FacturacionController {
+public class FacturacionControlador implements Initializable {
 
     @FXML private AnchorPane APUser;
     @FXML private AnchorPane APNotificacion;
@@ -28,6 +23,13 @@ public class FacturacionController {
     @FXML private AnchorPane APCompras;
     @FXML private AnchorPane APCompras2;
     @FXML private AnchorPane APBotonesCompra;
+    @FXML private ComboBox<Empleado> cmbVendidoPor;
+    @FXML private ObservableList<Empleado> ListaVendedores;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        cmbVendidoPor.setItems(ListaVendedores);
+    }
 
     //Cierra el programa
     public void pressExit(){
