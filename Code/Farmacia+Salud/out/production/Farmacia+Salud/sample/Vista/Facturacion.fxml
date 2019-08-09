@@ -418,8 +418,8 @@
                               <Font name="Calibri Bold" size="14.0" />
                            </font>
                         </Button>
-                        <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Dist. Ramos" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbProducto" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Supositorio" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedores" style="-fx-background-color: #FFFFFF;" />
+                        <ComboBox fx:id="cmbForma_farmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceutica" style="-fx-background-color: #FFFFFF;" />
                         <Label layoutX="58.0" layoutY="240.0" text="Unidad de medida">
                            <font>
                               <Font name="Calibri" size="20.0" />

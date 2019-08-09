@@ -5,10 +5,11 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import sample.Modelo.Conexion;
-import sample.Modelo.Empleado;
+import sample.Modelo.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -39,8 +40,30 @@ public class FacturacionControlador implements Initializable {
     @FXML private AnchorPane APBotonesPedido;
     @FXML private AnchorPane APBotonesCompra;
     @FXML private AnchorPane APBotonesProducto;
+    //ComboBox
+    @FXML private ComboBox cmbVendedor;
+    @FXML private ComboBox cmbProveedor;
+    @FXML private ComboBox cmbForma_farmaceutica;
+    @FXML private ComboBox cmbUnidadMedida;
+    @FXML private ComboBox cmbUtilidad;
+    @FXML private ComboBox cmbIndicacion;
 
-    private ObservableList<Empleado> ListaVendedores;
+    @FXML private TextField txtBuscar;
+    @FXML private TableView TVAgregarProductos;
+
+    //private ObservableList<Empleado> ListaVendedores;
+    private ObservableList<Proveedor> ListaProveedores;
+    private ObservableList<Producto> ListaProducto;
+    private ObservableList<Producto> ListaUnidadMedida;
+    private ObservableList<UtilidadProducto> ListaUtilidad;
+    private ObservableList<Indicacion> ListaIndicacion;
+
+    ObservableList<String> listaVendedores = FXCollections.observableArrayList();
+    ObservableList<String> listaProveedores = FXCollections.observableArrayList();
+    ObservableList<String> listaForma_farmaceutica = FXCollections.observableArrayList();
+    ObservableList<String> listaUnidadMedida = FXCollections.observableArrayList();
+    ObservableList<String> listaUtilidad = FXCollections.observableArrayList();
+    ObservableList<String> listaIndicacion = FXCollections.observableArrayList();
 
     private Conexion conexion;
 
@@ -49,14 +72,15 @@ public class FacturacionControlador implements Initializable {
         conexion = new Conexion();
         conexion.establecerConexion();
 
-        // Inicializar listas
-        ListaVendedores = FXCollections.observableArrayList();
-
         //LLenar listas
-        Empleado.llenarInformacion(conexion.getConnection(), ListaVendedores);
+        Empleado.llenarCmbNombresEmpleado(conexion.getConnection(), listaVendedores);
+        Proveedor.llenarCmbNombresProveedores(conexion.getConnection(), listaProveedores);
+        Producto.llenarCmbForma_farmaceutica(conexion.getConnection(), listaForma_farmaceutica);
 
         //Enlazar listas con ComboBox y TableView
-        cmbVendidoPor.setItems(ListaVendedores);
+        cmbVendedor.setItems(listaVendedores);
+        cmbProveedor.setItems(listaProveedores);
+        cmbForma_farmaceutica.setItems(listaForma_farmaceutica);
 
         conexion.cerrarConexion();
     }

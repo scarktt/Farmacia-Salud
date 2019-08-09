@@ -3,21 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="10bb5fcd-d027-4a95-8059-06b01c7bbcb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Conexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/DetalleCompraProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/DetalleCompraProducto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/DetallePedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/DetallePedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/DetalleProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/DetalleProducto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Empleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Lote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Lote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Pagos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Pagos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Pedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Proveedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Proveedor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Vista/Facturacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Vista/Facturacion.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Conexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#439#440#0" expanded="true" />
@@ -48,22 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="60" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#799#800#0" expanded="true" />
                 <element signature="e#827#828#0" expanded="true" />
@@ -73,29 +54,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/Vista/Facturacion.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="12" column="193" selection-start-line="12" selection-start-column="193" selection-end-line="12" selection-end-column="193" />
+            <state relative-caret-position="526">
+              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Producto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="338">
+              <caret line="148" column="66" selection-start-line="148" selection-start-column="66" selection-end-line="148" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Empleado.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="270">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,6 +102,7 @@
     <findStrings>
       <find>cmbEmpleado</find>
       <find>ComboBox</find>
+      <find>pressCerrarSesion</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,15 +136,17 @@
         <option value="$PROJECT_DIR$/src/sample/modelo/Producto.java" />
         <option value="$PROJECT_DIR$/src/sample/modelo/DetallePedido.java" />
         <option value="$PROJECT_DIR$/src/sample/modelo/Factura.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" />
         <option value="$PROJECT_DIR$/src/sample/Vista/Facturacion.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Producto.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -170,8 +159,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,6 +185,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="Controlador" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Modelo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
@@ -264,10 +260,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21255673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21567044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,7 +271,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3398693" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33868614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,42 +297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2122#2123#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2192#2193#0" expanded="true" />
-            <element signature="e#2251#2252#0" expanded="true" />
-            <element signature="e#2284#2285#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-            <element signature="e#2451#2452#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -715,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Producto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="113" column="35" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Factura.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -737,28 +689,32 @@
     <entry file="jar://$USER_HOME$/Downloads/mysql-connector-java-5.1.48-bin.jar!/com/mysql/jdbc/RowDataStatic.class" />
     <entry file="jar://$USER_HOME$/Downloads/mysql-connector-java-5.1.48-bin.jar!/com/mysql/jdbc/ResultSetRow.class" />
     <entry file="jar://$USER_HOME$/Downloads/mysql-connector-java-5.1.48-bin.jar!/com/mysql/jdbc/ResultSetImpl.class" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="361">
+          <caret line="2578" selection-start-line="2578" selection-end-line="2578" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Empleado.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="178">
+          <caret line="48" column="107" lean-forward="true" selection-start-line="48" selection-start-column="107" selection-end-line="48" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Vista/Facturacion.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="193" selection-start-line="12" selection-start-column="193" selection-end-line="12" selection-end-column="193" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#799#800#0" expanded="true" />
             <element signature="e#827#828#0" expanded="true" />
@@ -766,20 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="60" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Conexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#439#440#0" expanded="true" />
@@ -790,11 +736,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Vista/Facturacion.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/javafx-src.zip!/javafx/collections/ObservableList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="12" column="193" selection-start-line="12" selection-start-column="193" selection-end-line="12" selection-end-column="193" />
+        <state relative-caret-position="-1086">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Empleado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="94" column="58" lean-forward="true" selection-start-line="94" selection-start-column="58" selection-end-line="94" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Producto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="148" column="66" selection-start-line="148" selection-start-column="66" selection-end-line="148" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
