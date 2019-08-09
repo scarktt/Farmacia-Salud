@@ -37,6 +37,7 @@ public class Empleado{
     public IntegerProperty IDempleadoProperty() {
         return IDempleado;
     }
+
     //Metodos atributo: CedulaEmpleado
     public String getCedulaEmpleado() {
         return CedulaEmpleado.get();
@@ -47,6 +48,7 @@ public class Empleado{
     public StringProperty CedulaEmpleadoProperty() {
         return CedulaEmpleado;
     }
+
     //Metodos atributo: Nombre
     public String getNombre() {
         return Nombre.get();
@@ -57,6 +59,7 @@ public class Empleado{
     public StringProperty NombreProperty() {
         return Nombre;
     }
+
     //Metodos atributo: Usuario
     public String getUsuario() {
         return Usuario.get();
@@ -67,6 +70,7 @@ public class Empleado{
     public StringProperty UsuarioProperty() {
         return Usuario;
     }
+
     //Metodos atributo: Pass
     public String getPass() {
         return Pass.get();
