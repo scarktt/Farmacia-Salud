@@ -302,7 +302,7 @@
       </AnchorPane>
       <AnchorPane fx:id="APUser" layoutX="1052.0" layoutY="121.0" onMouseExited="#exitUsuario" prefHeight="101.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="1052.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
          <children>
-          <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
+            <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
                <children>
                   <Label fx:id="lblRol" layoutY="6.0" text="Rol: Administrador" AnchorPane.leftAnchor="30.0">
                      <font>
@@ -327,7 +327,7 @@
                   <Separator prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0" />
                </children>
             </AnchorPane>
-          <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+            <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
                <children>
                   <Label fx:id="lblCerrarSesion" layoutX="27.0" layoutY="7.0" text="Cerrar sesión" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="7.0">
                      <font>
@@ -390,11 +390,11 @@
                               <Image url="@../img/agregar.png" />
                            </image>
                         </ImageView>
-                        <TableView layoutX="46.0" layoutY="341.0" prefHeight="200.0" prefWidth="636.0">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
-                          </columns>
+                        <TableView fx:id="TVAgregarProductos" layoutX="46.0" layoutY="341.0" prefHeight="200.0" prefWidth="636.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
                         </TableView>
                      </children>
                   </AnchorPane>

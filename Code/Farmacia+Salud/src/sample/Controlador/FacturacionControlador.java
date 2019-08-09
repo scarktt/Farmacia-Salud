@@ -84,6 +84,44 @@ public class FacturacionControlador implements Initializable {
         //No funciona
     }
 
+    //Muestra en pantalla la ventana de facturacion
+    public void pressFacturacion(MouseEvent event) {
+        APVenta.setVisible(true);
+        APBotonesFacturacion.setVisible(true);
+        APFacturacion.setVisible(true);
+        APHistoricoVentas.setVisible(false);
+        APDetalleFactura.setVisible(false);
+        APCompra.setVisible(false);
+        APCompras.setVisible(false);
+        APBotonesCompra.setVisible(false);
+        APCompras2.setVisible(false);
+        APDetalleCompra.setVisible(false);
+        APHistoricoCompras.setVisible(false);
+        APPedidos.setVisible(false);
+        APPedido.setVisible(false);
+        APDetallePedido.setVisible(false);
+        APHistoricoPedidos.setVisible(false);
+        APProductos.setVisible(false);
+        APProducto.setVisible(false);
+        APBotonesCompra.setVisible(false);
+        APBotonesPedido.setVisible(false);
+        APBotonesProducto.setVisible(false);
+
+    }
+
+    //Muestra en pantalla la ventana de detalle factura
+    public void pressDetalleFactura(MouseEvent event) {
+        APDetalleFactura.setVisible(true);
+        APFacturacion.setVisible(false);
+        APHistoricoVentas.setVisible(false);
+    }
+
+    //Muestra en pantalla la ventana de historico de ventas
+    public void pressHistoricoVentas(MouseEvent event) {
+        APHistoricoVentas.setVisible(true);
+        APDetalleFactura.setVisible(false);
+        APFacturacion.setVisible(false);
+    }
 
 
     //Muestra en pantalla la ventana de compras
