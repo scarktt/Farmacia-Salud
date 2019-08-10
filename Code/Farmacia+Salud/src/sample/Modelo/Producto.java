@@ -160,4 +160,34 @@ public class Producto {
             e.printStackTrace();
         }
     }
+
+    public static void llenarCmbUnidadMedida (Connection connection, ObservableList<String> lista) {
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultado = statement.executeQuery("SELECT DISTINCT Unidad_medida FROM Producto");
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("Unidad_medida"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al agregar");
+            e.printStackTrace();
+        }
+    }
+
+    public static void llenarCmbNombresProductos (Connection connection, ObservableList<String> lista) {
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultado = statement.executeQuery("SELECT Nombre FROM Producto");
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("Nombre"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al agregar");
+            e.printStackTrace();
+        }
+    }
 }
