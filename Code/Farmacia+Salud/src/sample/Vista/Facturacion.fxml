@@ -526,11 +526,11 @@
                         <Separator layoutX="204.0" layoutY="32.0" prefHeight="3.0" prefWidth="918.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="32.0" />
                         <TableView fx:id="TVDetalleFactura" layoutX="102.0" layoutY="62.0" prefHeight="358.0" prefWidth="932.0">
                            <columns>
-                              <TableColumn fx:id="DFTCodigo" prefWidth="120.0" text="Código" />
-                              <TableColumn fx:id="DFTCDescripcion" prefWidth="300.0" text="Descripción" />
-                              <TableColumn fx:id="DFTCCantidad" prefWidth="170.0" text="Cantidad" />
-                              <TableColumn fx:id="DFTCPrecUnit" minWidth="2.0" prefWidth="170.0" text="Precio Unitario" />
-                              <TableColumn fx:id="DFTCPrecTotal" minWidth="0.0" prefWidth="170.0" text="Precio Total" />
+                              <TableColumn prefWidth="120.0" text="Código" />
+                              <TableColumn prefWidth="300.0" text="Descripción" />
+                              <TableColumn prefWidth="170.0" text="Cantidad" />
+                              <TableColumn minWidth="2.0" prefWidth="170.0" text="Precio Unitario" />
+                              <TableColumn minWidth="0.0" prefWidth="170.0" text="Precio Total" />
                            </columns>
                         </TableView>
                         <Button fx:id="btnImprimir" layoutX="532.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Imprimir">
@@ -571,9 +571,9 @@
                         </Label>
                         <TableView fx:id="TVSeleccionarPedido" layoutX="31.0" layoutY="77.0" prefHeight="135.0" prefWidth="556.0" AnchorPane.topAnchor="77.0">
                            <columns>
-                              <TableColumn fx:id="HVTCCodigo1" prefWidth="88.0" text="Pedido" />
-                              <TableColumn fx:id="HVTCDescripcion1" prefWidth="99.0" text="Fecha Entrega" />
-                              <TableColumn fx:id="HVTCUnidadesVendidas1" prefWidth="128.0" text="Pedido realizado por" />
+                              <TableColumn prefWidth="88.0" text="Pedido" />
+                              <TableColumn prefWidth="99.0" text="Fecha Entrega" />
+                              <TableColumn prefWidth="128.0" text="Pedido realizado por" />
                               <TableColumn minWidth="2.0" text="Editar" />
                               <TableColumn minWidth="2.0" text="Cancelar" />
                               <TableColumn minWidth="2.0" text="Comprar" />
@@ -637,9 +637,9 @@
                      <children>
                         <TableView fx:id="TVPedido" layoutX="14.0" layoutY="43.0" prefHeight="321.0" prefWidth="1171.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="26.0">
                            <columns>
-                              <TableColumn fx:id="HVTCCodigo" prefWidth="88.0" text="Pedido" />
-                              <TableColumn fx:id="HVTCDescripcion" prefWidth="165.0" text="Fecha Entrega" />
-                              <TableColumn fx:id="HVTCUnidadesVendidas" prefWidth="102.0" text="Finalizar" />
+                              <TableColumn prefWidth="88.0" text="Pedido" />
+                              <TableColumn prefWidth="165.0" text="Fecha Entrega" />
+                              <TableColumn prefWidth="102.0" text="Finalizar" />
                               <TableColumn minWidth="2.0" prefWidth="220.0" text="Producto" />
                               <TableColumn minWidth="2.0" prefWidth="219.0" text="Proveedor" />
                               <TableColumn minWidth="2.0" prefWidth="94.0" text="Cantidad" />
@@ -852,13 +852,13 @@
                               </ImageView>
                               <TableView fx:id="TVAgregarPedido" layoutX="7.0" layoutY="40.0" prefHeight="275.0" prefWidth="713.0">
                                  <columns>
-                                    <TableColumn fx:id="TCProducto1" prefWidth="65.0" text="Pedido" />
-                                    <TableColumn fx:id="TCCantidad1" minWidth="100.0" prefWidth="132.0" text="Fecha Entrega" />
-                                    <TableColumn fx:id="TCDescuento1" minWidth="100.0" prefWidth="127.0" text="Producto" />
-                                    <TableColumn fx:id="TCAgregar1" minWidth="100.0" prefWidth="126.0" text="Proveedor" />
-                                    <TableColumn fx:id="TCProducto11" prefWidth="82.0" text="Cantidad" />
-                                    <TableColumn fx:id="TCProducto111" prefWidth="66.0" text="Precio" />
-                                    <TableColumn fx:id="TCProducto1111" prefWidth="114.0" text="Descuento" />
+                                    <TableColumn prefWidth="65.0" text="Pedido" />
+                                    <TableColumn minWidth="100.0" prefWidth="132.0" text="Fecha Entrega" />
+                                    <TableColumn minWidth="100.0" prefWidth="127.0" text="Producto" />
+                                    <TableColumn minWidth="100.0" prefWidth="126.0" text="Proveedor" />
+                                    <TableColumn prefWidth="82.0" text="Cantidad" />
+                                    <TableColumn prefWidth="66.0" text="Precio" />
+                                    <TableColumn prefWidth="114.0" text="Descuento" />
                                  </columns>
                               </TableView>
                            </children>
