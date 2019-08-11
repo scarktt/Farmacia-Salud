@@ -79,7 +79,7 @@ public class FacturacionControlador implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        /*conexion = new Conexion();
+        conexion = new Conexion();
         conexion.establecerConexion();
 
         //LLenar listas
@@ -100,7 +100,7 @@ public class FacturacionControlador implements Initializable {
         cmbUtilidad.setItems(listaUtilidad);
         cmbProductoNombre.setItems(listaNombresProductos);
 
-        conexion.cerrarConexion();*/
+        conexion.cerrarConexion();
     }
 
     //Cierra el programa
