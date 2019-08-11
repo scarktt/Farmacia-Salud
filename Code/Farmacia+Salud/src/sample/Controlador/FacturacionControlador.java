@@ -2,26 +2,33 @@ package sample.Controlador;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.SplitPane;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import sample.Modelo.*;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class FacturacionControlador implements Initializable {
 
-    @FXML private AnchorPane APUser;
-    @FXML private AnchorPane APNotificacion;
+    @FXML private AnchorPane Contenedor;
+    @FXML private SplitPane SPUser;
+    @FXML private SplitPane SPNotificacion;
     @FXML private AnchorPane APVenta;
     @FXML private AnchorPane APFacturacion;
-    @FXML private AnchorPane APDetalleFactura;
+    @FXML private AnchorPane APConfiguracion;
+    @FXML private AnchorPane APRol;
+    @FXML private AnchorPane APCerrarSesion;
+    @FXML private AnchorPane APNotificacion;
+   // @FXML private AnchorPane APDetalleFactura;
     @FXML private AnchorPane APHistoricoVentas;
     @FXML private AnchorPane APCompra;
     @FXML private AnchorPane APCompras;
@@ -72,7 +79,7 @@ public class FacturacionControlador implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        conexion = new Conexion();
+        /*conexion = new Conexion();
         conexion.establecerConexion();
 
         //LLenar listas
@@ -93,7 +100,7 @@ public class FacturacionControlador implements Initializable {
         cmbUtilidad.setItems(listaUtilidad);
         cmbProductoNombre.setItems(listaNombresProductos);
 
-        conexion.cerrarConexion();
+        conexion.cerrarConexion();*/
     }
 
     //Cierra el programa
@@ -107,13 +114,16 @@ public class FacturacionControlador implements Initializable {
 
     //Muestra en pantalla el panel de Usuario o notificacion
     public void pressUsuario(MouseEvent event) {
-        APUser.setVisible(true);
+        SPUser.setVisible(true);
+        APConfiguracion.setVisible(true);
+        APRol.setVisible(true);
+        APCerrarSesion.setVisible(true);
     }
-    public void pressNotificacion(MouseEvent event) { APNotificacion.setVisible(true);}
+    public void pressNotificacion(MouseEvent event) { SPNotificacion.setVisible(true); APNotificacion.setVisible(true);}
 
     //Oculta el panel de usuario o notificacion
-    public void exitUsuario(MouseEvent event) { APUser.setVisible(false);}
-    public void exitNotificacion(MouseEvent event) { APNotificacion.setVisible(false);}
+    public void exitUsuario(MouseEvent event) { SPUser.setVisible(false);}
+    public void exitNotificacion(MouseEvent event) { SPNotificacion.setVisible(false);}
 
     public void pressCerrarSesion(MouseEvent event) throws IOException {
         //No funciona
@@ -125,7 +135,7 @@ public class FacturacionControlador implements Initializable {
         APBotonesFacturacion.setVisible(true);
         APFacturacion.setVisible(true);
         APHistoricoVentas.setVisible(false);
-        APDetalleFactura.setVisible(false);
+       // APDetalleFactura.setVisible(false);
         APCompra.setVisible(false);
         APCompras.setVisible(false);
         APBotonesCompra.setVisible(false);
@@ -144,9 +154,15 @@ public class FacturacionControlador implements Initializable {
 
     }
 
+    @FXML
+    public void loadDetalleFactura(ActionEvent event) throws IOException{
+        AnchorPane APDetalleFactura = FXMLLoader.load(getClass().getResource("DetalleFactura.fxml"));
+        Contenedor.getChildren().setAll(APDetalleFactura);
+    }
+
     //Muestra en pantalla la ventana de detalle factura
     public void pressDetalleFactura(MouseEvent event) {
-        APDetalleFactura.setVisible(true);
+        //APDetalleFactura.setVisible(true);
         APFacturacion.setVisible(false);
         APHistoricoVentas.setVisible(false);
     }
@@ -154,7 +170,7 @@ public class FacturacionControlador implements Initializable {
     //Muestra en pantalla la ventana de historico de ventas
     public void pressHistoricoVentas(MouseEvent event) {
         APHistoricoVentas.setVisible(true);
-        APDetalleFactura.setVisible(false);
+       // APDetalleFactura.setVisible(false);
         APFacturacion.setVisible(false);
     }
 
@@ -166,7 +182,7 @@ public class FacturacionControlador implements Initializable {
         APCompras.setVisible(true);
         APVenta.setVisible(false);
         APHistoricoVentas.setVisible(false);
-        APDetalleFactura.setVisible(false);
+        //APDetalleFactura.setVisible(false);
         APFacturacion.setVisible(false);
         APCompras2.setVisible(false);
         APDetalleCompra.setVisible(false);
@@ -217,7 +233,7 @@ public class FacturacionControlador implements Initializable {
         APBotonesCompra.setVisible(false);
         APVenta.setVisible(false);
         APHistoricoVentas.setVisible(false);
-        APDetalleFactura.setVisible(false);
+        //APDetalleFactura.setVisible(false);
         APFacturacion.setVisible(false);
         APCompra.setVisible(false);
         APCompras.setVisible(false);
@@ -253,7 +269,7 @@ public class FacturacionControlador implements Initializable {
         APBotonesCompra.setVisible(false);
         APVenta.setVisible(false);
         APHistoricoVentas.setVisible(false);
-        APDetalleFactura.setVisible(false);
+       // APDetalleFactura.setVisible(false);
         APFacturacion.setVisible(false);
         APCompra.setVisible(false);
         APCompras.setVisible(false);

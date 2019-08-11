@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -11,1188 +12,445 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.FacturacionControlador">
-   <children>
-      <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1263.0" style="-fx-background-color: #D7F9F1;">
+<children>
+   <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1263.0" style="-fx-background-color: #D7F9F1;">
+      <children>
+         <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
+            <image>
+               <Image url="@../img/cerrar.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="imgMin" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
+            <image>
+               <Image url="@../img/menos.png" />
+            </image>
+         </ImageView>
+      </children></AnchorPane>
+   <AnchorPane layoutY="36.0" prefHeight="616.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="36.0">
+      <children>
+         <ImageView fitHeight="65.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="620.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <image>
+               <Image url="@../img/disposicion.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="btnCompras" fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="118.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="506.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="118.0">
+            <image>
+               <Image url="@../img/carrito-de-compras.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="btnPedidos" fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="208.0">
+            <image>
+               <Image url="@../img/camion-de-carga.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="298.0" onMouseClicked="#pressPedido" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="298.0">
+            <image>
+               <Image url="@../img/apreton-de-manos.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="378.0">
+            <image>
+               <Image url="@../img/dinero.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="468.0" onMouseClicked="#pressProducto" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="156.0" AnchorPane.topAnchor="468.0">
+            <image>
+               <Image url="@../img/p-dentro-de-un-circulo.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="558.0">
+            <image>
+               <Image url="@../img/simbolo-del-telefono-auricular-en-un-circulo.png" />
+            </image>
+         </ImageView>
+         <Separator layoutX="1.0" layoutY="64.0" prefHeight="6.0" prefWidth="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="63.0" />
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="59.0" layoutY="34.0" prefHeight="68.0" prefWidth="1203.0" style="-fx-background-color: #C7CCB9;" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="34.0">
+      <children>
+         <ImageView fx:id="imgUsuario" fitHeight="58.0" fitWidth="145.0" layoutX="1108.0" layoutY="7.0" onMouseClicked="#pressUsuario" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <image>
+               <Image url="@../img/usuario.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="922.0" layoutY="20.0" text="Gabriela Castillo" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <font>
+               <Font name="Calibri Bold" size="24.0" />
+            </font>
+         </Label>
+         <ImageView fx:id="Notificacion" fitHeight="30.0" fitWidth="100.0" layoutX="868.0" layoutY="19.0" onMouseClicked="#pressNotificacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.topAnchor="19.0">
+            <image>
+               <Image url="@../img/campana.png" />
+            </image>
+         </ImageView>
+         <AnchorPane fx:id="APBotonesFacturacion" layoutX="14.0" layoutY="9.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="btnInicio" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressFacturacion" style="-fx-background-color: #A2AAAD;" text="Inicio" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnDetalleFactura" layoutX="108.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#loadDetalleFactura" style="-fx-background-color: #A2AAAD;" text="Detalle Factura" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoVenta" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoVentas" style="-fx-background-color: #A2AAAD;" text="Histórico de venta" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesCompra" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="btn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnDetalleCompra" layoutX="122.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetalleCompra" style="-fx-background-color: #A2AAAD;" text="Detalle Compra" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoCompra" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoCompra" style="-fx-background-color: #A2AAAD;" text="Histórico de compra" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btn2" layoutX="58.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras2" style="-fx-background-color: #A2AAAD;" text="2">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesPedido" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="btnPedido1" layoutX="51.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnDetallePedido" layoutX="112.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetallePedido" style="-fx-background-color: #A2AAAD;" text="Detalle Pedido" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoPedido" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoPedido" style="-fx-background-color: #A2AAAD;" text="Histórico de Pedido" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesProducto" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="499.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="Prbtn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressProducto" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="PrbtnReducirStock" layoutX="219.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetalleCompra" style="-fx-background-color: #A2AAAD;" text="Reducir Stock" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="PrbtnHistoricoPerdida" layoutX="347.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoProducto" style="-fx-background-color: #A2AAAD;" text="Histórico de pérdida" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="PrbtnAgregarProducto" layoutX="69.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras2" style="-fx-background-color: #A2AAAD;" text="Agregar producto">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="317.0" layoutY="223.0" prefHeight="575.0" prefWidth="1135.0" style="-fx-background-color: #423E47;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
+      <children>
+         <ListView editable="true" fixedCellSize="3.0" layoutX="66.0" layoutY="65.0" prefHeight="470.0" prefWidth="1070.0" visible="false" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="65.0" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="APNotificacion" onMouseExited="#exitNotificacion" prefHeight="220.0" prefWidth="249.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="740.0" AnchorPane.topAnchor="120.0">
+      <children>
+         <AnchorPane fx:id="APRol1" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
+            <children>
+               <Label fx:id="lblNotificacion" alignment="CENTER" layoutX="61.0" layoutY="5.0" text="Notificaciones" AnchorPane.leftAnchor="61.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="254.0" AnchorPane.topAnchor="37.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APEntrega" layoutY="37.0" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0">
+            <children>
+               <Label layoutX="81.0" layoutY="3.0" prefHeight="28.0" prefWidth="91.0" text="Entrega de " AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="3.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblEntrega" layoutX="23.0" layoutY="27.0" prefHeight="28.0" prefWidth="208.0" text="dist. Ramos en 12 horas">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APNotiCantidad" layoutY="98.0" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="58.0" prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="101.0">
+            <children>
+               <Label layoutX="36.0" layoutY="-10.0" text="Quedan" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="-10.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblCantidad" layoutX="110.0" text="10 unidades" AnchorPane.leftAnchor="110.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblProducto" layoutX="20.0" layoutY="30.0" text="de paracetamol" AnchorPane.leftAnchor="20.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblUnidadMedida" layoutX="150.0" layoutY="30.0" text="de 1 mg" AnchorPane.leftAnchor="150.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+         <ImageView fx:id="imgFlecha1" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="-22.0">
+            <image>
+               <Image url="@../img/flecha.png" />
+            </image>
+         </ImageView>
+         <AnchorPane fx:id="APNotifCantidad1" layoutY="95.0" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="58.0" prefWidth="254.0" AnchorPane.topAnchor="160.0">
+            <children>
+               <Label layoutX="30.0" layoutY="-9.0" text="Quedan" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="-9.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblCantidad1" layoutX="104.0" layoutY="1.0" text="10 unidades" AnchorPane.leftAnchor="104.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblProducto1" layoutX="14.0" layoutY="31.0" text="de ciprofloxacina " AnchorPane.leftAnchor="14.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblUnidadMedida1" layoutX="154.0" layoutY="31.0" text="de 50 mg" AnchorPane.leftAnchor="154.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="254.0" AnchorPane.leftAnchor="0.0" />
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="APUser" layoutX="1052.0" layoutY="121.0" onMouseExited="#exitUsuario" prefHeight="101.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="1052.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+      <children>
+         <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
+            <children>
+               <Label fx:id="lblRol" layoutY="6.0" text="Rol: Administrador" AnchorPane.leftAnchor="30.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="208.0" AnchorPane.topAnchor="37.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APConfiguracion" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0">
+            <children>
+               <Label fx:id="lblConfiguracion" layoutX="1.0" layoutY="7.0" text="Configuración" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="65.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <ImageView fx:id="imgConfiguracion" fitHeight="29.0" fitWidth="30.0" layoutX="28.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="5.0">
+                  <image>
+                     <Image url="@../img/Ajuste.png" />
+                  </image>
+               </ImageView>
+               <Separator prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+            <children>
+               <Label fx:id="lblCerrarSesion" layoutX="27.0" layoutY="7.0" text="Cerrar sesión" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="7.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <ImageView fx:id="imgCerrarSesion" fitHeight="29.0" fitWidth="30.0" layoutX="30.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="5.0">
+                  <image>
+                     <Image url="@../img/exit.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </AnchorPane>
+         <ImageView fx:id="imgFlecha" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="-22.0">
+            <image>
+               <Image url="@../img/flecha.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+      <AnchorPane fx:id="Contenedor" layoutX="60.0" layoutY="101.0" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
          <children>
-            <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
-               <image>
-                  <Image url="@../img/cerrar.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="imgMin" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
-               <image>
-                  <Image url="@../img/menos.png" />
-               </image>
-            </ImageView>
-         </children></AnchorPane>
-      <AnchorPane layoutY="36.0" prefHeight="616.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="36.0">
-         <children>
-            <ImageView fitHeight="65.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="620.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
-               <image>
-                  <Image url="@../img/disposicion.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="btnCompras" fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="118.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="506.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="118.0">
-               <image>
-                  <Image url="@../img/carrito-de-compras.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="btnPedidos" fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="208.0" onMouseClicked="#pressCompras" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="208.0">
-               <image>
-                  <Image url="@../img/camion-de-carga.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="298.0" onMouseClicked="#pressPedido" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="298.0">
-               <image>
-                  <Image url="@../img/apreton-de-manos.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="378.0">
-               <image>
-                  <Image url="@../img/dinero.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="468.0" onMouseClicked="#pressProducto" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="156.0" AnchorPane.topAnchor="468.0">
-               <image>
-                  <Image url="@../img/p-dentro-de-un-circulo.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="5.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="558.0">
-               <image>
-                  <Image url="@../img/simbolo-del-telefono-auricular-en-un-circulo.png" />
-               </image>
-            </ImageView>
-            <Separator layoutX="1.0" layoutY="64.0" prefHeight="6.0" prefWidth="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="63.0" />
+         <AnchorPane fx:id="APFacturacion" layoutX="2.0" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="0.0">
+            <children>
+               <AnchorPane layoutY="11.0" prefHeight="564.0" prefWidth="826.0" AnchorPane.topAnchor="11.0">
+                  <children>
+                     <Label layoutX="62.0" layoutY="5.0" text="Datos Factura">
+                        <font>
+                           <Font name="Calibri" size="20.0" />
+                        </font>
+                     </Label>
+                     <Separator layoutX="14.0" layoutY="13.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0" />
+                     <Separator layoutX="11.0" layoutY="15.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="15.0" />
+                     <Separator layoutX="10.0" layoutY="547.0" prefHeight="3.0" prefWidth="807.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="547.0" />
+                     <Separator layoutX="836.0" layoutY="62.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="815.0" AnchorPane.topAnchor="15.0" />
+                     <Separator layoutX="185.0" layoutY="9.0" prefHeight="3.0" prefWidth="636.0" style="-fx-background-color: #000000;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="13.0" />
+                     <Label layoutX="46.0" layoutY="57.0" text="Vendedor">
+                        <font>
+                           <Font name="Calibri" size="18.0" />
+                        </font>
+                     </Label>
+                     <ComboBox fx:id="cmbVendedor" layoutX="141.0" layoutY="50.0" prefHeight="37.0" prefWidth="190.0" promptText="Gabriela Castillo" style="-fx-background-color: #FFFFFF;" />
+                     <Label layoutX="305.0" layoutY="173.0" text="Adicionar Productos">
+                        <font>
+                           <Font name="Calibri" size="24.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="txtBuscar" layoutX="224.0" layoutY="212.0" prefHeight="40.0" prefWidth="361.0" promptText="       Buscar">
+                        <font>
+                           <Font name="Calibri" size="18.0" />
+                        </font>
+                     </TextField>
+                           <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="230.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../img/search.png" />
+                              </image>
+                           </ImageView>
+                           <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="694.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../img/agregar.png" />
+                              </image>
+                           </ImageView>
+                           <TableView fx:id="TVAgregarProductos" layoutX="180.0" layoutY="326.0" prefHeight="200.0" prefWidth="450.0">
+                              <columns>
+                                 <TableColumn fx:id="TCProducto" prefWidth="150.0" text="Producto" />
+                                 <TableColumn fx:id="TCCantidad" minWidth="100.0" prefWidth="52.0" text="Cantidad" />
+                                 <TableColumn fx:id="TCDescuento" minWidth="100.0" prefWidth="75.0" text="Descuento" />
+                                 <TableColumn fx:id="TCAgregar" minWidth="100.0" prefWidth="85.0" text="Agregar" />
+                              </columns>
+                           </TableView>
+                        </children>
+                     </AnchorPane>
+                     <AnchorPane layoutX="820.0" prefHeight="564.0" prefWidth="351.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                           <Label layoutX="65.0" layoutY="12.0" text="Búsqueda Avanzada">
+                              <font>
+                                 <Font name="Calibri" size="24.0" />
+                              </font>
+                           </Label>
+                           <Separator layoutX="17.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
+                           <Separator layoutX="11.0" layoutY="25.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+                           <Separator layoutX="17.0" layoutY="558.0" prefHeight="3.0" prefWidth="333.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="558.0" />
+                           <Separator layoutX="344.0" layoutY="25.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="25.0" />
+                           <Separator layoutX="272.0" layoutY="24.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="24.0" />
+                           <Button fx:id="btnRestablecer" layoutX="57.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Restablecer">
+                              <effect>
+                                 <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                              </effect>
+                              <font>
+                                 <Font name="Calibri Bold" size="14.0" />
+                              </font>
+                           </Button>
+                           <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
+                           <ComboBox fx:id="cmbForma_Farmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
+                           <Label layoutX="58.0" layoutY="240.0" text="Unidad de medida">
+                              <font>
+                                 <Font name="Calibri" size="20.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="txtMedida" layoutX="57.0" layoutY="288.0" prefHeight="28.0" prefWidth="60.0">
+                              <font>
+                                 <Font name="Calibri" size="18.0" />
+                              </font>
+                           </TextField>
+                           <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="290.0" prefHeight="30.0" prefWidth="174.0" promptText="Unidad de medida" style="-fx-background-color: #FFFFFF;" />
+                           <ComboBox fx:id="cmbUtilidad" layoutX="57.0" layoutY="360.0" prefHeight="30.0" prefWidth="239.0" promptText="Utilidad" style="-fx-background-color: #FFFFFF;" />
+                           <ComboBox fx:id="cmbIndicacion" layoutX="57.0" layoutY="422.0" prefHeight="30.0" prefWidth="239.0" promptText="Indicación" style="-fx-background-color: #FFFFFF;" />
+                           <CheckBox fx:id="chbVentaRestr" layoutX="64.0" layoutY="489.0" mnemonicParsing="false" text="Venta Restringida">
+                              <font>
+                                 <Font name="Calibri" size="16.0" />
+                              </font>
+                           </CheckBox>
+                           <CheckBox fx:id="chbGenerico" layoutX="65.0" layoutY="527.0" mnemonicParsing="false" text="Génerico">
+                              <font>
+                                 <Font name="Calibri" size="16.0" />
+                              </font>
+                           </CheckBox>
+                        </children>
+                     </AnchorPane>
+                  </children>
+                  </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="59.0" layoutY="34.0" prefHeight="68.0" prefWidth="1203.0" style="-fx-background-color: #C7CCB9;" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="34.0">
-         <children>
-            <ImageView fx:id="imgUsuario" fitHeight="58.0" fitWidth="145.0" layoutX="1108.0" layoutY="7.0" onMouseClicked="#pressUsuario" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
-               <image>
-                  <Image url="@../img/usuario.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="922.0" layoutY="20.0" text="Gabriela Castillo" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
-               <font>
-                  <Font name="Calibri Bold" size="24.0" />
-               </font>
-            </Label>
-            <ImageView fx:id="Notificacion" fitHeight="30.0" fitWidth="100.0" layoutX="868.0" layoutY="19.0" onMouseClicked="#pressNotificacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.topAnchor="19.0">
-               <image>
-                  <Image url="@../img/campana.png" />
-               </image>
-            </ImageView>
-            <AnchorPane fx:id="APBotonesFacturacion" layoutX="14.0" layoutY="9.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
-               <children>
-                  <Button fx:id="btnInicio" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressFacturacion" style="-fx-background-color: #A2AAAD;" text="Inicio" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnDetalleFactura" layoutX="108.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressDetalleFactura" style="-fx-background-color: #A2AAAD;" text="Detalle Factura" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnHistoricoVenta" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoVentas" style="-fx-background-color: #A2AAAD;" text="Histórico de venta" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APBotonesCompra" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
-               <children>
-                  <Button fx:id="btn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnDetalleCompra" layoutX="122.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetalleCompra" style="-fx-background-color: #A2AAAD;" text="Detalle Compra" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnHistoricoCompra" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoCompra" style="-fx-background-color: #A2AAAD;" text="Histórico de compra" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btn2" layoutX="58.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras2" style="-fx-background-color: #A2AAAD;" text="2">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APBotonesPedido" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
-               <children>
-                  <Button fx:id="btnPedido1" layoutX="51.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnDetallePedido" layoutX="112.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetallePedido" style="-fx-background-color: #A2AAAD;" text="Detalle Pedido" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnHistoricoPedido" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoPedido" style="-fx-background-color: #A2AAAD;" text="Histórico de Pedido" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APBotonesProducto" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="499.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
-               <children>
-                  <Button fx:id="Prbtn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressProducto" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="PrbtnReducirStock" layoutX="219.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetalleCompra" style="-fx-background-color: #A2AAAD;" text="Reducir Stock" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="PrbtnHistoricoPerdida" layoutX="347.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressHistoricoProducto" style="-fx-background-color: #A2AAAD;" text="Histórico de pérdida" AnchorPane.topAnchor="12.0">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="PrbtnAgregarProducto" layoutX="69.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressCompras2" style="-fx-background-color: #A2AAAD;" text="Agregar producto">
-                     <effect>
-                        <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                     </effect>
-                     <font>
-                        <Font name="Calibri Bold" size="14.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="317.0" layoutY="223.0" prefHeight="575.0" prefWidth="1135.0" style="-fx-background-color: #423E47;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
-         <children>
-            <ListView editable="true" fixedCellSize="3.0" layoutX="66.0" layoutY="65.0" prefHeight="470.0" prefWidth="1070.0" visible="false" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="65.0" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="APNotificacion" onMouseExited="#exitNotificacion" prefHeight="220.0" prefWidth="249.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="740.0" AnchorPane.topAnchor="120.0">
-         <children>
-            <AnchorPane fx:id="APRol1" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
-               <children>
-                  <Label fx:id="lblNotificacion" alignment="CENTER" layoutX="61.0" layoutY="5.0" text="Notificaciones" AnchorPane.leftAnchor="61.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Separator prefWidth="254.0" AnchorPane.topAnchor="37.0" />
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APEntrega" layoutY="37.0" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0">
-               <children>
-                  <Label layoutX="81.0" layoutY="3.0" prefHeight="28.0" prefWidth="91.0" text="Entrega de " AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="3.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblEntrega" layoutX="23.0" layoutY="27.0" prefHeight="28.0" prefWidth="208.0" text="dist. Ramos en 12 horas">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Separator prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APNotiCantidad" layoutY="98.0" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="58.0" prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="101.0">
-               <children>
-                  <Label layoutX="36.0" layoutY="-10.0" text="Quedan" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="-10.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblCantidad" layoutX="110.0" text="10 unidades" AnchorPane.leftAnchor="110.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblProducto" layoutX="20.0" layoutY="30.0" text="de paracetamol" AnchorPane.leftAnchor="20.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblUnidadMedida" layoutX="150.0" layoutY="30.0" text="de 1 mg" AnchorPane.leftAnchor="150.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <ImageView fx:id="imgFlecha1" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="-22.0">
-               <image>
-                  <Image url="@../img/flecha.png" />
-               </image>
-            </ImageView>
-            <AnchorPane fx:id="APNotifCantidad1" layoutY="95.0" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="58.0" prefWidth="254.0" AnchorPane.topAnchor="160.0">
-               <children>
-                  <Label layoutX="30.0" layoutY="-9.0" text="Quedan" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="-9.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblCantidad1" layoutX="104.0" layoutY="1.0" text="10 unidades" AnchorPane.leftAnchor="104.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblProducto1" layoutX="14.0" layoutY="31.0" text="de ciprofloxacina " AnchorPane.leftAnchor="14.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lblUnidadMedida1" layoutX="154.0" layoutY="31.0" text="de 50 mg" AnchorPane.leftAnchor="154.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Separator prefWidth="254.0" AnchorPane.leftAnchor="0.0" />
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="APUser" layoutX="1052.0" layoutY="121.0" onMouseExited="#exitUsuario" prefHeight="101.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="1052.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
-         <children>
-            <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
-               <children>
-                  <Label fx:id="lblRol" layoutY="6.0" text="Rol: Administrador" AnchorPane.leftAnchor="30.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Separator prefWidth="208.0" AnchorPane.topAnchor="37.0" />
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APConfiguracion" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0">
-               <children>
-                  <Label fx:id="lblConfiguracion" layoutX="1.0" layoutY="7.0" text="Configuración" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="65.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <ImageView fx:id="imgConfiguracion" fitHeight="29.0" fitWidth="30.0" layoutX="28.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="5.0">
-                     <image>
-                        <Image url="@../img/Ajuste.png" />
-                     </image>
-                  </ImageView>
-                  <Separator prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0" />
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
-               <children>
-                  <Label fx:id="lblCerrarSesion" layoutX="27.0" layoutY="7.0" text="Cerrar sesión" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="7.0">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <ImageView fx:id="imgCerrarSesion" fitHeight="29.0" fitWidth="30.0" layoutX="30.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="5.0">
-                     <image>
-                        <Image url="@../img/exit.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <ImageView fx:id="imgFlecha" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="-22.0">
-               <image>
-                  <Image url="@../img/flecha.png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="APVenta" layoutX="60.0" layoutY="102.0" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
-         <children>
-            <AnchorPane fx:id="APFacturacion" prefHeight="609.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <AnchorPane layoutY="9.0" prefHeight="564.0" prefWidth="826.0" AnchorPane.topAnchor="11.0">
-                     <children>
-                        <Label layoutX="62.0" layoutY="5.0" text="Datos Factura">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="14.0" layoutY="13.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0" />
-                        <Separator layoutX="11.0" layoutY="15.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="15.0" />
-                        <Separator layoutX="10.0" layoutY="547.0" prefHeight="3.0" prefWidth="807.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="547.0" />
-                        <Separator layoutX="836.0" layoutY="62.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="815.0" AnchorPane.topAnchor="15.0" />
-                        <Separator layoutX="185.0" layoutY="9.0" prefHeight="3.0" prefWidth="636.0" style="-fx-background-color: #000000;" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="13.0" />
-                        <Label layoutX="46.0" layoutY="57.0" text="Vendedor">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <!-- <ComboBox fx:id="cmbVendedor" layoutX="141.0" layoutY="50.0" prefHeight="37.0" prefWidth="190.0" promptText="Gabriela Castillo" style="-fx-background-color: #FFFFFF;" /> -->
-                        <Label layoutX="305.0" layoutY="173.0" text="Adicionar Productos">
-                           <font>
-                              <Font name="Calibri" size="24.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="txtBuscar" layoutX="224.0" layoutY="212.0" prefHeight="40.0" prefWidth="361.0" promptText="       Buscar">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </TextField>
-                        <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="230.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/search.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="694.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/agregar.png" />
-                           </image>
-                        </ImageView>
-                        <TableView fx:id="TVAgregarProductos" layoutX="180.0" layoutY="326.0" prefHeight="200.0" prefWidth="450.0">
-                           <columns>
-                              <TableColumn fx:id="TCProducto" prefWidth="150.0" text="Producto" />
-                              <TableColumn fx:id="TCCantidad" minWidth="100.0" prefWidth="52.0" text="Cantidad" />
-                              <TableColumn fx:id="TCDescuento" minWidth="100.0" prefWidth="75.0" text="Descuento" />
-                              <TableColumn fx:id="TCAgregar" minWidth="100.0" prefWidth="85.0" text="Agregar" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="820.0" prefHeight="564.0" prefWidth="351.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <Label layoutX="65.0" layoutY="12.0" text="Búsqueda Avanzada">
-                           <font>
-                              <Font name="Calibri" size="24.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="17.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="11.0" layoutY="25.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
-                        <Separator layoutX="17.0" layoutY="558.0" prefHeight="3.0" prefWidth="333.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="558.0" />
-                        <Separator layoutX="344.0" layoutY="25.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="25.0" />
-                        <Separator layoutX="272.0" layoutY="24.0" prefHeight="3.0" prefWidth="79.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="24.0" />
-                        <Button fx:id="btnRestablecer" layoutX="57.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Restablecer">
-                           <effect>
-                              <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                           </effect>
-                           <font>
-                              <Font name="Calibri Bold" size="14.0" />
-                           </font>
-                        </Button>
-                        <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedores" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbForma_farmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceutica" style="-fx-background-color: #FFFFFF;" />
-
-                        <Label layoutX="58.0" layoutY="240.0" text="Unidad de medida">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="txtMedida" layoutX="57.0" layoutY="288.0" prefHeight="28.0" prefWidth="60.0">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </TextField>
-                        <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="290.0" prefHeight="30.0" prefWidth="174.0" promptText="Unidad de medida" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbUtilidad" layoutX="57.0" layoutY="360.0" prefHeight="30.0" prefWidth="239.0" promptText="Utilidad" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbIndicacion" layoutX="57.0" layoutY="422.0" prefHeight="30.0" prefWidth="239.0" promptText="Indicación" style="-fx-background-color: #FFFFFF;" />
-                        <CheckBox fx:id="chbVentaRestr" layoutX="64.0" layoutY="489.0" mnemonicParsing="false" text="Venta Restringida">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <CheckBox fx:id="chbGenerico" layoutX="65.0" layoutY="527.0" mnemonicParsing="false" text="Génerico">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APHistoricoVentas" prefHeight="609.0" prefWidth="1167.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane fx:id="APHVFiltroVentas" layoutX="14.0" layoutY="14.0" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;" AnchorPane.rightAnchor="53.0">
-                     <children>
-                        <Label layoutX="72.0" layoutY="13.0" text="Filtro Ventas">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="181.0" layoutY="24.0" prefHeight="3.0" prefWidth="910.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="58.0" layoutY="57.0" text="Fecha desde:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="61.0" layoutY="101.0" text="Fecha hasta:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <DatePicker fx:id="DPFechaDesde" layoutX="189.0" layoutY="56.0" />
-                        <DatePicker fx:id="DPFechaHasta" layoutX="189.0" layoutY="100.0" />
-                        <ComboBox fx:id="cmbVendedor" layoutX="512.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Vendido por" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbDistribuidor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Distribuidor" style="-fx-background-color: #FFFFFF;" />
-                        <Button fx:id="btnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APHVHistorico" layoutX="14.0" layoutY="233.0" prefHeight="345.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;" AnchorPane.rightAnchor="53.0">
-                     <children>
-                        <Label layoutX="66.0" layoutY="14.0" text="Histórico Detalle">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                        <TableView fx:id="TVHistoricoVentas" layoutX="60.0" layoutY="53.0" prefHeight="200.0" prefWidth="981.0">
-                           <columns>
-                              <TableColumn prefWidth="102.0" text="Codigo" />
-                              <TableColumn prefWidth="589.0" text="Descripción" />
-                              <TableColumn prefWidth="152.0" text="Unidades Vendidas" />
-                              <TableColumn prefWidth="137.0" text="Disponible" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APDetalleFactura" prefHeight="609.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" visible="false" AnchorPane.leftAnchor="0.0">
-               <children>
-                  <AnchorPane prefHeight="594.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <Label layoutX="66.0" layoutY="21.0" text="Detalle Factura">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="566.0" prefHeight="3.0" prefWidth="1101.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="30.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="32.0" />
-                        <Separator layoutX="17.0" layoutY="32.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="34.0" />
-                        <Separator layoutX="1118.0" layoutY="32.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="34.0" />
-                        <Separator layoutX="204.0" layoutY="32.0" prefHeight="3.0" prefWidth="918.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="32.0" />
-                        <TableView fx:id="TVDetalleFactura" layoutX="102.0" layoutY="62.0" prefHeight="358.0" prefWidth="932.0">
-                           <columns>
-                              <TableColumn fx:id="DFTCodigo" prefWidth="120.0" text="Código" />
-                              <TableColumn fx:id="DFTCDescripcion" prefWidth="300.0" text="Descripción" />
-                              <TableColumn fx:id="DFTCCantidad" prefWidth="170.0" text="Cantidad" />
-                              <TableColumn fx:id="DFTCPrecUnit" minWidth="2.0" prefWidth="170.0" text="Precio Unitario" />
-                              <TableColumn fx:id="DFTCPrecTotal" minWidth="0.0" prefWidth="170.0" text="Precio Total" />
-                           </columns>
-                        </TableView>
-                        <Button fx:id="btnImprimir" layoutX="532.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Imprimir">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="APCompra" layoutX="55.0" layoutY="102.0" prefHeight="619.0" prefWidth="1208.0" style="-fx-background-color: #BCB8B1;" visible="false">
-         <children>
-            <AnchorPane fx:id="APCompras" prefHeight="611.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane fx:id="APSeleccionarPedido" prefHeight="222.0" prefWidth="587.0">
-                     <children>
-                        <Label layoutX="211.0" layoutY="18.0" text="Seleccionar pedido">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="15.0" layoutY="13.0" prefHeight="3.0" prefWidth="587.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
-                        <Separator layoutX="20.0" layoutY="219.0" prefHeight="3.0" prefWidth="587.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
-                        <Separator layoutX="11.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="599.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="276.0" layoutY="36.0" text="o">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="196.0" layoutY="51.0" text="Agregar Nuevo Producto" textFill="#1c9cf9" underline="true">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <TableView fx:id="TVSeleccionarPedido" layoutX="31.0" layoutY="77.0" prefHeight="135.0" prefWidth="556.0" AnchorPane.topAnchor="77.0">
-                           <columns>
-                              <TableColumn fx:id="HVTCCodigo1" prefWidth="88.0" text="Pedido" />
-                              <TableColumn fx:id="HVTCDescripcion1" prefWidth="99.0" text="Fecha Entrega" />
-                              <TableColumn fx:id="HVTCUnidadesVendidas1" prefWidth="128.0" text="Pedido realizado por" />
-                              <TableColumn minWidth="2.0" text="Editar" />
-                              <TableColumn minWidth="2.0" text="Cancelar" />
-                              <TableColumn minWidth="2.0" text="Comprar" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APComprar" layoutX="595.0" prefHeight="222.0" prefWidth="587.0">
-                     <children>
-                        <Separator layoutX="15.0" layoutY="13.0" prefHeight="3.0" prefWidth="574.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
-                        <Separator layoutX="20.0" layoutY="219.0" prefHeight="3.0" prefWidth="574.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
-                        <Separator layoutX="11.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="585.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="585.0" />
-                        <TextField fx:id="CtxtNombre" layoutX="26.0" layoutY="27.0" prefHeight="30.0" prefWidth="550.0" promptText="Nombre" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </TextField>
-                        <TextField fx:id="CtxtCantidad" layoutX="472.0" layoutY="68.0" prefHeight="30.0" prefWidth="91.0" promptText="Cantidad" AnchorPane.rightAnchor="26.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </TextField>
-                        <ComboBox fx:id="CcmbProveedor" layoutX="27.0" layoutY="68.0" prefHeight="29.0" prefWidth="211.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="CcmbFormaFarmac" layoutX="249.0" layoutY="68.0" prefHeight="29.0" prefWidth="211.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
-                        <TextField fx:id="Ctxt" layoutX="27.0" layoutY="111.0" prefHeight="30.0" prefWidth="68.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </TextField>
-                        <ComboBox fx:id="CcmbUnidad" layoutX="112.0" layoutY="112.0" prefHeight="29.0" prefWidth="97.0" promptText="Unidad" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="cmbPrecioCompra" layoutX="256.0" layoutY="112.0" prefHeight="29.0" prefWidth="174.0" promptText="Precio Compra " style="-fx-background-color: #FFFFFF;" />
-                        <TextField fx:id="CtxtDescuento" layoutX="474.0" layoutY="112.0" prefHeight="30.0" prefWidth="89.0" promptText="Descuento" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="26.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </TextField>
-                        <CheckBox fx:id="CchbDescontinuado" layoutX="26.0" layoutY="155.0" mnemonicParsing="false" text="Descontinuado">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <CheckBox fx:id="CchbGenerico" layoutX="474.0" layoutY="155.0" mnemonicParsing="false" text="Génerico" AnchorPane.rightAnchor="27.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <CheckBox fx:id="CchbVentaRestringida" layoutX="256.0" layoutY="155.0" mnemonicParsing="false" text="Venta Restringida">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <Button fx:id="CtxtComprar" layoutX="493.0" layoutY="183.0" mnemonicParsing="false" style="-fx-background-color: #A0A8AB;" text="Comprar">
-                           <font>
-                              <Font name="Calibri" size="14.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APMostrarPedido" layoutY="222.0" prefHeight="389.0" prefWidth="1211.0">
-                     <children>
-                        <TableView fx:id="TVPedido" layoutX="14.0" layoutY="43.0" prefHeight="321.0" prefWidth="1171.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="26.0">
-                           <columns>
-                              <TableColumn fx:id="HVTCCodigo" prefWidth="88.0" text="Pedido" />
-                              <TableColumn fx:id="HVTCDescripcion" prefWidth="165.0" text="Fecha Entrega" />
-                              <TableColumn fx:id="HVTCUnidadesVendidas" prefWidth="102.0" text="Finalizar" />
-                              <TableColumn minWidth="2.0" prefWidth="220.0" text="Producto" />
-                              <TableColumn minWidth="2.0" prefWidth="219.0" text="Proveedor" />
-                              <TableColumn minWidth="2.0" prefWidth="94.0" text="Cantidad" />
-                              <TableColumn minWidth="2.0" prefWidth="94.0" text="Precio" />
-                              <TableColumn minWidth="2.0" prefWidth="94.0" text="Descuento" />
-                              <TableColumn minWidth="2.0" prefWidth="94.0" text="Eliminar" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APCompras2" layoutX="2.0" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane layoutY="6.0" prefHeight="611.0" prefWidth="1171.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Separator layoutX="14.0" layoutY="13.0" prefHeight="3.0" prefWidth="1151.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" />
-                        <Separator layoutX="14.0" layoutY="594.0" prefHeight="3.0" prefWidth="1151.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="594.0" />
-                        <Separator layoutX="11.0" layoutY="13.0" orientation="VERTICAL" prefHeight="580.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="14.0" />
-                        <Separator layoutX="1159.0" layoutY="13.0" orientation="VERTICAL" prefHeight="580.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="1158.0" AnchorPane.topAnchor="15.0" />
-                        <Label layoutX="27.0" layoutY="30.0" text="Factura:">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lblNumFactura" layoutX="87.0" layoutY="30.0" text="128121">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="27.0" layoutY="94.0" text="Recibo Colector">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="50.0" layoutY="138.0" text="Observación">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="435.0" layoutY="95.0" text="Fecha de vencimiento de pago">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="CtxtObservacion" layoutX="157.0" layoutY="134.0" prefHeight="30.0" prefWidth="697.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </TextField>
-                        <DatePicker fx:id="CCdtFechaVencimiento" layoutX="678.0" layoutY="94.0" />
-                        <ComboBox fx:id="CcmbCompraPor" layoutX="936.0" layoutY="93.0" prefHeight="25.0" prefWidth="174.0" promptText="Compra realizada por" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="CcmbStatus" layoutX="936.0" layoutY="137.0" prefWidth="150.0" promptText="Status" style="-fx-background-color: #FFFFFF;" />
-                        <AnchorPane layoutX="18.0" layoutY="176.0" prefHeight="373.0" prefWidth="1143.0" style="-fx-background-color: #BCB8B1;">
-                           <children>
-                              <TableView fx:id="TVCompras2" layoutX="21.0" layoutY="14.0" prefHeight="336.0" prefWidth="1101.0">
-                                 <columns>
-                                    <TableColumn prefWidth="257.0" text="Producto" />
-                                    <TableColumn prefWidth="133.0" text="Precio Unit." />
-                                    <TableColumn prefWidth="140.0" text="\% Ganancia" />
-                                    <TableColumn prefWidth="163.0" text="Precio Venta" />
-                                    <TableColumn prefWidth="109.0" text="Lote No." />
-                                    <TableColumn prefWidth="169.0" text="Fecha Vencimiento" />
-                                    <TableColumn prefWidth="136.0" text="Cant Estante" />
-                                 </columns>
-                              </TableView>
-                           </children>
-                        </AnchorPane>
-                        <ImageView fx:id="btnCheck" fitHeight="46.0" fitWidth="52.0" layoutX="1087.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/checked.png" />
-                           </image>
-                        </ImageView>
-                        <TextField fx:id="CtxtRecivoColect" layoutX="157.0" layoutY="90.0" prefHeight="30.0" prefWidth="150.0">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APDetalleCompra" prefHeight="609.0" prefWidth="1171.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane prefHeight="609.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Button fx:id="CbtnImprimir" layoutX="495.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Button>
-                        <TableView fx:id="TVDetalleCompra" layoutX="50.0" layoutY="8.0" prefHeight="509.0" prefWidth="1101.0">
-                           <columns>
-                              <TableColumn prefWidth="102.0" text="Codigo" />
-                              <TableColumn prefWidth="250.0" text="Producto" />
-                              <TableColumn prefWidth="250.0" text="Proveedor" />
-                              <TableColumn prefWidth="115.0" text="Cantidad" />
-                              <TableColumn prefWidth="160.0" text="Descuento" />
-                              <TableColumn prefWidth="115.0" text="Precio Unit." />
-                              <TableColumn prefWidth="115.0" text="Precio Total" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APHistoricoCompras" prefHeight="619.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane fx:id="APFiltroVentas2" layoutY="208.0" prefHeight="345.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="66.0" layoutY="14.0" text="Histórico Detalle">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                        <TableView fx:id="TVHistoricoCompra" layoutX="66.0" layoutY="56.0" prefHeight="200.0" prefWidth="981.0">
-                           <columns>
-                              <TableColumn prefWidth="102.0" text="Codigo" />
-                              <TableColumn prefWidth="589.0" text="Descripción" />
-                              <TableColumn prefWidth="152.0" text="Unidades Vendidas" />
-                              <TableColumn prefWidth="137.0" text="Disponible" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APFiltroVentas" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="72.0" layoutY="13.0" text="Filtro Ventas">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="181.0" layoutY="24.0" prefHeight="3.0" prefWidth="910.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="58.0" layoutY="57.0" text="Fecha desde:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="61.0" layoutY="101.0" text="Fecha hasta:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <DatePicker fx:id="CDPFechaDesde" layoutX="189.0" layoutY="56.0" />
-                        <DatePicker fx:id="CDPFechaHasta" layoutX="189.0" layoutY="100.0" />
-                        <ComboBox fx:id="CcmbCompraoPor" layoutX="512.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Comprado por" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="CcmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="CcmbDistribuidor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Distribuidor" style="-fx-background-color: #FFFFFF;" />
-                        <Button fx:id="CbtnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-                  <Button fx:id="CbtnImprimirHist" layoutX="1005.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
-                     <font>
-                        <Font name="Calibri Bold" size="18.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="APPedido" layoutX="60.0" layoutY="101.0" prefHeight="621.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" visible="false">
-         <children>
-            <AnchorPane fx:id="APPedidos" prefHeight="609.0" prefWidth="1168.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane layoutY="9.0" prefHeight="564.0" prefWidth="826.0" style="-fx-background-color: #BCB8B1;" AnchorPane.topAnchor="11.0">
-                     <children>
-                        <Separator layoutX="11.0" layoutY="15.0" orientation="VERTICAL" prefHeight="536.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="15.0" />
-                        <Separator layoutX="10.0" layoutY="547.0" prefHeight="3.0" prefWidth="809.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="547.0" />
-                        <Separator layoutX="836.0" layoutY="62.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="815.0" AnchorPane.topAnchor="15.0" />
-                        <Separator layoutX="185.0" layoutY="9.0" prefHeight="3.0" prefWidth="805.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="13.0" />
-                        <Label layoutX="283.0" layoutY="81.0" text="Buscar Productos Registrados" AnchorPane.leftAnchor="283.0">
-                           <font>
-                              <Font name="Calibri" size="24.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="PtxtBuscar" layoutX="262.0" layoutY="126.0" prefHeight="40.0" prefWidth="361.0" promptText="       Buscar">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </TextField>
-                        <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="258.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/search.png" />
-                           </image>
-                        </ImageView>
-                        <AnchorPane layoutX="17.0" layoutY="223.0" prefHeight="320.0" prefWidth="795.0" style="-fx-background-color: #BCB8B1;">
-                           <children>
-                              <Label layoutX="727.0" layoutY="40.0" text="Agregar">
-                                 <font>
-                                    <Font name="Calibri" size="18.0" />
-                                 </font>
-                              </Label>
-                              <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="733.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../img/agregar.png" />
-                                 </image>
-                              </ImageView>
-                              <TableView fx:id="TVAgregarPedido" layoutX="7.0" layoutY="40.0" prefHeight="275.0" prefWidth="713.0">
-                                 <columns>
-                                    <TableColumn fx:id="TCProducto1" prefWidth="65.0" text="Pedido" />
-                                    <TableColumn fx:id="TCCantidad1" minWidth="100.0" prefWidth="132.0" text="Fecha Entrega" />
-                                    <TableColumn fx:id="TCDescuento1" minWidth="100.0" prefWidth="127.0" text="Producto" />
-                                    <TableColumn fx:id="TCAgregar1" minWidth="100.0" prefWidth="126.0" text="Proveedor" />
-                                    <TableColumn fx:id="TCProducto11" prefWidth="82.0" text="Cantidad" />
-                                    <TableColumn fx:id="TCProducto111" prefWidth="66.0" text="Precio" />
-                                    <TableColumn fx:id="TCProducto1111" prefWidth="114.0" text="Descuento" />
-                                 </columns>
-                              </TableView>
-                           </children>
-                        </AnchorPane>
-                        <Button fx:id="PbtnNuevoPedido" layoutX="72.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Nuevo Pedido">
-                           <effect>
-                              <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                           </effect>
-                           <font>
-                              <Font name="Calibri Bold" size="14.0" />
-                           </font>
-                        </Button>
-                        <ComboBox fx:id="PcmbProveedor" layoutX="195.0" layoutY="188.0" prefHeight="28.0" prefWidth="135.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="PcmbFormaFarmaceutica" layoutX="374.0" layoutY="186.0" prefHeight="30.0" prefWidth="151.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="PcmbUnidadMedida" layoutX="623.0" layoutY="187.0" prefHeight="30.0" prefWidth="107.0" promptText="Unidad" style="-fx-background-color: #FFFFFF;" />
-                        <TextField fx:id="PtxtMedida" layoutX="555.0" layoutY="185.0" prefHeight="28.0" prefWidth="60.0">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </TextField>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="820.0" prefHeight="564.0" prefWidth="351.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <Separator layoutX="11.0" layoutY="25.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
-                        <Separator layoutX="17.0" layoutY="558.0" prefHeight="3.0" prefWidth="333.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="558.0" />
-                        <Separator layoutX="344.0" layoutY="25.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="25.0" />
-                        <Separator layoutX="18.0" layoutY="24.0" prefHeight="3.0" prefWidth="334.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="24.0" />
-                        <Button fx:id="PbtnNuevoProducto" layoutX="57.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Nuevo Producto">
-                           <effect>
-                              <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                           </effect>
-                           <font>
-                              <Font name="Calibri Bold" size="14.0" />
-                           </font>
-                        </Button>
-                        <ComboBox fx:id="PNPcmbProveedor" layoutX="53.0" layoutY="172.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="VcmbFormaFarmaceutica" layoutX="53.0" layoutY="236.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
-                        <Label layoutX="52.0" layoutY="293.0" text="Unidad de medida">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="PNPtxtMedida" layoutX="51.0" layoutY="328.0" prefHeight="28.0" prefWidth="60.0">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </TextField>
-                        <ComboBox fx:id="PNPcmbUniMed" layoutX="119.0" layoutY="330.0" prefHeight="30.0" prefWidth="174.0" promptText="Unidad" style="-fx-background-color: #FFFFFF;" />
-                        <CheckBox fx:id="PchbVentaRestr" layoutX="56.0" layoutY="387.0" mnemonicParsing="false" text="Venta Restringida">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <CheckBox fx:id="PchbGenerico" layoutX="56.0" layoutY="427.0" mnemonicParsing="false" text="Génerico">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <TextField fx:id="PtxtNombre" layoutX="52.0" layoutY="110.0" prefHeight="34.0" prefWidth="239.0" text="Nombre">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </TextField>
-                        <CheckBox fx:id="PchbDescontinuado" layoutX="54.0" layoutY="468.0" mnemonicParsing="false" text="Descontinuado">
-                           <font>
-                              <Font name="Calibri" size="16.0" />
-                           </font>
-                        </CheckBox>
-                        <Button fx:id="PbtnPedir" layoutX="29.0" layoutY="517.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Pedir">
-                           <effect>
-                              <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
-                           </effect>
-                           <font>
-                              <Font name="Calibri Bold" size="14.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APDetallePedido" prefHeight="609.0" prefWidth="1171.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane prefHeight="609.0" prefWidth="1179.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Button fx:id="btnConfirmar" layoutX="1042.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Confirmar">
-                           <font>
-                              <Font name="Calibri" size="18.0" />
-                           </font>
-                        </Button>
-                        <TableView fx:id="TVDetallePedido" layoutX="50.0" layoutY="36.0" prefHeight="491.0" prefWidth="1101.0">
-                           <columns>
-                              <TableColumn prefWidth="102.0" text="Codigo" />
-                              <TableColumn prefWidth="250.0" text="Producto" />
-                              <TableColumn prefWidth="250.0" text="Proveedor" />
-                              <TableColumn prefWidth="115.0" text="Cantidad" />
-                              <TableColumn prefWidth="160.0" text="Descuento" />
-                              <TableColumn prefWidth="115.0" text="Precio Unit." />
-                              <TableColumn prefWidth="115.0" text="Precio Total" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APHistoricoPedidos" prefHeight="619.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane fx:id="APFiltroVentas21" layoutY="208.0" prefHeight="345.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="66.0" layoutY="14.0" text="Histórico Detalle">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                        <TableView fx:id="TVHistoricoPedido" layoutX="66.0" layoutY="57.0" prefHeight="222.0" prefWidth="981.0">
-                           <columns>
-                              <TableColumn prefWidth="102.0" text="Codigo" />
-                              <TableColumn prefWidth="589.0" text="Descripción" />
-                              <TableColumn prefWidth="152.0" text="Proveedor" />
-                              <TableColumn prefWidth="137.0" text="Unidades Compradas" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APFiltroVentas1" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="72.0" layoutY="13.0" text="Filtro Pedidos">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="181.0" layoutY="24.0" prefHeight="3.0" prefWidth="910.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="58.0" layoutY="57.0" text="Fecha desde:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="61.0" layoutY="101.0" text="Fecha hasta:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <DatePicker fx:id="PFechaDesde" layoutX="189.0" layoutY="56.0" />
-                        <DatePicker fx:id="PFechaHasta" layoutX="189.0" layoutY="100.0" />
-                        <ComboBox fx:id="PcmbPedidoPor" layoutX="512.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Pedido por" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="PcmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="PcmbDistribuidor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Distribuidor" style="-fx-background-color: #FFFFFF;" />
-                        <Button fx:id="PbtnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-                  <Button fx:id="PbtnImprimirPedido" layoutX="1005.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
-                     <font>
-                        <Font name="Calibri Bold" size="18.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="APProducto" layoutX="60.0" layoutY="101.0" prefHeight="620.0" prefWidth="1189.0" style="-fx-background-color: #BCB8B1;" visible="false">
-         <children>
-            <AnchorPane fx:id="APHistoricoProducto" prefHeight="619.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane fx:id="APFiltroVentas211" layoutY="208.0" prefHeight="345.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="66.0" layoutY="14.0" text="Histórico Detalle">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="77.0" layoutY="75.0" text="Código">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="166.0" layoutY="75.0" text="Descripción">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="957.0" layoutY="53.0" text="Unidades ">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="960.0" layoutY="76.0" text="Pedidas">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="723.0" layoutY="76.0" text="Proveedor">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="46.0" layoutY="113.0" prefHeight="3.0" prefWidth="1021.0" style="-fx-background-color: #000000;" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APFiltroVentas11" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="72.0" layoutY="13.0" text="Filtro">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="125.0" layoutY="24.0" prefHeight="3.0" prefWidth="966.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="58.0" layoutY="57.0" text="Fecha desde:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="61.0" layoutY="101.0" text="Fecha hasta:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <DatePicker fx:id="PrFechaDesde" layoutX="189.0" layoutY="56.0" />
-                        <DatePicker fx:id="PrFechaHasta" layoutX="189.0" layoutY="100.0" />
-                        <ComboBox fx:id="PrcmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="PrcmbDistribuidor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                        <Button fx:id="PrbtnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-                  <Button fx:id="PbtnImprimirPedido1" layoutX="1005.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
-                     <font>
-                        <Font name="Calibri Bold" size="18.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="APProductos" prefHeight="619.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;" visible="false">
-               <children>
-                  <AnchorPane fx:id="APFiltroVentas2111" layoutX="32.0" layoutY="238.0" prefHeight="345.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="66.0" layoutY="14.0" text="Histórico Detalle">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="77.0" layoutY="75.0" text="Código">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="166.0" layoutY="75.0" text="Descripción">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="957.0" layoutY="53.0" text="Unidades ">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="960.0" layoutY="76.0" text="Pedidas">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="723.0" layoutY="76.0" text="Proveedor">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="46.0" layoutY="113.0" prefHeight="3.0" prefWidth="1021.0" style="-fx-background-color: #000000;" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="APFiltroVentas111" layoutX="14.0" layoutY="14.0" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
-                     <children>
-                        <Label layoutX="72.0" layoutY="13.0" text="Filtro">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
-                        <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
-                        <Separator layoutX="125.0" layoutY="24.0" prefHeight="3.0" prefWidth="966.0" style="-fx-background-color: #000000;" />
-                        <Label layoutX="58.0" layoutY="57.0" text="Fecha desde:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="61.0" layoutY="101.0" text="Fecha hasta:">
-                           <font>
-                              <Font name="Calibri" size="20.0" />
-                           </font>
-                        </Label>
-                        <DatePicker fx:id="PrFechaDesde1" layoutX="189.0" layoutY="56.0" />
-                        <DatePicker fx:id="PrFechaHasta1" layoutX="189.0" layoutY="100.0" />
-                        <ComboBox fx:id="PrcmbProducto1" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
-                        <ComboBox fx:id="PrcmbDistribuidor1" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                        <Button fx:id="PrbtnRealizarBusqueda1" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
-                           <font>
-                              <Font name="Calibri Bold" size="18.0" />
-                           </font>
-                        </Button>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-   </children>
-</AnchorPane>

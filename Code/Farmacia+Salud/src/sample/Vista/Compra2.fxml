@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+
+<!--Escena de compras2-->
+
+<AnchorPane fx:id="APCompras2" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.Compra2Controlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+    <children>
+            <AnchorPane layoutY="6.0" prefHeight="611.0" prefWidth="1171.0" style="-fx-background-color: #BCB8B1;">
+                <children>
+                    <Separator layoutX="14.0" layoutY="13.0" prefHeight="3.0" prefWidth="1151.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" />
+                    <Separator layoutX="14.0" layoutY="594.0" prefHeight="3.0" prefWidth="1151.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="594.0" />
+                    <Separator layoutX="11.0" layoutY="13.0" orientation="VERTICAL" prefHeight="580.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="14.0" />
+                    <Separator layoutX="1159.0" layoutY="13.0" orientation="VERTICAL" prefHeight="580.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="1158.0" AnchorPane.topAnchor="15.0" />
+                    <Label layoutX="27.0" layoutY="30.0" text="Factura:">
+                        <font>
+                            <Font name="Calibri" size="18.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="lblNumFactura" layoutX="87.0" layoutY="30.0" text="128121">
+                        <font>
+                            <Font name="Calibri" size="18.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="27.0" layoutY="94.0" text="Recibo Colector">
+                        <font>
+                            <Font name="Calibri" size="18.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="50.0" layoutY="138.0" text="Observación">
+                        <font>
+                            <Font name="Calibri" size="18.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="435.0" layoutY="95.0" text="Fecha de vencimiento de pago">
+                        <font>
+                            <Font name="Calibri" size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtObservacion" layoutX="157.0" layoutY="134.0" prefHeight="30.0" prefWidth="697.0">
+                        <font>
+                            <Font name="Calibri" size="16.0" />
+                        </font>
+                    </TextField>
+                    <DatePicker fx:id="dtFechaVencimiento" layoutX="678.0" layoutY="94.0" />
+                    <ComboBox fx:id="cmbCompraPor" layoutX="936.0" layoutY="93.0" prefHeight="25.0" prefWidth="174.0" promptText="Compra realizada por" style="-fx-background-color: #FFFFFF;" />
+                    <ComboBox fx:id="cmbStatus" layoutX="936.0" layoutY="137.0" prefWidth="150.0" promptText="Status" style="-fx-background-color: #FFFFFF;" />
+                    <AnchorPane layoutX="18.0" layoutY="176.0" prefHeight="373.0" prefWidth="1143.0" style="-fx-background-color: #BCB8B1;">
+                        <children>
+                            <TableView fx:id="TVCompras2" layoutX="21.0" layoutY="14.0" prefHeight="336.0" prefWidth="1101.0">
+                                <columns>
+                                    <TableColumn prefWidth="257.0" text="Producto" />
+                                    <TableColumn prefWidth="133.0" text="Precio Unit." />
+                                    <TableColumn prefWidth="140.0" text="\% Ganancia" />
+                                    <TableColumn prefWidth="163.0" text="Precio Venta" />
+                                    <TableColumn prefWidth="109.0" text="Lote No." />
+                                    <TableColumn prefWidth="169.0" text="Fecha Vencimiento" />
+                                    <TableColumn prefWidth="136.0" text="Cant Estante" />
+                                </columns>
+                            </TableView>
+                        </children>
+                    </AnchorPane>
+                    <ImageView fx:id="btnCheck" fitHeight="46.0" fitWidth="52.0" layoutX="1087.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../img/checked.png" />
+                        </image>
+                    </ImageView>
+                    <TextField fx:id="CtxtRecivoColect" layoutX="157.0" layoutY="90.0" prefHeight="30.0" prefWidth="150.0">
+                        <font>
+                            <Font name="Calibri" size="16.0" />
+                        </font>
+                    </TextField>
+                </children>
+            </AnchorPane>
+        </children>
+</AnchorPane>

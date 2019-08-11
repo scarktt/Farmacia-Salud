@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--Escena de Detallecompras-->
+
+<AnchorPane fx:id="APDetalleCompra" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.DetalleCompraControlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+    <children>
+        <AnchorPane prefHeight="609.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Button fx:id="btnImprimir" layoutX="495.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="TVDetalleCompra" layoutX="50.0" layoutY="8.0" prefHeight="509.0" prefWidth="1101.0">
+                    <columns>
+                        <TableColumn prefWidth="102.0" text="Codigo" />
+                        <TableColumn prefWidth="250.0" text="Producto" />
+                        <TableColumn prefWidth="250.0" text="Proveedor" />
+                        <TableColumn prefWidth="115.0" text="Cantidad" />
+                        <TableColumn prefWidth="160.0" text="Descuento" />
+                        <TableColumn prefWidth="115.0" text="Precio Unit." />
+                        <TableColumn prefWidth="115.0" text="Precio Total" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

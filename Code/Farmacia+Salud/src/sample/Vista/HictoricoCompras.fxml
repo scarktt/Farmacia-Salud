@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--Escena de Historico de compras-->
+
+<AnchorPane fx:id="APHistoricoCompras" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.HistoricoComprasControlador"  prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+    <children>
+        <AnchorPane fx:id="APFiltroVentas2" layoutY="208.0" prefHeight="345.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Label layoutX="66.0" layoutY="14.0" text="Histórico Detalle">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
+                <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
+                <TableView fx:id="TVHistoricoCompra" layoutX="66.0" layoutY="56.0" prefHeight="200.0" prefWidth="981.0">
+                    <columns>
+                        <TableColumn prefWidth="102.0" text="Codigo" />
+                        <TableColumn prefWidth="589.0" text="Descripción" />
+                        <TableColumn prefWidth="152.0" text="Unidades Vendidas" />
+                        <TableColumn prefWidth="137.0" text="Disponible" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="APFiltroVentas" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Label layoutX="72.0" layoutY="13.0" text="Filtro Ventas">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
+                <Separator layoutX="181.0" layoutY="24.0" prefHeight="3.0" prefWidth="910.0" style="-fx-background-color: #000000;" />
+                <Label layoutX="58.0" layoutY="57.0" text="Fecha desde:">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="61.0" layoutY="101.0" text="Fecha hasta:">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="dpFechaDesde" layoutX="189.0" layoutY="56.0" />
+                <DatePicker fx:id="dpFechaHasta" layoutX="189.0" layoutY="100.0" />
+                <ComboBox fx:id="cmdVendedor" layoutX="512.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Comprado por" style="-fx-background-color: #FFFFFF;" />
+                <ComboBox fx:id="cmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
+                <ComboBox fx:id="cmbProveedor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Distribuidor" style="-fx-background-color: #FFFFFF;" />
+                <Button fx:id="btnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Button fx:id="btnImprimirHistCompra" layoutX="1005.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
+            <font>
+                <Font name="Calibri Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
