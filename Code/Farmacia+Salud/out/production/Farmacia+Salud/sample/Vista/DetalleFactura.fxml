@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -9,7 +10,7 @@
 
 <!--Escena de DetalleFactura-->
 
-<AnchorPane fx:id="APDetalleFactura" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.DetalleFacturaControlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+<AnchorPane fx:id="APDetalleFactura" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.DetalleFacturaControlador">
         <children>
             <AnchorPane prefHeight="594.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="0.0">
                 <children>
