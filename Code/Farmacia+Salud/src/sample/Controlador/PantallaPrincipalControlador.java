@@ -21,12 +21,9 @@ public class PantallaPrincipalControlador implements Initializable {
     @FXML private AnchorPane Contenedor;
     @FXML private AnchorPane APUser;
     @FXML private AnchorPane APNotificacion;
-    @FXML private AnchorPane APVenta;
-   // @FXML private AnchorPane APFacturacion;
     @FXML private AnchorPane APConfiguracion;
     @FXML private AnchorPane APRol;
     @FXML private AnchorPane APCerrarSesion;
-   // @FXML private AnchorPane APDetalleFactura;
     //Botones de arriiba
     @FXML private AnchorPane APBotonesFacturacion;
     @FXML private AnchorPane APBotonesPedido;
@@ -199,12 +196,24 @@ public class PantallaPrincipalControlador implements Initializable {
     //Muestra en pantalla la ventana de producto
     @FXML
    public void pressProducto(ActionEvent event) throws IOException{
-        AnchorPane APProducto = FXMLLoader.load(getClass().getResource("/sample/Producto.fxml"));
+        AnchorPane APProducto = FXMLLoader.load(getClass().getResource("/sample/Vista/Producto.fxml"));
         Contenedor.getChildren().setAll(APProducto);
         APBotonesProducto.setVisible(true);
         APBotonesCompra.setVisible(false);
         APBotonesFacturacion.setVisible(false);
         APBotonesPedido.setVisible(false);
+    }
+
+    @FXML
+    public void pressAgregarProducto(ActionEvent event) throws IOException{
+        AnchorPane  APAgregarProducto  = FXMLLoader.load(getClass().getResource("/sample/Vista/AgregarProducto.fxml"));
+        Contenedor.getChildren().setAll( APAgregarProducto);
+    }
+
+    @FXML
+    public void pressReducirStock(ActionEvent event) throws IOException{
+        AnchorPane APReduciStock= FXMLLoader.load(getClass().getResource("/sample/Vista/ReducirStock.fxml"));
+        Contenedor.getChildren().setAll(APReduciStock);
     }
 
     //Muestra en pantalla la ventana de Historicoproducto

@@ -36,7 +36,7 @@
          <Separator layoutX="1.0" layoutY="64.0" prefHeight="6.0" prefWidth="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="63.0" />
             <Button fx:id="btnVentas" layoutY="118.0" mnemonicParsing="false" onAction="#pressFacturacion" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="90.0">
                <graphic>
-               <ImageView fitHeight="48.0" fitWidth="43.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../img/carrito-de-compras.png" />
                   </image>
@@ -54,7 +54,7 @@
             </Button>
             <Button fx:id="btnProveedores" layoutY="293.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="290.0">
                <graphic>
-                  <ImageView fitHeight="48.0" fitWidth="43.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/apreton-de-manos.png" />
                      </image>
@@ -63,7 +63,7 @@
             </Button>
             <Button fx:id="btnPagoServicios" layoutY="376.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="390.0">
                <graphic>
-                  <ImageView fitHeight="48.0" fitWidth="43.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dinero.png" />
                      </image>
@@ -72,7 +72,7 @@
             </Button>
             <Button fx:id="btnProducto" layoutX="10.0" layoutY="410.0" mnemonicParsing="false" onAction="#pressProducto" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="490.0">
                <graphic>
-                  <ImageView fitHeight="48.0" fitWidth="43.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="48.0" fitWidth="43.0"  pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/p-dentro-de-un-circulo.png" />
                      </image>
@@ -81,7 +81,7 @@
             </Button>
             <Button fx:id="btnPedido" layoutX="10.0" layoutY="510.0" mnemonicParsing="false" onAction="#pressPedido" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="590.0">
                <graphic>
-                  <ImageView fitHeight="48.0" fitWidth="43.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="48.0" fitWidth="43.0"  pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/simbolo-del-telefono-auricular-en-un-circulo.png" />
                      </image>
@@ -201,7 +201,7 @@
          </AnchorPane>
          <AnchorPane fx:id="APBotonesProducto" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="499.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
             <children>
-               <Button fx:id="Prbtn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressProducto" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+               <Button fx:id="Prbtn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressProducto" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
                   <effect>
                      <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
                   </effect>
@@ -209,7 +209,7 @@
                      <Font name="Calibri Bold" size="14.0" />
                   </font>
                </Button>
-               <Button fx:id="PrbtnReducirStock" layoutX="219.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#pressDetalleCompra" style="-fx-background-color: #A2AAAD;" text="Reducir Stock" AnchorPane.topAnchor="12.0">
+               <Button fx:id="btnReducirStock" layoutX="219.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressReducirStock" style="-fx-background-color: #A2AAAD;" text="Reducir Stock" AnchorPane.topAnchor="12.0">
                   <effect>
                      <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
                   </effect>
@@ -217,7 +217,7 @@
                      <Font name="Calibri Bold" size="14.0" />
                   </font>
                </Button>
-               <Button fx:id="PrbtnHistoricoPerdida" layoutX="347.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressHistoricoPerdida" style="-fx-background-color: #A2AAAD;" text="Histórico de pérdida" AnchorPane.topAnchor="12.0">
+               <Button fx:id="btnHistoricoPerdida" layoutX="347.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressHistoricoPerdida" style="-fx-background-color: #A2AAAD;" text="Histórico de pérdida" AnchorPane.topAnchor="12.0">
                   <effect>
                      <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
                   </effect>
@@ -225,7 +225,7 @@
                      <Font name="Calibri Bold" size="14.0" />
                   </font>
                </Button>
-               <Button fx:id="PrbtnAgregarProducto" layoutX="69.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Agregar producto">
+               <Button fx:id="btnAgregarProducto" layoutX="69.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Agregar producto" onAction="#pressAgregarProducto">
                   <effect>
                      <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
                   </effect>

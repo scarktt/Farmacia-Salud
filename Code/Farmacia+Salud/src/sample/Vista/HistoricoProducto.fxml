@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -9,7 +10,7 @@
 
 <!--Viata de HistoricoProducto-->
 
-<AnchorPane fx:id="APHistoricoProducto" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.HistoricoProductoControlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+<AnchorPane fx:id="APHistoricoProducto" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.HistoricoProductosControlador">
         <children>
             <AnchorPane fx:id="APFiltroVentas1" prefHeight="187.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
                 <children>
@@ -33,11 +34,11 @@
                             <Font name="Calibri" size="20.0" />
                         </font>
                     </Label>
-                    <DatePicker fx:id="PrFechaDesde" layoutX="189.0" layoutY="56.0" />
-                    <DatePicker fx:id="PrFechaHasta" layoutX="189.0" layoutY="100.0" />
-                    <ComboBox fx:id="PrcmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
-                    <ComboBox fx:id="PrcmbDistribuidor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-                    <Button fx:id="PrbtnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
+                    <DatePicker fx:id="DPFechaDesde" layoutX="189.0" layoutY="56.0" />
+                    <DatePicker fx:id="DPFechaHasta" layoutX="189.0" layoutY="100.0" />
+                    <ComboBox fx:id="cmbProducto" layoutX="676.0" layoutY="53.0" prefHeight="32.0" prefWidth="135.0" promptText="Producto" style="-fx-background-color: #FFFFFF;" />
+                    <ComboBox fx:id="cmbProveedor" layoutX="836.0" layoutY="52.0" prefHeight="34.0" prefWidth="135.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
+                    <Button fx:id="btnRealizarBusqueda" layoutX="878.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Realizar Búsqueda">
                         <font>
                             <Font name="Calibri Bold" size="18.0" />
                         </font>
@@ -55,35 +56,19 @@
                 <Separator layoutX="20.0" layoutY="319.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
                 <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
                 <Separator layoutX="213.0" layoutY="24.0" prefHeight="3.0" prefWidth="878.0" style="-fx-background-color: #000000;" />
-                <Label layoutX="77.0" layoutY="75.0" text="Código">
-                    <font>
-                        <Font name="Calibri" size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="166.0" layoutY="75.0" text="Descripción">
-                    <font>
-                        <Font name="Calibri" size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="957.0" layoutY="53.0" text="Unidades ">
-                    <font>
-                        <Font name="Calibri" size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="960.0" layoutY="76.0" text="Pedidas">
-                    <font>
-                        <Font name="Calibri" size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="723.0" layoutY="76.0" text="Proveedor">
-                    <font>
-                        <Font name="Calibri" size="20.0" />
-                    </font>
-                </Label>
-                <Separator layoutX="46.0" layoutY="113.0" prefHeight="3.0" prefWidth="1021.0" style="-fx-background-color: #000000;" />
+                <TableView fx:id="TVHistoricoProducto" layoutX="66.0" layoutY="57.0" prefHeight="222.0" prefWidth="981.0">
+                    <columns>
+                        <TableColumn prefWidth="138.0" text="Codigo Producto" />
+                        <TableColumn prefWidth="124.0" text="No. Lote" />
+                  <TableColumn prefWidth="285.0" text="Descripción" />
+                        <TableColumn prefWidth="214.0" text="Proveedor" />
+                        <TableColumn prefWidth="97.0" text="Cantidad" />
+                  <TableColumn prefWidth="122.0" text="Monto Perido" />
+                    </columns>
+                </TableView>
             </children>
         </AnchorPane>
-            <Button fx:id="PbtnImprimirPedido1" layoutX="1005.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
+            <Button fx:id="btnImprimir" layoutX="1004.0" layoutY="536.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
                 <font>
                     <Font name="Calibri Bold" size="18.0" />
                 </font>

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexion {
-   private Connection connection;
+    private Connection connection;
     private final String driver = "com.mysql.jdbc.Driver";
     private final String user = "root";
     private final String pass = "12345678";
