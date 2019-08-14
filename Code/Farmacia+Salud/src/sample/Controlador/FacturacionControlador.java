@@ -48,17 +48,10 @@ public class FacturacionControlador implements Initializable {
     @FXML private ComboBox cmbUtilidad;
     @FXML private ComboBox cmbIndicacion;
     //ComboBox tercera pantalla de facturacion
-    @FXML private ComboBox cmbProductoNombre;
+    @FXML private ComboBox PrcmbProducto;
 
     @FXML private TextField txtBuscar;
     @FXML private TableView TVAgregarProductos;
-
-    //private ObservableList<Empleado> ListaVendedores;
-    private ObservableList<Proveedor> ListaProveedores;
-    private ObservableList<Producto> ListaProducto;
-    private ObservableList<Producto> ListaUnidadMedida;
-    private ObservableList<UtilidadProducto> ListaUtilidad;
-    private ObservableList<Indicacion> ListaIndicacion;
 
     ObservableList<String> listaVendedores = FXCollections.observableArrayList();
     ObservableList<String> listaProveedores = FXCollections.observableArrayList();
@@ -91,7 +84,7 @@ public class FacturacionControlador implements Initializable {
         cmbUnidadMedida.setItems(listaUnidadMedida);
         cmbIndicacion.setItems(listaIndicacion);
         cmbUtilidad.setItems(listaUtilidad);
-        cmbProductoNombre.setItems(listaNombresProductos);
+        PrcmbProducto.setItems(listaNombresProductos);
 
         conexion.cerrarConexion();
     }

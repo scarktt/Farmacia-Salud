@@ -3,10 +3,7 @@ package sample.Modelo;
 import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Producto {
     private IntegerProperty IDproducto;
@@ -163,30 +160,32 @@ public class Producto {
 
     public static void llenarCmbUnidadMedida (Connection connection, ObservableList<String> lista) {
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultado = statement.executeQuery("SELECT DISTINCT Unidad_medida FROM Producto");
+            String query = "SELECT DISTINCT Unidad_medida FROM Producto";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
                 lista.add(resultado.getString("Unidad_medida"));
             }
         } catch (SQLException e) {
-            System.out.println("Error al agregar");
+            System.out.println("Error al agregar unidad de medida");
             e.printStackTrace();
         }
     }
 
     public static void llenarCmbNombresProductos (Connection connection, ObservableList<String> lista) {
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultado = statement.executeQuery("SELECT Nombre FROM Producto");
+            String query = "SELECT Nombre FROM Producto";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
                 lista.add(resultado.getString("Nombre"));
             }
         } catch (SQLException e) {
-            System.out.println("Error al agregar");
+            System.out.println("Error al agregar Nombre del producto al combobox");
             e.printStackTrace();
         }
     }
