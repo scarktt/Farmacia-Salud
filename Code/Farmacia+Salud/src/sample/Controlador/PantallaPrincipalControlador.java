@@ -29,6 +29,7 @@ public class PantallaPrincipalControlador implements Initializable {
     @FXML private AnchorPane APBotonesPedido;
     @FXML private AnchorPane APBotonesCompra;
     @FXML private AnchorPane APBotonesProducto;
+    @FXML private AnchorPane APBotonesPagoServicio;
     //ComboBox primera pantalla de facturacion
     @FXML private ComboBox cmbVendedor;
     @FXML private ComboBox cmbProveedor;
@@ -61,7 +62,7 @@ public class PantallaPrincipalControlador implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        conexion = new Conexion();
+        /*conexion = new Conexion();
         conexion.establecerConexion();
 
         //LLenar listas
@@ -82,7 +83,7 @@ public class PantallaPrincipalControlador implements Initializable {
         cmbUtilidad.setItems(listaUtilidad);
         cmbProductoNombre.setItems(listaNombresProductos);
 
-        conexion.cerrarConexion();
+        conexion.cerrarConexion();*/
     }
 
     //Cierra el programa
@@ -120,6 +121,7 @@ public class PantallaPrincipalControlador implements Initializable {
         APBotonesCompra.setVisible(false);
         APBotonesPedido.setVisible(false);
         APBotonesProducto.setVisible(false);
+        APBotonesPagoServicio.setVisible(false);
     }
 
     //Muestra en pantalla la ventana de detalle factura
@@ -145,6 +147,8 @@ public class PantallaPrincipalControlador implements Initializable {
         APBotonesCompra.setVisible(true);
         APBotonesPedido.setVisible(false);
         APBotonesProducto.setVisible(false);
+        APBotonesFacturacion.setVisible(false);
+        APBotonesPagoServicio.setVisible(false);
     }
 
     //Muestra en pantalla la ventana de compras2
@@ -177,6 +181,7 @@ public class PantallaPrincipalControlador implements Initializable {
         APBotonesCompra.setVisible(false);
         APBotonesFacturacion.setVisible(false);
         APBotonesProducto.setVisible(false);
+        APBotonesPagoServicio.setVisible(false);
     }
 
     //Muestra en pantalla la ventana de Detallepedido
@@ -202,6 +207,7 @@ public class PantallaPrincipalControlador implements Initializable {
         APBotonesCompra.setVisible(false);
         APBotonesFacturacion.setVisible(false);
         APBotonesPedido.setVisible(false);
+        APBotonesPagoServicio.setVisible(false);
     }
 
     @FXML
@@ -221,5 +227,36 @@ public class PantallaPrincipalControlador implements Initializable {
     public void pressHistoricoPerdida(ActionEvent event) throws IOException{
         AnchorPane APHistoricoProducto  = FXMLLoader.load(getClass().getResource("/sample/Vista/HistoricoProducto.fxml"));
         Contenedor.getChildren().setAll(APHistoricoProducto );
+    }
+
+    //Muestra en pantalla la ventana de proveedor
+    @FXML
+    public void pressProvedor(ActionEvent event) throws IOException{
+        AnchorPane APProveedor = FXMLLoader.load(getClass().getResource("/sample/Vista/Proveedor.fxml"));
+        Contenedor.getChildren().setAll(APProveedor);
+        APBotonesProducto.setVisible(false);
+        APBotonesCompra.setVisible(false);
+        APBotonesFacturacion.setVisible(false);
+        APBotonesPedido.setVisible(false);
+        APBotonesPagoServicio.setVisible(false);
+    }
+
+    //Muestra en pantalla la ventana de pago servicios
+    @FXML
+    public void pressPagoServicio(ActionEvent event) throws IOException{
+        AnchorPane APPagoServicio = FXMLLoader.load(getClass().getResource("/sample/Vista/PagoServicio.fxml"));
+        Contenedor.getChildren().setAll(APPagoServicio);
+        APBotonesPagoServicio.setVisible(true);
+        APBotonesProducto.setVisible(false);
+        APBotonesCompra.setVisible(false);
+        APBotonesFacturacion.setVisible(false);
+        APBotonesPedido.setVisible(false);
+    }
+
+    //Muestra en pantalla la ventana de historico servicios
+    @FXML
+    public void pressHistoricoPago(ActionEvent event) throws IOException{
+        AnchorPane APHistoricoPagos  = FXMLLoader.load(getClass().getResource("/sample/Vista/HistoricoPagos.fxml"));
+        Contenedor.getChildren().setAll(APHistoricoPagos );
     }
 }
