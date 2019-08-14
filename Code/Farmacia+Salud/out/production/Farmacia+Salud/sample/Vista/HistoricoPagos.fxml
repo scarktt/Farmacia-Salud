@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="APHistoricoPagos" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.HistoricoPagosControlador">
+   <children>
+      <AnchorPane prefHeight="199.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+          <children>
+              <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="120.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+              <Separator layoutX="20.0" layoutY="148.0" prefHeight="3.0" prefWidth="776.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="148.0" />
+              <Separator layoutX="790.0" layoutY="29.0" orientation="VERTICAL" prefHeight="120.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="790.0" AnchorPane.topAnchor="29.0" />
+              <Separator layoutX="114.0" layoutY="24.0" prefHeight="3.0" prefWidth="678.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+              <Separator layoutX="20.0" layoutY="26.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+              <Label layoutX="67.0" layoutY="17.0" text="Filtro">
+                  <font>
+                      <Font name="Calibri" size="18.0" />
+                  </font>
+              </Label>
+            <Label layoutX="48.0" layoutY="49.0" text="Fechas desde:">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="90.0" text="Fecha hasta:">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="DPFechaDesde" layoutX="164.0" layoutY="48.0" />
+            <DatePicker fx:id="DPFechaHasta" layoutX="164.0" layoutY="89.0" />
+            <ComboBox fx:id="cmbCategoria" layoutX="423.0" layoutY="48.0" prefWidth="150.0" promptText="Categoría" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbProveedor" layoutX="624.0" layoutY="48.0" prefWidth="150.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
+            <Button fx:id="btnRealizarBusqueda" layoutX="620.0" layoutY="103.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Realizar Búsqueda">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+          </children>
+      </AnchorPane>
+       <AnchorPane layoutY="152.0" prefHeight="461.0" prefWidth="532.0" style="-fx-background-color: #BCB8B1;">
+           <children>
+               <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+               <Separator layoutX="22.0" layoutY="376.0" prefHeight="3.0" prefWidth="498.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="168.0" AnchorPane.topAnchor="376.0" />
+               <Separator layoutX="515.0" layoutY="27.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="515.0" AnchorPane.topAnchor="27.0" />
+               <Separator layoutX="288.0" layoutY="24.0" prefHeight="3.0" prefWidth="230.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+               <Separator layoutX="20.0" layoutY="26.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+               <Label layoutX="67.0" layoutY="17.0" text="Histórico detalle de servicios">
+                   <font>
+                       <Font name="Calibri" size="18.0" />
+                   </font>
+               </Label>
+            <TableView fx:id="TVHistoricoServicios" layoutX="40.0" layoutY="43.0" prefHeight="280.0" prefWidth="462.0" AnchorPane.topAnchor="43.0">
+              <columns>
+                <TableColumn prefWidth="176.0" text="Pago realizado por" />
+                <TableColumn prefWidth="136.0" text="Tipo pago" />
+                  <TableColumn prefWidth="149.0" text="Monto" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnImprimirHS" layoutX="414.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Imprimir">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+           </children>
+       </AnchorPane>
+      <AnchorPane layoutX="531.0" layoutY="153.0" prefHeight="555.0" prefWidth="672.0" style="-fx-background-color: #BCB8B1;">
+          <children>
+              <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+              <Separator layoutX="19.0" layoutY="376.0" prefHeight="3.0" prefWidth="621.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="178.0" AnchorPane.topAnchor="376.0" />
+              <Separator layoutX="636.0" layoutY="26.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="636.0" AnchorPane.topAnchor="26.0" />
+              <Separator layoutX="276.0" layoutY="24.0" prefHeight="3.0" prefWidth="363.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+              <Separator layoutX="20.0" layoutY="26.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+              <Label layoutX="67.0" layoutY="17.0" text="Histórico detalle de deudas">
+                  <font>
+                      <Font name="Calibri" size="18.0" />
+                  </font>
+              </Label>
+            <TableView fx:id="TVHistoricoDeudas" layoutX="32.0" layoutY="42.0" prefHeight="280.0" prefWidth="594.0" AnchorPane.topAnchor="43.0">
+               <columns>
+                  <TableColumn prefWidth="139.0" text="Proveedor" />
+                  <TableColumn prefWidth="77.0" text="Monto" />
+                  <TableColumn prefWidth="94.0" text="Recibo Colector" />
+                  <TableColumn prefWidth="110.0" text="Observación" />
+                  <TableColumn prefWidth="85.0" text="Fecha Venc." />
+                  <TableColumn prefWidth="88.0" text="Pago" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnImprimirHD" layoutX="538.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Imprimir">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

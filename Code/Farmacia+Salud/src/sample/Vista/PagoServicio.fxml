@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane fx:id="APPagoServicio" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.PagoServicioControlador">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="609.0" prefWidth="388.0" style="-fx-background-color: #BCB8B1;" AnchorPane.bottomAnchor="0.0">
+         <children>
+           <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+           <Separator layoutX="20.0" layoutY="559.0" prefHeight="3.0" prefWidth="351.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="47.0" />
+           <Separator layoutX="368.0" layoutY="27.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="368.0" AnchorPane.topAnchor="27.0" />
+           <Separator layoutX="203.0" layoutY="24.0" prefHeight="3.0" prefWidth="168.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+            <Button fx:id="btnRealizarNuevoPago" layoutX="43.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Realizar Nuevo Pago">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="43.0" layoutY="137.0" text="Pago realizado por">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="187.0" text="Tipo de pago">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="131.0" layoutY="238.0" text="Monto">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbPagoRealizadoPor" layoutX="196.0" layoutY="136.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbTipoPago" layoutX="199.0" layoutY="186.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <TextField fx:id="txtMonto" layoutX="199.0" layoutY="232.0" prefHeight="34.0" prefWidth="150.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnAgregar" layoutX="155.0" layoutY="314.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="37.0" style="-fx-background-color: #BCB8B1;">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/carrito-de-compras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator layoutX="20.0" layoutY="26.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+            <Label layoutX="67.0" layoutY="17.0" text="Pago de Servicios">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="386.0" layoutY="2.0" prefHeight="339.0" prefWidth="827.0" style="-fx-background-color: #BCB8B1;">
+          <children>
+              <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="338.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+              <Separator layoutX="20.0" layoutY="364.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="364.0" />
+              <Separator layoutX="786.0" layoutY="26.0" orientation="VERTICAL" prefHeight="338.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="786.0" AnchorPane.topAnchor="26.0" />
+              <Separator layoutX="285.0" layoutY="24.0" prefHeight="3.0" prefWidth="505.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="26.0" />
+
+              <TableView fx:id="TVPagoServicio" layoutX="33.0" layoutY="105.0" prefHeight="235.0" prefWidth="745.0">
+                  <columns>
+                      <TableColumn prefWidth="132.0" text="Proveedor" />
+                      <TableColumn prefWidth="114.0" text="Monto" />
+                      <TableColumn prefWidth="118.0" text="Recibo Colector" />
+                      <TableColumn minWidth="0.0" prefWidth="173.0" text="Observación" />
+                      <TableColumn prefWidth="115.0" text="Fecha Vencimiento" />
+                  <TableColumn prefWidth="92.0" text="Pago" />
+                  </columns>
+              </TableView>
+            <Label layoutX="112.0" layoutY="63.0" text="Proveedor">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbFacturaCompra" layoutX="587.0" layoutY="61.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <Label layoutX="439.0" layoutY="63.0" text="Factura de compra">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="21.0" layoutY="26.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+            <Label layoutX="67.0" layoutY="16.0" text="Pago de deudas | Pendiente">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+          </children>
+      </AnchorPane>
+       <AnchorPane layoutX="386.0" layoutY="376.0" prefHeight="235.0" prefWidth="827.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                 <Separator layoutX="17.0" layoutY="10.0" orientation="VERTICAL" prefHeight="175.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                 <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="47.0" />
+                      <Separator layoutX="786.0" layoutY="11.0" orientation="VERTICAL" prefHeight="175.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="11.0" />
+                      <Separator layoutX="266.0" layoutY="9.0" prefHeight="3.0" prefWidth="524.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="9.0" />
+            <Separator layoutX="21.0" layoutY="8.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="9.0" />
+            <Label layoutX="73.0" layoutY="1.0" text="Pago de deudas | Abono">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="39.0" text="Abono realizado por">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbAbonoRealizadoPor" layoutX="199.0" layoutY="38.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <TextField fx:id="txtAgregarBono" layoutX="199.0" layoutY="77.0" prefHeight="34.0" prefWidth="150.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="90.0" layoutY="83.0" text="Agregar bono">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAgregar1" layoutX="343.0" layoutY="126.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="37.0" style="-fx-background-color: #BCB8B1;">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/right.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator layoutX="402.0" layoutY="12.0" orientation="VERTICAL" prefHeight="154.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="22.0" />
+            <TableView layoutX="477.0" layoutY="16.0" prefHeight="119.0" prefWidth="229.0">
+              <columns>
+                <TableColumn prefWidth="107.0" text="Fecha Abono" />
+                <TableColumn prefWidth="121.0" text="Cantidad Abonada" />
+              </columns>
+            </TableView>
+            <Label layoutX="496.0" layoutY="138.0" text="Total abonado">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="496.0" layoutY="161.0" text="Deuda restante">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalAbonado" layoutX="630.0" layoutY="138.0" text="1200">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDeudaRestante" layoutX="634.0" layoutY="161.0" text="300">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+                  </children>
+              </AnchorPane>
+      </children>
+</AnchorPane>
