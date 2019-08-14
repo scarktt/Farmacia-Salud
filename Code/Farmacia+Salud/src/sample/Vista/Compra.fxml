@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--Escena de compras-->
+
+<AnchorPane fx:id="APCompras" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.CompraControlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+    <children>
+        <AnchorPane fx:id="APSeleccionarPedido" prefHeight="222.0" prefWidth="587.0">
+            <children>
+                <Label layoutX="211.0" layoutY="18.0" text="Seleccionar pedido">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="15.0" layoutY="13.0" prefHeight="3.0" prefWidth="587.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
+                <Separator layoutX="20.0" layoutY="219.0" prefHeight="3.0" prefWidth="587.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
+                <Separator layoutX="11.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="599.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" />
+                <Label layoutX="276.0" layoutY="36.0" text="o">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="196.0" layoutY="51.0" text="Agregar Nuevo Producto" textFill="#1c9cf9" underline="true">
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="TVSeleccionarPedido" layoutX="31.0" layoutY="77.0" prefHeight="135.0" prefWidth="556.0" AnchorPane.topAnchor="77.0">
+                    <columns>
+                        <TableColumn prefWidth="88.0" text="Pedido" />
+                        <TableColumn prefWidth="99.0" text="Fecha Entrega" />
+                        <TableColumn prefWidth="128.0" text="Pedido realizado por" />
+                        <TableColumn minWidth="2.0" text="Editar" />
+                        <TableColumn minWidth="2.0" text="Cancelar" />
+                        <TableColumn minWidth="2.0" text="Comprar" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="APComprar" layoutX="595.0" prefHeight="222.0" prefWidth="587.0">
+            <children>
+                <Separator layoutX="15.0" layoutY="13.0" prefHeight="3.0" prefWidth="574.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
+                <Separator layoutX="20.0" layoutY="219.0" prefHeight="3.0" prefWidth="574.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="15.0" />
+                <Separator layoutX="11.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="585.0" layoutY="16.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="3.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="585.0" />
+                <TextField fx:id="CtxtNombre" layoutX="26.0" layoutY="27.0" prefHeight="30.0" prefWidth="550.0" promptText="Nombre" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="CtxtCantidad" layoutX="472.0" layoutY="68.0" prefHeight="30.0" prefWidth="91.0" promptText="Cantidad" AnchorPane.rightAnchor="26.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="cmbProveedor" layoutX="27.0" layoutY="68.0" prefHeight="29.0" prefWidth="211.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
+                <ComboBox fx:id="CcmbFormaFarmac" layoutX="249.0" layoutY="68.0" prefHeight="29.0" prefWidth="211.0" promptText="Forma Farmaceútica" style="-fx-background-color: #FFFFFF;" />
+                <TextField fx:id="Ctxt" layoutX="27.0" layoutY="111.0" prefHeight="30.0" prefWidth="68.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="cmbUnidadMedida" layoutX="112.0" layoutY="112.0" prefHeight="29.0" prefWidth="124.0" promptText="Unidad Medida" style="-fx-background-color: #FFFFFF;" />
+                <ComboBox fx:id="cmbPrecioCompra" layoutX="256.0" layoutY="112.0" prefHeight="29.0" prefWidth="174.0" promptText="Precio Compra " style="-fx-background-color: #FFFFFF;" />
+                <TextField fx:id="CtxtDescuento" layoutX="474.0" layoutY="112.0" prefHeight="30.0" prefWidth="89.0" promptText="Descuento" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="26.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <CheckBox fx:id="CchbDescontinuado" layoutX="26.0" layoutY="155.0" mnemonicParsing="false" text="Descontinuado">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="chbGenerico" layoutX="474.0" layoutY="155.0" mnemonicParsing="false" text="Génerico" AnchorPane.rightAnchor="27.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="CchbVentaRestringida" layoutX="256.0" layoutY="155.0" mnemonicParsing="false" text="Venta Restringida">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </CheckBox>
+                <Button fx:id="btnComprar" layoutX="493.0" layoutY="183.0" mnemonicParsing="false" style="-fx-background-color: #A0A8AB;" text="Comprar">
+                    <font>
+                        <Font name="Calibri" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="APMostrarPedido" layoutY="222.0" prefHeight="389.0" prefWidth="1211.0">
+            <children>
+                <TableView fx:id="TVPedido" layoutX="14.0" layoutY="43.0" prefHeight="321.0" prefWidth="1171.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="26.0">
+                    <columns>
+                        <TableColumn prefWidth="88.0" text="Pedido" />
+                        <TableColumn prefWidth="165.0" text="Fecha Entrega" />
+                        <TableColumn prefWidth="102.0" text="Finalizar" />
+                        <TableColumn minWidth="2.0" prefWidth="220.0" text="Producto" />
+                        <TableColumn minWidth="2.0" prefWidth="219.0" text="Proveedor" />
+                        <TableColumn minWidth="2.0" prefWidth="94.0" text="Cantidad" />
+                        <TableColumn minWidth="2.0" prefWidth="94.0" text="Precio" />
+                        <TableColumn minWidth="2.0" prefWidth="94.0" text="Descuento" />
+                        <TableColumn minWidth="2.0" prefWidth="94.0" text="Eliminar" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

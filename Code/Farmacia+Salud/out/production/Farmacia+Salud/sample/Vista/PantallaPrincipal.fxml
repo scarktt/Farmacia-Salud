@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Padre" prefHeight="680.0" prefWidth="1260.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.PantallaPrincipalControlador">
+<children>
+   <AnchorPane fx:id="BarraArriba" prefHeight="37.0" prefWidth="1263.0" style="-fx-background-color: #D7F9F1;">
+      <children>
+         <ImageView fx:id="imgexit" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressExit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
+            <image>
+               <Image url="@../img/cerrar.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="imgMin" fitHeight="30.0" fitWidth="48.0" onMouseClicked="#pressMin" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="4.0">
+            <image>
+               <Image url="@../img/menos.png" />
+            </image>
+         </ImageView>
+      </children></AnchorPane>
+   <AnchorPane layoutY="36.0" prefHeight="616.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="36.0">
+      <children>
+         <ImageView fitHeight="65.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="620.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <image>
+               <Image url="@../img/disposicion.png" />
+            </image>
+         </ImageView>
+         <Separator layoutX="1.0" layoutY="64.0" prefHeight="6.0" prefWidth="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="63.0" />
+            <Button fx:id="btnVentas" layoutY="118.0" mnemonicParsing="false" onAction="#pressFacturacion" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="90.0">
+               <graphic>
+               <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../img/carrito-de-compras.png" />
+                  </image>
+               </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCompras" layoutY="208.0" mnemonicParsing="false" onAction="#pressCompras" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="190.0">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="43.0" onMouseClicked="#pressFacturacion" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/camion-de-carga.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnProveedores" layoutY="293.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="290.0">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/apreton-de-manos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnPagoServicios" layoutY="376.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="390.0">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/dinero.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnProducto" layoutX="10.0" layoutY="410.0" mnemonicParsing="false" onAction="#pressProducto" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="490.0">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="43.0"  pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/p-dentro-de-un-circulo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnPedido" layoutX="10.0" layoutY="510.0" mnemonicParsing="false" onAction="#pressPedido" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="590.0">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="43.0"  pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/simbolo-del-telefono-auricular-en-un-circulo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="59.0" layoutY="34.0" prefHeight="68.0" prefWidth="1203.0" style="-fx-background-color: #C7CCB9;" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="34.0">
+      <children>
+         <ImageView fx:id="imgUsuario" fitHeight="58.0" fitWidth="145.0" layoutX="1108.0" layoutY="7.0" onMouseClicked="#pressUsuario" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <image>
+               <Image url="@../img/usuario.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="922.0" layoutY="20.0" text="Gabriela Castillo" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <font>
+               <Font name="Calibri Bold" size="24.0" />
+            </font>
+         </Label>
+         <ImageView fx:id="Notificacion" fitHeight="30.0" fitWidth="100.0" layoutX="868.0" layoutY="19.0" onMouseClicked="#pressNotificacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.topAnchor="19.0">
+            <image>
+               <Image url="@../img/campana.png" />
+            </image>
+         </ImageView>
+         <AnchorPane fx:id="APBotonesFacturacion" layoutX="14.0" layoutY="9.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="btnInicio" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressFacturacion" style="-fx-background-color: #A2AAAD;" text="Inicio" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnDetalleFactura" layoutX="108.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressDetalleFactura" style="-fx-background-color: #A2AAAD;" text="Detalle Factura" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoVenta" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressHistoricoVentas" style="-fx-background-color: #A2AAAD;" text="Histórico de venta" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesCompra" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="btn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressCompras" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnDetalleCompra" layoutX="122.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressDetalleCompra" style="-fx-background-color: #A2AAAD;" text="Detalle Compra" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoCompra" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressHistoricoCompra" style="-fx-background-color: #A2AAAD;" text="Histórico de compra" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btn2" layoutX="58.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressCompras2" style="-fx-background-color: #A2AAAD;" text="2">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesPedido" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="406.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="btnPedido1" layoutX="51.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressPedido" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnDetallePedido" layoutX="112.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressDetallePedido" style="-fx-background-color: #A2AAAD;" text="Detalle Pedido" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoPedido" layoutX="266.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressHistoricoPedido" style="-fx-background-color: #A2AAAD;" text="Histórico de Pedido" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesProducto" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="499.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="Prbtn1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressProducto" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnReducirStock" layoutX="219.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressReducirStock" style="-fx-background-color: #A2AAAD;" text="Reducir Stock" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoPerdida" layoutX="347.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressHistoricoPerdida" style="-fx-background-color: #A2AAAD;" text="Histórico de pérdida" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnAgregarProducto" layoutX="69.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Agregar producto" onAction="#pressAgregarProducto">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="APNotificacion" onMouseExited="#exitNotificacion" prefHeight="220.0" prefWidth="249.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="740.0" AnchorPane.topAnchor="120.0">
+      <children>
+         <AnchorPane fx:id="APRol1" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
+            <children>
+               <Label fx:id="lblNotificacion" alignment="CENTER" layoutX="61.0" layoutY="5.0" text="Notificaciones" AnchorPane.leftAnchor="61.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="254.0" AnchorPane.topAnchor="37.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APEntrega" layoutY="37.0" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0">
+            <children>
+               <Label layoutX="81.0" layoutY="3.0" prefHeight="28.0" prefWidth="91.0" text="Entrega de " AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="3.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblEntrega" layoutX="23.0" layoutY="27.0" prefHeight="28.0" prefWidth="208.0" text="dist. Ramos en 12 horas">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APNotiCantidad" layoutY="98.0" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="58.0" prefWidth="254.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="101.0">
+            <children>
+               <Label layoutX="36.0" layoutY="-10.0" text="Quedan" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="-10.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblCantidad" layoutX="110.0" text="10 unidades" AnchorPane.leftAnchor="110.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblProducto" layoutX="20.0" layoutY="30.0" text="de paracetamol" AnchorPane.leftAnchor="20.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblUnidadMedida" layoutX="150.0" layoutY="30.0" text="de 1 mg" AnchorPane.leftAnchor="150.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+         <ImageView fx:id="imgFlecha1" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="-22.0">
+            <image>
+               <Image url="@../img/flecha.png" />
+            </image>
+         </ImageView>
+         <AnchorPane fx:id="APNotifCantidad1" layoutY="95.0" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="58.0" prefWidth="254.0" AnchorPane.topAnchor="160.0">
+            <children>
+               <Label layoutX="30.0" layoutY="-9.0" text="Quedan" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="-9.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblCantidad1" layoutX="104.0" layoutY="1.0" text="10 unidades" AnchorPane.leftAnchor="104.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblProducto1" layoutX="14.0" layoutY="31.0" text="de ciprofloxacina " AnchorPane.leftAnchor="14.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblUnidadMedida1" layoutX="154.0" layoutY="31.0" text="de 50 mg" AnchorPane.leftAnchor="154.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="254.0" AnchorPane.leftAnchor="0.0" />
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="APUser" layoutX="1052.0" layoutY="121.0" onMouseExited="#exitUsuario" prefHeight="101.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" visible="false" AnchorPane.leftAnchor="1052.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+      <children>
+         <AnchorPane fx:id="APRol" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0">
+            <children>
+               <Label fx:id="lblRol" layoutY="6.0" text="Rol: Administrador" AnchorPane.leftAnchor="30.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Separator prefWidth="208.0" AnchorPane.topAnchor="37.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APConfiguracion" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0">
+            <children>
+               <Label fx:id="lblConfiguracion" layoutX="1.0" layoutY="7.0" text="Configuración" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="65.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <ImageView fx:id="imgConfiguracion" fitHeight="29.0" fitWidth="30.0" layoutX="28.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="5.0">
+                  <image>
+                     <Image url="@../img/Ajuste.png" />
+                  </image>
+               </ImageView>
+               <Separator prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="37.0" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APCerrarSesion" minHeight="0.0" minWidth="0.0" onMouseClicked="#pressCerrarSesion" prefHeight="37.0" prefWidth="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+            <children>
+               <Label fx:id="lblCerrarSesion" layoutX="27.0" layoutY="7.0" text="Cerrar sesión" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="7.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <ImageView fx:id="imgCerrarSesion" fitHeight="29.0" fitWidth="30.0" layoutX="30.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="5.0">
+                  <image>
+                     <Image url="@../img/exit.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </AnchorPane>
+         <ImageView fx:id="imgFlecha" fitHeight="34.0" fitWidth="29.0" layoutX="125.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="-22.0">
+            <image>
+               <Image url="@../img/flecha.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="Contenedor" layoutX="60.0" layoutY="101.0" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+      <children></children>
+   </AnchorPane>
+</children>
+</AnchorPane>

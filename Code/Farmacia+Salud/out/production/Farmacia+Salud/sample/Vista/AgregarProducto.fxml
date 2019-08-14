@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="APAgregarProducto" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.AgregarProductoControlador">
+    <children>
+            <Separator layoutX="42.0" layoutY="26.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="0.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="1155.0" />
+            <Separator layoutX="47.0" layoutY="536.0" prefHeight="3.0" prefWidth="1113.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="525.0" />
+            <Separator layoutX="1155.0" layoutY="27.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="27.0" />
+            <Separator layoutX="45.0" layoutY="24.0" prefHeight="3.0" prefWidth="1117.0" style="-fx-background-color: #000000;" />
+            <Separator layoutX="48.0" layoutY="59.0" prefHeight="3.0" prefWidth="1113.0" style="-fx-background-color: #000000;" />
+            <Label layoutX="72.0" layoutY="33.0" text="Nombre">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="33.0" text="Forma Farmaceútica">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="529.0" layoutY="33.0" text="Unidad Medida">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="393.0" layoutY="33.0" text="Dosis/Cantidad">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="670.0" layoutY="33.0" text="Restricción">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="776.0" layoutY="33.0" text="Descontinuado">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="1051.0" layoutY="33.0" text="Indicación">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="928.0" layoutY="33.0" text="Utilidad">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <Separator layoutX="899.0" layoutY="27.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+            <TextField fx:id="txtNombre" layoutX="62.0" layoutY="74.0" prefHeight="30.0" prefWidth="130.0">
+                <font>
+                    <Font name="Calibri" size="16.0" />
+                </font>
+            </TextField>
+            <TextField fx:id="txtDosis" layoutX="393.0" layoutY="74.0" prefHeight="30.0" prefWidth="113.0">
+                <font>
+                    <Font name="Calibri" size="16.0" />
+                </font>
+            </TextField>
+            <ComboBox fx:id="cmbForma_Farmaceutica" layoutX="216.0" layoutY="77.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
+            <ComboBox fx:id="cmbUnidadMedida" layoutX="529.0" layoutY="77.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" />
+            <CheckBox fx:id="chbVentaRestr" layoutX="696.0" layoutY="77.0" mnemonicParsing="false">
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </CheckBox>
+            <CheckBox fx:id="chbDescontinuado" layoutX="803.0" layoutY="77.0" mnemonicParsing="false">
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </CheckBox>
+            <ComboBox fx:id="cmbUtilidad" layoutX="916.0" layoutY="77.0" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #ffffff;" />
+            <ComboBox fx:id="cmbIndicacion" layoutX="1043.0" layoutY="77.0" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #ffffff;" />
+      <Button fx:id="btnListo" layoutX="1110.0" layoutY="528.0" mnemonicParsing="false" style="-fx-background-color: #BCB8B1;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/checked.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        </children>
+</AnchorPane>

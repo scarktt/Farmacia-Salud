@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="APReduciStock" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.ReducirStockControlador">
+    <children>
+        <AnchorPane fx:id="APBuscarProductosRegistrados" prefHeight="409.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="383.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="383.0" />
+                <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
+                <Separator layoutX="18.0" layoutY="24.0" prefHeight="3.0" prefWidth="1071.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="20.0" />
+                <TextField fx:id="txtBuscar" layoutX="377.0" layoutY="84.0" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="377.0">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="lblbuscar" layoutX="338.0" layoutY="84.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="338.0" />
+                <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="345.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/search.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="373.0" layoutY="45.0" text="Buscar Productos Registrados">
+                    <font>
+                        <Font name="Calibri" size="24.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="TVReducirStock" layoutX="41.0" layoutY="138.0" prefHeight="235.0" prefWidth="1034.0">
+                    <columns>
+                        <TableColumn prefWidth="82.0" text="ID" />
+                        <TableColumn prefWidth="85.0" text="Restricción" />
+                        <TableColumn prefWidth="192.0" text="Nombre" />
+                        <TableColumn prefWidth="192.0" text="Forma Farmaceutica" />
+                        <TableColumn minWidth="0.0" prefWidth="115.0" text="Dosis/Cant." />
+                        <TableColumn minWidth="0.0" prefWidth="126.0" text="Unidad Medida" />
+                        <TableColumn minWidth="6.0" prefWidth="111.0" text="Stock Bodega" />
+                        <TableColumn prefWidth="130.0" text="Stock Estante" />
+                    </columns>
+                </TableView>
+                <Button fx:id="btnEditar" layoutX="926.0" layoutY="93.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #BCB8B1;" text="Editar Stock">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+               <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/edit.png" />
+                            </image>
+                        </ImageView>
+               </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="APBuscarProductosRegistrados2" layoutY="396.0" prefHeight="188.0" prefWidth="1101.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="1073.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
+                <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="1071.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="23.0" layoutY="59.0" prefHeight="3.0" prefWidth="1071.0" style="-fx-background-color: #000000;" />
+                <Label layoutX="32.0" layoutY="33.0" text="Nombre">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="166.0" layoutY="33.0" text="Forma Farmaceútica">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="483.0" layoutY="33.0" text="Unidad Medida">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="347.0" layoutY="33.0" text="Dosis/Cantidad">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="624.0" layoutY="33.0" text="Restricción">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="730.0" layoutY="33.0" text="Descontinuado">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="982.0" layoutY="33.0" text="Stock Estante">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="854.0" layoutY="33.0" text="Stock Bodega">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtNombre" layoutX="26.0" layoutY="74.0" prefHeight="30.0" prefWidth="113.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtDosis" layoutX="347.0" layoutY="74.0" prefHeight="30.0" prefWidth="113.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="cmbForma_Farmaceutica" layoutX="170.0" layoutY="77.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
+                <ComboBox fx:id="cmbUnidadMedida" layoutX="483.0" layoutY="77.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" />
+                <CheckBox fx:id="chbVentaRestr" layoutX="650.0" layoutY="77.0" mnemonicParsing="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="chbDescontinuado" layoutX="757.0" layoutY="77.0" mnemonicParsing="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </CheckBox>
+            <TextField fx:id="txtStockBodega" layoutX="854.0" layoutY="79.0" prefHeight="30.0" prefWidth="99.0">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtStockEstante" layoutX="982.0" layoutY="79.0" prefHeight="30.0" prefWidth="99.0">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+        <Button fx:id="btnListo" layoutX="1101.0" layoutY="524.0" mnemonicParsing="false" style="-fx-background-color: #BCB8B1;">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/checked.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

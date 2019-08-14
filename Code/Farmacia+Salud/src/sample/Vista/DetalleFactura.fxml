@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--Escena de DetalleFactura-->
+
+<AnchorPane fx:id="APDetalleFactura" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.DetalleFacturaControlador">
+        <children>
+            <AnchorPane prefHeight="594.0" prefWidth="1136.0" style="-fx-background-color: #BCB8B1;" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label layoutX="66.0" layoutY="21.0" text="Detalle Factura">
+                        <font>
+                            <Font name="Calibri" size="20.0" />
+                        </font>
+                    </Label>
+                    <Separator layoutX="20.0" layoutY="566.0" prefHeight="3.0" prefWidth="1101.0" style="-fx-background-color: #000000;" />
+                    <Separator layoutX="20.0" layoutY="30.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="32.0" />
+                    <Separator layoutX="17.0" layoutY="32.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="34.0" />
+                    <Separator layoutX="1118.0" layoutY="32.0" orientation="VERTICAL" prefHeight="535.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="34.0" />
+                    <Separator layoutX="204.0" layoutY="32.0" prefHeight="3.0" prefWidth="918.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="32.0" />
+                    <TableView fx:id="TVDetalleFactura" layoutX="102.0" layoutY="62.0" prefHeight="358.0" prefWidth="932.0">
+                        <columns>
+                            <TableColumn prefWidth="120.0" text="Código" />
+                            <TableColumn prefWidth="300.0" text="Descripción" />
+                            <TableColumn prefWidth="170.0" text="Cantidad" />
+                            <TableColumn minWidth="2.0" prefWidth="170.0" text="Precio Unitario" />
+                            <TableColumn minWidth="0.0" prefWidth="170.0" text="Precio Total" />
+                        </columns>
+                    </TableView>
+                    <Button fx:id="btnImprimir" layoutX="532.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Imprimir">
+                        <font>
+                            <Font name="Calibri Bold" size="18.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </children>
+</AnchorPane>

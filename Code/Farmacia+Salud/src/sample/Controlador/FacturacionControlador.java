@@ -1,5 +1,6 @@
 package sample.Controlador;
 
+<<<<<<< HEAD
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -268,4 +269,8 @@ public class FacturacionControlador implements Initializable {
         APProductos.setVisible(false);
         APDetallePedido.setVisible(false);
     }
+=======
+public class FacturacionControlador
+{
+>>>>>>> 5821f5b1ff4f43f6e910c8b506f8ef12f243aaf4
 }
