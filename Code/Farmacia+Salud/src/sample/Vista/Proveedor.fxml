@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="APProveedor" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.ProveedorControlador">
+    <children>
+        <AnchorPane fx:id="APProveedor1" prefHeight="409.0" prefWidth="799.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="383.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="383.0" />
+                <Separator layoutX="786.0" layoutY="26.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="786.0" AnchorPane.topAnchor="26.0" />
+                <Separator layoutX="18.0" layoutY="24.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="20.0" />
+                <TextField fx:id="txtBuscar" layoutX="206.0" layoutY="80.0" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="206.0">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="lblbuscar" layoutX="167.0" layoutY="80.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="167.0" />
+                <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="174.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/search.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="202.0" layoutY="41.0" text="Buscar Productos Registrados">
+                    <font>
+                        <Font name="Calibri" size="24.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="TVProveedor" layoutX="41.0" layoutY="138.0" prefHeight="235.0" prefWidth="669.0">
+                    <columns>
+                        <TableColumn prefWidth="99.0" text="ID" />
+                        <TableColumn prefWidth="192.0" text="Nombre" />
+                        <TableColumn prefWidth="175.0" text="Tipo" />
+                        <TableColumn minWidth="0.0" prefWidth="101.0" text="Teléfono 1" />
+                        <TableColumn prefWidth="99.0" text="Teléfono 2" />
+                    </columns>
+                </TableView>
+                <Button fx:id="btnEditar" layoutX="723.0" layoutY="231.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #BCB8B1;">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/edit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            <Button fx:id="btnMenos" layoutX="723.0" layoutY="178.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #BCB8B1;">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/minus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="APProveedor2" layoutY="386.0" prefHeight="188.0" prefWidth="871.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Separator layoutX="17.0" layoutY="29.0" orientation="VERTICAL" prefHeight="146.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="172.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="786.0" layoutY="27.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="27.0" />
+                <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="23.0" layoutY="59.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" />
+                <Label layoutX="167.0" layoutY="36.0" text="Nombre">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="366.0" layoutY="36.0" text="Tipo">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="508.0" layoutY="36.0" text="Teléfono 1">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtNombre" layoutX="132.0" layoutY="77.0" prefHeight="30.0" prefWidth="150.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtTeléfono1" layoutX="490.0" layoutY="77.0" prefHeight="30.0" prefWidth="113.0">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="cmbTipo" layoutX="313.0" layoutY="80.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="670.0" layoutY="36.0" text="Teléfono 2">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTeléfono2" layoutX="645.0" layoutY="77.0" prefHeight="30.0" prefWidth="113.0">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="41.0" layoutY="36.0" text="ID">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblID" layoutX="41.0" layoutY="81.0" text="123123">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+              <Button fx:id="btnListo" layoutX="813.0" layoutY="129.0" mnemonicParsing="false" style="-fx-background-color: #BCB8B1;">
+                  <graphic>
+                      <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../img/checked.png" />
+                          </image>
+                      </ImageView>
+                  </graphic>
+              </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="APProveedor3" layoutX="799.0" prefHeight="395.0" prefWidth="391.0" style="-fx-background-color: #BCB8B1;">
+            <children>
+                <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="20.0" layoutY="383.0" prefHeight="3.0" prefWidth="346.0" style="-fx-background-color: #000000;" />
+                <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="27.0" />
+                <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="340.0" style="-fx-background-color: #000000;" />
+                <TextField fx:id="txtNombreAg" layoutX="46.0" layoutY="89.0" prefHeight="30.0" prefWidth="299.0" promptText="Nombre">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="cmbTipoAg" layoutX="46.0" layoutY="152.0" prefHeight="25.0" prefWidth="299.0" promptText="Tipo" style="-fx-background-color: #ffffff;" />
+            <TextField fx:id="txtTel1" layoutX="46.0" layoutY="215.0" prefHeight="30.0" prefWidth="299.0" promptText="Teléfono 1">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTel2" layoutX="46.0" layoutY="275.0" prefHeight="30.0" prefWidth="299.0" promptText="Teléfono 2">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnAgregar" layoutX="46.0" layoutY="327.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Agregar">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNuevoProveedor" layoutX="46.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Nuevo Proveedor">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -52,7 +52,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="btnProveedores" layoutY="293.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="290.0">
+            <Button fx:id="btnProveedores" layoutY="293.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.topAnchor="290.0" onAction="#pressProvedor">
                <graphic>
                   <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -61,7 +61,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="btnPagoServicios" layoutY="376.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="390.0">
+            <Button fx:id="btnPagoServicios" layoutY="376.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="390.0" onAction="#pressPagoServicio">
                <graphic>
                   <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -226,6 +226,26 @@
                   </font>
                </Button>
                <Button fx:id="btnAgregarProducto" layoutX="69.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Agregar producto" onAction="#pressAgregarProducto">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="APBotonesPagoServicio" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="499.0" style="-fx-background-color: #C7CCB9;" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0">
+            <children>
+               <Button fx:id="PrbtnPagoServicio1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressPagoServicio" style="-fx-background-color: #A2AAAD;" text="1" AnchorPane.topAnchor="12.0">
+                  <effect>
+                     <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
+                  </effect>
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnHistoricoPagos" layoutX="70.0" layoutY="12.0" mnemonicParsing="false" onAction="#pressHistoricoPago" style="-fx-background-color: #A2AAAD;" text="Histórico de pagos" AnchorPane.topAnchor="12.0">
                   <effect>
                      <DropShadow height="0.0" offsetY="1.0" radius="1.0" width="6.0" />
                   </effect>
