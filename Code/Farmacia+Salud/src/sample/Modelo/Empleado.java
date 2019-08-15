@@ -27,6 +27,10 @@ public class Empleado{
         this.Pass = new SimpleStringProperty(Pass);
     }
 
+    public Empleado(String Nombre) {
+        this.Nombre = new SimpleStringProperty(Nombre);
+    }
+
     //Metodos atributo: IDempleado
     public int getIDempleado() {
         return IDempleado.get();
@@ -78,28 +82,24 @@ public class Empleado{
         return Pass;
     }
 
-    @Override
+    // NOTA: Nunca, nunca soberescribir la clase con el metodo toString.
+    // ya que por ejemplo sólo se puede retornar uno de los atributos
+    /*@Override
     public String toString () {
         return Nombre.get();
-    }
+    }*/
 
-    public static void llenarInformacion (Connection connection, ObservableList<Empleado> lista) {
+    public static void llenarCmbNombresEmpleado (Connection connection, ObservableList<String> lista) {
         try {
             Statement statement = connection.createStatement();
-            ResultSet resultado = statement.executeQuery("SELECT IDempleado, CedulaEmpleado,Nombre,Usuario,Pass FROM Empleado");
+            ResultSet resultado = statement.executeQuery("SELECT Nombre FROM Empleado");
 
+            // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
-                lista.add(
-                        new Empleado(
-                            resultado.getInt("IDempleado"),
-                            resultado.getString("CedulaEmpleado"),
-                            resultado.getString("Nombre"),
-                            resultado.getString("Usuario"),
-                            resultado.getString("Pass")
-                        )
-                );
+                lista.add(resultado.getString("Nombre"));
             }
         } catch (SQLException e) {
+            System.out.println("Error al agregar");
             e.printStackTrace();
         }
     }
