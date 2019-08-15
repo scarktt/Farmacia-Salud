@@ -7,10 +7,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Proveedor{
     private IntegerProperty IDproveedor;
@@ -81,15 +78,16 @@ public class Proveedor{
 
     public static void llenarCmbNombresProveedores (Connection connection, ObservableList<String> lista) {
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultado = statement.executeQuery("SELECT Nombre_proveedor FROM Proveedor");
+            String query = "SELECT Nombre_proveedor FROM Proveedor";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
                 lista.add(resultado.getString("Nombre_proveedor"));
             }
         } catch (SQLException e) {
-            System.out.println("Error al agregar");
+            System.out.println("Error al agregar Nombre del proveedor");
             e.printStackTrace();
         }
     }

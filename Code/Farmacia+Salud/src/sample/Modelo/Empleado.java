@@ -7,10 +7,7 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
 import java.lang.String;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Empleado{
     private IntegerProperty IDempleado;
@@ -91,15 +88,16 @@ public class Empleado{
 
     public static void llenarCmbNombresEmpleado (Connection connection, ObservableList<String> lista) {
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultado = statement.executeQuery("SELECT Nombre FROM Empleado");
+            String query = "SELECT Nombre FROM Empleado";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
                 lista.add(resultado.getString("Nombre"));
             }
         } catch (SQLException e) {
-            System.out.println("Error al agregar");
+            System.out.println("Error al agregar Nombre del empleado al combobox");
             e.printStackTrace();
         }
     }
