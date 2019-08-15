@@ -1,13 +1,17 @@
 package sample.Controlador;
 
-<<<<<<< HEAD
+import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import sample.Modelo.*;
@@ -36,37 +40,38 @@ public class FacturacionControlador implements Initializable {
     @FXML private AnchorPane APProducto;
     @FXML private AnchorPane APProductos;
     @FXML private AnchorPane APHistoricoProducto;
-    //Botones de arriiba
+    // Botones de arriba
     @FXML private AnchorPane APBotonesFacturacion;
     @FXML private AnchorPane APBotonesPedido;
     @FXML private AnchorPane APBotonesCompra;
     @FXML private AnchorPane APBotonesProducto;
-    //ComboBox primera pantalla de facturacion
+    // ComboBox
     @FXML private ComboBox cmbVendedor;
     @FXML private ComboBox cmbProveedor;
-    @FXML private ComboBox cmbForma_farmaceutica;
+    @FXML private ComboBox cmbForma_Farmaceutica;
     @FXML private ComboBox cmbUnidadMedida;
     @FXML private ComboBox cmbUtilidad;
     @FXML private ComboBox cmbIndicacion;
-    //ComboBox tercera pantalla de facturacion
-    @FXML private ComboBox PrcmbProducto;
-
     @FXML private TextField txtBuscar;
-    @FXML private TableView TVAgregarProductos;
+    // TableViewß
+    @FXML private TableView<String> TVAgregarProductos;
+    // Columnas del TableView
+    @FXML private TableColumn<String, String> TCProducto;
 
-    ObservableList<String> listaVendedores = FXCollections.observableArrayList();
-    ObservableList<String> listaProveedores = FXCollections.observableArrayList();
-    ObservableList<String> listaForma_farmaceutica = FXCollections.observableArrayList();
-    ObservableList<String> listaUnidadMedida = FXCollections.observableArrayList();
-    ObservableList<String> listaIndicacion = FXCollections.observableArrayList();
-    ObservableList<String> listaUtilidad = FXCollections.observableArrayList();
-    ObservableList<String> listaNombresProductos = FXCollections.observableArrayList();
+    // Colecciones de tipo String
+    private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
+    private ObservableList<String> listaProveedores = FXCollections.observableArrayList();
+    private ObservableList<String> listaForma_farmaceutica = FXCollections.observableArrayList();
+    private ObservableList<String> listaUnidadMedida = FXCollections.observableArrayList();
+    private ObservableList<String> listaIndicacion = FXCollections.observableArrayList();
+    private ObservableList<String> listaUtilidad = FXCollections.observableArrayList();
 
-    private Conexion conexion;
+    // Colecciones de tipo Objeto
+    private ObservableList<String> listaNombreProducto = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        conexion = new Conexion();
+        Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
         //LLenar listas
@@ -76,26 +81,28 @@ public class FacturacionControlador implements Initializable {
         Producto.llenarCmbUnidadMedida(conexion.getConnection(), listaUnidadMedida);
         Enfermedad.llenarCmbEnfermedad(conexion.getConnection(), listaUtilidad);
         Indicacion.llenarCmbIndicacion(conexion.getConnection(), listaIndicacion);
-        Producto.llenarCmbNombresProductos(conexion.getConnection(), listaNombresProductos);
 
-        //Enlazar listas con ComboBox y TableView
+
+        // Enlazar listas con ComboBox
         cmbVendedor.setItems(listaVendedores);
         cmbProveedor.setItems(listaProveedores);
-        cmbForma_farmaceutica.setItems(listaForma_farmaceutica);
+        cmbForma_Farmaceutica.setItems(listaForma_farmaceutica);
         cmbUnidadMedida.setItems(listaUnidadMedida);
         cmbIndicacion.setItems(listaIndicacion);
         cmbUtilidad.setItems(listaUtilidad);
-        PrcmbProducto.setItems(listaNombresProductos);
+
+
 
         conexion.cerrarConexion();
     }
 
     //Cierra el programa
-    public void pressExit(){
+    public void pressExit() {
         System.exit(0);
     }
+
     //Minimiza el programa
-    public void pressMin(){
+    public void pressMin() {
         //setIconified(1);aun no funciona
     }
 
@@ -103,11 +110,19 @@ public class FacturacionControlador implements Initializable {
     public void pressUsuario(MouseEvent event) {
         APUser.setVisible(true);
     }
-    public void pressNotificacion(MouseEvent event) { APNotificacion.setVisible(true);}
+
+    public void pressNotificacion(MouseEvent event) {
+        APNotificacion.setVisible(true);
+    }
 
     //Oculta el panel de usuario o notificacion
-    public void exitUsuario(MouseEvent event) { APUser.setVisible(false);}
-    public void exitNotificacion(MouseEvent event) { APNotificacion.setVisible(false);}
+    public void exitUsuario(MouseEvent event) {
+        APUser.setVisible(false);
+    }
+
+    public void exitNotificacion(MouseEvent event) {
+        APNotificacion.setVisible(false);
+    }
 
     public void pressCerrarSesion(MouseEvent event) throws IOException {
         //No funciona
@@ -269,8 +284,23 @@ public class FacturacionControlador implements Initializable {
         APProductos.setVisible(false);
         APDetallePedido.setVisible(false);
     }
-=======
-public class FacturacionControlador
-{
->>>>>>> 5821f5b1ff4f43f6e910c8b506f8ef12f243aaf4
+
+    public TextField getTxtBuscar() {
+        return txtBuscar;
+    }
+
+    public void handleKeyReleased(KeyEvent keyEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), keyEvent.getText(), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
+    }
 }

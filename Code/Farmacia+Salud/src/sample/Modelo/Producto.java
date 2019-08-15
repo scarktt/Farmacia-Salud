@@ -33,6 +33,10 @@ public class Producto {
         this.StockEstante = new SimpleIntegerProperty(StockEstante);
     }
 
+    public Producto (String Nombre) {
+        this.Nombre = new SimpleStringProperty(Nombre);
+    }
+
     //Metodos atributo: IDproducto
     public int getIDproducto() {
         return IDproducto.get();
@@ -186,6 +190,25 @@ public class Producto {
             }
         } catch (SQLException e) {
             System.out.println("Error al agregar Nombre del producto al combobox");
+            e.printStackTrace();
+        }
+    }
+
+    public static void busquedaDinamicaProducto (Connection connection, String busqueda, ObservableList<String> lista) {
+        try {
+            String query = "SELECT * FROM Producto WHERE Nombre LIKE '"+busqueda+"%'";
+            PreparedStatement statement = connection.prepareStatement(query);
+            //statement.setNString(1, busqueda);
+            ResultSet resultado = statement.executeQuery();
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("Nombre"));
+            }
+
+            statement.close();
+        } catch (SQLException e) {
+            System.out.println("Error al agregar Nombre del producto al TableView");
             e.printStackTrace();
         }
     }
