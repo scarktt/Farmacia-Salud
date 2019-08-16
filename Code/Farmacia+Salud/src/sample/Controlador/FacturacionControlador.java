@@ -11,6 +11,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -285,22 +286,40 @@ public class FacturacionControlador implements Initializable {
         APDetallePedido.setVisible(false);
     }
 
-    public TextField getTxtBuscar() {
-        return txtBuscar;
-    }
+    String text = "";
 
     public void handleKeyReleased(KeyEvent keyEvent) {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), keyEvent.getText(), listaNombreProducto);
+        if (keyEvent.getCode() != KeyCode.BACK_SPACE) {
+            text = text + keyEvent.getText();
+            listaNombreProducto.clear();
 
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(listaNombreProducto);
+            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, listaNombreProducto);
 
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+            // Enlazar listas con TableView
+            TVAgregarProductos.setItems(listaNombreProducto);
 
-        conexion.cerrarConexion();
+            // Enlazar columnas con atributos
+            TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+            conexion.cerrarConexion();
+
+        } else {
+           text = text.substring(0, text.length() - 1);
+           listaNombreProducto.clear();
+
+            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, listaNombreProducto);
+
+            // Enlazar listas con TableView
+            TVAgregarProductos.setItems(listaNombreProducto);
+
+            // Enlazar columnas con atributos
+            TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+            conexion.cerrarConexion();
+        }
+
     }
 }
