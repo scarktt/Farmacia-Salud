@@ -3,14 +3,12 @@ package sample.Controlador;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -40,7 +38,6 @@ public class FacturacionControlador implements Initializable {
     @FXML private AnchorPane APHistoricoPedidos;
     @FXML private AnchorPane APProducto;
     @FXML private AnchorPane APProductos;
-    @FXML private AnchorPane APHistoricoProducto;
     // Botones de arriba
     @FXML private AnchorPane APBotonesFacturacion;
     @FXML private AnchorPane APBotonesPedido;
@@ -279,20 +276,16 @@ public class FacturacionControlador implements Initializable {
         APBotonesPedido.setVisible(false);
     }
 
-    //Muestra en pantalla la ventana de Historicoproducto
-    public void pressHistoricoProducto(MouseEvent event) {
-        APHistoricoProducto.setVisible(true);
-        APProductos.setVisible(false);
-        APDetallePedido.setVisible(false);
-    }
-
-    String text = "";
+    private String text = "";
 
     public void handleKeyReleased(KeyEvent keyEvent) {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
         if (keyEvent.getCode() != KeyCode.BACK_SPACE) {
+            // Se agrega la letra digitada caracter a caracter, esto debido a que cada vez que se entra en este metodo
+            // (handleKeyReleased) el parametro del mismo solo recibe el caracter nuevo y si se envia solo eso para
+            // la consulta, la busqueda va a ser incorrecta.
             text = text + keyEvent.getText();
             listaNombreProducto.clear();
 
@@ -307,8 +300,18 @@ public class FacturacionControlador implements Initializable {
             conexion.cerrarConexion();
 
         } else {
-           text = text.substring(0, text.length() - 1);
-           listaNombreProducto.clear();
+
+            // Si la longitud del texto es cero, se le establece como cadena vacia. Si no, se resta un caracter
+            // del texto. (Esto tiene la finalidad de no activar la excepcion de que la longitud de la cadena
+            // sea un numero negativo)
+            if (text.length() == 0) {
+                text = "";
+                listaNombreProducto.clear();
+
+            } else {
+                text = text.substring(0, text.length() - 1);
+                listaNombreProducto.clear();
+            }
 
             Producto.busquedaDinamicaProducto(conexion.getConnection(), text, listaNombreProducto);
 

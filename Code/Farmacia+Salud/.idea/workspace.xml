@@ -4,9 +4,9 @@
     <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Conexion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
