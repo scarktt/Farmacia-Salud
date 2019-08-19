@@ -19,7 +19,7 @@
                 <Separator layoutX="20.0" layoutY="383.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="383.0" />
                 <Separator layoutX="786.0" layoutY="26.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="786.0" AnchorPane.topAnchor="26.0" />
                 <Separator layoutX="18.0" layoutY="24.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="20.0" />
-                <TextField fx:id="txtBuscar" layoutX="206.0" layoutY="80.0" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="206.0">
+                <TextField fx:id="txtBuscar" layoutX="206.0" layoutY="80.0" onKeyReleased="#handleKeyReleased" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="206.0">
                     <font>
                         <Font name="Calibri" size="18.0" />
                     </font>
@@ -30,18 +30,18 @@
                         <Image url="@../img/search.png" />
                     </image>
                 </ImageView>
-                <Label layoutX="202.0" layoutY="41.0" text="Buscar Productos Registrados">
+                <Label layoutX="196.0" layoutY="41.0" text="Buscar Proveedores Registrados">
                     <font>
                         <Font name="Calibri" size="24.0" />
                     </font>
                 </Label>
                 <TableView fx:id="TVProveedor" layoutX="41.0" layoutY="138.0" prefHeight="235.0" prefWidth="669.0">
                     <columns>
-                        <TableColumn prefWidth="99.0" text="ID" />
-                        <TableColumn prefWidth="192.0" text="Nombre" />
-                        <TableColumn prefWidth="175.0" text="Tipo" />
-                        <TableColumn minWidth="0.0" prefWidth="101.0" text="Teléfono 1" />
-                        <TableColumn prefWidth="99.0" text="Teléfono 2" />
+                        <TableColumn fx:id="TCID" prefWidth="99.0" text="ID" />
+                        <TableColumn fx:id="TCNombre" prefWidth="192.0" text="Nombre" />
+                        <TableColumn fx:id="TCTipo" prefWidth="175.0" text="Tipo" />
+                        <TableColumn fx:id="TCTel1" minWidth="0.0" prefWidth="101.0" text="Teléfono 1" />
+                        <TableColumn fx:id="TCTel2" prefWidth="99.0" text="Teléfono 2" />
                     </columns>
                 </TableView>
                 <Button fx:id="btnEditar" layoutX="723.0" layoutY="231.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #BCB8B1;">
@@ -68,6 +68,12 @@
                   </ImageView>
                </graphic>
             </Button>
+            <ComboBox fx:id="cmbTipo1" layoutX="566.0" layoutY="80.0" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="602.0" layoutY="44.0" text="Tipo">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
         <AnchorPane fx:id="APProveedor2" layoutY="386.0" prefHeight="188.0" prefWidth="871.0" style="-fx-background-color: #BCB8B1;">
@@ -97,7 +103,7 @@
                         <Font name="Calibri" size="16.0" />
                     </font>
                 </TextField>
-                <TextField fx:id="txtTeléfono1" layoutX="490.0" layoutY="77.0" prefHeight="30.0" prefWidth="113.0">
+                <TextField fx:id="txtTelefono1" layoutX="490.0" layoutY="77.0" prefHeight="30.0" prefWidth="113.0">
                     <font>
                         <Font name="Calibri" size="16.0" />
                     </font>
@@ -108,7 +114,7 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtTeléfono2" layoutX="645.0" layoutY="77.0" prefHeight="30.0" prefWidth="113.0">
+            <TextField fx:id="txtTelefono2" layoutX="645.0" layoutY="77.0" prefHeight="30.0" prefWidth="113.0">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font>

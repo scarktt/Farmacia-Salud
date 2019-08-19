@@ -72,16 +72,6 @@ public class FacturacionControlador implements Initializable {
         conexion.cerrarConexion();
     }
 
-    //Cierra el programa
-    public void pressExit() {
-        System.exit(0);
-    }
-
-    //Minimiza el programa
-    public void pressMin() {
-        //setIconified(1);aun no funciona
-    }
-
     private String text = "";
 
     public void handleKeyReleased(KeyEvent keyEvent) {

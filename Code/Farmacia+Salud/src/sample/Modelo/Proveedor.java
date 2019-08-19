@@ -91,4 +91,40 @@ public class Proveedor{
             e.printStackTrace();
         }
     }
+
+
+    public static void llenarCmbTipoProveedores (Connection connection, ObservableList<String> lista) {
+        try {
+            String query = "SELECT DISTINCT Tipo_proveedor FROM Proveedor";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("Tipo_proveedor"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al agregar tipo de proveedor");
+            e.printStackTrace();
+        }
+    }
+
+    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<String> lista) {
+        try {
+            String query = "SELECT DISTINCT Nombre_proveedor FROM Proveedor WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
+            PreparedStatement statement = connection.prepareStatement(query);
+            //statement.setNString(1, busqueda);
+            ResultSet resultado = statement.executeQuery();
+
+            // Se recorre el campo que en este caso es el de Nombre_proveedor
+            while (resultado.next()) {
+                lista.add(resultado.getString("Nombre_proveedor"));
+            }
+
+            statement.close();
+        } catch (SQLException e) {
+            System.out.println("Error al agregar Nombre del proveedor al TableView");
+            e.printStackTrace();
+        }
+    }
 }

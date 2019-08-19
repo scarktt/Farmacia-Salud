@@ -1,8 +1,9 @@
 package sample.Modelo;
 
 import javafx.beans.property.*;
+import javafx.collections.ObservableList;
 
-import java.sql.Date;
+import java.sql.*;
 
 public class CompraProducto{
     private IntegerProperty FacturaCompraProducto;
@@ -10,20 +11,20 @@ public class CompraProducto{
     private IntegerProperty IDproducto;
     private Date FechaCompra;
     private FloatProperty MontoCompra;
-    private IntegerProperty ReciboColector;
+    private StringProperty ReciboColector;
     private StringProperty Status;
     private StringProperty Observacion;
     private Date FechaVencPago;
 
     public CompraProducto(int FacturaCompraProducto, int FacturaPedido, int IDproducto,
-                          Date FechaCompra, float MontoCompra, int ReciboColector,
+                          Date FechaCompra, float MontoCompra, String ReciboColector,
                           String Status, String Observacion, Date FechaVencPago) {
         this.FacturaCompraProducto = new SimpleIntegerProperty(FacturaCompraProducto);
         this.FacturaPedido = new SimpleIntegerProperty(FacturaPedido);
         this.IDproducto = new SimpleIntegerProperty(IDproducto);
         this.FechaCompra = FechaCompra;
         this.MontoCompra = new SimpleFloatProperty(MontoCompra);
-        this.ReciboColector = new SimpleIntegerProperty(ReciboColector);
+        this.ReciboColector = new SimpleStringProperty(ReciboColector);
         this.Status = new SimpleStringProperty(Status);
         this.Observacion = new SimpleStringProperty(Observacion);
         this.FechaVencPago = FechaVencPago;
@@ -85,13 +86,11 @@ public class CompraProducto{
     }
 
     //Metodos atributo: ReciboColector
-    public int getReciboColector() {
+    public String getReciboColector() {
         return ReciboColector.get();
     }
-    public void setReciboColector(int ReciboColector) {
-        this.ReciboColector = new SimpleIntegerProperty(ReciboColector);
-    }
-    public IntegerProperty ReciboColectorProperty() {
+    public void setReciboColector(String ReciboColector) {this.ReciboColector = new SimpleStringProperty(ReciboColector);}
+    public StringProperty ReciboColectorProperty() {
         return ReciboColector;
     }
 
@@ -124,7 +123,23 @@ public class CompraProducto{
     public void setFechaVencPago(Date FechaVencPago) {
         this.FechaVencPago = FechaVencPago;
     }
-    public Date FechaVencPagoProperty() {
-        return FechaVencPago;
+    public Date FechaVencPagoProperty() { return FechaVencPago;
     }
+
+    public static void llenarCmbFacturaCompra (Connection connection, ObservableList<String> lista) {
+        try {
+            String query = "SELECT FacturaCompraProducto FROM CompraProducto";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("FacturaCompraProducto"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al agregar Factura de Compra de Producto");
+            e.printStackTrace();
+        }
+    }
+
 }
