@@ -6,14 +6,11 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
+import javafx.scene.layout.AnchorPane;
 import sample.Modelo.*;
 
 import java.io.IOException;
@@ -21,6 +18,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class FacturacionControlador implements Initializable {
+
+    @FXML private AnchorPane APFacturacion;
 
     // ComboBox
     @FXML private ComboBox cmbVendedor;
@@ -37,7 +36,6 @@ public class FacturacionControlador implements Initializable {
     @FXML private TableView<String> TVAgregarProductos;
     // Columna del TableView
     @FXML private TableColumn<String, String> TCProducto;
-    @FXML private Button btnInsertar;
 
     // Colecciones de tipo String para los ComboBox
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
@@ -50,12 +48,14 @@ public class FacturacionControlador implements Initializable {
     // Colecciones de tipo String para el TableView
     private ObservableList<String> listaNombreProducto = FXCollections.observableArrayList();
 
+    private ObservableList<Producto> listaProductos = FXCollections.observableArrayList();
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
-        System.out.println(TVAgregarProductos.getSelectionModel().getSelectedItem());
+        Producto.AgregarListaProductos(conexion.getConnection(), listaProductos);
 
         LoadDataCmbox(conexion);
 
@@ -70,7 +70,6 @@ public class FacturacionControlador implements Initializable {
         Producto.llenarCmbUnidadMedida(conexion.getConnection(), listaUnidadMedida);
         Enfermedad.llenarCmbEnfermedad(conexion.getConnection(), listaUtilidad);
         Indicacion.llenarCmbIndicacion(conexion.getConnection(), listaIndicacion);
-
 
         // Enlazar listas con ComboBox
         cmbVendedor.setItems(listaVendedores);
@@ -139,16 +138,23 @@ public class FacturacionControlador implements Initializable {
         txtProducto.setText(value);
     }
 
-    public void OnButtonToAddClicked(MouseEvent mouseEvent) throws IOException {
-        if (cmbVendedor.getValue() != null && txtProducto.getText() != null && txtCantidad.getText() != null) {
-            Parent DetalleFacturacionParent = FXMLLoader.load(getClass().getResource("/sample/Vista/DetalleFactura.fxml"));
-            Scene DetalleFacturacionScene = new Scene(DetalleFacturacionParent);
+    private Boolean addProduct = false;
 
-            Stage window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+    public void OnButtonToAddClicked(MouseEvent mouseEvent) {
+        // El objetivo del siguiente condicional es verificar que se hayan completado todos los elementos
+        // necesarios para proceder a agregar un determinado producto en la pantalla de Detalle Facturacion.
+        if (cmbVendedor.getValue() != null && !txtProducto.getText().equals("") && !txtCantidad.getText().equals("")) {
+            addProduct = true;
 
-            window.setScene(DetalleFacturacionScene);
-            window.show();
+        }
+    }
 
+    public void OnButtonToGoDetalleFacturaClicked(MouseEvent mouseEvent) throws IOException {
+        // El objetivo del siguiente if es verificar que se haya agregado al menos un producto para asi
+        // pasar a la siguiente pantalla de Detalle Factura.
+        if (addProduct) {
+            AnchorPane APDetalleFactura = FXMLLoader.load(getClass().getResource("/sample/Vista/DetalleFactura.fxml"));
+            APFacturacion.getChildren().setAll(APDetalleFactura);
         }
     }
 }

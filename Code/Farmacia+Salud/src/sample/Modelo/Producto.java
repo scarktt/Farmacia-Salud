@@ -147,6 +147,37 @@ public class Producto {
         return StockEstante;
     }
 
+    public static void AgregarListaProductos (Connection connection, ObservableList<Producto> lista) {
+        try {
+            String query = "SELECT IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Descontinuado, Generico, StockBodega, StockEstante FROM Producto";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery();
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(
+                        new Producto(
+                                resultado.getInt("IDproducto"),
+                                resultado.getString("Nombre"),
+                                resultado.getString("Forma_farmaceutica"),
+                                resultado.getInt("Dosis_Contenido"),
+                                resultado.getString("Unidad_medida"),
+                                resultado.getBoolean("Restriccion"),
+                                resultado.getBoolean("Descontinuado"),
+                                resultado.getBoolean("Generico"),
+                                resultado.getInt("StockBodega"),
+                                resultado.getInt("StockEstante")
+                                    )
+                        );
+            }
+
+            statement.close();
+        } catch (SQLException e) {
+            System.out.println("Error al agregar la lista de todos los productos.");
+            e.printStackTrace();
+        }
+    }
+
     public static void llenarCmbForma_farmaceutica (Connection connection, ObservableList<String> lista) {
         try {
             Statement statement = connection.createStatement();

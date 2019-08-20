@@ -31,6 +31,10 @@ public class PantallaPrincipalControlador {
     @FXML private AnchorPane APBotonesProducto;
     @FXML private AnchorPane APBotonesPagoServicio;
 
+    public AnchorPane getContenedor() {
+        return Contenedor;
+    }
+
     //Cierra el programa
     public void pressExit(){
         System.exit(0);
@@ -71,7 +75,7 @@ public class PantallaPrincipalControlador {
 
     //Muestra en pantalla la ventana de detalle factura
     @FXML
-    public void pressDetalleFactura(ActionEvent event) throws IOException{
+    public void pressDetalleFactura(MouseEvent event) throws IOException{
         AnchorPane APDetalleFactura = FXMLLoader.load(getClass().getResource("/sample/Vista/DetalleFactura.fxml"));
         Contenedor.getChildren().setAll(APDetalleFactura);
     }
