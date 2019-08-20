@@ -9,7 +9,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import sample.Modelo.*;
 
@@ -20,16 +19,14 @@ import java.util.ResourceBundle;
 public class FacturacionControlador implements Initializable {
 
     @FXML private AnchorPane APFacturacion;
-
     // ComboBox
-    @FXML private ComboBox cmbVendedor;
-    @FXML private ComboBox cmbProveedor;
-    @FXML private ComboBox cmbForma_Farmaceutica;
-    @FXML private ComboBox cmbUnidadMedida;
-    @FXML private ComboBox cmbUtilidad;
-    @FXML private ComboBox cmbIndicacion;
+    @FXML private ComboBox<String> cmbVendedor;
+    @FXML private ComboBox<String> cmbProveedor;
+    @FXML private ComboBox<String> cmbForma_Farmaceutica;
+    @FXML private ComboBox<String> cmbUnidadMedida;
+    @FXML private ComboBox<String> cmbUtilidad;
+    @FXML private ComboBox<String> cmbIndicacion;
     // TextFields
-    @FXML private TextField txtBuscar;
     @FXML private TextField txtProducto;
     @FXML private TextField txtCantidad;
     // TableView
@@ -48,6 +45,7 @@ public class FacturacionControlador implements Initializable {
     // Colecciones de tipo String para el TableView
     private ObservableList<String> listaNombreProducto = FXCollections.observableArrayList();
 
+    // Colecciones de tipo Producto
     private ObservableList<Producto> listaProductos = FXCollections.observableArrayList();
 
     @Override
@@ -130,7 +128,7 @@ public class FacturacionControlador implements Initializable {
 
     }
 
-    public void OnTableItemSelected(MouseEvent mouseEvent) {
+    public void OnTableItemSelected() {
         // Se obtiene el nombre del item seleccionado
         String value = TVAgregarProductos.getSelectionModel().getSelectedItem();
 
@@ -140,16 +138,16 @@ public class FacturacionControlador implements Initializable {
 
     private Boolean addProduct = false;
 
-    public void OnButtonToAddClicked(MouseEvent mouseEvent) {
-        // El objetivo del siguiente condicional es verificar que se hayan completado todos los elementos
-        // necesarios para proceder a agregar un determinado producto en la pantalla de Detalle Facturacion.
+    public void OnButtonToAddClicked() {
+        // El objetivo del siguiente condicional es verificar que se hayan completado todos los elementos necesarios
+        // para proceder a agregar un determinado producto en la pantalla de Detalle Facturacion.
         if (cmbVendedor.getValue() != null && !txtProducto.getText().equals("") && !txtCantidad.getText().equals("")) {
             addProduct = true;
 
         }
     }
 
-    public void OnButtonToGoDetalleFacturaClicked(MouseEvent mouseEvent) throws IOException {
+    public void OnButtonToGoDetalleFacturaClicked() throws IOException {
         // El objetivo del siguiente if es verificar que se haya agregado al menos un producto para asi
         // pasar a la siguiente pantalla de Detalle Factura.
         if (addProduct) {
