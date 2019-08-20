@@ -4,15 +4,16 @@ import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import sample.Modelo.*;
 
 import java.io.IOException;
@@ -28,13 +29,17 @@ public class FacturacionControlador implements Initializable {
     @FXML private ComboBox cmbUnidadMedida;
     @FXML private ComboBox cmbUtilidad;
     @FXML private ComboBox cmbIndicacion;
+    // TextFields
     @FXML private TextField txtBuscar;
-    // TableViewß
+    @FXML private TextField txtProducto;
+    @FXML private TextField txtCantidad;
+    // TableView
     @FXML private TableView<String> TVAgregarProductos;
-    // Columnas del TableView
+    // Columna del TableView
     @FXML private TableColumn<String, String> TCProducto;
+    @FXML private Button btnInsertar;
 
-    // Colecciones de tipo String
+    // Colecciones de tipo String para los ComboBox
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
     private ObservableList<String> listaProveedores = FXCollections.observableArrayList();
     private ObservableList<String> listaForma_farmaceutica = FXCollections.observableArrayList();
@@ -42,7 +47,7 @@ public class FacturacionControlador implements Initializable {
     private ObservableList<String> listaIndicacion = FXCollections.observableArrayList();
     private ObservableList<String> listaUtilidad = FXCollections.observableArrayList();
 
-    // Colecciones de tipo Objeto
+    // Colecciones de tipo String para el TableView
     private ObservableList<String> listaNombreProducto = FXCollections.observableArrayList();
 
     @Override
@@ -50,6 +55,14 @@ public class FacturacionControlador implements Initializable {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
+        System.out.println(TVAgregarProductos.getSelectionModel().getSelectedItem());
+
+        LoadDataCmbox(conexion);
+
+        conexion.cerrarConexion();
+    }
+
+    private void LoadDataCmbox (Conexion conexion) {
         //LLenar listas
         Empleado.llenarCmbNombresEmpleado(conexion.getConnection(), listaVendedores);
         Proveedor.llenarCmbNombresProveedores(conexion.getConnection(), listaProveedores);
@@ -66,10 +79,6 @@ public class FacturacionControlador implements Initializable {
         cmbUnidadMedida.setItems(listaUnidadMedida);
         cmbIndicacion.setItems(listaIndicacion);
         cmbUtilidad.setItems(listaUtilidad);
-
-
-
-        conexion.cerrarConexion();
     }
 
     private String text = "";
@@ -120,5 +129,26 @@ public class FacturacionControlador implements Initializable {
             conexion.cerrarConexion();
         }
 
+    }
+
+    public void OnTableItemSelected(MouseEvent mouseEvent) {
+        // Se obtiene el nombre del item seleccionado
+        String value = TVAgregarProductos.getSelectionModel().getSelectedItem();
+
+        // Se le asigna el valor obtenido previamente al text field de producto
+        txtProducto.setText(value);
+    }
+
+    public void OnButtonToAddClicked(MouseEvent mouseEvent) throws IOException {
+        if (cmbVendedor.getValue() != null && txtProducto.getText() != null && txtCantidad.getText() != null) {
+            Parent DetalleFacturacionParent = FXMLLoader.load(getClass().getResource("/sample/Vista/DetalleFactura.fxml"));
+            Scene DetalleFacturacionScene = new Scene(DetalleFacturacionParent);
+
+            Stage window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+
+            window.setScene(DetalleFacturacionScene);
+            window.show();
+
+        }
     }
 }
