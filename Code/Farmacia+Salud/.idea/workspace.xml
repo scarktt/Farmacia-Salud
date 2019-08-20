@@ -2,10 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/Farmacia-Salud.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/Farmacia+Salud.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/.idea/workspace.xml~parent of 0ce139f... Se llenan todos los combobox de la primera pantalla de facturacion" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/lib/mysql-connector-java-8.0.17-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/lib/protobuf-java-3.6.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/lib/protobuf-java-3.6.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/Vista/Facturacion.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/Ajuste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/Farmacia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/Pastillas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/agregar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/anadir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/apreton-de-manos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/bloquear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/camion-de-carga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/campana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/carrito-de-compras.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/cerrar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/dinero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/disposicion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/flecha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/menos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/p-dentro-de-un-circulo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/simbolo-del-telefono-auricular-en-un-circulo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/img/usuario.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/src/sample/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Database/SQL/MySQLServer/procedimientos almacenados/Procedimientos almacenados modificar.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Database/SQL/MySQLServer/SPModificar.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Database/SQL/MySQLServer/VistasTablas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Database/SQL/MySQLServer/VistasTablas.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
