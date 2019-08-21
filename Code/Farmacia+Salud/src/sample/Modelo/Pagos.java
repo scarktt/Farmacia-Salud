@@ -2,8 +2,9 @@ package sample.Modelo;
 
 
 import javafx.beans.property.*;
+import javafx.collections.ObservableList;
 
-import java.sql.Date;
+import java.sql.*;
 
 public class Pagos{
     private IntegerProperty IDPagos;
@@ -12,8 +13,8 @@ public class Pagos{
     private FloatProperty MontoPago;
     private Date FechaPago;
 
-    public Pagos(int IDPagos, int IDempleado, String TipoPago,
-                 float MontoPago, Date FechaPago) {
+    public Pagos(int IDPagos, int IDempleado, String TipoPago, float MontoPago, Date FechaPago)
+    {
         this.IDPagos = new SimpleIntegerProperty(IDPagos);
         this.IDempleado = new SimpleIntegerProperty(IDempleado);
         this.TipoPago = new SimpleStringProperty(TipoPago);
@@ -74,5 +75,21 @@ public class Pagos{
     }
     public Date FechaPagoProperty() {
         return FechaPago;
+    }
+
+    public static void llenarCmbTipoPago (Connection connection, ObservableList<String> lista) {
+        try {
+            String query = "SELECT DISTINCT TipoPago FROM Pagos";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("TipoPago"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al agregar Tipo de Pago");
+            e.printStackTrace();
+        }
     }
 }
