@@ -78,7 +78,7 @@ public class Proveedor{
 
     public static void llenarCmbNombresProveedores (Connection connection, ObservableList<String> lista) {
         try {
-            String query = "SELECT Nombre_proveedor FROM Proveedor";
+            String query = "SELECT DISTINCT Nombre_proveedor FROM Proveedor";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultado = statement.executeQuery(query);
 

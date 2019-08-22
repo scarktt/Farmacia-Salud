@@ -73,7 +73,7 @@
               <TableView fx:id="TVPagoServicio" layoutX="33.0" layoutY="105.0" prefHeight="235.0" prefWidth="745.0">
                   <columns>
                       <TableColumn fx:id="TCProveedor" prefWidth="132.0" text="Proveedor" />
-                      <TableColumn fx:id="TCMonto" prefWidth="114.0" text="Monto" />\
+                      <TableColumn fx:id="TCMonto" prefWidth="114.0" text="Monto" />
                       <TableColumn fx:id="TCReciboColector" prefWidth="118.0" text="Recibo Colector" />
                       <TableColumn fx:id="TCObservacion" minWidth="0.0" prefWidth="216.0" text="Observación" />
                       <TableColumn fx:id="TCFechaVencPago" prefWidth="164.0" text="Fecha Vencimiento Pago" />

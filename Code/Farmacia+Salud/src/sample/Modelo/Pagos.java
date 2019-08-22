@@ -97,45 +97,34 @@ public class Pagos{
         }
     }
 
-    public static void busquedaDinamicaDeudasPendientes (Connection connection, String busqueda, ObservableList<Pagos> lista) {
+    public static void busquedaDinamicaDeudasPendientes (Connection connection, String busqueda,
+                                                         ObservableList<String> listaProveedor,
+                                                         ObservableList<String> listaMonto,
+                                                         ObservableList<String> listaReciboColector,
+                                                         ObservableList<String> listaObservacion,
+                                                         ObservableList<String> listaFechaVencPago) {
         try {
-            String query = "SELECT t3.IDproveedor, t3.Tipo_proveedor, t3.Nombre_proveedor, t3.tel1, t3.tel2," +
-                    "t1.FacturaCompraProducto, t1.FacturaPedido, t1.IDproducto, t1.FechaCompra, t1.MontoCompra," +
-                    "t1.ReciboColector, t1.Status, t1.Observacion, t1.FechaVencPago  " +
+            String query = "SELECT t3.Nombre_proveedor, t1.MontoCompra," +
+                    "t1.ReciboColector, t1.Observacion, t1.FechaVencPago  " +
                     "FROM CompraProducto t1 " +
                     "INNER JOIN Abono t2 on t1.FacturaCompraProducto = t2.FacturaCompraProducto " +
                     "INNER JOIN Proveedor t3 on t2.IDproveedor = t3.IDproveedor " +
                     "WHERE t3.Nombre_proveedor LIKE '"+busqueda+"%'";
             PreparedStatement statement = connection.prepareStatement(query);
-            //statement.setNString(1, busqueda);
             ResultSet resultado = statement.executeQuery();
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
-                lista.add(new Pagos (
-                        new Proveedor (
-                                resultado.getInt("IDproveedor"),
-                                resultado.getString("Tipo_proveedor"),
-                                resultado.getString("Nombre_proveedor"),
-                                resultado.getString("tel1"),
-                                resultado.getString("tel2")
-                        ), new CompraProducto(
-                                resultado.getInt("FacturaCompraProducto"),
-                                resultado.getInt("FacturaPedido"),
-                                resultado.getInt("IDproducto"),
-                                resultado.getDate("FechaCompra"),
-                                resultado.getFloat("MontoCompra"),
-                                resultado.getString("ReciboColector"),
-                                resultado.getString("Status"),
-                                resultado.getString("Observacion"),
-                                resultado.getDate("FechaVencPago")
-                        )
-                ));
+                listaProveedor.add(resultado.getString("Nombre_Proveedor"));
+                listaMonto.add(resultado.getString("MontoCompra"));
+                listaReciboColector.add(resultado.getString("ReciboColector"));
+                listaObservacion.add(resultado.getString("Observacion"));
+                listaFechaVencPago.add(resultado.getString("FechaVencPago"));
             }
 
             statement.close();
         } catch (SQLException e) {
-            System.out.println("Error al agregar Nombre del producto al TableView");
+            System.out.println("Error al agregar las deudas pendientes al TableView");
             e.printStackTrace();
         }
     }

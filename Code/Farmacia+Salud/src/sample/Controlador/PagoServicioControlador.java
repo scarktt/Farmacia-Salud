@@ -34,14 +34,14 @@ public class PagoServicioControlador implements Initializable {
     @FXML private TextField txtAgregarAbono;
 
     // TableView
-    @FXML private TableView<Pagos> TVPagoServicio;
+    @FXML private TableView<String> TVPagoServicio;
     @FXML private TableView<Abono> TVAbono;
 
-    @FXML private TableColumn<Pagos, Proveedor> TCProveedor;
-    @FXML private TableColumn<Pagos, CompraProducto> TCMonto;
-    @FXML private TableColumn<Pagos, CompraProducto> TCReciboColector;
-    @FXML private TableColumn<Pagos, CompraProducto> TCObservacion;
-    @FXML private TableColumn<Pagos, CompraProducto> TCFechaVencPago;
+    @FXML private TableColumn<String, String> TCProveedor;
+    @FXML private TableColumn<String, String> TCMonto;
+    @FXML private TableColumn<String, String> TCReciboColector;
+    @FXML private TableColumn<String, String> TCObservacion;
+    @FXML private TableColumn<String, String> TCFechaVencPago;
 
     // Colecciones de tipo String
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
@@ -49,10 +49,14 @@ public class PagoServicioControlador implements Initializable {
     private ObservableList<String> listaProveedores = FXCollections.observableArrayList();
     private ObservableList<String> listaFacturaCompra = FXCollections.observableArrayList();
 
-    private ObservableList<Pagos> listaDeudas = FXCollections.observableArrayList();
-
     //Colecciones de tipo Pagos
-    private ObservableList<Pagos> listaPagos = FXCollections.observableArrayList();
+    private ObservableList<String> listaDeudas = FXCollections.observableArrayList();
+    private ObservableList<String> listaProveedor = FXCollections.observableArrayList();
+    private ObservableList<String> listaMonto = FXCollections.observableArrayList();
+    private ObservableList<String> listaReciboColector = FXCollections.observableArrayList();
+    private ObservableList<String> listaObservacion = FXCollections.observableArrayList();
+    private ObservableList<String> listaFechaVencPago = FXCollections.observableArrayList();
+
     //Colecciones de tipo Abono
     private ObservableList<Abono> listaAbono = FXCollections.observableArrayList();
 
@@ -84,18 +88,29 @@ public class PagoServicioControlador implements Initializable {
         conexion.establecerConexion();
 
         text = text + cmbProveedor.getSelectionModel().getSelectedItem();
-        listaDeudas.clear();
+        listaProveedor.clear();listaMonto.clear();listaReciboColector.clear();listaObservacion.clear();listaFechaVencPago.clear();
 
-        Pagos.busquedaDinamicaDeudasPendientes(conexion.getConnection(), text, listaDeudas);
+        Pagos.busquedaDinamicaDeudasPendientes(conexion.getConnection(), text,listaProveedor, listaMonto, listaReciboColector, listaObservacion, listaFechaVencPago);
 
-        TVPagoServicio.setItems(listaDeudas);
+        TVPagoServicio.setItems(listaProveedor);
+        TCProveedor.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
 
-        // Enlazar columnas con atributos
-        TCProveedor.setCellValueFactory(new PropertyValueFactory<Pagos, Proveedor>("Nombre_proveedor"));
-        TCMonto.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("MontoCompra"));
+        //TVPagoServicio.setItems(listaMonto);
+        TCMonto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+       // TVPagoServicio.setItems(listaReciboColector);
+        TCReciboColector.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        //TVPagoServicio.setItems(listaObservacion);
+        TCObservacion.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+       // TVPagoServicio.setItems(listaFechaVencPago);
+        TCFechaVencPago.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        /*TCMonto.setCellValueFactory(new PropertyValueFactory<String, String>("MontoCompra"));
         TCReciboColector.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("ReciboColector"));
-        TCObservacion.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("Observacio"));
-        TCFechaVencPago.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("FechaVencPago"));
+        TCProveedor.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("Observacio"));
+        TCFechaVencPago.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("FechaVencPago"));*/
 
         conexion.cerrarConexion();
     }

@@ -74,15 +74,9 @@
                   <columns>
                       <TableColumn fx:id="TCProveedor" prefWidth="132.0" text="Proveedor" />
                       <TableColumn fx:id="TCMonto" prefWidth="114.0" text="Monto" />
-<<<<<<< HEAD
                       <TableColumn fx:id="TCReciboColector" prefWidth="118.0" text="Recibo Colector" />
                       <TableColumn fx:id="TCObservacion" minWidth="0.0" prefWidth="216.0" text="Observación" />
                       <TableColumn fx:id="TCFechaVencPago" prefWidth="164.0" text="Fecha Vencimiento Pago" />
-=======
-                      <TableColumn fx:id="TCReciboColector" prefWidth="149.0" text="Recibo Colector" />
-                      <TableColumn fx:id="TCObservacion" minWidth="0.0" prefWidth="196.0" text="Observación" />
-                      <TableColumn fx:id="TCFechaVencPago" prefWidth="151.0" text="Fecha Vencimiento Pago" />
->>>>>>> 505d73a99692b6dafd67d0dc6f367c249c19819f
                   </columns>
               </TableView>
             <Label layoutX="112.0" layoutY="63.0" text="Proveedor">
