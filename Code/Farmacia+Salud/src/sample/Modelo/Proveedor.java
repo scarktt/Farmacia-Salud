@@ -91,4 +91,26 @@ public class Proveedor{
             e.printStackTrace();
         }
     }
+
+    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<String> lista) {
+        try {
+            String query = "SELECT IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2 " +
+                    "FROM Proveedor WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
+            PreparedStatement statement = connection.prepareStatement(query);
+            //statement.setNString(1, busqueda);
+            ResultSet resultado = statement.executeQuery();
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("Nombre_proveedor")
+                );
+            }
+
+            statement.close();
+        } catch (SQLException e) {
+            System.out.println("Error al agregar Nombre del producto al TableView");
+            e.printStackTrace();
+        }
+    }
+
 }

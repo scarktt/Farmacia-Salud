@@ -39,7 +39,7 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbPagoRealizadoPor" layoutX="196.0" layoutY="136.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbVendedor" layoutX="196.0" layoutY="136.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <ComboBox fx:id="cmbTipoPago" layoutX="199.0" layoutY="186.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <TextField fx:id="txtMonto" layoutX="199.0" layoutY="232.0" prefHeight="34.0" prefWidth="150.0">
                <font>
@@ -72,12 +72,11 @@
 
               <TableView fx:id="TVPagoServicio" layoutX="33.0" layoutY="105.0" prefHeight="235.0" prefWidth="745.0">
                   <columns>
-                      <TableColumn prefWidth="132.0" text="Proveedor" />
-                      <TableColumn prefWidth="114.0" text="Monto" />
-                      <TableColumn prefWidth="118.0" text="Recibo Colector" />
-                      <TableColumn minWidth="0.0" prefWidth="173.0" text="Observación" />
-                      <TableColumn prefWidth="115.0" text="Fecha Vencimiento" />
-                  <TableColumn prefWidth="92.0" text="Pago" />
+                      <TableColumn fx:id="TCProveedor" prefWidth="132.0" text="Proveedor" />
+                      <TableColumn fx:id="TCMonto" prefWidth="114.0" text="Monto" />
+                      <TableColumn fx:id="TCReciboColector" prefWidth="118.0" text="Recibo Colector" />
+                      <TableColumn fx:id="TCObservacion" minWidth="0.0" prefWidth="216.0" text="Observación" />
+                      <TableColumn fx:id="TCFechaVencPago" prefWidth="164.0" text="Fecha Vencimiento Pago" />
                   </columns>
               </TableView>
             <Label layoutX="112.0" layoutY="63.0" text="Proveedor">
@@ -85,7 +84,7 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" onAction="#handleonActionProveedor" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <ComboBox fx:id="cmbFacturaCompra" layoutX="587.0" layoutY="61.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <Label layoutX="439.0" layoutY="63.0" text="Factura de compra">
                <font>
@@ -117,7 +116,7 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbAbonoRealizadoPor" layoutX="199.0" layoutY="38.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbVendedorA" layoutX="199.0" layoutY="38.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <TextField fx:id="txtAgregarBono" layoutX="199.0" layoutY="77.0" prefHeight="34.0" prefWidth="150.0">
                <font>
                   <Font name="Calibri" size="18.0" />

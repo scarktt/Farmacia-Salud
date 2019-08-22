@@ -10,7 +10,7 @@ public class Conexion {
     private final String port = "3306";
     private final String db = "FarmaciaMSalud";
     private final String user = "root";
-    private final String pass = "12345678";
+    private final String pass = "12345";
     private final String url = "jdbc:mysql://" + host + ":" + port + "/" + db + "?user="
             + user + "&password=" + pass + "&useSSL=false";
 
