@@ -3,12 +3,14 @@ package sample.Controlador;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import sample.Modelo.*;
 
@@ -27,8 +29,12 @@ public class FacturacionControlador implements Initializable {
     @FXML private ComboBox<String> cmbUtilidad;
     @FXML private ComboBox<String> cmbIndicacion;
     // TextFields
+    @FXML private TextField buscar;
     @FXML private TextField txtProducto;
     @FXML private TextField txtCantidad;
+    @FXML private TextField tfDosis;
+    // CheckBox
+    @FXML private CheckBox ckboxGenerico;
     // TableView
     @FXML private TableView<String> TVAgregarProductos;
     // Columna del TableView
@@ -78,6 +84,8 @@ public class FacturacionControlador implements Initializable {
         cmbUtilidad.setItems(listaUtilidad);
     }
 
+    /************************************ METODO HANDLE PARA EL BUSCADOR ************************************/
+
     private String text = "";
 
     public void handleKeyReleased(KeyEvent keyEvent) {
@@ -91,7 +99,8 @@ public class FacturacionControlador implements Initializable {
             text = text + keyEvent.getText();
             listaNombreProducto.clear();
 
-            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, listaNombreProducto);
+            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, getTipo(), getProveedorValue(),
+                    getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
 
             // Enlazar listas con TableView
             TVAgregarProductos.setItems(listaNombreProducto);
@@ -115,7 +124,8 @@ public class FacturacionControlador implements Initializable {
                 listaNombreProducto.clear();
             }
 
-            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, listaNombreProducto);
+            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, getTipo(), getProveedorValue(),
+                    getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
 
             // Enlazar listas con TableView
             TVAgregarProductos.setItems(listaNombreProducto);
@@ -126,6 +136,108 @@ public class FacturacionControlador implements Initializable {
             conexion.cerrarConexion();
         }
 
+    }
+
+    public void OnReleasedProveedor(ActionEvent actionEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+        listaNombreProducto.clear();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
+    }
+
+    public void OnReleasedFormaF(ActionEvent actionEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+        listaNombreProducto.clear();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
+    }
+
+    public void OnReleasedUnidadMedida(ActionEvent actionEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+        listaNombreProducto.clear();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
+    }
+
+    public void OnReleasedUtilidad(ActionEvent actionEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+        listaNombreProducto.clear();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
+    }
+
+    public void OnReleasedIndicacion(ActionEvent actionEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+        listaNombreProducto.clear();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
+    }
+
+    public void OnMouseClickedGenerico(MouseEvent mouseEvent) {
+        Conexion conexion = new Conexion();
+        conexion.establecerConexion();
+        listaNombreProducto.clear();
+
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), listaNombreProducto);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(listaNombreProducto);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+
+        conexion.cerrarConexion();
     }
 
     public void OnTableItemSelected() {
@@ -153,6 +265,90 @@ public class FacturacionControlador implements Initializable {
         if (addProduct) {
             AnchorPane APDetalleFactura = FXMLLoader.load(getClass().getResource("/sample/Vista/DetalleFactura.fxml"));
             APFacturacion.getChildren().setAll(APDetalleFactura);
+        }
+    }
+
+    /************* METODOS PARA OBTENER LOS VALORES DE LOS CAMPOS DE BUSQUEDA AVANZADA *************/
+
+    private String getProveedorValue() {
+        if (cmbProveedor.getSelectionModel().isEmpty()) {
+            System.out.println(cmbProveedor.getValue());
+            return "%";
+        } else {
+            return cmbProveedor.getValue();
+        }
+    }
+
+    private String getFormafarmaceuticaValue () {
+        if (cmbForma_Farmaceutica.getSelectionModel().isEmpty()) {
+            return "%";
+        } else {
+            return cmbForma_Farmaceutica.getValue();
+        }
+    }
+
+    private int getDosisValue () {
+        if (tfDosis.getText() == null) {
+            return 0;
+        } else if (isInteger(tfDosis.getText())) {
+            return Integer.parseInt(tfDosis.getText());
+        } else {
+            return 0;
+        }
+    }
+
+    private String getUnidadMedidaValue () {
+        if (cmbUnidadMedida.getSelectionModel().isEmpty()) {
+            return "%";
+        } else {
+            return cmbUnidadMedida.getValue();
+        }
+    }
+
+    private String getUtilidadValue () {
+        if (cmbUtilidad.getSelectionModel().isEmpty()) {
+            return "%";
+        } else {
+            return cmbUtilidad.getValue();
+        }
+    }
+
+    private String getIndicacion () {
+        if (cmbIndicacion.getSelectionModel().isEmpty()) {
+            return "%";
+        } else {
+            return cmbIndicacion.getValue();
+        }
+    }
+
+    private Boolean getGenerico () {
+        if (ckboxGenerico.isSelected()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private boolean isInteger(String numero){
+        try{
+            Integer.parseInt(numero);
+            return true;
+        }catch(NumberFormatException e){
+            return false;
+        }
+    }
+
+    private int getTipo () {
+        if (!tfDosis.getText().equals("") && ckboxGenerico.isSelected()) {
+            return 0;
+        } else if (tfDosis.getText().equals("") && !ckboxGenerico.isSelected()) {
+            return 1;
+        } else if (tfDosis.getText().equals("") && ckboxGenerico.isSelected()) {
+            return 2;
+        } else if (!tfDosis.getText().equals("") && !ckboxGenerico.isSelected()) {
+            return 3;
+        } else {
+            return 0;
         }
     }
 }
