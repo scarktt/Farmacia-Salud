@@ -56,11 +56,12 @@ Primary Key (NoFactura,IDproducto,IDLote)
 Create table DetallePedido
 (
 	FacturaPedido Integer NOT NULL,
+	IDproveedor Integer NOT NULL,
 	IDproducto Integer NOT NULL,
 	CantidadUnidad Integer NOT NULL,
 	PrecioxUnidad Decimal (13,3) NOT NULL,
 	EsProductoNuevo Bit NOT NULL,
-Primary Key (FacturaPedido,IDproducto)
+Primary Key (FacturaPedido, IDproveedor, IDproducto)
 );
 
 Create table DetalleProducto
@@ -137,7 +138,7 @@ Create table Pedido
 	IDempleado Integer NOT NULL,
 	FechaPedido Datetime NULL,
 	MontoPedido Decimal (13,3) NULL,
-Primary Key (FacturaPedido)
+Primary Key (FacturaPedido, IDproveedor)
 );
 
 Create table PerdidaProducto
