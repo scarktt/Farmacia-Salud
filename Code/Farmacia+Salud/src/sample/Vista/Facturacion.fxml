@@ -37,9 +37,10 @@
                       <Font name="Calibri" size="18.0" />
                   </font>
               </TextField>
-              <TableView fx:id="TVAgregarProductos" layoutX="137.0" layoutY="326.0" onMouseClicked="#OnTableItemSelected" prefHeight="200.0" prefWidth="211.0">
+              <TableView fx:id="TVAgregarProductos" layoutX="54.0" layoutY="325.0" onMouseClicked="#OnTableItemSelected" prefHeight="200.0" prefWidth="314.0">
                   <columns>
-                      <TableColumn fx:id="TCProducto" prefWidth="210.0" text="Producto" />
+                      <TableColumn fx:id="TCProducto" prefWidth="168.0" text="Producto" />
+                  <TableColumn fx:id="TCProveedor" prefWidth="145.0" text="Proveedor" />
                   </columns>
               </TableView>
               <Label layoutX="185.0" layoutY="212.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="201.0" />
