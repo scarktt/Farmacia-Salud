@@ -225,19 +225,28 @@ public class Producto {
         }
     }
 
-    public static void busquedaDinamicaProducto (Connection connection, String busqueda, ObservableList<String> lista) {
+    public static void busquedaDinamicaProducto (Connection connection, String busqueda, int tipo, String proveedor,
+                                                 String forma_farmaceutica, int dosis, String unidad_medida, String utilidad,
+                                                 String indicacion, boolean generico, ObservableList<String> lista) {
         try {
-            String query = "SELECT DISTINCT Nombre FROM Producto WHERE Nombre LIKE '"+busqueda+"%'";
-            PreparedStatement statement = connection.prepareStatement(query);
-            //statement.setNString(1, busqueda);
-            ResultSet resultado = statement.executeQuery();
+            CallableStatement cst = connection.prepareCall("{call sp_ConsultaProductoEnFacturacion (?,?,?,?,?,?,?,?,?)}");
+            cst.setInt(1, tipo);
+            cst.setString(2, busqueda);
+            cst.setString(3, proveedor);
+            cst.setString(4, forma_farmaceutica);
+            cst.setInt(5, dosis);
+            cst.setString(6, unidad_medida);
+            cst.setString(7, utilidad);
+            cst.setString(8, indicacion);
+            cst.setBoolean(9, generico);
 
-            // Se recorre el campo que en este caso es el de Nombre
+            cst.execute();
+            final ResultSet resultado = cst.getResultSet();
+
             while (resultado.next()) {
                 lista.add(resultado.getString("Nombre"));
             }
 
-            statement.close();
         } catch (SQLException e) {
             System.out.println("Error al agregar Nombre del producto al TableView");
             e.printStackTrace();
