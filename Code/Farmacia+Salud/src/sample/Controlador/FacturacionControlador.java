@@ -72,7 +72,7 @@ public class FacturacionControlador implements Initializable {
         conexion.cerrarConexion();
     }
 
-<<<<<<< HEAD
+
     //Cierra el programa
     public void pressExit() {
         System.exit(0);
@@ -83,13 +83,16 @@ public class FacturacionControlador implements Initializable {
         //setIconified(1);aun no funciona
     }
 
-=======
->>>>>>> 505d73a99692b6dafd67d0dc6f367c249c19819f
+
     private String text = "";
 
     public void handleKeyReleased(KeyEvent keyEvent) {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
+
+
+
+
 
         if (keyEvent.getCode() != KeyCode.BACK_SPACE) {
             // Se agrega la letra digitada caracter a caracter, esto debido a que cada vez que se entra en este metodo
@@ -132,6 +135,7 @@ public class FacturacionControlador implements Initializable {
 
             conexion.cerrarConexion();
         }
+
 
     }
 }
