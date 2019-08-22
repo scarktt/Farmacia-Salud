@@ -97,14 +97,6 @@ public class PagoServicioControlador implements Initializable {
         TCObservacion.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("Observacio"));
         TCFechaVencPago.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("FechaVencPago"));
 
-
-        conexion.cerrarConexion();
-
-    }
-
-        TVPagoServicio.setItems(listaPagos);
-        TVAbono.setItems(listaAbono);
-
         conexion.cerrarConexion();
     }
 }
