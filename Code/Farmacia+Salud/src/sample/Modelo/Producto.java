@@ -196,7 +196,7 @@ public class Producto {
 
     public static void busquedaDinamicaProducto (Connection connection, String busqueda, ObservableList<String> lista) {
         try {
-            String query = "SELECT * FROM Producto WHERE Nombre LIKE '"+busqueda+"%'";
+            String query = "SELECT DISTINCT Nombre FROM Producto WHERE Nombre LIKE '"+busqueda+"%'";
             PreparedStatement statement = connection.prepareStatement(query);
             //statement.setNString(1, busqueda);
             ResultSet resultado = statement.executeQuery();
