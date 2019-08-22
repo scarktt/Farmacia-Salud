@@ -146,29 +146,4 @@ public class CompraProducto{
             e.printStackTrace();
         }
     }
-
-    /*public static void busquedaDinamicaFacturaCompra (Connection connection, String busqueda, ObservableList<String> lista) {
-        try {
-            String query = "SELECT t3.Nombre_proveedor, t2.FacturaCompraProducto " +
-                    "FROM CompraProducto t1 INNER JOIN Abono t2 " +
-                    "on t1.FacturaCompraProducto = t2.FacturaCompraProducto " +
-                    "INNER JOIN Proveedor t3 " +
-                    "on t2.IDproveedor = t3.IDproveedor " +
-                    "WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
-            PreparedStatement statement = connection.prepareStatement(query);
-            //statement.setNString(1, busqueda);
-            ResultSet resultado = statement.executeQuery();
-
-            // Se recorre el campo que en este caso es el de Nombre
-            while (resultado.next()) {
-                lista.add(resultado.getString("FacturaCompraProducto")
-                );
-            }
-
-            statement.close();
-        } catch (SQLException e) {
-            System.out.println("Error al agregar Nombre del producto al TableView");
-            e.printStackTrace();
-        }
-    }*/
 }

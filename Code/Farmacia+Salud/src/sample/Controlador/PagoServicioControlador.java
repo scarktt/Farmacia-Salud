@@ -16,6 +16,8 @@ import javafx.scene.input.KeyEvent;
 import sample.Modelo.*;
 
 import javafx.event.ActionEvent;
+import sample.Modelo.*;
+
 import java.net.URL;
 import java.sql.Date;
 import java.util.ResourceBundle;
@@ -71,8 +73,6 @@ public class PagoServicioControlador implements Initializable {
         cmbTipoPago.setItems(listaTipoPago);
         cmbFacturaCompra.setItems(listaFacturaCompra);
         cmbVendedorA.setItems(listaVendedores);
-        //TVPagoServicio.setItems(listaPagos);
-        //TVAbono.setItems(listaAbono);
 
         conexion.cerrarConexion();
     }
@@ -102,5 +102,9 @@ public class PagoServicioControlador implements Initializable {
 
     }
 
-}
+        TVPagoServicio.setItems(listaPagos);
+        TVAbono.setItems(listaAbono);
 
+        conexion.cerrarConexion();
+    }
+}

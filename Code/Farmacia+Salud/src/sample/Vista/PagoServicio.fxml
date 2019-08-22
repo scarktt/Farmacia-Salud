@@ -74,9 +74,15 @@
                   <columns>
                       <TableColumn fx:id="TCProveedor" prefWidth="132.0" text="Proveedor" />
                       <TableColumn fx:id="TCMonto" prefWidth="114.0" text="Monto" />
+<<<<<<< HEAD
                       <TableColumn fx:id="TCReciboColector" prefWidth="118.0" text="Recibo Colector" />
                       <TableColumn fx:id="TCObservacion" minWidth="0.0" prefWidth="216.0" text="Observación" />
                       <TableColumn fx:id="TCFechaVencPago" prefWidth="164.0" text="Fecha Vencimiento Pago" />
+=======
+                      <TableColumn fx:id="TCReciboColector" prefWidth="149.0" text="Recibo Colector" />
+                      <TableColumn fx:id="TCObservacion" minWidth="0.0" prefWidth="196.0" text="Observación" />
+                      <TableColumn fx:id="TCFechaVencPago" prefWidth="151.0" text="Fecha Vencimiento Pago" />
+>>>>>>> 505d73a99692b6dafd67d0dc6f367c249c19819f
                   </columns>
               </TableView>
             <Label layoutX="112.0" layoutY="63.0" text="Proveedor">
@@ -137,10 +143,10 @@
                </graphic>
             </Button>
             <Separator layoutX="402.0" layoutY="12.0" orientation="VERTICAL" prefHeight="154.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="22.0" />
-            <TableView layoutX="477.0" layoutY="16.0" prefHeight="119.0" prefWidth="229.0">
+            <TableView fx:id="TVAbono" layoutX="477.0" layoutY="16.0" prefHeight="119.0" prefWidth="229.0">
               <columns>
-                <TableColumn prefWidth="107.0" text="Fecha Abono" />
-                <TableColumn prefWidth="121.0" text="Cantidad Abonada" />
+                <TableColumn fx:id="TCFechaAbono" prefWidth="107.0" text="Fecha Abono" />
+                <TableColumn fx:id="TCSaldoAbono" prefWidth="121.0" text="Cantidad Abonada" />
               </columns>
             </TableView>
             <Label layoutX="496.0" layoutY="138.0" text="Total abonado">
