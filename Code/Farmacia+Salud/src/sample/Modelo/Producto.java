@@ -76,8 +76,9 @@ public class Producto {
             final ResultSet resultado = cst.getResultSet();
 
             while (resultado.next()) {
-                firstRow.add(0, new SimpleStringProperty(resultado.getString("Nombre")));
-                firstRow.add(1, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
+                firstRow.add(0, new SimpleStringProperty(resultado.getString("IDproducto")));
+                firstRow.add(1, new SimpleStringProperty(resultado.getString("Nombre")));
+                firstRow.add(2, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
                 data.add(firstRow);
             }
 
