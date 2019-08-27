@@ -1,4 +1,4 @@
---Abono [COMPLETADO - 99 REGISTROS]INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (10601,3083,107031,398);
+-- Abono [COMPLETADO - 99 REGISTROS]INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (10601,3083,107031,398);
 INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (10602,3010,107026,127);
 INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (10603,3041,107028,325);
 INSERT INTO Abono (IDabono,FacturaCompraProducto,IDproveedor,SaldoAbono) VALUES (10604,3025,107032,1077);
@@ -1013,43 +1013,43 @@ INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad
 INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Generico, Descontinuado) VALUES (1080, "Loratadina", "J", 24, "mg", 0, 0, 0);
 
 
---Proveedor [Completado - 35 REGISTROS]
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107001, "Laboratorio", "Unifarm", "82245083","505441041");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107002, "Laboratorio", "Pharmalat", "86328780","50584497");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107003, "Laboratorio", "Ramos", "86869305","50582411");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107004, "Laboratorio", "Caplin Point", "89502120","505610672");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107005, "Laboratorio", "Procaps", "83632708","505310871");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107006, "Laboratorio", "Chia Fong","867510478","505368106");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107007, "Laboratorio", "Ceguel","87656496","50506111");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107008, "Laboratorio", "Rarpe","87249035","50549373");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107009, "Laboratorio", "Pisa","812106361","50526788");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107010, "Laboratorio", "Panzyma","82452831","50594381");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107011, "Laboratorio", "Infasa","82472541","50554505");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107012, "Laboratorio", "PFizer","853335108","505201084");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107013, "Laboratorio", "La Santé","89471012","50539881");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1070104, "Laboratorio", "Bengoechea","871078376","50596431");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1070105, "Distribuidor", "Rocha","86895446","50546020");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1070106, "Distribuidor", "J.Ruiz","88377702","50527204");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1070107, "Distribuidor", "Jazmin","86907496","50554013");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1070108, "Distribuidor", "Refanic","84891081","50582053");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107019, "Distribuidor", "Los Paisanos","87754774","505301078");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107020, "Distribuidor", "Krisan","84932838","50595898");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107021, "Laboratorio", "Solka","852410613","50529273");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107022, "Laboratorio", "Calox","81107530","505419108");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107023, "Laboratorio", "Unimark","87771903","50538060");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107024, "Laboratorio", "Zepol","834310661","50561358");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107025, "Laboratorio", "Altasa","83232788","50529789");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107026, "Laboratorio", "Winzzer","89796572","505241072");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107027, "Laboratorio", "Bayer","82923822","505104348");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107028, "Laboratorio", "Discarsa","81272620","50545650");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107029, "Laboratorio", "Euros","82723919","50576799");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107030, "Distribuidor", "Refanic","85959242","50576341");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107031, "Distribuidor", "Dicegsa","82023051","505910681");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107032, "Distribuidor", "Farcosa","878729107","50508896");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107033, "Distribuidor", "Disprofar","84546224","50529781");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107034, "Distribuidor", "Pushendorf","826410888","50587955");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107035, "Distribuidor", "Generifar","851261068","50590685");
-INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (107036, "Laboratorio", "Natural Herbal","845323108","50595432");
+-- Proveedor [Completado - 35 REGISTROS]
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1001, "Laboratorio", "Unifarm", "82245083","505441041");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1002, "Laboratorio", "Pharmalat", "86328780","50584497");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1003, "Laboratorio", "Ramos", "86869305","50582411");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1004, "Laboratorio", "Caplin Point", "89502120","505610672");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1005, "Laboratorio", "Procaps", "83632708","505310871");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1006, "Laboratorio", "Chia Fong","867510478","505368106");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1007, "Laboratorio", "Ceguel","87656496","50506111");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1008, "Laboratorio", "Rarpe","87249035","50549373");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1009, "Laboratorio", "Pisa","812106361","50526788");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1010, "Laboratorio", "Panzyma","82452831","50594381");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1011, "Laboratorio", "Infasa","82472541","50554505");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1012, "Laboratorio", "PFizer","853335108","505201084");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1013, "Laboratorio", "La Santé","89471012","50539881");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1014, "Laboratorio", "Bengoechea","871078376","50596431");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1015, "Distribuidor", "Rocha","86895446","50546020");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1016, "Distribuidor", "J.Ruiz","88377702","50527204");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1017, "Distribuidor", "Jazmin","86907496","50554013");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1018, "Distribuidor", "Refanic","84891081","50582053");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1019, "Distribuidor", "Los Paisanos","87754774","505301078");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1020, "Distribuidor", "Krisan","84932838","50595898");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1021, "Laboratorio", "Solka","852410613","50529273");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1022, "Laboratorio", "Calox","81107530","505419108");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1023, "Laboratorio", "Unimark","87771903","50538060");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1024, "Laboratorio", "Zepol","834310661","50561358");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1025, "Laboratorio", "Altasa","83232788","50529789");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1026, "Laboratorio", "Winzzer","89796572","505241072");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1027, "Laboratorio", "Bayer","82923822","505104348");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1028, "Laboratorio", "Discarsa","81272620","50545650");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1029, "Laboratorio", "Euros","82723919","50576799");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1030, "Distribuidor", "Refanic","85959242","50576341");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1031, "Distribuidor", "Dicegsa","82023051","505910681");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1032, "Distribuidor", "Farcosa","878729107","50508896");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1033, "Distribuidor", "Disprofar","84546224","50529781");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1034, "Distribuidor", "Pushendorf","826410888","50587955");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1035, "Distribuidor", "Generifar","851261068","50590685");
+INSERT Proveedor (IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2) VALUES (1036, "Laboratorio", "Natural Herbal","845323108","50595432");
 
 --UtilidadProducto [COMPLETADO - 99 REGISTROS]
 INSERT INTO UtilidadProducto (IDproducto,IDenfermedad) VALUES (1001,5009);

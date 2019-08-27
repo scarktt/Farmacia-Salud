@@ -198,7 +198,7 @@ Where IDproducto = @IDproducto AND IDindicacion = @IDindicacion;
 END $$
 Call ModIndicacionProducto ('1001', '7002')
 
--- Lote
+-- InventarioProducto
 DELIMITER $$
 Create Procedure ModInventarioProducto(
 in FacturaCompraPedido int,
