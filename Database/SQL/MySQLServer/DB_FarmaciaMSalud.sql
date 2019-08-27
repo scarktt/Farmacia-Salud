@@ -372,7 +372,7 @@ CREATE TABLE `Producto` (
   `IDproducto` int(11) NOT NULL,
   `Nombre` char(30) NOT NULL,
   `Forma_farmaceutica` char(20) NOT NULL,
-  `Dosis_Contenido` int(11) NOT NULL,
+  `Dosis_Contenido` decimal(13,3) NOT NULL,
   `Unidad_medida` char(10) NOT NULL,
   `Restriccion` bit(1) DEFAULT NULL,
   `Generico` bit(1) NOT NULL,
