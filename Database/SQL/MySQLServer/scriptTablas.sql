@@ -21,10 +21,10 @@ Primary Key (IDabono,FacturaCompraPedido,IDproveedor)
 Create table Empleado
 (
 	IDempleado Integer NOT NULL,
-	CedulaEmpleado Char(16) NOT NULL,
-	Nombre Char(30) NULL,
-	Usuario Char(10) NULL,
-	Pass Char(8) NULL,
+	CedulaEmpleado Char(16) NULL,
+	Nombre Char(30) NOT NULL,
+	Usuario Char(10) NOT NULL,
+	Pass Char(8) NOT NULL,
 Primary Key (IDempleado)
 );
 
@@ -32,12 +32,12 @@ Primary Key (IDempleado)
 Create table Producto
 (
 	IDproducto Integer NOT NULL,
-	Nombre Char(30) NULL,
-	Forma_farmaceutica Char(20) NULL,
-	Dosis_Contenido Integer NULL,
-	Unidad_medida Char(10) NULL,
+	Nombre Char(30) NOT NULL,
+	Forma_farmaceutica Char(20) NOT NULL,
+	Dosis_Contenido Integer NOT NULL,
+	Unidad_medida Char(10) NOT NULL,
 	Restriccion Bit NULL,
-	Generico Bit NULL,
+	Generico Bit NOT NULL,
 	Descontinuado Bit NULL,
 Primary Key (IDproducto)
 );
@@ -47,7 +47,7 @@ Create table Proveedor
 (
 	IDproveedor Integer NOT NULL,
 	Tipo_proveedor Char(20) NULL,
-	Nombre_proveedor Char(30) NULL,
+	Nombre_proveedor Char(30) NOT NULL,
 	tel1 Char(8) NULL,
 	tel2 Char(8) NULL,
 Primary Key (IDproveedor)
@@ -56,17 +56,17 @@ Primary Key (IDproveedor)
 
 Create table Compra
 (
-	FacturaCompraPedido Integer NOT NULL,
-	FacturaPedido Integer NOT NULL,
+	FacturaCompra Integer NOT NULL,
 	IDproveedor Integer NOT NULL,
-	FechaCompra Datetime NULL,
-	MontoCompra Decimal(13,3) NULL,
+	FacturaPedido Integer NOT NULL,
+	FechaCompra Datetime NOT NULL,
+	MontoCompra Decimal(13,3) NOT NULL,
 	ReciboColector Char(8) NULL,
-	Status Char(10) NULL,
+	Status Char(10) NOT NULL,
 	Observacion Char(30) NULL,
-	FechaVencPa Datetime NULL,
-	Descuento Decimal(1,3) NULL,
-Primary Key (FacturaCompraPedido)
+	FechaVencPago Datetime NOT NULL,
+	Descuento Decimal(13,3) NULL,
+Primary Key (FacturaCompra)
 );
 
 
@@ -74,7 +74,7 @@ Create table Factura
 (
 	NoFactura Integer NOT NULL,
 	IDempleado Integer NOT NULL,
-	Fecha Datetime NULL,
+	Fecha Datetime NOT NULL,
 Primary Key (NoFactura)
 );
 
@@ -84,10 +84,10 @@ Create table DetalleFactura
 	NoFactura Integer NOT NULL,
 	FacturaCompraPedido Integer NOT NULL,
 	IDproducto Integer NOT NULL,
-	Descripcion Char(30) NULL,
-	PrecioUnitario Decimal(13,3) NULL,
-	Cantidad Integer NULL,
-	Total Decimal(13,3) NULL,
+	Descripcion Char(30) NOT NULL,
+	PrecioUnitario Decimal(13,3) NOT NULL,
+	Cantidad Integer NOT NULL,
+	Total Decimal(13,3) NOT NULL,
 Primary Key (NoFactura,FacturaCompraPedido,IDproducto)
 );
 
@@ -95,7 +95,7 @@ Primary Key (NoFactura,FacturaCompraPedido,IDproducto)
 Create table Enfermedad
 (
 	IDenfermedad Integer NOT NULL,
-	Descripcion Char(15) NULL,
+	Descripcion Char(35) NOT NULL,
 Primary Key (IDenfermedad)
 );
 
@@ -111,7 +111,7 @@ Primary Key (IDproducto,IDenfermedad)
 Create table Indicacion
 (
 	IDindicacion Integer NOT NULL,
-	Descripcion Char(20) NULL,
+	Descripcion Char(35) NOT NULL,
 Primary Key (IDindicacion)
 );
 
@@ -124,14 +124,14 @@ Primary Key (IDproducto,IDindicacion)
 );
 
 
-Create table PagoServicios
+Create table Pagos
 (
-	IDPagoServicios Integer NOT NULL,
+	IDPagos Integer NOT NULL,
 	IDempleado Integer NOT NULL,
-	TipodePaServicios Char(40) NULL,
-	PaServicio Decimal(13,3) NULL,
-	FechaPa Datetime NULL,
-Primary Key (IDPagoServicios)
+	TipoPago Char(40) NULL,
+	MOntoPago Decimal(13,3) NOT NULL,
+	FechaPago Datetime NOT NULL,
+Primary Key (IDPagos)
 );
 
 
@@ -140,8 +140,8 @@ Create table Pedido
 	FacturaPedido Integer NOT NULL,
 	IDproveedor Integer NOT NULL,
 	IDempleado Integer NOT NULL,
-	FechaPedido Datetime NULL,
-	MontoPedido Decimal(13,3) NULL,
+	FechaPedido Datetime NOT NULL,
+	MontoPedido Decimal(13,3) NOT NULL,
 Primary Key (FacturaPedido)
 );
 
@@ -150,8 +150,9 @@ Create table DetallePedido
 (
 	FacturaPedido Integer NOT NULL,
 	IDproducto Integer NOT NULL,
-	CantidadUnidad Integer NULL,
-	MontoxUnidad Decimal(13,3) NULL,
+	IDproveedor Integer NOT NULL,
+	CantidadUnidad Integer NOT NULL,
+	MontoxUnidad Decimal(13,3) NOT NULL,
 Primary Key (FacturaPedido,IDproducto)
 );
 
@@ -161,22 +162,21 @@ Create table PerdidaProducto
 	IDperdida Integer NOT NULL,
 	FacturaCompraPedido Integer NOT NULL,
 	IDproducto Integer NOT NULL,
-	CantidadUnidades Integer NULL,
-	MontoPerdido Decimal(13,3) NULL,
+	CantidadUnidades Integer NOT NULL,
+	MontoPerdido Decimal(13,3) NOT NULL,
 Primary Key (IDperdida)
 );
 
 
 Create table InventarioProducto
 (
-	FacturaCompraPedido Integer NOT NULL,
+	FacturaCompra Integer NOT NULL,
 	IDproducto Integer NOT NULL,
-	CantidadUnidades Integer NULL,
-	MontoxUnidad Decimal(13,3) NULL,
-	Ganancia Decimal(1,3) NULL,
-	PrecioVenta Decimal(13,3) NULL,
-	PrecioUnitario Decimal(13,3) NULL,
-	StockBodega Integer NULL,
-	StockEstante Integer NULL,
-Primary Key (FacturaCompraPedido,IDproducto)
+	CantidadUnidades Integer NOT NULL,
+	MontoxUnidad Decimal(13,3) NOT NULL,
+	Ganancia Decimal(13,3) NOT NULL,
+	PrecioVentaUnitario Decimal(13,3) NOT NULL,
+	StockBodega Integer NOT NULL,
+	StockEstante Integer NOT NULL,
+Primary Key (FacturaCompra,IDproducto)
 );
