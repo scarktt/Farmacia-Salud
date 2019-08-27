@@ -1,5 +1,6 @@
 package sample.Controlador;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -7,13 +8,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import sample.Modelo.*;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -36,11 +38,11 @@ public class FacturacionControlador implements Initializable {
     @FXML private CheckBox ckboxGenerico;
     // TableView
     @FXML private TableView<List<StringProperty>> TVAgregarProductos;
-    // Columnas del TableView
+    // TableView's Columns
     @FXML private TableColumn<List<StringProperty>, String> TCProducto;
     @FXML private TableColumn<List<StringProperty>, String> TCProveedor;
 
-    // Colecciones de tipo String para los ComboBox
+    // String Collections for ComboBox Items
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
     private ObservableList<String> listaProveedores = FXCollections.observableArrayList();
     private ObservableList<String> listaForma_farmaceutica = FXCollections.observableArrayList();
@@ -48,7 +50,7 @@ public class FacturacionControlador implements Initializable {
     private ObservableList<String> listaIndicacion = FXCollections.observableArrayList();
     private ObservableList<String> listaUtilidad = FXCollections.observableArrayList();
 
-    // Colecciones de tipo StringProperty para el TableView
+    // String Collections for TableView
     private ObservableList<List<StringProperty>> data = FXCollections.observableArrayList();
 
     @Override
@@ -59,6 +61,7 @@ public class FacturacionControlador implements Initializable {
         LoadDataCmbox(conexion);
 
         conexion.cerrarConexion();
+
     }
 
     private void LoadDataCmbox (Conexion conexion) {
@@ -81,58 +84,43 @@ public class FacturacionControlador implements Initializable {
 
     /************************************ METODO HANDLE PARA EL BUSCADOR ************************************/
 
-    private String text = "";
+    private void filterList (Conexion conexion, String newValue, String oldValue) {
+        if (buscar.getText().isEmpty()) {
+            data.clear();
 
-    public void handleKeyReleased(KeyEvent keyEvent) {
+        } else if (newValue.length() < oldValue.length()) {
+            data.clear();
+            getListFromDataBaseAndLoadData (conexion, newValue);
+
+        } else {
+            data.clear();
+            getListFromDataBaseAndLoadData (conexion, newValue);
+        }
+    }
+
+    private void getListFromDataBaseAndLoadData (Conexion conexion, String newValue) {
+        Producto.busquedaDinamicaProducto(conexion.getConnection(), newValue, getTipo(), getProveedorValue(),
+                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
+
+        // Enlazar listas con TableView
+        TVAgregarProductos.setItems(data);
+
+        // Enlazar columnas con atributos
+        TCProducto.setCellValueFactory(data -> data.getValue().get(1));
+        TCProveedor.setCellValueFactory(data -> data.getValue().get(2));
+
+        conexion.cerrarConexion();
+    }
+
+    private String oldValue = "";
+
+    public void handleKeyReleased() {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
-        if (keyEvent.getCode() != KeyCode.BACK_SPACE) {
-            // Se agrega la letra digitada caracter a caracter, esto debido a que cada vez que se entra en este metodo
-            // (handleKeyReleased) el parametro del mismo solo recibe el caracter nuevo y si se envia solo eso para
-            // la consulta, la busqueda va a ser incorrecta.
-            text = text + keyEvent.getText();
-            data.clear();
+        filterList(conexion, buscar.getText(), oldValue);
 
-            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, getTipo(), getProveedorValue(),
-                    getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-            // Enlazar listas con TableView
-            TVAgregarProductos.setItems(data);
-
-            // Enlazar columnas con atributos
-            TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-            TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-            conexion.cerrarConexion();
-
-        } else {
-
-            // Si la longitud del texto es cero, se le establece como cadena vacia. Si no, se resta un caracter
-            // del texto. (Esto tiene la finalidad de no activar la excepcion de que la longitud de la cadena
-            // sea un numero negativo)
-            if (text.length() == 0) {
-                text = "";
-                data.clear();
-
-            } else {
-                text = text.substring(0, text.length() - 1);
-                data.clear();
-            }
-
-            Producto.busquedaDinamicaProducto(conexion.getConnection(), text, getTipo(), getProveedorValue(),
-                    getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-            // Enlazar listas con TableView
-            TVAgregarProductos.setItems(data);
-
-            // Enlazar columnas con atributos
-            TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-            TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-            conexion.cerrarConexion();
-        }
-
+        oldValue = buscar.getText();
     }
 
     public void OnReleasedProveedor() {
@@ -140,17 +128,7 @@ public class FacturacionControlador implements Initializable {
         conexion.establecerConexion();
         data.clear();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
+        getListFromDataBaseAndLoadData (conexion, buscar.getText());
     }
 
     public void OnReleasedFormaF() {
@@ -158,17 +136,7 @@ public class FacturacionControlador implements Initializable {
         conexion.establecerConexion();
         data.clear();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
+        getListFromDataBaseAndLoadData (conexion, buscar.getText());
     }
 
     public void OnReleasedUnidadMedida() {
@@ -176,17 +144,7 @@ public class FacturacionControlador implements Initializable {
         conexion.establecerConexion();
         data.clear();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
+        getListFromDataBaseAndLoadData (conexion, buscar.getText());
     }
 
     public void OnReleasedUtilidad() {
@@ -194,17 +152,7 @@ public class FacturacionControlador implements Initializable {
         conexion.establecerConexion();
         data.clear();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
+        getListFromDataBaseAndLoadData (conexion, buscar.getText());
     }
 
     public void OnReleasedIndicacion() {
@@ -212,17 +160,7 @@ public class FacturacionControlador implements Initializable {
         conexion.establecerConexion();
         data.clear();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
+        getListFromDataBaseAndLoadData (conexion, buscar.getText());
     }
 
     public void OnMouseClickedGenerico() {
@@ -230,25 +168,23 @@ public class FacturacionControlador implements Initializable {
         conexion.establecerConexion();
         data.clear();
 
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
+        getListFromDataBaseAndLoadData (conexion, buscar.getText());
     }
 
     public void OnTableItemSelected() {
-        // Se obtiene el nombre del item seleccionado
-        //String value = TVAgregarProductos.getSelectionModel().getSelectedItem();
+        /*TVAgregarProductos.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        TVAgregarProductos.getSelectionModel().setCellSelectionEnabled(true);*/
+
+        TablePosition tablePosition = TVAgregarProductos.getSelectionModel().getSelectedCells().get(0);
+        int row = tablePosition.getRow();
+
+        TableColumn col = tablePosition.getTableColumn();
+
+        // this gives the value in the selected cell:
+        String data = (String) col.getCellObservableValue(row).getValue();
 
         // Se le asigna el valor obtenido previamente al text field de producto
-        //txtProducto.setText(value);
+        txtProducto.setText(data);
     }
 
     private Boolean addProduct = false;
@@ -350,4 +286,5 @@ public class FacturacionControlador implements Initializable {
             return 0;
         }
     }
+
 }
