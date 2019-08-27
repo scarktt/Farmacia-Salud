@@ -1,7 +1,7 @@
 #vistas pantalla compras
 -- la vista 5 falta el descuento!!
 
-CREATE VIEW v_compras_1 AS SELECT FacturaPedido,FechaPedido,Nombre  FROM FarmaciaMSalud.Pedido t1 INNER JOIN FarmaciaMSaludsalud.Empleado t2 on t1.IDempleado = t2.IDempleado ;
+CREATE VIEW v_compras_1 AS SELECT FacturaPedido,FechaPedido,Nombre  FROM FarmaciaMSalud.Pedido t1 INNER JOIN FarmaciaMSalud.Empleado t2 on t1.IDempleado = t2.IDempleado ;
 CREATE VIEW v_compras_2 AS SELECT FacturaPedido,FechaPedido FROM FarmaciaMSalud.Pedido;
 CREATE VIEW v_compras_3 AS SELECT Nombre,Dosis_Contenido,Unidad_medida,Nombre_proveedor  FROM FarmaciaMSalud.Producto t1 INNER JOIN FarmaciaMSalud.DetallePedido t2 on t1.IDproducto = t2.IDproducto INNER JOIN FarmaciaMSalud.Pedido t3 on t2.FacturaPedido = t3.FacturaPedido INNER JOIN FarmaciaMSalud.Proveedor t4 on t3.IDproveedor = t4.IDproveedor;
 CREATE VIEW v_compras_4 AS SELECT Nombre,Dosis_Contenido,Unidad_medida,PrecioUnitario  FROM FarmaciaMSalud.Producto t1 INNER JOIN FarmaciaMSalud.DetalleProducto t2 on t1.IDproducto = t2.IDproducto;

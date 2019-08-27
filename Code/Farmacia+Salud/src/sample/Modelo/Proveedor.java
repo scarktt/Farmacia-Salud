@@ -8,6 +8,8 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Proveedor{
     private IntegerProperty IDproveedor;
@@ -92,25 +94,41 @@ public class Proveedor{
         }
     }
 
-    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<String> lista) {
-        try {
-            String query = "SELECT IDproveedor, Tipo_proveedor, Nombre_proveedor, tel1, tel2 " +
-                    "FROM Proveedor WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
-            PreparedStatement statement = connection.prepareStatement(query);
-            //statement.setNString(1, busqueda);
-            ResultSet resultado = statement.executeQuery();
+    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<List<StringProperty>> data) {
+        List<StringProperty> Row = new ArrayList<>();
 
-            // Se recorre el campo que en este caso es el de Nombre
+        try {
+            String query = "SELECT DISTINCT IDproveedor,Nombre_proveedor,Tipo_proveedor,tel1,tel2 FROM Proveedor" +
+                    " WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
+
             while (resultado.next()) {
-                lista.add(resultado.getString("Nombre_proveedor")
-                );
+                Row.add(0, new SimpleStringProperty(resultado.getString("IDproveedor")));
+                Row.add(1, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
+                Row.add(2, new SimpleStringProperty(resultado.getString("Tipo_proveedor")));
+                Row.add(3, new SimpleStringProperty(resultado.getString("tel1")));
+                Row.add(4, new SimpleStringProperty(resultado.getString("tel2")));
+                System.out.println(Row);
+                data.add(Row);
+                System.out.println(data);
+                System.out.println("---------");
             }
 
             statement.close();
         } catch (SQLException e) {
-            System.out.println("Error al agregar Nombre del producto al TableView");
+            System.out.println("Error al agregar las deudas pendientes al TableView");
             e.printStackTrace();
+
+            //Si compra 10 cojas, de 100 pone 1000 pastillas
+
         }
     }
 
 }
+
+
+/*LA caja de 100 la venden en 80 por ejeplo, dependiendo
+precio de venta es con el 30%
+        es el precio final que se le vende, pero no hacen eso con pastillas porque sale no favorable, con 30%*/

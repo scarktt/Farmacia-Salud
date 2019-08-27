@@ -84,7 +84,7 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" onAction="#handleonActionProveedor" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" onAction="#onActionProveedor" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <ComboBox fx:id="cmbFacturaCompra" layoutX="587.0" layoutY="61.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
             <Label layoutX="439.0" layoutY="63.0" text="Factura de compra">
                <font>

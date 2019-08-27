@@ -1,6 +1,7 @@
 package sample.Controlador;
 
 import javafx.beans.property.ReadOnlyStringWrapper;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -20,6 +21,7 @@ import sample.Modelo.*;
 
 import java.net.URL;
 import java.sql.Date;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class PagoServicioControlador implements Initializable {
@@ -34,14 +36,17 @@ public class PagoServicioControlador implements Initializable {
     @FXML private TextField txtAgregarAbono;
 
     // TableView
-    @FXML private TableView<String> TVPagoServicio;
-    @FXML private TableView<Abono> TVAbono;
+    @FXML private TableView<List<StringProperty>> TVPagoServicio;
+    @FXML private TableView<List<StringProperty>> TVAbono;
 
-    @FXML private TableColumn<String, String> TCProveedor;
-    @FXML private TableColumn<String, String> TCMonto;
-    @FXML private TableColumn<String, String> TCReciboColector;
-    @FXML private TableColumn<String, String> TCObservacion;
-    @FXML private TableColumn<String, String> TCFechaVencPago;
+    @FXML private TableColumn<List<StringProperty>, String> TCProveedor;
+    @FXML private TableColumn<List<StringProperty>, String> TCMonto;
+    @FXML private TableColumn<List<StringProperty>, String> TCReciboColector;
+    @FXML private TableColumn<List<StringProperty>, String> TCObservacion;
+    @FXML private TableColumn<List<StringProperty>, String> TCFechaVencPago;
+
+    @FXML private TableColumn<List<StringProperty>, String> TCFechaAbono;
+    @FXML private TableColumn<List<StringProperty>, String> TCSaldoAbono;
 
     // Colecciones de tipo String
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
@@ -49,22 +54,36 @@ public class PagoServicioControlador implements Initializable {
     private ObservableList<String> listaProveedores = FXCollections.observableArrayList();
     private ObservableList<String> listaFacturaCompra = FXCollections.observableArrayList();
 
-    //Colecciones de tipo Pagos
-    private ObservableList<String> listaDeudas = FXCollections.observableArrayList();
-    private ObservableList<String> listaProveedor = FXCollections.observableArrayList();
-    private ObservableList<String> listaMonto = FXCollections.observableArrayList();
-    private ObservableList<String> listaReciboColector = FXCollections.observableArrayList();
-    private ObservableList<String> listaObservacion = FXCollections.observableArrayList();
-    private ObservableList<String> listaFechaVencPago = FXCollections.observableArrayList();
+    // Colecciones de tipo StringProperty para el TableView
+    private ObservableList<List<StringProperty>> listaDeudas = FXCollections.observableArrayList();
+    private ObservableList<List<StringProperty>> listaAbono = FXCollections.observableArrayList();
 
     //Colecciones de tipo Abono
-    private ObservableList<Abono> listaAbono = FXCollections.observableArrayList();
+    //private ObservableList<Abono> listaAbono = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
+        LoadDataCmbox(conexion);
+
+
+        listaAbono.clear();
+
+        Abono.llenarTVAbono(conexion.getConnection(), listaAbono);
+
+        // Enlazar listas con TableView
+        TVAbono.setItems(listaAbono);
+        //System.out.println(listaAbono);
+        // Enlazar columnas con atributos
+        TCFechaAbono.setCellValueFactory(listaAbono -> listaAbono.getValue().get(1));
+        TCSaldoAbono.setCellValueFactory(listaAbono -> listaAbono.getValue().get(0));
+
+        conexion.cerrarConexion();
+    }
+
+    private void LoadDataCmbox (Conexion conexion) {
         //LLenar listas
         Empleado.llenarCmbNombresEmpleado(conexion.getConnection(), listaVendedores);
         Proveedor.llenarCmbNombresProveedores(conexion.getConnection(), listaProveedores);
@@ -77,41 +96,33 @@ public class PagoServicioControlador implements Initializable {
         cmbTipoPago.setItems(listaTipoPago);
         cmbFacturaCompra.setItems(listaFacturaCompra);
         cmbVendedorA.setItems(listaVendedores);
-
-        conexion.cerrarConexion();
     }
+
+
+    /************************************ METODO ONACTION PARA EL FILTRO POR PROVEEDOR ************************************/
 
     private String text = "";
 
-    public void handleonActionProveedor(ActionEvent event) {
+    public void onActionProveedor(ActionEvent event) {
         Conexion conexion = new Conexion();
         conexion.establecerConexion();
 
         text = text + cmbProveedor.getSelectionModel().getSelectedItem();
-        listaProveedor.clear();listaMonto.clear();listaReciboColector.clear();listaObservacion.clear();listaFechaVencPago.clear();
+        listaDeudas.clear();
 
-        Pagos.busquedaDinamicaDeudasPendientes(conexion.getConnection(), text,listaProveedor, listaMonto, listaReciboColector, listaObservacion, listaFechaVencPago);
+        Pagos.busquedaDinamicaDeudasPendientes(conexion.getConnection(), text, listaDeudas);
 
-        TVPagoServicio.setItems(listaProveedor);
-        TCProveedor.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
+        //System.out.println(listaDeudas);
+        // Enlazar listas con TableView
+        TVPagoServicio.setItems(listaDeudas);
 
-        //TVPagoServicio.setItems(listaMonto);
-        TCMonto.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
-
-       // TVPagoServicio.setItems(listaReciboColector);
-        TCReciboColector.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
-
-        //TVPagoServicio.setItems(listaObservacion);
-        TCObservacion.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
-
-       // TVPagoServicio.setItems(listaFechaVencPago);
-        TCFechaVencPago.setCellValueFactory(param -> new ReadOnlyStringWrapper(param.getValue()));
-
-        /*TCMonto.setCellValueFactory(new PropertyValueFactory<String, String>("MontoCompra"));
-        TCReciboColector.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("ReciboColector"));
-        TCProveedor.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("Observacio"));
-        TCFechaVencPago.setCellValueFactory(new PropertyValueFactory<Pagos, CompraProducto>("FechaVencPago"));*/
-
+        // Enlazar columnas con atributos
+        TCProveedor.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(0));
+        TCMonto.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(1));
+        TCReciboColector.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(2));
+        TCObservacion.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(3));
+        TCFechaVencPago.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(4));
+        //System.out.println(listaDeudas);
         conexion.cerrarConexion();
     }
 }

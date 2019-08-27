@@ -13,13 +13,13 @@
 
 <AnchorPane fx:id="APProveedor" prefHeight="609.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.ProveedorControlador">
     <children>
-        <AnchorPane fx:id="APProveedor1" prefHeight="409.0" prefWidth="799.0" style="-fx-background-color: #BCB8B1;">
+        <AnchorPane fx:id="APProveedor1" layoutX="14.0" prefHeight="409.0" prefWidth="799.0" style="-fx-background-color: #BCB8B1;">
             <children>
                 <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
                 <Separator layoutX="20.0" layoutY="383.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="383.0" />
                 <Separator layoutX="786.0" layoutY="26.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="786.0" AnchorPane.topAnchor="26.0" />
                 <Separator layoutX="18.0" layoutY="24.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="20.0" />
-                <TextField fx:id="txtBuscar" layoutX="206.0" layoutY="80.0" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="206.0">
+                <TextField fx:id="txtBuscar" layoutX="206.0" layoutY="80.0" onKeyReleased="#handleKeyReleased" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="206.0">
                     <font>
                         <Font name="Calibri" size="18.0" />
                     </font>
@@ -37,11 +37,11 @@
                 </Label>
                 <TableView fx:id="TVProveedor" layoutX="41.0" layoutY="138.0" prefHeight="235.0" prefWidth="669.0">
                     <columns>
-                        <TableColumn prefWidth="99.0" text="ID" />
-                        <TableColumn prefWidth="192.0" text="Nombre" />
-                        <TableColumn prefWidth="175.0" text="Tipo" />
-                        <TableColumn minWidth="0.0" prefWidth="101.0" text="Teléfono 1" />
-                        <TableColumn prefWidth="99.0" text="Teléfono 2" />
+                        <TableColumn fx:id="TCID" prefWidth="99.0" text="ID" />
+                        <TableColumn fx:id="TCNombre" prefWidth="192.0" text="Nombre" />
+                        <TableColumn fx:id="TCTipo" prefWidth="175.0" text="Tipo" />
+                        <TableColumn fx:id="TCTel1" minWidth="0.0" prefWidth="101.0" text="Teléfono 1" />
+                        <TableColumn fx:id="TCTel2" prefWidth="99.0" text="Teléfono 2" />
                     </columns>
                 </TableView>
                 <Button fx:id="btnEditar" layoutX="723.0" layoutY="231.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #BCB8B1;">

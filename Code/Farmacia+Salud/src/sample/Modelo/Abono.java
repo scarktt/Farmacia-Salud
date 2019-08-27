@@ -1,13 +1,12 @@
 package sample.Modelo;
 
 
-import javafx.beans.property.FloatProperty;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleFloatProperty;
-import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Abono{
     private IntegerProperty IDabono;
@@ -75,7 +74,9 @@ public class Abono{
         return FechaAbono;
     }
 
-    public static void llenarTVAbono(Connection connection, ObservableList<Abono> lista){
+    public static void llenarTVAbono(Connection connection, ObservableList<List<StringProperty>> data){
+        List<StringProperty> Row = new ArrayList<>();
+
         try {
             String query = "SELECT FechaAbono, SaldoAbono FROM Abono;";
 
@@ -83,13 +84,9 @@ public class Abono{
             ResultSet resultado  = statement.executeQuery(query);
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
-                lista.add(new Abono (
-                        //resultado.getInt("IDabono"),
-                        //resultado.getInt("FacturaCompraProducto"),
-                        //resultado.getInt("IDproveedor"),
-                        resultado.getFloat("SaldoAbono"),
-                        resultado.getDate("FechaAbono"))
-                );
+                Row.add(0, new SimpleStringProperty(resultado.getString("SaldoAbono")));
+                Row.add(1, new SimpleStringProperty(resultado.getString("FechaAbono")));
+                data.add(Row);
             }
 
         } catch (SQLException e) {
