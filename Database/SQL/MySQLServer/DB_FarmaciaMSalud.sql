@@ -27,6 +27,7 @@ CREATE TABLE `Abono` (
   `FacturaCompraPedido` int(11) NOT NULL,
   `IDproveedor` int(11) NOT NULL,
   `SaldoAbono` decimal(13,3) DEFAULT NULL,
+  `FechaAbono` datetime DEFAULT NULL,
   PRIMARY KEY (`IDabono`,`FacturaCompraPedido`,`IDproveedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
