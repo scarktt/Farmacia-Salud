@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -11,7 +13,7 @@
 
 <!--Escena de compras2-->
 
-<AnchorPane fx:id="APCompras2" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.Compra2Controlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+<AnchorPane fx:id="APCompras2" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.Compra2Controlador">
     <children>
             <AnchorPane layoutY="6.0" prefHeight="611.0" prefWidth="1171.0" style="-fx-background-color: #BCB8B1;">
                 <children>
@@ -24,7 +26,7 @@
                             <Font name="Calibri" size="18.0" />
                         </font>
                     </Label>
-                    <Label fx:id="lblNumFactura" layoutX="87.0" layoutY="30.0" text="128121">
+                    <Label fx:id="lblNumFactura" layoutX="104.0" layoutY="30.0" text="128121">
                         <font>
                             <Font name="Calibri" size="18.0" />
                         </font>
@@ -39,40 +41,94 @@
                             <Font name="Calibri" size="18.0" />
                         </font>
                     </Label>
-                    <Label layoutX="435.0" layoutY="95.0" text="Fecha de vencimiento de pago">
+                    <Label layoutX="406.0" layoutY="96.0" text="Fecha de vencimiento de pago">
                         <font>
                             <Font name="Calibri" size="18.0" />
                         </font>
                     </Label>
-                    <TextField fx:id="txtObservacion" layoutX="157.0" layoutY="134.0" prefHeight="30.0" prefWidth="697.0">
+                    <TextField fx:id="txtObservacion" layoutX="171.0" layoutY="135.0" prefHeight="30.0" prefWidth="697.0">
                         <font>
                             <Font name="Calibri" size="16.0" />
                         </font>
                     </TextField>
-                    <DatePicker fx:id="dtFechaVencimiento" layoutX="678.0" layoutY="94.0" />
+                    <DatePicker fx:id="dtFechaVencimiento" layoutX="678.0" layoutY="94.0" prefHeight="27.0" prefWidth="190.0" />
                     <ComboBox fx:id="cmbCompraPor" layoutX="936.0" layoutY="93.0" prefHeight="25.0" prefWidth="174.0" promptText="Compra realizada por" style="-fx-background-color: #FFFFFF;" />
                     <ComboBox fx:id="cmbStatus" layoutX="936.0" layoutY="137.0" prefWidth="150.0" promptText="Status" style="-fx-background-color: #FFFFFF;" />
                     <AnchorPane layoutX="18.0" layoutY="176.0" prefHeight="373.0" prefWidth="1143.0" style="-fx-background-color: #BCB8B1;">
                         <children>
-                            <TableView fx:id="TVCompras2" layoutX="21.0" layoutY="14.0" prefHeight="336.0" prefWidth="1101.0">
+                            <TableView fx:id="TVCompras2" layoutX="21.0" layoutY="73.0" prefHeight="277.0" prefWidth="260.0">
                                 <columns>
                                     <TableColumn prefWidth="257.0" text="Producto" />
-                                    <TableColumn prefWidth="133.0" text="Precio Unit." />
-                                    <TableColumn prefWidth="140.0" text="\% Ganancia" />
-                                    <TableColumn prefWidth="163.0" text="Precio Venta" />
-                                    <TableColumn prefWidth="109.0" text="Lote No." />
-                                    <TableColumn prefWidth="169.0" text="Fecha Vencimiento" />
-                                    <TableColumn prefWidth="136.0" text="Cant Estante" />
                                 </columns>
                             </TableView>
+                  <TextField fx:id="CtxtRecivoColect1" layoutX="211.0" layoutY="7.0" prefHeight="30.0" prefWidth="150.0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="8.0" layoutY="11.0" text="Descuento de compra">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="309.0" layoutY="87.0" text="Precio Unitario C$">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="CtxtRecivoColect11" layoutX="483.0" layoutY="83.0" prefHeight="32.0" prefWidth="99.0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="CtxtRecivoColect111" layoutX="425.0" layoutY="126.0" prefHeight="32.0" prefWidth="156.0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="309.0" layoutY="131.0" text="\% Ganancia">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="300.0" layoutY="176.0" text="Precio Venta C$">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="CtxtRecivoColect1111" layoutX="456.0" layoutY="171.0" prefHeight="32.0" prefWidth="122.0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="CtxtRecivoColect11111" layoutX="479.0" layoutY="212.0" prefHeight="32.0" prefWidth="99.0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="302.0" layoutY="217.0" text="Cantidad a estante">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="299.0" layoutY="262.0" text="Cantidad a bodega">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="CtxtRecivoColect111111" layoutX="476.0" layoutY="257.0" prefHeight="32.0" prefWidth="99.0">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </TextField>
+                          <ImageView fx:id="btnCheck" fitHeight="46.0" fitWidth="52.0" layoutX="530.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@../img/checked.png" />
+                              </image>
+                          </ImageView>
                         </children>
                     </AnchorPane>
-                    <ImageView fx:id="btnCheck" fitHeight="46.0" fitWidth="52.0" layoutX="1087.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../img/checked.png" />
-                        </image>
-                    </ImageView>
-                    <TextField fx:id="CtxtRecivoColect" layoutX="157.0" layoutY="90.0" prefHeight="30.0" prefWidth="150.0">
+                    <TextField fx:id="CtxtRecivoColect" layoutX="171.0" layoutY="91.0" prefHeight="30.0" prefWidth="150.0">
                         <font>
                             <Font name="Calibri" size="16.0" />
                         </font>

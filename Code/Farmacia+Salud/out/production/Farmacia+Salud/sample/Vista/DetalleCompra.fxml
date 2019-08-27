@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -9,16 +10,16 @@
 
 <!--Escena de Detallecompras-->
 
-<AnchorPane fx:id="APDetalleCompra" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controlador.DetalleCompraControlador" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;">
+<AnchorPane fx:id="APDetalleCompra" prefHeight="620.0" prefWidth="1203.0" style="-fx-background-color: #BCB8B1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlador.DetalleCompraControlador">
     <children>
         <AnchorPane prefHeight="609.0" prefWidth="1200.0" style="-fx-background-color: #BCB8B1;">
             <children>
-                <Button fx:id="btnImprimir" layoutX="495.0" layoutY="561.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
+                <Button fx:id="btnImprimir" layoutX="535.0" layoutY="472.0" mnemonicParsing="false" style="-fx-background-color: #A2AAAD;" text="Imprimir">
                     <font>
                         <Font name="Calibri" size="18.0" />
                     </font>
                 </Button>
-                <TableView fx:id="TVDetalleCompra" layoutX="50.0" layoutY="8.0" prefHeight="509.0" prefWidth="1101.0">
+                <TableView fx:id="TVDetalleCompra" layoutX="50.0" layoutY="8.0" prefHeight="424.0" prefWidth="1101.0">
                     <columns>
                         <TableColumn prefWidth="102.0" text="Codigo" />
                         <TableColumn prefWidth="250.0" text="Producto" />
@@ -26,9 +27,19 @@
                         <TableColumn prefWidth="115.0" text="Cantidad" />
                         <TableColumn prefWidth="160.0" text="Descuento" />
                         <TableColumn prefWidth="115.0" text="Precio Unit." />
-                        <TableColumn prefWidth="115.0" text="Precio Total" />
+                        <TableColumn prefWidth="115.0" text="Subtotal" />
                     </columns>
                 </TableView>
+            <Label layoutX="960.0" layoutY="448.0" text="Total:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="1028.0" layoutY="448.0" text="Sum(Subtotal)">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
     </children>
