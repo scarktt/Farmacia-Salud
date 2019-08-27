@@ -38,7 +38,6 @@ public class FacturacionControlador implements Initializable {
     @FXML private CheckBox ckboxGenerico;
     // TableView
     @FXML private TableView<List<StringProperty>> TVAgregarProductos;
-
     // TableView's Columns
     @FXML private TableColumn<List<StringProperty>, String> TCProducto;
     @FXML private TableColumn<List<StringProperty>, String> TCProveedor;
@@ -81,7 +80,6 @@ public class FacturacionControlador implements Initializable {
         cmbUnidadMedida.setItems(listaUnidadMedida);
         cmbIndicacion.setItems(listaIndicacion);
         cmbUtilidad.setItems(listaUtilidad);
-
     }
 
     /************************************ METODO HANDLE PARA EL BUSCADOR ************************************/
@@ -220,222 +218,6 @@ public class FacturacionControlador implements Initializable {
         }
     }
 
-private String getFormafarmaceuticaValue () {
-        if (cmbForma_Farmaceutica.getSelectionModel().isEmpty()) {
-            return "%";
-        } else {
-            return cmbForma_Farmaceutica.getValue();
-        }
-    }
-
-    private int getDosisValue () {
-        if (tfDosis.getText().equals("")) {
-            return 0;
-        } else if (isInteger(tfDosis.getText())) {
-            return Integer.parseInt(tfDosis.getText());
-        } else {
-            return 0;
-        }
-    }
-
-    private String getUnidadMedidaValue () {
-        if (cmbUnidadMedida.getSelectionModel().isEmpty()) {
-            return "%";
-        } else {
-            return cmbUnidadMedida.getValue();
-        }
-    }
-
-    private String getUtilidadValue () {
-        if (cmbUtilidad.getSelectionModel().isEmpty()) {
-            return "%";
-        } else {
-            return cmbUtilidad.getValue();
-        }
-    }
-
-    private String getIndicacion () {
-        if (cmbIndicacion.getSelectionModel().isEmpty()) {
-            return "%";
-        } else {
-            return cmbIndicacion.getValue();
-        }
-    }
-
-    private Boolean getGenerico () {
-        return ckboxGenerico.isSelected();
-    }
-
-    private boolean isInteger(String numero){
-        try{
-            Integer.parseInt(numero);
-            return true;
-        }catch(NumberFormatException e){
-            return false;
-        }
-    }
-
-    private int getTipo () {
-        if (!tfDosis.getText().equals("") && ckboxGenerico.isSelected()) {
-            return 0;
-        } else if (tfDosis.getText().equals("") && !ckboxGenerico.isSelected()) {
-            return 1;
-        } else if (tfDosis.getText().equals("") && ckboxGenerico.isSelected()) {
-            return 2;
-        } else if (!tfDosis.getText().equals("") && !ckboxGenerico.isSelected()) {
-            return 3;
-        } else {
-            return 0;
-        }
-    }
-
-    public void OnReleasedProveedor() {
-        Conexion conexion = new Conexion();
-        conexion.establecerConexion();
-        data.clear();
-
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
-    }
-
-    public void OnReleasedFormaF() {
-        Conexion conexion = new Conexion();
-        conexion.establecerConexion();
-        data.clear();
-
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
-    }
-
-    public void OnReleasedUnidadMedida() {
-        Conexion conexion = new Conexion();
-        conexion.establecerConexion();
-        data.clear();
-
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
-    }
-
-    public void OnReleasedUtilidad() {
-        Conexion conexion = new Conexion();
-        conexion.establecerConexion();
-        data.clear();
-
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
-    }
-
-    public void OnReleasedIndicacion() {
-        Conexion conexion = new Conexion();
-        conexion.establecerConexion();
-        data.clear();
-
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
-    }
-
-    public void OnMouseClickedGenerico() {
-        Conexion conexion = new Conexion();
-        conexion.establecerConexion();
-        data.clear();
-
-        Producto.busquedaDinamicaProducto(conexion.getConnection(), buscar.getText(), getTipo(), getProveedorValue(),
-                getFormafarmaceuticaValue(), getDosisValue(), getUnidadMedidaValue (), getUtilidadValue (), getIndicacion (), getGenerico (), data);
-
-        // Enlazar listas con TableView
-        TVAgregarProductos.setItems(data);
-
-        // Enlazar columnas con atributos
-        TCProducto.setCellValueFactory(data -> data.getValue().get(0));
-        TCProveedor.setCellValueFactory(data -> data.getValue().get(1));
-
-        conexion.cerrarConexion();
-    }
-
-    public void OnTableItemSelected() {
-        // Se obtiene el nombre del item seleccionado
-        //String value = TVAgregarProductos.getSelectionModel().getSelectedItem();
-
-        // Se le asigna el valor obtenido previamente al text field de producto
-        //txtProducto.setText(value);
-    }
-
-    private Boolean addProduct = false;
-
-    public void OnButtonToAddClicked() {
-        // El objetivo del siguiente condicional es verificar que se hayan completado todos los elementos necesarios
-        // para proceder a agregar un determinado producto en la pantalla de Detalle Facturacion.
-        if (cmbVendedor.getValue() != null && !txtProducto.getText().equals("") && !txtCantidad.getText().equals("")) {
-            addProduct = true;
-
-        }
-    }
-
-    public void OnButtonToGoDetalleFacturaClicked() throws IOException {
-        // El objetivo del siguiente if es verificar que se haya agregado al menos un producto para asi
-        // pasar a la siguiente pantalla de Detalle Factura.
-        if (addProduct) {
-            AnchorPane APDetalleFactura = FXMLLoader.load(getClass().getResource("/sample/Vista/DetalleFactura.fxml"));
-            APFacturacion.getChildren().setAll(APDetalleFactura);
-        }
-    }
-
-    /************* METODOS PARA OBTENER LOS VALORES DE LOS CAMPOS DE BUSQUEDA AVANZADA *************/
-
-    private String getProveedorValue() {
-        if (cmbProveedor.getSelectionModel().isEmpty()) {
-            System.out.println(cmbProveedor.getValue());
-            return "%";
-        } else {
-            return cmbProveedor.getValue();
-        }
-    }
-
     private String getFormafarmaceuticaValue () {
         if (cmbForma_Farmaceutica.getSelectionModel().isEmpty()) {
             return "%";
@@ -504,4 +286,5 @@ private String getFormafarmaceuticaValue () {
             return 0;
         }
     }
+
 }
