@@ -50,7 +50,7 @@
                                     <Image url="@../img/agregar.png" />
                                 </image>
                             </ImageView>
-                            <TableView fx:id="TVAgregarPedido" layoutX="7.0" layoutY="40.0" prefHeight="275.0" prefWidth="713.0">
+                            <TableView fx:id="TVAgregarPedido" layoutX="7.0" layoutY="40.0" prefHeight="275.0" prefWidth="601.0">
                                 <columns>
                                     <TableColumn prefWidth="65.0" text="Pedido" />
                                     <TableColumn minWidth="100.0" prefWidth="132.0" text="Fecha Entrega" />
@@ -58,7 +58,6 @@
                                     <TableColumn minWidth="100.0" prefWidth="126.0" text="Proveedor" />
                                     <TableColumn prefWidth="82.0" text="Cantidad" />
                                     <TableColumn prefWidth="66.0" text="Precio" />
-                                    <TableColumn prefWidth="114.0" text="Descuento" />
                                 </columns>
                             </TableView>
                         </children>
