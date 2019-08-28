@@ -3,6 +3,8 @@
 -- Host: localhost    Database: FarmaciaMSalud
 -- ------------------------------------------------------
 -- Server version	5.7.27
+CREATE DATABASE  IF NOT EXISTS `FarmaciaMSalud`;
+USE `FarmaciaMSalud`;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
