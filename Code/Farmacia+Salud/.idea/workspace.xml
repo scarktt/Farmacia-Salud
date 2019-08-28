@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Farmacia+Salud:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="" />
+    <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/PagoServicioControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/PagoServicioControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentation/Documento Protocolario - V2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentation/Documento Protocolario - V2.docx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,64 +42,13 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Controlador" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Modelo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Vista" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunDashboard">
@@ -129,51 +88,12 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="DB Browser" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="SQL" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
