@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+Use FarmaciaMasSalud;
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 Use FarmaciaMSalud;
 drop procedure ModAbono;
 --Abono 
@@ -29,7 +33,12 @@ in MontoCompra decimal,
 in ReciboColector char(15),
 in Estatus char(15),
 in Observacion char(30),
+<<<<<<< HEAD
 in FechaVencPago date
+=======
+in FechaVencPago date,
+in Descuento decimal
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 ) 
 Begin
 UPDATE CompraProducto SET
@@ -40,13 +49,22 @@ MontoCompra = @MontoCompra,
 ReciboColector = @ReciboColector,
 Status =  @Estatus,
 Observacion = @Observacion ,
+<<<<<<< HEAD
 FechaVencPago = @FechaVencPago 
+=======
+FechaVencPago = @FechaVencPago, 
+Descuento = @Descuento
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 
 Where FacturaCompraProducto = @FacturaCompraProducto;
 
 End $$
 
+<<<<<<< HEAD
 Call ModCompraProducto ('3001', '9001', '1001', '2016-02-25', '150.000', '5001', 'Credito', '-', '2016-01-01')
+=======
+Call ModCompraProducto ('3001', '9001', '1001', '2016-02-25', '150.000', '5001', 'Credito', '-', '2016-01-01', 0)
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 
 --Detalle Compra
 DELIMITER $$
@@ -69,37 +87,55 @@ Call ModDetalleCompraProducto ('1101', '1012', '255', '4.000')
 DELIMITER $$
 Create procedure ModDetalleFactura(
 in Nofactura int,
+<<<<<<< HEAD
 in IDproducto int,
 in IDLote int,
+=======
+in FacturaCompraProducto int,
+in IDproducto int,
+in IDLote int,
+in Descripcion char(30),
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 in PrecioUnitario decimal,
 in Cantidad int, 
 in Total decimal)
 Begin 
 UPDAte DetalleFactura SET
+Descripcion = @Descripcion,
 PrecioUnitario = @PrecioUnitario,
 Cantidad = @Cantidad,
 Total = @Total
 
+<<<<<<< HEAD
 where IDfactura = @IDfactura AND IDproducto = @IDproducto AND IDLote = @IDLote;
 END $$
 
 Call ModDetalleFactura ('6001', '1044', '84763', '69.000', '10', '690.000');
+=======
+where Nofactura = @Nofactura AND FacturaCompraProducto = @FacturaCompraProducto AND IDproducto = @IDproducto AND IDLote = @IDLote;
+END $$
+
+Call ModDetalleFactura ('6001', '1044', '84763', '-', '69.000', '10', '690.000');
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 
 -- Detalle Pedido
 DELIMITER $$
 Create Procedure ModDetallePedido(
 in IDproveedor int,
-in IDpedido int,
-in Cantidad int,
-in Monto decimal,
-in IDproducto int)
+in IDproducto int,
+in CantidadUnidad int,
+in MontoxUnidad decimal)
 Begin
 UPDATE DetallePedido SET
-Cantidad = @Cantidad,
-Monto = @Monto
+CantidadUnidad = @CantidadUnidad,
+MontoxUnidad = @MontoxUnidad
 where IDproveedor = @IDproveedor AND IDpedido = @IDpedido AND IDproducto = @IDproducto;
 END $$
+<<<<<<< HEAD
 Call ModDetallePedido ('2201', '1092', '27', '243.000', '0');
+=======
+Call ModDetallePedido ('2201', '1092', '27', '243.000');
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 
 --Detalle Producto
 DELIMITER $$
@@ -151,7 +187,11 @@ where IDenfermedad = @IDenfermedad;
 END $$
 
 Call ModEnfermedad (5024, 'Sinusitis')
+<<<<<<< HEAD
 
+=======
+Enfermedad
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 -- Factura
 DELIMITER $$
 Create Procedure ModFactura(
@@ -193,21 +233,35 @@ Where IDproducto = @IDproducto AND IDindicacion = @IDindicacion;
 END $$
 Call ModIndicacionProducto ('1001', '7002')
 
--- Lote
+-- InventarioProducto
 DELIMITER $$
-Create Procedure ModLote(
-in IDLote int,
-in Fecha_venc datetime)
+Create Procedure ModInventarioProducto(
+in FacturaCompraPedido int,
+in IDproducto int,
+in CantidadUnidades int,
+in MontoxUnidad decimal(13,3),
+in Ganancia decimal(13,3),
+in PrecioVenta decimal(13,3),
+in PrecioUnitario decimal(13,3),
+in StockBodega int,
+in StockEstante int)
 Begin
-UPDATE Lote SET
-Fecha_Venc = @Fecha_venc
-Where IDLote = @IDLote;
+UPDATE InventarioProducto SET
+CantidadUnidades = @CantidadUnidades,
+MontoxUnidad = @MontoxUnidad,
+Ganancia = @Ganancia,
+PrecioVenta = @PrecioVenta,
+PrecioUnitario = @PrecioUnitario,
+StockBodega = @StockBodega,
+StockEstante = @StockEstante
+Where FacturaCompraPedido = @FacturaCompraPedido AND IDproducto = @IDproducto;
 END $$
-Call ModLote ('8001', '10-01-2020')
+-- Call ModInventarioProducto ('8001', '10-01-2020')
 
 -- PagoServicios
 DELIMITER $$
 Create Procedure ModPagos(
+<<<<<<< HEAD
 in IDPagos int,
 in IDempleado int,
 in TipoPago char(40),
@@ -220,6 +274,20 @@ TipoPago = @TipoPago,
 MontoPago = @MontoPago,
 FechaPago = @FechaPago
 where IDPago = @IDPago;
+=======
+in IDPagoServicios int,
+in IDempleado int,
+in TipoPagoServicios char(40),
+in PaServicio decimal,
+in FechaPa datetime)
+Begin
+UPDATE PagoServicios SET
+IDempleado = @IDempleado ,
+TipoPagoServicios = @TipoPagoServicios,
+PaServicio = @PaServicio,
+FechaPa = @FechaPa
+where IDPagoServicios = @IDPagoServicios;
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 END $$
 Call ModPagoServicios ('1601', '1', 'Luz', '1072.000', '2018-09-14 01:26:52')
 
@@ -243,6 +311,7 @@ Call ModPedido ('2201', '17002', '2', '2019-07-09 17:06:01', '1665.000')
 
 --Perdida producto
 DELIMITER $$
+<<<<<<< HEAD
 Create Procedure PerdidaProducto(
 in IDproducto int,
 in IDLote int,
@@ -256,6 +325,23 @@ MontoPerdido = @MontoPerdido
 Where IDproducto = @IDproducto AND IDLote = @IDLote AND IDperdida = @IDperdida;
 END $$
 Call ModPerdidaProducto ('1004', '89286', '2388', '2', '60.000')
+=======
+Create Procedure ModPerdidaProducto(
+in IDperdida int,
+in FacturaCompraPedido int,
+in IDproductos int,
+in CantidadUnidades int,
+in MontoPerdido decimal)
+Begin
+UPDATE Producto Set
+FacturaCompraPedido = @FacturaCompraPedido,
+IDproductos = @IDproductos,
+CantidadUnidades = @Cantidad,
+MontoPerdido = @CantidadUnidades
+Where IDperdida = @IDperdida ;
+END $$
+Call ModPerdidaProducto (2301, 3010, 1010,6, '200.000')
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 
 -- Producto
 DELIMITER $$
@@ -264,18 +350,26 @@ in IDproducto int,
 in Nombre char(30),
 in Forma_farmaceutica varchar(20),
 in Dosis_Contenido int,
+<<<<<<< HEAD
 in UnidadMedida varchar(10),
 in Restriccion bit,
 in Descontinuado bit,
+=======
+in Unidad_medida varchar(10),
+in Restriccion bit,
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 in Generico bit,
-in StockBodega int,
-in StockEstante int)
+in Descontinuado bit)
 Begin
 UPDATE Producto Set
 Nombre = @Nombre,
 Forma_farmaceutica = @Forma_farmaceutica,
 Dosis_Contenido = @Dosis_Contenido,
+<<<<<<< HEAD
 Unidad_medida = @UnidadMedida,
+=======
+Unidad_medida = @Unidad_medida,
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
 Restriccion = @Restriccion,
 Descontinuado = @Descontinuado,
 Generico = @Generico,
@@ -283,7 +377,11 @@ StockBodega = @StockBodega,
 StockEstante = @StockEstante
 Where IDproducto = @IDproducto;
 END $$
+<<<<<<< HEAD
 Call ModProducto ('1004', 'Zepol Deportista', 'Crema', '30', 'gr', '0', '0', '0', '20', '20')
+=======
+Call ModProducto ('1004', 'Zepol Deportista', 'Crema', '30', 'gr', '0', '0', '0')
+>>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
  
 -- Proveedor
 DELIMITER $$
