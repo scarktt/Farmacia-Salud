@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" afterDir="false" />
@@ -21,9 +20,6 @@
       <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Vista/PagoServicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Vista/PagoServicio.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Vista/Proveedor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Vista/Proveedor.fxml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controlador/PagoServicioControlador.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,13 +100,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="867">
               <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
-=======
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
             </state>
           </provider>
         </entry>
@@ -163,7 +151,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -187,8 +174,6 @@
       </list>
     </option>
   </component>
-=======
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="724" />
     <option name="y" value="33" />
@@ -204,11 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,11 +223,8 @@
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
-=======
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +277,6 @@
     </task>
     <servers />
   </component>
-<<<<<<< HEAD
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -310,13 +286,10 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-=======
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" weight="0.21785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -338,33 +311,10 @@
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32843137" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="DB Browser" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="SQL" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="DB Execution Console" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-<<<<<<< HEAD
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -401,13 +351,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
-=======
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -450,7 +393,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Conexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170" />
@@ -471,18 +413,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-374">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/AgregarProductoControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk1.8.0_221/javafx-src.zip!/com/sun/javafx/scene/control/ReadOnlyUnbackedObservableList.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="128">
           <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
         </state>
@@ -655,12 +590,5 @@
         </settings>
       </state>
     </states>
-=======
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
->>>>>>> ae2806b698b71f01e78dd132c4653c8ec3c7aa56
   </component>
 </project>
