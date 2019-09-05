@@ -48,8 +48,7 @@ public class LoginController {
         stage.setScene(scene);//Se carga el nuevo escenario
         stage.initStyle(StageStyle.UNDECORATED);//Para que no salgan el minimizar, maximinAr, y cerrar
         stage.setResizable(false);//Para que no se pueda redimensionar
-        stage.
-        stage.show();//Muestra el nuevo escenario
+        stageshow();//Muestra el nuevo escenario
         ((Node) (event.getSource())).getScene().getWindow().hide();//Oculta la ventana actual
     }
 }
