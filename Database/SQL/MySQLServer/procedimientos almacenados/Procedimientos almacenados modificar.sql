@@ -1,6 +1,6 @@
 Use FarmaciaMasSalud;
 
---Abono 
+--Abono
 DELIMITER $$
 Create Procedure ModAbono(
 in pIDabono int,
@@ -30,17 +30,17 @@ in pEstatus char(15),
 in pObservacion char(30),
 in pFechaVencPago date,
 in pDescuento decimal
-) 
+)
 Begin
-UPDATE CompraProducto SET 
+UPDATE CompraProducto SET
 IDproveedor = pIDproveedor,
-FacturaPedido = pFacturaPedido, 
-FechaCompra = pFechaCompra, 
-MontoCompra = pMontoCompra, 
+FacturaPedido = pFacturaPedido,
+FechaCompra = pFechaCompra,
+MontoCompra = pMontoCompra,
 ReciboColector = pReciboColector,
 Status =  pEstatus,
 Observacion = pObservacion ,
-FechaVencPago = pFechaVencPago, 
+FechaVencPago = pFechaVencPago,
 Descuento = pDescuento
 Where FacturaCompra = pFacturaCompra;
 End $$
@@ -73,9 +73,9 @@ in pIDproducto int,
 in pIDLote int,
 in pDescripcion char(30),
 in pPrecioUnitario decimal,
-in pCantidad int, 
+in pCantidad int,
 in pTotal decimal)
-Begin 
+Begin
 UPDAte DetalleFactura SET
 Descripcion = pDescripcion,
 PrecioUnitario = pPrecioUnitario,
@@ -118,7 +118,7 @@ END $$
 
 Call ModDetalleProducto ('1001', '81329', '2018-10-29 12:52:44', '63.000', '22.050');
 
---Empleado 
+--Empleado
 DELIMITER $$
 Create procedure ModEmpleado (
 in pIDempleado int,
@@ -142,7 +142,7 @@ DELIMITER $$
 Create procedure ModEnfermedad(
 in pIDenfermedad int,
 in pDescripcion char(50) )
-Begin 
+Begin
 UPDATE Enfermedad SET
 Descripcion = pDescripcion
 where IDenfermedad = pIDenfermedad;
@@ -169,7 +169,7 @@ DELIMITER $$
 Create Procedure ModIndicacion(
 in pIDindicacion int,
 in pDescripcion char(50) )
-Begin 
+Begin
 UPDATE Indicacion SET
 Descripcion = pDecripcion
 where IDindicacion = pIDindicacion;
@@ -289,7 +289,7 @@ Generico = pGenerico,
 Descontinuado = pDescontinuado
 Where IDproducto = pIDproducto;
 END $$
-Call ModProducto(1001, 'Acetaminophen', 'Gotas', '30.000', 'ml', 0, 1, 0) 
+Call ModProducto(1001, 'Acetaminophen', 'Gotas', '30.000', 'ml', 0, 1, 0)
 
 -- Proveedor
 DELIMITER $$
@@ -300,13 +300,13 @@ in pNombre_proveedor char(30),
 in ptel1 char(8),
 in ptel2 char(8))
 Begin
-UPDATE Proveedor SET	
+UPDATE Proveedor SET
 Tipo_proveedor = pTipo_proveedor,
 Nombre_proveedor = pNombre_proveedor,
 tel1 = ptel1,
 tel2 = ptel2
 where IDproveedor = pIDproveedor;
-END $$ 
+END $$
 
 Call ModProveedor ('17008', 'Laboratorio', 'Rarpe', '87249035', '50549373')
 
@@ -319,6 +319,7 @@ Begin
 UPDATE UtilidadProducto SET
 IDproducto = pIDproducto,
 IDenfermedad = pIDenfermedad;
+<<<<<<< HEAD
 END $$
 
 Call ModUtilidadProducto (2104, 1039, 5025)
@@ -361,10 +362,12 @@ PrecioVentaUnitario = pPrecioVentaUnitario,
 Subtotal = pSubtotal,
 Subtotal = CantidadUnidades * PrecioVentaUnitario
 Where FacturaCompra = pFacturaCompra AND IDproducto = pIDproducto;
+=======
+>>>>>>> mybranch
 END $$
 Call ModcalcularProducto(3081, 1027, 7, 85.000, 255)
 
--- Procedimiento para saber el monto perdido, el subtotal y cantidad de producto de inventario 
+-- Procedimiento para saber el monto perdido, el subtotal y cantidad de producto de inventario
 -- cuando se modifique la cantidad de unidades perdidas
 DELIMITER $$
 CREATE PROCEDURE ModCantPerdidas(
@@ -375,7 +378,7 @@ in pCantidadUnidades int,
 in pCantidadPerdida int)
 Begin
 UPDATE InventarioProducto I INNER JOIN PerdidaProducto PP on I.FacturaCompra = PP.FacturaCompra AND
-I.IDproducto = PP.IDproducto SET 
+I.IDproducto = PP.IDproducto SET
 PP.CantidadUnidades = pCantidadPerdida,
 PP.MontoPerdido = I.PrecioVentaUnitario * pCantidadPerdida,
 I.CantidadUnidades = pCantidadUnidades - pCantidadPerdida,
@@ -394,7 +397,7 @@ in pIDproducto int,
 in pCantidadUnidad int
 )
 Begin
-UPDATE  Pedido p INNER JOIN DetallePedido DP on P.FacturaPedido = DP.FacturaPedido SET 
+UPDATE  Pedido p INNER JOIN DetallePedido DP on P.FacturaPedido = DP.FacturaPedido SET
 DP.CantidadUnidad = pCantidadUnidad,
 P.MontoPedido = pCantidadUnidad * DP.MontoxUnidad
 Where P.FacturaPedido = pFacturaPedido AND DP.FacturaPedido = pFacturaPedido AND DP.IDproducto = pIDproducto ;
