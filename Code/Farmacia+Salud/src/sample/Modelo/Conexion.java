@@ -8,9 +8,9 @@ public class Conexion {
     private Connection connection;
     private final String host = "localhost";
     private final String port = "3306";
-    private final String db = "FarmaciaMSalud";
+    private final String db = "FarmaciaMasSalud";
     private final String user = "root";
-    private final String pass = "12345678";
+    private final String pass = "12345";
     private final String url = "jdbc:mysql://" + host + ":" + port + "/" + db + "?user="
             + user + "&password=" + pass + "&useSSL=false";
 
