@@ -133,13 +133,13 @@ public class CompraProducto{
 
     public static void llenarCmbFacturaCompra (Connection connection, ObservableList<String> lista) {
         try {
-            String query = "SELECT FacturaCompraProducto FROM CompraProducto";
+            String query = "SELECT FacturaCompra FROM Compra";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultado = statement.executeQuery(query);
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
-                lista.add(resultado.getString("FacturaCompraProducto"));
+                lista.add(resultado.getString("FacturaCompra"));
             }
         } catch (SQLException e) {
             System.out.println("Error al agregar Factura de Compra de Producto");

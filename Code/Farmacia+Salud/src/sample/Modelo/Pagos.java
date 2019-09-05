@@ -95,17 +95,15 @@ public class Pagos{
         }
     }
 
+
     public static void busquedaDinamicaDeudasPendientes (Connection connection, String busqueda,
                                                          ObservableList<List<StringProperty>> data) {
         List<StringProperty> Row = new ArrayList<>();
 
         try {
-            String query = "SELECT t3.Nombre_proveedor, t1.MontoCompra," +
-                    "t1.ReciboColector, t1.Observacion, t1.FechaVencPago  " +
-                    "FROM CompraProducto t1 " +
-                    "INNER JOIN Abono t2 on t1.FacturaCompraProducto = t2.FacturaCompraProducto " +
-                    "INNER JOIN Proveedor t3 on t2.IDproveedor = t3.IDproveedor " +
-                    "WHERE t3.Nombre_proveedor LIKE '"+busqueda+"%'";
+            String query = "SELECT t3.Nombre_proveedor, t1.MontoCompra, t1.ReciboColector, t1.Observacion, t1.FechaVencPago " +
+                    "FROM Compra t1 INNER JOIN Abono t2 on t1.FacturaCompra = t2.FacturaCompra " +
+                    "INNER JOIN Proveedor t3 on t2.IDproveedor = t3.IDproveedor WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
 
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultado = statement.executeQuery(query);
@@ -118,6 +116,7 @@ public class Pagos{
                 Row.add(4, new SimpleStringProperty(resultado.getString("FechaVencPago")));
                 System.out.println(Row);
                 data.add(Row);
+                System.out.println(Row);
                 System.out.println(data);
                 System.out.println("---------");
             }

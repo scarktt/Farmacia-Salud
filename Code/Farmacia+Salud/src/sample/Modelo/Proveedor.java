@@ -100,9 +100,8 @@ public class Proveedor{
         try {
             String query = "SELECT DISTINCT IDproveedor,Nombre_proveedor,Tipo_proveedor,tel1,tel2 FROM Proveedor" +
                     " WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
-
             PreparedStatement statement = connection.prepareStatement(query);
-            ResultSet resultado = statement.executeQuery(query);
+            final ResultSet resultado = statement.executeQuery();
 
             while (resultado.next()) {
                 Row.add(0, new SimpleStringProperty(resultado.getString("IDproveedor")));
@@ -110,25 +109,15 @@ public class Proveedor{
                 Row.add(2, new SimpleStringProperty(resultado.getString("Tipo_proveedor")));
                 Row.add(3, new SimpleStringProperty(resultado.getString("tel1")));
                 Row.add(4, new SimpleStringProperty(resultado.getString("tel2")));
-                System.out.println(Row);
                 data.add(Row);
+                System.out.println(Row);
                 System.out.println(data);
                 System.out.println("---------");
             }
-
-            statement.close();
+            //statement.close();
         } catch (SQLException e) {
-            System.out.println("Error al agregar las deudas pendientes al TableView");
+            System.out.println("Error al agregar las proveedores al TableView");
             e.printStackTrace();
-
-            //Si compra 10 cojas, de 100 pone 1000 pastillas
-
         }
     }
-
 }
-
-
-/*LA caja de 100 la venden en 80 por ejeplo, dependiendo
-precio de venta es con el 30%
-        es el precio final que se le vende, pero no hacen eso con pastillas porque sale no favorable, con 30%*/

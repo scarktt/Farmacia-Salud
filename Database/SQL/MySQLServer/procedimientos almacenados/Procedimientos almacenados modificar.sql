@@ -198,7 +198,6 @@ in pIDproducto int,
 in pCantidadUnidades int,
 in pMontoxUnidad decimal(13,3),
 in pGanancia decimal(13,3),
-in pPrecioVenta decimal(13,3),
 in pPrecioUnitario decimal(13,3),
 in pStockBodega int,
 in pStockEstante int)
@@ -207,7 +206,6 @@ UPDATE InventarioProducto SET
 CantidadUnidades = pCantidadUnidades,
 MontoxUnidad = pMontoxUnidad,
 Ganancia = pGanancia,
-PrecioVenta = pPrecioVenta,
 PrecioUnitario = pPrecioUnitario,
 StockBodega = pStockBodega,
 StockEstante = pStockEstante

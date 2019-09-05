@@ -1,12 +1,14 @@
 package sample.Controlador;
 
 import javafx.beans.property.StringProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import sample.Modelo.Conexion;
@@ -27,8 +29,30 @@ public class ProveedorControlador implements Initializable {
     @FXML private TableColumn<List<StringProperty>, String> TCTel1;
     @FXML private TableColumn<List<StringProperty>, String> TCTel2;
 
+    //Botones
+    @FXML private Button btnAgregar;
+    @FXML private Button btnEliminar;
+    @FXML private Button btnEditar;
+    @FXML private Button btnListo;
+    @FXML private Button btnNuevoProveedor;
+
+    //Textfield
+    @FXML private  TextField txtIDAg;
+    @FXML private TextField txtNombreAg;
+    @FXML private TextField txtTel1Ag;
+    @FXML private TextField txtTel2Ag;
+    @FXML private TextField txtNombre;
+    @FXML private TextField txtTel1;
+    @FXML private TextField txtTel2;
+
+    @FXML private Label lblID;
+
+    //Combobox
+    @FXML private ComboBox cmbTipoAg;
+
     // Colecciones de tipo StringProperty para el TableView
     private ObservableList<List<StringProperty>> data = FXCollections.observableArrayList();
+     private int posicion;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -94,10 +118,21 @@ public class ProveedorControlador implements Initializable {
             TCTipo.setCellValueFactory(data -> data.getValue().get(2));
             TCTel1.setCellValueFactory(data -> data.getValue().get(3));
             TCTel2.setCellValueFactory(data -> data.getValue().get(4));
+            gestionarEventos();
 
             conexion.cerrarConexion();
         }
-
     }
+
+    public void gestionarEventos(){
+        TVProveedor.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<List<StringProperty>>() {
+            @Override
+            public void changed(ObservableValue<? extends List<StringProperty>> observable, List<StringProperty> oldValue, List<StringProperty> newValue) {
+                //lblID.setText(newValue.getIDproveedor());
+            }
+        }
+        );
+    }
+
 
 }

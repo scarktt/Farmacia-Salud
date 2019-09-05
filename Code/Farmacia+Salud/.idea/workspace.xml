@@ -2,24 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/PagoServicioControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/PagoServicioControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/HistoricoPagosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/HistoricoPagosControlador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/ProveedorControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/ProveedorControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Vista/PagoServicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Vista/PagoServicio.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Vista/Proveedor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Vista/Proveedor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Abono.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Abono.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/CompraProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/CompraProducto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Conexion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Pagos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Pagos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Proveedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Proveedor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controlador/PagoServicioControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/PagoServicioControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controlador/HistoricoPagosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/HistoricoPagosControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Abono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Abono.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Pagos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Pagos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Vista/PagoServicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Vista/PagoServicio.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Vista/Proveedor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Vista/Proveedor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Database/SQL/MySQLServer/procedimientos almacenados/Procedimientos almacenados modificar.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Database/SQL/MySQLServer/procedimientos almacenados/Procedimientos almacenados modificar.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,43 +34,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controlador/PagoServicioControlador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="45" column="76" selection-start-line="39" selection-start-column="4" selection-end-line="45" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="312">
+              <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controlador/PantallaPrincipalControlador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2640">
+              <caret line="182" column="68" lean-forward="true" selection-start-line="182" selection-start-column="68" selection-end-line="182" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Pagos.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="277">
+              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -77,17 +75,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="133" column="111" selection-start-line="133" selection-start-column="111" selection-end-line="133" selection-end-column="111" />
+            <state relative-caret-position="163">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1679#1680#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+                <element signature="e#2046#2047#0" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
+                <element signature="e#2235#2236#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2397#2398#0" expanded="true" />
+                <element signature="e#2494#2495#0" expanded="true" />
+                <element signature="e#2564#2565#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Producto.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Pagos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+            <state relative-caret-position="173">
+              <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,10 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Abono.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+            <state relative-caret-position="-611">
+              <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -155,24 +169,32 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" />
         <option value="$PROJECT_DIR$/src/sample/Vista/PagoServicio.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Modelo/Abono.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelo/Abono.java" />
         <option value="$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java" />
         <option value="$PROJECT_DIR$/src/sample/Controlador/PagoServicioControlador.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelo/Producto.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controlador/HistoricoPagosControlador.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Conexion.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Pagos.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Pagos.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" />
+        <option value="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" />
         <option value="$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Pagos.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Pagos.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" />
-        <option value="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" />
+        <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="724" />
@@ -199,11 +221,6 @@
             <path>
               <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,6 +228,13 @@
               <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmacia+Salud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Controlador" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Farmacia+Salud" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +314,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21785174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -300,57 +324,26 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33006537" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32843137" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.32843137" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="SQL" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21785174" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="DB Browser" order="6" weight="0.32980332" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843137" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32843137" />
-      <window_info anchor="bottom" id="SQL" order="9" />
-      <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32843137" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32843137" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -364,7 +357,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER" />
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -392,22 +392,14 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Conexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Vista/Proveedor.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/PantallaPrincipalControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Factura.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -427,13 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="92" column="37" lean-forward="true" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1553">
-          <caret line="172" column="7" selection-start-line="172" selection-start-column="7" selection-end-line="172" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -459,24 +444,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/HistoricoPagosControlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Conexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Abono.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/CompraProducto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="141" column="60" selection-start-line="141" selection-start-column="60" selection-end-line="141" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controlador/PagoServicioControlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="45" column="76" selection-start-line="39" selection-start-column="4" selection-end-line="45" selection-end-column="76" />
+        <state relative-caret-position="1377">
+          <caret line="103" column="29" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Producto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controlador/FacturacionControlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        <state relative-caret-position="-611">
+          <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Pagos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="173">
+          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -485,35 +514,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="133" column="111" selection-start-line="133" selection-start-column="111" selection-end-line="133" selection-end-column="111" />
+        <state relative-caret-position="163">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2235#2236#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2397#2398#0" expanded="true" />
+            <element signature="e#2494#2495#0" expanded="true" />
+            <element signature="e#2564#2565#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Producto.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Vista/PantallaPrincipal.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Abono.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/PantallaPrincipalControlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+        <state relative-caret-position="2640">
+          <caret line="182" column="68" lean-forward="true" selection-start-line="182" selection-start-column="68" selection-end-line="182" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Pagos.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="277">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
         </state>
       </provider>
     </entry>
