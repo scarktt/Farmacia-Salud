@@ -12,10 +12,11 @@ Database		MS SQL 2005
 Create table Abono
 (
 	IDabono Integer NOT NULL,
-	FacturaCompraPedido Integer NOT NULL,
+	FacturaCompra Integer NOT NULL,
 	IDproveedor Integer NOT NULL,
-	SaldoAbono Decimal(13,3) NULL,
-Primary Key (IDabono,FacturaCompraPedido,IDproveedor)
+	SaldoAbono Decimal(13,3) NOT NULL,
+	Fecha Datetime NOT NULL,
+Primary Key (IDabono,FacturaCompra,IDproveedor)
 );
 
 Create table Empleado
@@ -25,6 +26,7 @@ Create table Empleado
 	Nombre Char(30) NOT NULL,
 	Usuario Char(10) NOT NULL,
 	Pass Char(8) NOT NULL,
+	Rol Char(8) NOT NULL,
 Primary Key (IDempleado)
 );
 
@@ -82,13 +84,13 @@ Primary Key (NoFactura)
 Create table DetalleFactura
 (
 	NoFactura Integer NOT NULL,
-	FacturaCompraPedido Integer NOT NULL,
+	FacturaCompra Integer NOT NULL,
 	IDproducto Integer NOT NULL,
 	Descripcion Char(30) NOT NULL,
 	PrecioUnitario Decimal(13,3) NOT NULL,
 	Cantidad Integer NOT NULL,
 	Total Decimal(13,3) NOT NULL,
-Primary Key (NoFactura,FacturaCompraPedido,IDproducto)
+Primary Key (NoFactura,FacturaCompra,IDproducto)
 );
 
 
@@ -129,7 +131,7 @@ Create table Pagos
 	IDPagos Integer NOT NULL,
 	IDempleado Integer NOT NULL,
 	TipoPago Char(40) NULL,
-	MOntoPago Decimal(13,3) NOT NULL,
+	MontoPago Decimal(13,3) NOT NULL,
 	FechaPago Datetime NOT NULL,
 Primary Key (IDPagos)
 );

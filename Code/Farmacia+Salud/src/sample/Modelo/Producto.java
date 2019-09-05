@@ -61,7 +61,7 @@ public class Producto {
         List<StringProperty> firstRow = new ArrayList<>();
 
         try {
-            CallableStatement cst = connection.prepareCall("{call sp_ConsultaProductoEnFacturacion (?,?,?,?,?,?,?,?,?)}");
+            CallableStatement cst = connection.prepareCall("{call sp_busquedafiltrada (?,?,?,?,?,?,?,?,?)}");
             cst.setInt(1, tipo);
             cst.setString(2, busqueda);
             cst.setString(3, proveedor);
@@ -79,11 +79,13 @@ public class Producto {
                 firstRow.add(0, new SimpleStringProperty(resultado.getString("IDproducto")));
                 firstRow.add(1, new SimpleStringProperty(resultado.getString("Nombre")));
                 firstRow.add(2, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
+                firstRow.add(3, new SimpleStringProperty(resultado.getString("Forma_farmaceutica")));
+                firstRow.add(4, new SimpleStringProperty(resultado.getString("Dosis_Contenido")));
                 data.add(firstRow);
             }
 
         } catch (SQLException e) {
-            System.out.println("Error al agregar Nombre del producto al TableView");
+            System.out.println("Error al agregar los datos");
             e.printStackTrace();
         }
     }
