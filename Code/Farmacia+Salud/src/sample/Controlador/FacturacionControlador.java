@@ -41,6 +41,8 @@ public class FacturacionControlador implements Initializable {
     // TableView's Columns
     @FXML private TableColumn<List<StringProperty>, String> TCProducto;
     @FXML private TableColumn<List<StringProperty>, String> TCProveedor;
+    @FXML private TableColumn<List<StringProperty>, String> TCFormaFarmaceutica;
+    @FXML private TableColumn<List<StringProperty>, String> TCDosis;
 
     // String Collections for ComboBox Items
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
@@ -108,6 +110,8 @@ public class FacturacionControlador implements Initializable {
         // Enlazar columnas con atributos
         TCProducto.setCellValueFactory(data -> data.getValue().get(1));
         TCProveedor.setCellValueFactory(data -> data.getValue().get(2));
+        TCFormaFarmaceutica.setCellValueFactory(data -> data.getValue().get(3));
+        TCDosis.setCellValueFactory(data -> data.getValue().get(4));
 
         conexion.cerrarConexion();
     }
