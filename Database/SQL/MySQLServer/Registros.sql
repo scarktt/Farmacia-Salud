@@ -549,9 +549,9 @@ INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (3, "
 ------- VALORES DE REALES QUE PUEDEN SER UTILIZADOS ------
 
 -- Empleado [COMPLETADO - 3 REGISTROS]
-INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (1, "001-130599-1007K", "Francisco Silva", "FSilva", "1234");
-INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (2, "001-230198-0198W", "Gabriela Castillo", "GCastillo", "1234");
-INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass) VALUES (3, "", "Vendedor 3", "Vendedor", "1234");
+INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass, Rol) VALUES (1, "001-130599-1007K", "Francisco Silva", "FSilva", "1234", "admin");
+INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass, Rol) VALUES (2, "001-230198-0198W", "Gabriela Castillo", "GCastillo", "1234", "admin");
+INSERT Empleado (IDempleado, CedulaEmpleado, Nombre, Usuario, Pass, Rol) VALUES (3, "", "Vendedor 3", "Vendedor", "1234", "vendedor");
 
 -- Producto [COMPLETO - 80 REGISTROS]
 INSERT Producto (IDproducto, Nombre, Forma_farmaceutica, Dosis_Contenido, Unidad_medida, Restriccion, Generico, Descontinuado) VALUES (1001, "Acetaminofen", "Gotas", 30, "ml", 0, 1, 0);
