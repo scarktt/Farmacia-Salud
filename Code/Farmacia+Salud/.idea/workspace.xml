@@ -6,22 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Controlador/FacturacionControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Vista/PantallaPrincipal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/Vista/PantallaPrincipal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Empleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/modelo/Producto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Farmacia+Salud/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Modelo/Proveedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Vista/PantallaPrincipal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Vista/PantallaPrincipal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="a88bfd0f-fe0a-4435-8242-7c0ef96b06c9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="1054">
               <caret line="96" column="131" selection-start-line="96" selection-start-column="88" selection-end-line="96" selection-end-column="131" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -178,8 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +206,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +274,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23373677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -557,9 +542,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Vista/PantallaPrincipal.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="114" column="27" selection-start-line="113" selection-start-column="47" selection-end-line="114" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="119" column="71" selection-start-line="119" selection-start-column="71" selection-end-line="119" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Modelo/Proveedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="1054">
           <caret line="96" column="131" selection-start-line="96" selection-start-column="88" selection-end-line="96" selection-end-column="131" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -589,24 +592,6 @@
             <element signature="e#2494#2495#0" expanded="true" />
             <element signature="e#2537#2538#0" expanded="true" />
             <element signature="e#2564#2565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Vista/PantallaPrincipal.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="114" column="27" selection-start-line="113" selection-start-column="47" selection-end-line="114" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controlador/ProveedorControlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="119" column="71" selection-start-line="119" selection-start-column="71" selection-end-line="119" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
