@@ -101,4 +101,23 @@ public class Empleado{
             e.printStackTrace();
         }
     }
+
+    public static int validarIngreso(Connection connection, String user, String pass){
+        int resultado = 0;
+
+        try {
+            String query = "SELECT IDEmpleado, CedulaEmpleado, Nombre, Usuario, Pass, Rol FROM Empleado WHERE Usuario = '"+user+"' AND Pass = '"+pass+"'";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+            final ResultSet result = statement.executeQuery();
+
+            if(result.next()){
+                resultado = 1;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return resultado;
+    }
 }

@@ -118,21 +118,8 @@ public class ProveedorControlador implements Initializable {
             TCTipo.setCellValueFactory(data -> data.getValue().get(2));
             TCTel1.setCellValueFactory(data -> data.getValue().get(3));
             TCTel2.setCellValueFactory(data -> data.getValue().get(4));
-            gestionarEventos();
 
             conexion.cerrarConexion();
         }
     }
-
-    public void gestionarEventos(){
-        TVProveedor.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<List<StringProperty>>() {
-            @Override
-            public void changed(ObservableValue<? extends List<StringProperty>> observable, List<StringProperty> oldValue, List<StringProperty> newValue) {
-                //lblID.setText(newValue.getIDproveedor());
-            }
-        }
-        );
-    }
-
-
 }

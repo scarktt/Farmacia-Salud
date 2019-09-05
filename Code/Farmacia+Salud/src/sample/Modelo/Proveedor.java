@@ -110,9 +110,6 @@ public class Proveedor{
                 Row.add(3, new SimpleStringProperty(resultado.getString("tel1")));
                 Row.add(4, new SimpleStringProperty(resultado.getString("tel2")));
                 data.add(Row);
-                System.out.println(Row);
-                System.out.println(data);
-                System.out.println("---------");
             }
             //statement.close();
         } catch (SQLException e) {
