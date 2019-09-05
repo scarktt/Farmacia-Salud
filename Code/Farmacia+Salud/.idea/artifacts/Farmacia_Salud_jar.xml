@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Farmacia+Salud:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Farmacia_Salud_jar</output-path>
+    <root id="archive" name="Farmacia+Salud.jar">
+      <element id="module-output" name="Farmacia+Salud" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jfoenix/jfoenix/8.0.8/jfoenix-8.0.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
