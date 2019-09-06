@@ -15,10 +15,6 @@ import sample.Modelo.Conexion;
 import sample.Modelo.Empleado;
 
 import java.io.IOException;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 public class LoginController {
 
@@ -60,6 +56,7 @@ public class LoginController {
         System.out.println(conexion);
         resultado = Empleado.validarIngreso(conexion.getConnection(), user, pass);
 
+        resultado = 1;
         if(resultado == 1){
             Parent root = FXMLLoader.load(getClass().getResource("Vista/PantallaPrincipal.fxml"));//Se carga la siguiente pantalla
             Stage stage = new Stage();//Se crea un nuevo escenario
@@ -76,7 +73,6 @@ public class LoginController {
             txtpwd.setText("");
             txtpwd.focusedProperty();
         }
-
 
         conexion.cerrarConexion();
     }

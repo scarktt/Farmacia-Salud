@@ -3,8 +3,6 @@ package sample.Modelo;
 import javafx.beans.property.*;
 import javafx.collections.ObservableList;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Producto {
 
