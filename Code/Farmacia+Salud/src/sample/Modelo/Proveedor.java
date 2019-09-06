@@ -109,8 +109,8 @@ public class Proveedor{
                 Row.add(2, new SimpleStringProperty(resultado.getString("Tipo_proveedor")));
                 Row.add(3, new SimpleStringProperty(resultado.getString("tel1")));
                 Row.add(4, new SimpleStringProperty(resultado.getString("tel2")));
-                data.add(Row);
             }
+            data.add(Row);
             //statement.close();
         } catch (SQLException e) {
             System.out.println("Error al agregar las proveedores al TableView");
