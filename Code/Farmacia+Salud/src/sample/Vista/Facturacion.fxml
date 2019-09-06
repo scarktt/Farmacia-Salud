@@ -32,12 +32,12 @@
                       <Font name="Calibri" size="24.0" />
                   </font>
               </Label>
-              <TextField fx:id="buscar" layoutX="260.0" layoutY="179.0" onKeyReleased="#handleKeyReleased" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="260.0">
+              <TextField fx:id="buscar" layoutX="260.0" layoutY="179.0" prefHeight="40.0" prefWidth="321.0" promptText="Buscar" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="260.0">
                   <font>
                       <Font name="Calibri" size="18.0" />
                   </font>
               </TextField>
-              <TableView fx:id="TVAgregarProductos" layoutX="38.0" layoutY="254.0" onMouseClicked="#OnTableItemSelected" prefHeight="200.0" prefWidth="473.0">
+              <TableView fx:id="TVAgregarProductos" layoutX="38.0" layoutY="254.0" prefHeight="200.0" prefWidth="473.0">
                   <columns>
                       <TableColumn fx:id="TCProducto" prefWidth="154.0" text="Nombre" />
                   <TableColumn fx:id="TCProveedor" prefWidth="130.0" text="Proveedor" />
@@ -52,7 +52,7 @@
                  </image>
               </ImageView>
               <Button layoutX="694.0" layoutY="418.0" mnemonicParsing="false" onMouseClicked="#OnButtonToAddClicked" text="Agregar" />
-              <TextField fx:id="txtCantidad" layoutX="635.0" layoutY="310.0" onKeyReleased="#handleKeyReleased" prefHeight="35.0" prefWidth="127.0" style="-fx-background-color: #FFFFFF;">
+              <TextField fx:id="txtCantidad" layoutX="635.0" layoutY="310.0" prefHeight="35.0" prefWidth="127.0" style="-fx-background-color: #FFFFFF;">
                   <font>
                       <Font name="Calibri" size="18.0" />
                   </font>
@@ -67,7 +67,7 @@
                       <Font name="Calibri" size="18.0" />
                   </font>
               </Label>
-              <TextField layoutX="635.0" layoutY="363.0" onKeyReleased="#handleKeyReleased" prefHeight="35.0" prefWidth="127.0" style="-fx-background-color: #FFFFFF;">
+              <TextField layoutX="635.0" layoutY="363.0" prefHeight="35.0" prefWidth="127.0" style="-fx-background-color: #FFFFFF;">
                   <font>
                       <Font name="Calibri" size="18.0" />
                   </font>
@@ -77,7 +77,7 @@
                       <Font name="Calibri" size="18.0" />
                   </font>
               </Label>
-              <TextField fx:id="txtProducto" disable="true" layoutX="637.0" layoutY="254.0" onKeyReleased="#handleKeyReleased" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;">
+              <TextField fx:id="txtProducto" disable="true" layoutX="637.0" layoutY="254.0" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: #FFFFFF;">
                   <font>
                       <Font name="Calibri" size="18.0" />
                   </font>
@@ -105,8 +105,8 @@
                       <Font name="Calibri Bold" size="14.0" />
                   </font>
               </Button>
-              <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" onAction="#OnReleasedProveedor" prefHeight="28.0" prefWidth="239.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
-              <ComboBox fx:id="cmbForma_Farmaceutica" layoutX="57.0" layoutY="174.0" onAction="#OnReleasedFormaF" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceutica" style="-fx-background-color: #FFFFFF;" />
+              <ComboBox fx:id="cmbProveedor" layoutX="57.0" layoutY="107.0" prefHeight="28.0" prefWidth="239.0" promptText="Proveedor" style="-fx-background-color: #FFFFFF;" />
+              <ComboBox fx:id="cmbForma_Farmaceutica" layoutX="57.0" layoutY="174.0" prefHeight="30.0" prefWidth="239.0" promptText="Forma Farmaceutica" style="-fx-background-color: #FFFFFF;" />
               <Label layoutX="58.0" layoutY="240.0" text="Unidad de medida">
                   <font>
                       <Font name="Calibri" size="20.0" />
@@ -117,10 +117,10 @@
                       <Font name="Calibri" size="18.0" />
                   </font>
               </TextField>
-              <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="290.0" onAction="#OnReleasedUnidadMedida" prefHeight="30.0" prefWidth="174.0" promptText="Unidad de medida" style="-fx-background-color: #FFFFFF;" />
-              <ComboBox fx:id="cmbUtilidad" layoutX="57.0" layoutY="360.0" onAction="#OnReleasedUtilidad" prefHeight="30.0" prefWidth="239.0" promptText="Utilidad" style="-fx-background-color: #FFFFFF;" />
-              <ComboBox fx:id="cmbIndicacion" layoutX="57.0" layoutY="422.0" onAction="#OnReleasedIndicacion" prefHeight="30.0" prefWidth="239.0" promptText="Indicación" style="-fx-background-color: #FFFFFF;" />
-              <CheckBox fx:id="ckboxGenerico" layoutX="58.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedGenerico" text="Génerico">
+              <ComboBox fx:id="cmbUnidadMedida" layoutX="125.0" layoutY="290.0" prefHeight="30.0" prefWidth="174.0" promptText="Unidad de medida" style="-fx-background-color: #FFFFFF;" />
+              <ComboBox fx:id="cmbUtilidad" layoutX="57.0" layoutY="360.0" prefHeight="30.0" prefWidth="239.0" promptText="Utilidad" style="-fx-background-color: #FFFFFF;" />
+              <ComboBox fx:id="cmbIndicacion" layoutX="57.0" layoutY="422.0" prefHeight="30.0" prefWidth="239.0" promptText="Indicación" style="-fx-background-color: #FFFFFF;" />
+              <CheckBox fx:id="ckboxGenerico" layoutX="58.0" layoutY="480.0" mnemonicParsing="false" text="Génerico">
                   <font>
                       <Font name="Calibri" size="16.0" />
                   </font>

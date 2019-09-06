@@ -8,6 +8,60 @@ import java.util.List;
 
 public class Producto {
 
+    private StringProperty Nombre;
+    private StringProperty NombreProveedor;
+    private StringProperty FormaFarmaceutica;
+    private StringProperty Dosis;
+
+    public Producto (String Nombre, String NombreProveedor, String FormaFarmaceutica,
+    String Dosis) {
+        this.Nombre = new SimpleStringProperty(Nombre);
+        this.NombreProveedor = new SimpleStringProperty(NombreProveedor);
+        this.FormaFarmaceutica = new SimpleStringProperty(FormaFarmaceutica);
+        this.Dosis = new SimpleStringProperty(Dosis);
+    }
+
+    //Metodos atributo: Nombre
+    public String getNombre() {
+        return Nombre.get();
+    }
+    public void setNombre(String Nombre) {
+        this.Nombre = new SimpleStringProperty(Nombre);
+    }
+    public StringProperty NombreProperty() {
+        return Nombre;
+    }
+    //Metodos atributo: NombreProveedor
+    public String getNombreProveedor() {
+        return NombreProveedor.get();
+    }
+    public void setNombreProveedor(String NombreProveedor) {
+        this.NombreProveedor = new SimpleStringProperty(NombreProveedor);
+    }
+    public StringProperty NombreProveedorProperty() {
+        return NombreProveedor;
+    }
+    //Metodos atributo: FormaFarmaceutica
+    public String getFormaFarmaceutica() {
+        return FormaFarmaceutica.get();
+    }
+    public void setFormaFarmaceutica(String FormaFarmaceutica) {
+        this.FormaFarmaceutica = new SimpleStringProperty(FormaFarmaceutica);
+    }
+    public StringProperty FormaFarmaceuticaProperty() {
+        return FormaFarmaceutica;
+    }
+    //Metodos atributo: Dosis
+    public String getDosis() {
+        return Dosis.get();
+    }
+    public void setDosis(String Dosis) {
+        this.Dosis = new SimpleStringProperty(Dosis);
+    }
+    public StringProperty DosisProperty() {
+        return Dosis;
+    }
+
     public static void llenarCmbForma_farmaceutica (Connection connection, ObservableList<String> lista) {
         try {
             Statement statement = connection.createStatement();
@@ -55,33 +109,27 @@ public class Producto {
         }
     }
 
-    public static void busquedaDinamicaProducto (Connection connection, String busqueda, int tipo, String proveedor,
-                                                 String forma_farmaceutica, int dosis, String unidad_medida, String utilidad,
-                                                 String indicacion, boolean generico, ObservableList<List<StringProperty>> data) {
-        List<StringProperty> firstRow = new ArrayList<>();
+    public static void CargarProductos (Connection connection, ObservableList<Producto> data) {
 
         try {
-            CallableStatement cst = connection.prepareCall("{call sp_busquedafiltrada (?,?,?,?,?,?,?,?,?)}");
-            cst.setInt(1, tipo);
-            cst.setString(2, busqueda);
-            cst.setString(3, proveedor);
-            cst.setString(4, forma_farmaceutica);
-            cst.setInt(5, dosis);
-            cst.setString(6, unidad_medida);
-            cst.setString(7, utilidad);
-            cst.setString(8, indicacion);
-            cst.setBoolean(9, generico);
-
-            cst.execute();
-            final ResultSet resultado = cst.getResultSet();
+            String query =
+                    "SELECT p.Nombre, p.Forma_farmaceutica, prv.Nombre_proveedor, p.Dosis_Contenido " +
+                            "FROM InventarioProducto invp " +
+                            "INNER JOIN Producto p ON invp.IDproducto = p.IDproducto " +
+                            "INNER JOIN Compra c ON invp.FacturaCompra = c.FacturaCompra " +
+                            "INNER JOIN Proveedor prv ON c.IDproveedor = prv.IDproveedor ";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
 
             while (resultado.next()) {
-                firstRow.add(0, new SimpleStringProperty(resultado.getString("IDproducto")));
-                firstRow.add(1, new SimpleStringProperty(resultado.getString("Nombre")));
-                firstRow.add(2, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
-                firstRow.add(3, new SimpleStringProperty(resultado.getString("Forma_farmaceutica")));
-                firstRow.add(4, new SimpleStringProperty(resultado.getString("Dosis_Contenido")));
-                data.add(firstRow);
+                data.add(
+                        new Producto (
+                                resultado.getString("Nombre"),
+                                resultado.getString("Nombre_proveedor"),
+                                resultado.getString("Forma_farmaceutica"),
+                                resultado.getString("Dosis_Contenido")
+                        )
+                );
             }
 
         } catch (SQLException e) {
