@@ -15,10 +15,13 @@ public class CompraProducto{
     private StringProperty Status;
     private StringProperty Observacion;
     private Date FechaVencPago;
+    private Proveedor Nombre_proveedor;
 
-    public CompraProducto(int FacturaCompraProducto, int FacturaPedido, int IDproducto,
-                          Date FechaCompra, float MontoCompra, String  ReciboColector,
-                          String Status, String Observacion, Date FechaVencPago) {
+    public CompraProducto(int FacturaCompraProducto, int FacturaPedido, int IDproducto,Date FechaCompra,
+                          float MontoCompra, String ReciboColector,
+                          String Status, String Observacion, Date FechaVencPago
+                          //Proveedor Nombre_proveedor
+                          ) {
         this.FacturaCompraProducto = new SimpleIntegerProperty(FacturaCompraProducto);
         this.FacturaPedido = new SimpleIntegerProperty(FacturaPedido);
         this.IDproducto = new SimpleIntegerProperty(IDproducto);
@@ -28,6 +31,7 @@ public class CompraProducto{
         this.Status = new SimpleStringProperty(Status);
         this.Observacion = new SimpleStringProperty(Observacion);
         this.FechaVencPago = FechaVencPago;
+        //this.Nombre_proveedor = Nombre_proveedor;
     }
 
     //Metodos atributo: FacturaCompraProducto
@@ -89,7 +93,7 @@ public class CompraProducto{
     public String getReciboColector() {
         return ReciboColector.get();
     }
-    public void setReciboColector(String ReciboColector) {this.ReciboColector = new SimpleStringProperty(ReciboColector); }
+    public void setReciboColector(String ReciboColector) {this.ReciboColector = new SimpleStringProperty(ReciboColector);}
     public StringProperty ReciboColectorProperty() {
         return ReciboColector;
     }
@@ -129,13 +133,13 @@ public class CompraProducto{
 
     public static void llenarCmbFacturaCompra (Connection connection, ObservableList<String> lista) {
         try {
-            String query = "SELECT FacturaCompraProducto FROM CompraProducto";
+            String query = "SELECT FacturaCompra FROM Compra";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultado = statement.executeQuery(query);
 
             // Se recorre el campo que en este caso es el de Nombre
             while (resultado.next()) {
-                lista.add(resultado.getString("FacturaCompraProducto"));
+                lista.add(resultado.getString("FacturaCompra"));
             }
         } catch (SQLException e) {
             System.out.println("Error al agregar Factura de Compra de Producto");

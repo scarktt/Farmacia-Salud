@@ -3,6 +3,8 @@
 -- Host: localhost    Database: FarmaciaMSalud
 -- ------------------------------------------------------
 -- Server version	5.7.27
+CREATE DATABASE  IF NOT EXISTS `FarmaciaMSalud`;
+USE `FarmaciaMSalud`;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,6 +29,7 @@ CREATE TABLE `Abono` (
   `FacturaCompraPedido` int(11) NOT NULL,
   `IDproveedor` int(11) NOT NULL,
   `SaldoAbono` decimal(13,3) DEFAULT NULL,
+  `FechaAbono` datetime DEFAULT NULL,
   PRIMARY KEY (`IDabono`,`FacturaCompraPedido`,`IDproveedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -371,7 +374,7 @@ CREATE TABLE `Producto` (
   `IDproducto` int(11) NOT NULL,
   `Nombre` char(30) NOT NULL,
   `Forma_farmaceutica` char(20) NOT NULL,
-  `Dosis_Contenido` int(11) NOT NULL,
+  `Dosis_Contenido` decimal(13,3) NOT NULL,
   `Unidad_medida` char(10) NOT NULL,
   `Restriccion` bit(1) DEFAULT NULL,
   `Generico` bit(1) NOT NULL,

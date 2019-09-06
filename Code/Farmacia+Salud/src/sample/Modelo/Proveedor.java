@@ -8,6 +8,8 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Proveedor{
     private IntegerProperty IDproveedor;
@@ -78,7 +80,7 @@ public class Proveedor{
 
     public static void llenarCmbNombresProveedores (Connection connection, ObservableList<String> lista) {
         try {
-            String query = "SELECT Nombre_proveedor FROM Proveedor";
+            String query = "SELECT DISTINCT Nombre_proveedor FROM Proveedor";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultado = statement.executeQuery(query);
 
@@ -88,6 +90,30 @@ public class Proveedor{
             }
         } catch (SQLException e) {
             System.out.println("Error al agregar Nombre del proveedor");
+            e.printStackTrace();
+        }
+    }
+
+    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<List<StringProperty>> data) {
+        List<StringProperty> Row = new ArrayList<>();
+
+        try {
+            String query = "SELECT DISTINCT IDproveedor,Nombre_proveedor,Tipo_proveedor,tel1,tel2 FROM Proveedor" +
+                    " WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
+            PreparedStatement statement = connection.prepareStatement(query);
+            final ResultSet resultado = statement.executeQuery();
+
+            while (resultado.next()) {
+                Row.add(0, new SimpleStringProperty(resultado.getString("IDproveedor")));
+                Row.add(1, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
+                Row.add(2, new SimpleStringProperty(resultado.getString("Tipo_proveedor")));
+                Row.add(3, new SimpleStringProperty(resultado.getString("tel1")));
+                Row.add(4, new SimpleStringProperty(resultado.getString("tel2")));
+                data.add(Row);
+            }
+            //statement.close();
+        } catch (SQLException e) {
+            System.out.println("Error al agregar las proveedores al TableView");
             e.printStackTrace();
         }
     }

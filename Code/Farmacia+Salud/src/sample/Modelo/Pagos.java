@@ -2,9 +2,12 @@ package sample.Modelo;
 
 
 import javafx.beans.property.*;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Pagos{
     private IntegerProperty IDPagos;
@@ -13,8 +16,7 @@ public class Pagos{
     private FloatProperty MontoPago;
     private Date FechaPago;
 
-    public Pagos(int IDPagos, int IDempleado, String TipoPago, float MontoPago, Date FechaPago)
-    {
+    public Pagos(int IDPagos, int IDempleado, String TipoPago, float MontoPago, Date FechaPago) {
         this.IDPagos = new SimpleIntegerProperty(IDPagos);
         this.IDempleado = new SimpleIntegerProperty(IDempleado);
         this.TipoPago = new SimpleStringProperty(TipoPago);
@@ -90,6 +92,42 @@ public class Pagos{
         } catch (SQLException e) {
             System.out.println("Error al agregar Tipo de Pago");
             e.printStackTrace();
+        }
+    }
+
+
+    public static void busquedaDinamicaDeudasPendientes (Connection connection, String busqueda,
+                                                         ObservableList<List<StringProperty>> data) {
+        List<StringProperty> Row = new ArrayList<>();
+
+        try {
+            String query = "SELECT t3.Nombre_proveedor, t1.MontoCompra, t1.ReciboColector, t1.Observacion, t1.FechaVencPago " +
+                    "FROM Compra t1 INNER JOIN Abono t2 on t1.FacturaCompra = t2.FacturaCompra " +
+                    "INNER JOIN Proveedor t3 on t2.IDproveedor = t3.IDproveedor WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
+
+            while (resultado.next()) {
+                Row.add(0, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
+                Row.add(1, new SimpleStringProperty(resultado.getString("MontoCompra")));
+                Row.add(2, new SimpleStringProperty(resultado.getString("ReciboColector")));
+                Row.add(3, new SimpleStringProperty(resultado.getString("Observacion")));
+                Row.add(4, new SimpleStringProperty(resultado.getString("FechaVencPago")));
+                System.out.println(Row);
+                data.add(Row);
+                System.out.println(Row);
+                System.out.println(data);
+                System.out.println("---------");
+            }
+
+            statement.close();
+        } catch (SQLException e) {
+            System.out.println("Error al agregar las deudas pendientes al TableView");
+            e.printStackTrace();
+
+            //Si compra 10 cojas, de 100 pone 1000 pastillas
+
         }
     }
 }

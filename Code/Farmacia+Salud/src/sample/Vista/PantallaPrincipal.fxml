@@ -97,12 +97,12 @@
                <Image url="@../img/usuario.png" />
             </image>
          </ImageView>
-         <Label layoutX="922.0" layoutY="20.0" text="Gabriela Castillo" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <Label fx:id="lblUsuario" layoutX="922.0" layoutY="20.0" text="Farmacia +Salud" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0">
             <font>
                <Font name="Calibri Bold" size="24.0" />
             </font>
          </Label>
-         <ImageView fx:id="Notificacion" fitHeight="30.0" fitWidth="100.0" layoutX="868.0" layoutY="19.0" onMouseClicked="#pressNotificacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.topAnchor="19.0">
+         <ImageView fx:id="Notificacion" fitHeight="25.0" fitWidth="80.0" layoutX="868.0" layoutY="19.0" onMouseClicked="#pressNotificacion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.0" AnchorPane.topAnchor="19.0">
             <image>
                <Image url="@../img/campana.png" />
             </image>
