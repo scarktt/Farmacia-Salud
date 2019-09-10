@@ -10,73 +10,73 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pagos{
-    private IntegerProperty IDPagos;
-    private IntegerProperty IDempleado;
-    private StringProperty TipoPago;
-    private FloatProperty MontoPago;
-    private Date FechaPago;
+    private StringProperty Nombre_proveedor;
+    private FloatProperty MontoCompra;
+    private StringProperty ReciboColector;
+    private StringProperty Observacion;
+    private Date FechaVencPago;
 
-    public Pagos(int IDPagos, int IDempleado, String TipoPago, float MontoPago, Date FechaPago) {
-        this.IDPagos = new SimpleIntegerProperty(IDPagos);
-        this.IDempleado = new SimpleIntegerProperty(IDempleado);
-        this.TipoPago = new SimpleStringProperty(TipoPago);
-        this.MontoPago = new SimpleFloatProperty(MontoPago);
-        this.FechaPago = FechaPago;
+    public Pagos(String Nombre_proveedor, float MontoCompra, String ReciboColector, String Observacion, Date FechaVencPago) {
+        this.Nombre_proveedor = new SimpleStringProperty(Nombre_proveedor);
+        this.MontoCompra = new SimpleFloatProperty(MontoCompra);
+        this.ReciboColector = new SimpleStringProperty(ReciboColector);
+        this.Observacion = new SimpleStringProperty(Observacion);
+        this.FechaVencPago = FechaVencPago;
     }
 
     //Metodos atributo: IDPagos
-    public int getIDPagos() {
-        return IDPagos.get();
+    public String getNombre_proveedor() {
+        return Nombre_proveedor.get();
     }
-    public void setIDPagos(int IDPagos) {
-        this.IDPagos = new SimpleIntegerProperty(IDPagos);
+    public void setNombre_proveedor(String Nombre_proveedor) {
+        this.Nombre_proveedor = new SimpleStringProperty(Nombre_proveedor);
     }
-    public IntegerProperty IDPagosProperty() {
-        return IDPagos;
-    }
-
-    //Metodos atributo: IDempleado
-    public int getIDempleado() {
-        return IDempleado.get();
-    }
-    public void setIDempleado(int IDempleado) {
-        this.IDempleado = new SimpleIntegerProperty(IDempleado);
-    }
-    public IntegerProperty IDempleadoProperty() {
-        return IDempleado;
-    }
-
-    //Metodos atributo: TipoPago
-    public String getTipoPago() {
-        return TipoPago.get();
-    }
-    public void setTipoPago(String TipoPago) {
-        this.TipoPago = new SimpleStringProperty(TipoPago);
-    }
-    public StringProperty TipoPagoProperty() {
-        return TipoPago;
+    public StringProperty IDPagosProperty() {
+        return Nombre_proveedor;
     }
 
     //Metodos atributo: MontoPago
-    public float getMontoPago() {
-        return MontoPago.get();
+    public float getMontoCompra() {
+        return MontoCompra.get();
     }
-    public void setMontoPago(float MontoPago) {
-        this.MontoPago = new SimpleFloatProperty(MontoPago);
+    public void setMontoCompra(float MontoCompra) {
+        this.MontoCompra = new SimpleFloatProperty(MontoCompra);
     }
-    public FloatProperty MontoPagoProperty() {
-        return MontoPago;
+    public FloatProperty MontoCompraProperty() {
+        return MontoCompra;
     }
+
+    //Metodos atributo: IDempleado
+    public String getReciboColector() {
+        return ReciboColector.get();
+    }
+    public void setReciboColector(String ReciboColector) {
+        this.ReciboColector = new SimpleStringProperty(ReciboColector); }
+    public StringProperty ReciboColectorProperty() {
+        return ReciboColector;
+    }
+
+    //Metodos atributo: TipoPago
+    public String getObservacion() {
+        return Observacion.get();
+    }
+    public void setObservacion(String Observacion) {
+        this.Observacion = new SimpleStringProperty(Observacion);
+    }
+    public StringProperty ObservacionProperty() {
+        return Observacion;
+    }
+
 
     //Metodos atributo: FechaPago
     public Date getFechaPago() {
-        return FechaPago;
+        return FechaVencPago;
     }
-    public void setFechaPago(Date FechaPago) {
-        this.FechaPago = FechaPago;
+    public void setFechaPago(Date FechaVencPago) {
+        this.FechaVencPago = FechaVencPago;
     }
     public Date FechaPagoProperty() {
-        return FechaPago;
+        return FechaVencPago;
     }
 
     public static void llenarCmbTipoPago (Connection connection, ObservableList<String> lista) {
@@ -97,28 +97,26 @@ public class Pagos{
 
 
     public static void busquedaDinamicaDeudasPendientes (Connection connection, String busqueda,
-                                                         ObservableList<List<StringProperty>> data) {
-        List<StringProperty> Row = new ArrayList<>();
+                                                         ObservableList<Pagos> data) {
 
         try {
             String query = "SELECT t3.Nombre_proveedor, t1.MontoCompra, t1.ReciboColector, t1.Observacion, t1.FechaVencPago " +
-                    "FROM Compra t1 INNER JOIN Abono t2 on t1.FacturaCompra = t2.FacturaCompra " +
-                    "INNER JOIN Proveedor t3 on t2.IDproveedor = t3.IDproveedor WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
+                    "FROM Compra t1 INNER JOIN Abono t2 on t1.FacturaCompra = t2.FacturaCompra" +
+                    " INNER JOIN Proveedor t3 on t2.IDproveedor = t3.IDproveedor WHERE t3.Nombre_proveedor LIKE '"+busqueda+"%'";
 
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultado = statement.executeQuery(query);
 
             while (resultado.next()) {
-                Row.add(0, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
-                Row.add(1, new SimpleStringProperty(resultado.getString("MontoCompra")));
-                Row.add(2, new SimpleStringProperty(resultado.getString("ReciboColector")));
-                Row.add(3, new SimpleStringProperty(resultado.getString("Observacion")));
-                Row.add(4, new SimpleStringProperty(resultado.getString("FechaVencPago")));
-                System.out.println(Row);
-                data.add(Row);
-                System.out.println(Row);
-                System.out.println(data);
-                System.out.println("---------");
+                data.add(
+                        new Pagos (
+                                resultado.getString("Nombre_proveedor"),
+                                resultado.getFloat("MontoCompra"),
+                                resultado.getString("ReciboColector"),
+                                resultado.getString("Observacion"),
+                                resultado.getDate("FechaVencPago")
+                        )
+                );
             }
 
             statement.close();

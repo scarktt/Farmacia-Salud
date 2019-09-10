@@ -29,21 +29,20 @@ public class PagoServicioControlador implements Initializable {
     @FXML private ComboBox cmbVendedor;
     @FXML private ComboBox cmbTipoPago;
     @FXML private ComboBox cmbProveedor;
-    @FXML private ComboBox cmbFacturaCompra;
     @FXML private ComboBox cmbVendedorA;
     //Textbox
     @FXML private TextField txtMonto;
     @FXML private TextField txtAgregarAbono;
 
     // TableView
-    @FXML private TableView<List<StringProperty>> TVPagoServicio;
+    @FXML private TableView<Pagos> TVPagoServicio;
     @FXML private TableView<List<StringProperty>> TVAbono;
 
-    @FXML private TableColumn<List<StringProperty>, String> TCProveedor;
-    @FXML private TableColumn<List<StringProperty>, String> TCMonto;
-    @FXML private TableColumn<List<StringProperty>, String> TCReciboColector;
-    @FXML private TableColumn<List<StringProperty>, String> TCObservacion;
-    @FXML private TableColumn<List<StringProperty>, String> TCFechaVencPago;
+    @FXML private TableColumn<Pagos, String> TCProveedor;
+    @FXML private TableColumn<Pagos, String> TCMonto;
+    @FXML private TableColumn<Pagos, String> TCReciboColector;
+    @FXML private TableColumn<Pagos, String> TCObservacion;
+    @FXML private TableColumn<Pagos, String> TCFechaVencPago;
 
     @FXML private TableColumn<List<StringProperty>, String> TCFechaAbono;
     @FXML private TableColumn<List<StringProperty>, String> TCSaldoAbono;
@@ -52,10 +51,9 @@ public class PagoServicioControlador implements Initializable {
     private ObservableList<String> listaVendedores = FXCollections.observableArrayList();
     private ObservableList<String> listaTipoPago = FXCollections.observableArrayList();
     private ObservableList<String> listaProveedores = FXCollections.observableArrayList();
-    private ObservableList<String> listaFacturaCompra = FXCollections.observableArrayList();
 
     // Colecciones de tipo StringProperty para el TableView
-    private ObservableList<List<StringProperty>> listaDeudas = FXCollections.observableArrayList();
+    private ObservableList<Pagos> listaDeudas = FXCollections.observableArrayList();
     private ObservableList<List<StringProperty>> listaAbono = FXCollections.observableArrayList();
 
     //Colecciones de tipo Abono
@@ -88,13 +86,11 @@ public class PagoServicioControlador implements Initializable {
         Empleado.llenarCmbNombresEmpleado(conexion.getConnection(), listaVendedores);
         Proveedor.llenarCmbNombresProveedores(conexion.getConnection(), listaProveedores);
         Pagos.llenarCmbTipoPago(conexion.getConnection(), listaTipoPago);
-        CompraProducto.llenarCmbFacturaCompra(conexion.getConnection(), listaFacturaCompra);
 
         // Enlazar listas con ComboBox y tableview
         cmbVendedor.setItems(listaVendedores);
         cmbProveedor.setItems(listaProveedores);
         cmbTipoPago.setItems(listaTipoPago);
-        cmbFacturaCompra.setItems(listaFacturaCompra);
         cmbVendedorA.setItems(listaVendedores);
     }
 
@@ -117,12 +113,12 @@ public class PagoServicioControlador implements Initializable {
         TVPagoServicio.setItems(listaDeudas);
 
         // Enlazar columnas con atributos
-        TCProveedor.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(0));
-        TCMonto.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(1));
-        TCReciboColector.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(2));
-        TCObservacion.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(3));
-        TCFechaVencPago.setCellValueFactory(listaDeudas -> listaDeudas.getValue().get(4));
-        //System.out.println(listaDeudas);
+        TCProveedor.setCellValueFactory(new PropertyValueFactory<>("Nombre_proveedor"));
+        TCMonto.setCellValueFactory(new PropertyValueFactory<>("MontoCompra"));
+        TCReciboColector.setCellValueFactory(new PropertyValueFactory<>("ReciboColector"));
+        TCObservacion.setCellValueFactory(new PropertyValueFactory<>("Observacion"));
+        TCFechaVencPago.setCellValueFactory(new PropertyValueFactory<>("FechaVencPago"));
+
         conexion.cerrarConexion();
     }
 }

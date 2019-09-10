@@ -44,7 +44,7 @@
                         <TableColumn fx:id="TCTel2" prefWidth="99.0" text="Teléfono 2" />
                     </columns>
                 </TableView>
-                <Button fx:id="btnEditar" layoutX="726.0" layoutY="215.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #BCB8B1;">
+                <Button fx:id="btnEditar" layoutX="726.0" layoutY="215.0" mnemonicParsing="false" onAction="#ActualizarRegistro" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #BCB8B1;" visible="false">
                     <font>
                         <Font name="Calibri" size="16.0" />
                     </font>
@@ -56,7 +56,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-            <Button fx:id="btnEliminar" layoutX="729.0" layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: #BCB8B1;">
+            <Button fx:id="btnEliminar" layoutX="729.0" layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: #BCB8B1;" visible="false">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -115,12 +115,12 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="lblID" layoutX="41.0" layoutY="81.0" text="123123">
+            <Label fx:id="lblID" layoutX="41.0" layoutY="81.0">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-              <Button fx:id="btnListo" layoutX="813.0" layoutY="129.0" mnemonicParsing="false" style="-fx-background-color: #BCB8B1;">
+              <Button fx:id="btnListo" layoutX="813.0" layoutY="129.0" mnemonicParsing="false" onAction="#ActualizarRegistro" style="-fx-background-color: #BCB8B1;" visible="false">
                   <graphic>
                       <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                           <image>
@@ -137,28 +137,28 @@
                 <Separator layoutX="20.0" layoutY="383.0" prefHeight="3.0" prefWidth="346.0" style="-fx-background-color: #000000;" />
                 <Separator layoutX="1088.0" layoutY="29.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="27.0" />
                 <Separator layoutX="20.0" layoutY="24.0" prefHeight="3.0" prefWidth="340.0" style="-fx-background-color: #000000;" />
-                <TextField fx:id="txtNombreAg" layoutX="46.0" layoutY="124.0" prefHeight="30.0" prefWidth="299.0" promptText="Nombre">
+                <TextField fx:id="txtNombreAg" layoutX="46.0" layoutY="131.0" prefHeight="30.0" prefWidth="299.0" promptText="Nombre">
                     <font>
                         <Font name="Calibri" size="16.0" />
                     </font>
                 </TextField>
-                <ComboBox fx:id="cmbTipoAg" layoutX="46.0" layoutY="173.0" prefHeight="25.0" prefWidth="299.0" promptText="Tipo" style="-fx-background-color: #ffffff;" />
-            <TextField fx:id="txtTel1" layoutX="46.0" layoutY="215.0" prefHeight="30.0" prefWidth="299.0" promptText="Teléfono 1">
+                <ComboBox fx:id="cmbTipoAg" layoutX="46.0" layoutY="182.0" prefHeight="25.0" prefWidth="299.0" promptText="Tipo" style="-fx-background-color: #ffffff;" />
+            <TextField fx:id="txtTel1Ag" layoutX="46.0" layoutY="225.0" prefHeight="30.0" prefWidth="299.0" promptText="Teléfono 1">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font>
             </TextField>
-            <TextField fx:id="txtTel2" layoutX="46.0" layoutY="275.0" prefHeight="30.0" prefWidth="299.0" promptText="Teléfono 2">
+            <TextField fx:id="txtTel2Ag" layoutX="46.0" layoutY="283.0" prefHeight="30.0" prefWidth="299.0" promptText="Teléfono 2">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font>
             </TextField>
-            <Button fx:id="btnAgregar" layoutX="46.0" layoutY="327.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Agregar">
+            <Button fx:id="btnAgregar" layoutX="46.0" layoutY="327.0" mnemonicParsing="false" onAction="#GuardarRegistro" style="-fx-background-color: #FFFFFF;" text="Agregar">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="btnNuevoProveedor" layoutX="46.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="Nuevo Proveedor">
+            <Button fx:id="btnNuevoProveedor" layoutX="46.0" layoutY="39.0" mnemonicParsing="false" onAction="#LimpiarAgregar" style="-fx-background-color: #FFFFFF;" text="Nuevo Proveedor">
                <font>
                   <Font name="Calibri" size="18.0" />
                </font>

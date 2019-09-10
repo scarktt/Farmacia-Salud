@@ -13,16 +13,16 @@ import java.util.List;
 
 public class Proveedor{
     private IntegerProperty IDproveedor;
-    private StringProperty Tipo_proveedor;
     private StringProperty Nombre_proveedor;
+    private StringProperty Tipo_proveedor;
     private StringProperty tel1;
     private StringProperty tel2;
 
-    public Proveedor(int IDproveedor, String Tipo_proveedor, String Nombre_proveedor,
+    public Proveedor(int IDproveedor, String Nombre_proveedor, String Tipo_proveedor,
                      String tel1, String tel2) {
         this.IDproveedor = new SimpleIntegerProperty(IDproveedor);
-        this.Tipo_proveedor = new SimpleStringProperty(Tipo_proveedor);
         this.Nombre_proveedor = new SimpleStringProperty(Nombre_proveedor);
+        this.Tipo_proveedor = new SimpleStringProperty(Tipo_proveedor);
         this.tel1 = new SimpleStringProperty(tel1);
         this.tel2 = new SimpleStringProperty(tel2);
     }
@@ -37,16 +37,6 @@ public class Proveedor{
     public IntegerProperty IDproveedorProperty() {
         return IDproveedor;
     }
-    //Metodos atributo: Tipo_proveedor
-    public String getTipo_proveedor() {
-        return Tipo_proveedor.get();
-    }
-    public void setTipo_proveedor(String Tipo_proveedor) {
-        this.Tipo_proveedor = new SimpleStringProperty(Tipo_proveedor);
-    }
-    public StringProperty Tipo_proveedorProperty() {
-        return Tipo_proveedor;
-    }
     //Metodos atributo: Nombre_proveedor
     public String getNombre_proveedor() {
         return Nombre_proveedor.get();
@@ -56,6 +46,16 @@ public class Proveedor{
     }
     public StringProperty Nombre_proveedorProperty() {
         return Nombre_proveedor;
+    }
+    //Metodos atributo: Tipo_proveedor
+    public String getTipo_proveedor() {
+        return Tipo_proveedor.get();
+    }
+    public void setTipo_proveedor(String Tipo_proveedor) {
+        this.Tipo_proveedor = new SimpleStringProperty(Tipo_proveedor);
+    }
+    public StringProperty Tipo_proveedorProperty() {
+        return Tipo_proveedor;
     }
     //Metodos atributo: tel1
     public String getTel1() {
@@ -94,27 +94,87 @@ public class Proveedor{
         }
     }
 
-    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<List<StringProperty>> data) {
-        List<StringProperty> Row = new ArrayList<>();
+    public static void llenarCmbTipoProveedores(Connection connection, ObservableList<String> lista) {
+        try {
+            String query = "SELECT DISTINCT Tipo_proveedor FROM Proveedor";
+            PreparedStatement statement = connection.prepareStatement(query);
+            ResultSet resultado = statement.executeQuery(query);
+
+            // Se recorre el campo que en este caso es el de Nombre
+            while (resultado.next()) {
+                lista.add(resultado.getString("Tipo_proveedor"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al agregar Nombre del proveedor");
+            e.printStackTrace();
+        }
+    }
+
+    public static void busquedaDinamicaProveedor (Connection connection, String busqueda, ObservableList<Proveedor> data) {
+
 
         try {
             String query = "SELECT DISTINCT IDproveedor,Nombre_proveedor,Tipo_proveedor,tel1,tel2 FROM Proveedor" +
                     " WHERE Nombre_proveedor LIKE '"+busqueda+"%'";
             PreparedStatement statement = connection.prepareStatement(query);
-            final ResultSet resultado = statement.executeQuery();
+            ResultSet resultado = statement.executeQuery(query);
 
             while (resultado.next()) {
-                Row.add(0, new SimpleStringProperty(resultado.getString("IDproveedor")));
-                Row.add(1, new SimpleStringProperty(resultado.getString("Nombre_proveedor")));
-                Row.add(2, new SimpleStringProperty(resultado.getString("Tipo_proveedor")));
-                Row.add(3, new SimpleStringProperty(resultado.getString("tel1")));
-                Row.add(4, new SimpleStringProperty(resultado.getString("tel2")));
+                data.add(
+                        new Proveedor (
+                            resultado.getInt("IDproveedor"),
+                            resultado.getString("Nombre_proveedor"),
+                            resultado.getString("Tipo_proveedor"),
+                            resultado.getString("tel1"),
+                            resultado.getString("tel2")
+                        )
+                );
             }
-            data.add(Row);
-            //statement.close();
         } catch (SQLException e) {
             System.out.println("Error al agregar las proveedores al TableView");
             e.printStackTrace();
         }
+    }
+
+    public int AgregarProveedor(Connection connection) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO Proveedor (IDproveedor," +
+                    " Nombre_proveedor, Tipo_proveedor, tel1, tel2) VALUES (?,?,?,?,?)");
+
+            statement.setInt(1,IDproveedor.get());
+            statement.setString(2 ,Nombre_proveedor.get());
+            statement.setString(3 ,Tipo_proveedor.get());
+            statement.setString(4 ,tel1.get());
+            statement.setString(5 ,tel2.get());
+            return statement.executeUpdate();
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    public int ModificarProveedor(Connection connection) {
+        try {
+            PreparedStatement statement = connection.prepareStatement("UPDATE Proveedor SET\n" +
+                    " Nombre_proveedor = ?, Tipo_proveedor = ?, tel1 = ?, tel2 = ? " +
+                    "where IDproveedor = ?");
+
+            statement.setString(1 ,Nombre_proveedor.get());
+            statement.setString(2 ,Tipo_proveedor.get());
+            statement.setString(3 ,tel1.get());
+            statement.setString(4 ,tel2.get());
+            statement.setInt(5,IDproveedor.get());
+            return statement.executeUpdate();
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+
+        }
+    }
+
+    public void EliminarProveedor(Connection connection) {
+
     }
 }

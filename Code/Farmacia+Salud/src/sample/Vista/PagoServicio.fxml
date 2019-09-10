@@ -63,12 +63,8 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="386.0" layoutY="2.0" prefHeight="339.0" prefWidth="827.0" style="-fx-background-color: #BCB8B1;">
+      <AnchorPane layoutX="386.0" layoutY="18.0" prefHeight="348.0" prefWidth="801.0" style="-fx-background-color: #FFFFFF;">
           <children>
-              <Separator layoutX="17.0" layoutY="27.0" orientation="VERTICAL" prefHeight="338.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
-              <Separator layoutX="20.0" layoutY="364.0" prefHeight="3.0" prefWidth="770.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="364.0" />
-              <Separator layoutX="786.0" layoutY="26.0" orientation="VERTICAL" prefHeight="338.0" prefWidth="6.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="786.0" AnchorPane.topAnchor="26.0" />
-              <Separator layoutX="285.0" layoutY="24.0" prefHeight="3.0" prefWidth="505.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="26.0" />
 
               <TableView fx:id="TVPagoServicio" layoutX="33.0" layoutY="105.0" prefHeight="235.0" prefWidth="745.0">
                   <columns>
@@ -84,14 +80,7 @@
                   <Font name="Calibri" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" onAction="#onActionProveedor" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
-            <ComboBox fx:id="cmbFacturaCompra" layoutX="587.0" layoutY="61.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
-            <Label layoutX="439.0" layoutY="63.0" text="Factura de compra">
-               <font>
-                  <Font name="Calibri" size="18.0" />
-               </font>
-            </Label>
-            <Separator layoutX="21.0" layoutY="26.0" prefHeight="3.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.topAnchor="26.0" />
+            <ComboBox fx:id="cmbProveedor" layoutX="204.0" layoutY="61.0" onAction="#onActionProveedor" prefWidth="150.0" style="-fx-background-color: #CCCCCC;" />
             <Label layoutX="67.0" layoutY="16.0" text="Pago de deudas | Pendiente">
                <font>
                   <Font name="Calibri" size="18.0" />
